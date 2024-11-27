@@ -15,6 +15,7 @@ Hráč vstupuje do světa Pokémonů jako nový trenér, kterého právě čeká
 
 ## Optional požadavky
 1. Statistiky (poražení pokémoni, chycení pokémoni...)
+2. Achievementy
    
 
    
