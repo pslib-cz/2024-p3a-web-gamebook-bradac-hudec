@@ -1,6 +1,6 @@
 # PokéBook
 
-Hráč vstupuje do světa Pokémonů jako nový trenér, který právě získal svého prvního Pokémona. Jeho cílem je prozkoumat svět, porazit různé Pokémony, překonat nebezpečí ve formě neblaze proslulých Rakeťáků, a nakonec se stát mistrem Indigo Ligy. Hráč bude muset strategicky využívat své Pokémony a sbírat různé předměty, aby mohl postupovat ve hře
+Hráč vstupuje do světa Pokémonů jako nový trenér, který právě získal svého prvního Pokémona. Jeho cílem je prozkoumat svět, porazit různé Pokémony, překonat nebezpečí ve formě neblaze proslulých Rakeťáků. Hráč bude muset strategicky využívat své Pokémony, aby mohl postupovat ve hře. Pomocí mu mohou být nasbírané předměty. Konec hry nastane když po nasbírání 3 pokémonů hráč zvítězí v bitvě o odznak Indigo ligy.
 
 ## Katalog požadavků
 1. Vytvoření postavy (jméno)
