@@ -3,6 +3,9 @@
 Hráč vstupuje do světa Pokémonů jako nový trenér, kterého právě čeká výběr svého prvního Pokémona. Jeho cílem je prozkoumat svět, porazit různé Pokémony, překonat nebezpečí ve formě neblaze proslulých Rakeťáků. Hráč bude muset strategicky využívat své Pokémony, aby mohl postupovat ve hře. Pomocí mu mohou být nasbírané předměty. Konec hry nastane když po nasbírání 3 pokémonů hráč zvítězí v bitvě o odznak Indigo ligy.
 
 ## Katalog požadavků
+
+
+### Funkční požadavky
 1. Vytvoření postavy (jméno)
 2. Pohyb mezi místnostmi (různé lokace)
 3. Boje s Pokémony (dobrovolné, 1v1)
@@ -13,9 +16,24 @@ Hráč vstupuje do světa Pokémonů jako nový trenér, kterého právě čeká
 8. Hlavní menu a přihlašovací systém
 9. Legenda k předmětům
 
-## Optional požadavky
+#### Optional funkční požadavky
 1. Statistiky (poražení pokémoni, chycení pokémoni...)
 2. Achievementy
-   
 
+
+
+
+### Nefunkční požadavky
+
+
+#### Použité technologie
+   - **React:** Frontendová část aplikace
+   - **ASP.NET:** Backendová část s **REST API**
+   - **SQLite:** Databázový systém pro ukládání dat
+   - **localStorage:** Pro ukládání stavu hry na straně klienta
+
+#### Architektura
+   - Použití template **ASP.NET + React** ve Visual Studiu.
+   - Centralizace dat pomocí Contextu
+   - Podpora **CRUD** operací pro administrátorské funkce.
    
