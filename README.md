@@ -34,4 +34,7 @@ Hráč vstupuje do světa Pokémonů jako nový trenér, kterého právě čeká
 #### Architektura
    - Použití template **ASP.NET + React** ve Visual Studiu.
    - Podpora **CRUD** operací pro administrátorské funkce.
+
+
+Figma: https://www.figma.com/design/SKZ4c1FYVx0rSehQLImRUW/PGB?node-id=0-1&node-type=canvas&t=rUGzQ1RoupfwuQ0Y-0
    
