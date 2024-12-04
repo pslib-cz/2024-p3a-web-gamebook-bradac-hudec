@@ -8,7 +8,7 @@ Hráč vstupuje do světa Pokémonů jako nový trenér, kterého právě čeká
 ### Funkční požadavky
 2. Pohyb mezi místnostmi (různé lokace)
 3. Boje s Pokémony (1v1)
-4. Bitvy s Rakeťáky 
+4. Bitvy s Rakeťáky (povinné bitvy bez jakékoliv odměny, náhodně se objevují)
 5. Inventář/batoh + hráčovi chycení pokémoni 
 6. Mechanika útoků a typové výhody
 7. Správa životů a energie
