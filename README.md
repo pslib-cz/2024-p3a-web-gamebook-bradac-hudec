@@ -38,5 +38,10 @@ Hráč vstupuje do světa Pokémonů jako nový trenér, kterého právě čeká
 
 Figma: https://www.figma.com/design/SKZ4c1FYVx0rSehQLImRUW/PGB?node-id=0-1&node-type=canvas&t=rUGzQ1RoupfwuQ0Y-0
 
+### Návrh Datového Modelu
+
+![image](https://github.com/user-attachments/assets/e5f7229d-8e1f-42e8-90d2-38222c71eeeb)
+
+
 
    
