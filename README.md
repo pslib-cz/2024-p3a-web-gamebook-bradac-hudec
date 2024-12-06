@@ -40,7 +40,8 @@ Odkaz:  https://www.figma.com/design/SKZ4c1FYVx0rSehQLImRUW/PGB?node-id=0-1&node
 
 ### Návrh Datového Modelu
 
-![image](https://github.com/user-attachments/assets/e5f7229d-8e1f-42e8-90d2-38222c71eeeb)
+![image](https://github.com/user-attachments/assets/9147a75f-f53f-465d-939a-6beaae2cc505)
+
 
 
 
