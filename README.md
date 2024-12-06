@@ -29,6 +29,7 @@ Hráč vstupuje do světa Pokémonů jako nový trenér, kterého právě čeká
    - **ASP.NET:** Backendová část s **REST API**
    - **SQLite:** Databázový systém pro ukládání dat
    - **localStorage:** Pro ukládání stavu hry na straně klienta
+   - **Leonardo AI:** Pro generaci grafiky
 
 #### Architektura
    - Použití template **ASP.NET + React** ve Visual Studiu.
