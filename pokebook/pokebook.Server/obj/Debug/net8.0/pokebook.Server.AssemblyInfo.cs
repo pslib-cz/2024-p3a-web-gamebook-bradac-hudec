@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pokebook.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b010b95dc9ca14a54f0daa6f4fb510fa572f42ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee73b6f530e9ccfb6fcd1991e0745019d9fdc8ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("pokebook.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pokebook.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
