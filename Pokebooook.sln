@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokebooook.Server", "Pokebooook.Server\Pokebooook.Server.csproj", "{8ED70AAD-0FA9-404C-B1EF-AF7C3B00AF97}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "pokebooook.client", "pokebooook.client\pokebooook.client.esproj", "{50774108-883F-4325-92DC-236EE53BE487}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ED70AAD-0FA9-404C-B1EF-AF7C3B00AF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED70AAD-0FA9-404C-B1EF-AF7C3B00AF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED70AAD-0FA9-404C-B1EF-AF7C3B00AF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED70AAD-0FA9-404C-B1EF-AF7C3B00AF97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50774108-883F-4325-92DC-236EE53BE487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50774108-883F-4325-92DC-236EE53BE487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50774108-883F-4325-92DC-236EE53BE487}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{50774108-883F-4325-92DC-236EE53BE487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50774108-883F-4325-92DC-236EE53BE487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50774108-883F-4325-92DC-236EE53BE487}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {412FBB46-F110-4D41-8B53-7FF5D83F4A4E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+@Pokebooook.Server_HostAddress = http://localhost:5212
+
+GET {{Pokebooook.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
