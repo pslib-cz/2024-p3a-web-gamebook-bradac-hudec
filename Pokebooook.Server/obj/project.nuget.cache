@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "sxD+IPptayU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\Pokebooook.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Filip\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.11\\microsoft.aspnetcore.spaproxy.8.0.11.nupkg.sha512",
+    "C:\\Users\\Filip\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Filip\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Filip\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\Filip\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\Filip\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\Filip\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
