@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Pokebooook.Server.props" />
+</Project>
