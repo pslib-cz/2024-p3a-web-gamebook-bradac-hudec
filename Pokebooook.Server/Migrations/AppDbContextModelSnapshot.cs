@@ -64,7 +64,7 @@ namespace Pokebooook.Server.Migrations
                     b.ToTable("Locations");
                 });
 
-            modelBuilder.Entity("Pokebooook.Server.Models.PokemonType", b =>
+            modelBuilder.Entity("Pokebooook.Server.Models.PokemonTypes", b =>
                 {
                     b.Property<int>("TypeId")
                         .ValueGeneratedOnAdd()
@@ -73,6 +73,60 @@ namespace Pokebooook.Server.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<double>("ToBug")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToDark")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToDragon")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToElectric")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToFairy")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToFighting")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToFire")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToFlying")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToGhost")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToGrass")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToGround")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToIce")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToNormal")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToPoison")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToPsychic")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToRock")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToSteel")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ToWater")
+                        .HasColumnType("REAL");
 
                     b.Property<string>("TypeIcon")
                         .IsRequired()

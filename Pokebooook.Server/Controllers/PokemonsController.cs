@@ -76,12 +76,46 @@ namespace Pokebooook.Server.Controllers
         // POST: api/Pokemons
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Pokemons>> PostPokemons(Pokemons pokemons)
+        public async Task<ActionResult<IEnumerable<Pokemons>>> PostPokemons([FromBody] List<Pokemons> pokemons)
         {
-            _context.Pokemons.Add(pokemons);
-            await _context.SaveChangesAsync();
+            if (pokemons == null || pokemons.Count == 0)
+            {
+                return BadRequest("No pokemons provided.");
+            }
 
-            return CreatedAtAction("GetPokemons", new { id = pokemons.PokedexId }, pokemons);
+            const int batchSize = 50; // Nastavíme velikost dávky na 50
+            var totalPokemons = pokemons.Count;
+            var batches = (int)Math.Ceiling((double)totalPokemons / batchSize); // Počet dávek, které budeme zpracovávat
+
+            using (var transaction = await _context.Database.BeginTransactionAsync())
+            {
+                try
+                {
+                    // Vkládáme Pokémony po dávkách
+                    for (int i = 0; i < batches; i++)
+                    {
+                        // Vytvoříme dávku pro každý cyklus
+                        var batch = pokemons.Skip(i * batchSize).Take(batchSize).ToList();
+
+                        // Přidáme dávku Pokémonů do DB
+                        await _context.Pokemons.AddRangeAsync(batch);
+
+                        // Uložíme změny pro tuto dávku
+                        await _context.SaveChangesAsync();
+                    }
+
+                    // Potvrdíme transakci, všechny změny budou uloženy
+                    await transaction.CommitAsync();
+
+                    return CreatedAtAction("GetPokemons", new { ids = string.Join(",", pokemons.Select(p => p.PokedexId)) }, pokemons);
+                }
+                catch (Exception ex)
+                {
+                    // Pokud dojde k chybě, vrátíme všechny změny zpět
+                    await transaction.RollbackAsync();
+                    return StatusCode(500, $"An error occurred while inserting pokemons: {ex.Message}");
+                }
+            }
         }
 
         // DELETE: api/Pokemons/5
