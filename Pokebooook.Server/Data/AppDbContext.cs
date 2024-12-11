@@ -16,5 +16,9 @@ namespace Pokebooook.Server.Data
           base.OnConfiguring(optionsBuilder);
         }
         public DbSet<Pokemons> Pokemons { get; set; }
+        public DbSet<Attacks> Attacks { get; set; }
+        public DbSet<PokemonTypes> PokemonTypes { get; set; }
+        public DbSet<Pokebooook.Server.Models.Locations> Locations { get; set; } = default!;
+
     }
 }
