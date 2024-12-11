@@ -1,8 +1,12 @@
-﻿namespace Pokebooook.Server.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Pokebooook.Server.Models
 {
-    public class PokemonType
+    public class PokemonTypes
     {
+        [Key]
         public int TypeId { get; set; }
+
         public required string Name { get; set; }
         public required string TypeIcon { get; set; }
     
