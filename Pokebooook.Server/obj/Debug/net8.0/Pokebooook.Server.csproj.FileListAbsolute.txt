@@ -291,3 +291,4 @@ C:\Users\Filip\Source\Repos\2024-p3a-web-gamebook-bradac-hudec.git\Pokebooook.Se
 C:\Users\Filip\Source\Repos\2024-p3a-web-gamebook-bradac-hudec.git\Pokebooook.Server\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Filip\Source\Repos\2024-p3a-web-gamebook-bradac-hudec.git\Pokebooook.Server\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Filip\Source\Repos\2024-p3a-web-gamebook-bradac-hudec.git\Pokebooook.Server\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Filip\Source\Repos\2024-p3a-web-gamebook-bradac-hudec.git\Pokebooook.Server\bin\Debug\net8.0\Pokebooook.Server.staticwebassets.runtime.json

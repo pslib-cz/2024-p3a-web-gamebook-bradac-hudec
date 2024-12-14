@@ -23,36 +23,36 @@ namespace Pokebooook.Server.Controllers
 
         // GET: api/PokemonTypes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<PokemonTypes>>> GetPokemonTypes()
+        public async Task<ActionResult<IEnumerable<PokemonType>>> GetPokemonTypes()
         {
             return await _context.PokemonTypes.ToListAsync();
         }
 
         // GET: api/PokemonTypes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<PokemonTypes>> GetPokemonTypes(int id)
+        public async Task<ActionResult<PokemonType>> GetPokemonType(int id)
         {
-            var pokemonTypes = await _context.PokemonTypes.FindAsync(id);
+            var pokemonType = await _context.PokemonTypes.FindAsync(id);
 
-            if (pokemonTypes == null)
+            if (pokemonType == null)
             {
                 return NotFound();
             }
 
-            return pokemonTypes;
+            return pokemonType;
         }
 
         // PUT: api/PokemonTypes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPokemonTypes(int id, PokemonTypes pokemonTypes)
+        public async Task<IActionResult> PutPokemonType(int id, PokemonType pokemonType)
         {
-            if (id != pokemonTypes.TypeId)
+            if (id != pokemonType.TypeId)
             {
                 return BadRequest();
             }
 
-            _context.Entry(pokemonTypes).State = EntityState.Modified;
+            _context.Entry(pokemonType).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace Pokebooook.Server.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PokemonTypesExists(id))
+                if (!PokemonTypeExists(id))
                 {
                     return NotFound();
                 }
@@ -76,34 +76,31 @@ namespace Pokebooook.Server.Controllers
         // POST: api/PokemonTypes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<IEnumerable<PokemonTypes>>> PostPokemonTypes([FromBody] List<PokemonTypes> pokemonTypesList)
+        public async Task<ActionResult<PokemonType>> PostPokemonType(PokemonType pokemonType)
         {
-            // Přidáme všechny nové Pokémonní typy
-            _context.PokemonTypes.AddRange(pokemonTypesList);
+            _context.PokemonTypes.Add(pokemonType);
             await _context.SaveChangesAsync();
 
-            // Vrátíme seznam přidaných Pokémonních typů jako odpověď
-            return CreatedAtAction("GetPokemonTypes", new { ids = pokemonTypesList.Select(pt => pt.TypeId) }, pokemonTypesList);
+            return CreatedAtAction("GetPokemonType", new { id = pokemonType.TypeId }, pokemonType);
         }
-
 
         // DELETE: api/PokemonTypes/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePokemonTypes(int id)
+        public async Task<IActionResult> DeletePokemonType(int id)
         {
-            var pokemonTypes = await _context.PokemonTypes.FindAsync(id);
-            if (pokemonTypes == null)
+            var pokemonType = await _context.PokemonTypes.FindAsync(id);
+            if (pokemonType == null)
             {
                 return NotFound();
             }
 
-            _context.PokemonTypes.Remove(pokemonTypes);
+            _context.PokemonTypes.Remove(pokemonType);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool PokemonTypesExists(int id)
+        private bool PokemonTypeExists(int id)
         {
             return _context.PokemonTypes.Any(e => e.TypeId == id);
         }

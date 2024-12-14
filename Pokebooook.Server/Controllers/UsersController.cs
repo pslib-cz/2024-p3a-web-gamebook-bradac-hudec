@@ -12,47 +12,47 @@ namespace Pokebooook.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class LocationsController : ControllerBase
+    public class UsersController : ControllerBase
     {
         private readonly AppDbContext _context;
 
-        public LocationsController(AppDbContext context)
+        public UsersController(AppDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Locations
+        // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Location>>> GetLocations()
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            return await _context.Locations.ToListAsync();
+            return await _context.Users.ToListAsync();
         }
 
-        // GET: api/Locations/5
+        // GET: api/Users/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Location>> GetLocation(int id)
+        public async Task<ActionResult<User>> GetUser(int id)
         {
-            var location = await _context.Locations.FindAsync(id);
+            var user = await _context.Users.FindAsync(id);
 
-            if (location == null)
+            if (user == null)
             {
                 return NotFound();
             }
 
-            return location;
+            return user;
         }
 
-        // PUT: api/Locations/5
+        // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutLocation(int id, Location location)
+        public async Task<IActionResult> PutUser(int id, User user)
         {
-            if (id != location.LocationId)
+            if (id != user.UserId)
             {
                 return BadRequest();
             }
 
-            _context.Entry(location).State = EntityState.Modified;
+            _context.Entry(user).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace Pokebooook.Server.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!LocationExists(id))
+                if (!UserExists(id))
                 {
                     return NotFound();
                 }
@@ -73,36 +73,36 @@ namespace Pokebooook.Server.Controllers
             return NoContent();
         }
 
-        // POST: api/Locations
+        // POST: api/Users
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Location>> PostLocation(Location location)
+        public async Task<ActionResult<User>> PostUser(User user)
         {
-            _context.Locations.Add(location);
+            _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetLocation", new { id = location.LocationId }, location);
+            return CreatedAtAction("GetUser", new { id = user.UserId }, user);
         }
 
-        // DELETE: api/Locations/5
+        // DELETE: api/Users/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteLocation(int id)
+        public async Task<IActionResult> DeleteUser(int id)
         {
-            var location = await _context.Locations.FindAsync(id);
-            if (location == null)
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
             {
                 return NotFound();
             }
 
-            _context.Locations.Remove(location);
+            _context.Users.Remove(user);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool LocationExists(int id)
+        private bool UserExists(int id)
         {
-            return _context.Locations.Any(e => e.LocationId == id);
+            return _context.Users.Any(e => e.UserId == id);
         }
     }
 }

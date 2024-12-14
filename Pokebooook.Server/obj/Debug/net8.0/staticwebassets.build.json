@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X+XypeOw5Xi9tQO98/qQeLsniqFz/ovylW6l63LXgRY=",
+  "Hash": "jUYbHqX0MCnJjixpxpTK2dutadqrBprw6vTOvhskoeo=",
   "Source": "Pokebooook.Server",
   "BasePath": "_content/Pokebooook.Server",
   "Mode": "Default",
@@ -18,7 +18,120 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Pokebooook.Server\\wwwroot",
+      "Source": "Pokebooook.Server",
+      "ContentRoot": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\",
+      "BasePath": "_content/Pokebooook.Server",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\sim.png",
+      "SourceId": "Pokebooook.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\",
+      "BasePath": "_content/Pokebooook.Server",
+      "RelativePath": "uploads/sim#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "85qyxmsw5v",
+      "Integrity": "3FEfxyqphuQFPSgnYHzNS0gvHf0YmxZjxxKFFP3LaD0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\sim.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/sim.85qyxmsw5v.png",
+      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\sim.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1667258"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3FEfxyqphuQFPSgnYHzNS0gvHf0YmxZjxxKFFP3LaD0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Dec 2024 15:39:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "85qyxmsw5v"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/sim.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3FEfxyqphuQFPSgnYHzNS0gvHf0YmxZjxxKFFP3LaD0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/sim.png",
+      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\sim.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1667258"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3FEfxyqphuQFPSgnYHzNS0gvHf0YmxZjxxKFFP3LaD0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Dec 2024 15:39:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3FEfxyqphuQFPSgnYHzNS0gvHf0YmxZjxxKFFP3LaD0="
+        }
+      ]
+    }
+  ]
 }
