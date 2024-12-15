@@ -1,46 +1,46 @@
-# PokéBook
+# PokÃ©Book
 
-Hráè vstupuje do svìta Pokémonù jako novı trenér, kterého právì èeká vıbìr svého prvního Pokémona. Jeho cílem je prozkoumat svìt, porazit rùzné Pokémony, pøekonat nebezpeèí ve formì neblaze proslulıch Rakeákù. Hráè bude muset strategicky vyuívat své Pokémony, aby mohl postupovat ve høe. Pomocí mu mohou bıt nasbírané pøedmìty. Konec hry nastane kdy po nasbírání 6 pokémonù hráè zvítìzí v bitvì o odznak Indigo ligy.
+HrÃ¡Ä vstupuje do svÄ›ta PokÃ©monÅ¯ jako novÃ½ trenÃ©r, kterÃ©ho prÃ¡vÄ› ÄekÃ¡ vÃ½bÄ›r svÃ©ho prvnÃ­ho PokÃ©mona. Jeho cÃ­lem je prozkoumat svÄ›t, porazit rÅ¯znÃ© PokÃ©mony, pÅ™ekonat nebezpeÄÃ­ ve formÄ› neblaze proslulÃ½ch RakeÅ¥Ã¡kÅ¯. HrÃ¡Ä bude muset strategicky vyuÅ¾Ã­vat svÃ© PokÃ©mony, aby mohl postupovat ve hÅ™e. PomocÃ­ mu mohou bÃ½t nasbÃ­ranÃ© pÅ™edmÄ›ty. Konec hry nastane kdyÅ¾ po nasbÃ­rÃ¡nÃ­ 6 pokÃ©monÅ¯ hrÃ¡Ä zvÃ­tÄ›zÃ­ v bitvÄ› o odznak Indigo ligy.
 
-## Katalog poadavkù
-
-
-### Funkèní poadavky
-2. Pohyb mezi místnostmi (rùzné lokace)
-3. Boje s Pokémony (1v1, po dokonèení získá hráè pokémona + pøedmìt)
-4. Bitvy s Rakeáky (povinné bitvy bez jakékoliv odmìny, náhodnì se objevují)
-5. Inventáø/batoh (pøedmìty) + samostatné menu pro hráèovi chycené pokémony 
-6. Mechanika útokù a typové vıhody
-7. Správa ivotù a energie
-8. Obchod s evolucemi vašich pokémonù (Pokud jste moc slabı, mùete se posilnit evolucí, evoluce by stály mince)
-9. Hlavní menu a pøihlašovací systém
-10. Legenda k pøedmìtùm (K èemu kadı pøedmìt slouí)
-11. Statistiky (poèet chycenıch pokémonù, poèet dohrání)
+## Katalog poÅ¾adavkÅ¯
 
 
+### FunkÄnÃ­ poÅ¾adavky
+2. Pohyb mezi mÃ­stnostmi (rÅ¯znÃ© lokace)
+3. Boje s PokÃ©mony (1v1, po dokonÄenÃ­ zÃ­skÃ¡ hrÃ¡Ä pokÃ©mona + pÅ™edmÄ›t)
+4. Bitvy s RakeÅ¥Ã¡ky (povinnÃ© bitvy bez jakÃ©koliv odmÄ›ny, nÃ¡hodnÄ› se objevujÃ­)
+5. InventÃ¡Å™/batoh (pÅ™edmÄ›ty) + samostatnÃ© menu pro hrÃ¡Äovi chycenÃ© pokÃ©mony 
+6. Mechanika ÃºtokÅ¯ a typovÃ© vÃ½hody
+7. SprÃ¡va Å¾ivotÅ¯ a energie
+8. Obchod s evolucemi vaÅ¡ich pokÃ©monÅ¯ (Pokud jste moc slabÃ½, mÅ¯Å¾ete se posilnit evolucÃ­, evoluce by stÃ¡ly mince)
+9. HlavnÃ­ menu a pÅ™ihlaÅ¡ovacÃ­ systÃ©m
+10. Legenda k pÅ™edmÄ›tÅ¯m (K Äemu kaÅ¾dÃ½ pÅ™edmÄ›t slouÅ¾Ã­)
+11. Statistiky (poÄet chycenÃ½ch pokÃ©monÅ¯, poÄet dohrÃ¡nÃ­)
 
 
 
-### Nefunkèní poadavky
 
 
-#### Pouité technologie
-   - **React:** Frontendová èást aplikace
-   - **ASP.NET:** Backendová èást s **REST API**
-   - **SQLite:** Databázovı systém pro ukládání dat
-   - **localStorage:** Pro ukládání stavu hry na stranì klienta
+### NefunkÄnÃ­ poÅ¾adavky
+
+
+#### PouÅ¾itÃ© technologie
+   - **React:** FrontendovÃ¡ ÄÃ¡st aplikace
+   - **ASP.NET:** BackendovÃ¡ ÄÃ¡st s **REST API**
+   - **SQLite:** DatabÃ¡zovÃ½ systÃ©m pro uklÃ¡dÃ¡nÃ­ dat
+   - **localStorage:** Pro uklÃ¡dÃ¡nÃ­ stavu hry na stranÄ› klienta
    - **Leonardo AI:** Pro generaci grafiky
 
 #### Architektura
-   - Pouití template **ASP.NET + React** ve Visual Studiu.
-   - Podpora **CRUD** operací pro administrátorské funkce.
+   - PouÅ¾itÃ­ template **ASP.NET + React** ve Visual Studiu.
+   - Podpora **CRUD** operacÃ­ pro administrÃ¡torskÃ© funkce.
 
-### Grafickı Návrh
+### GrafickÃ½ NÃ¡vrh
 Odkaz:  https://www.figma.com/design/SKZ4c1FYVx0rSehQLImRUW/PGB?node-id=0-1&node-type=canvas&t=rUGzQ1RoupfwuQ0Y-0
 
-### Návrh Datového Modelu
+### NÃ¡vrh DatovÃ©ho Modelu
 
-![image](https://github.com/user-attachments/assets/9147a75f-f53f-465d-939a-6beaae2cc505)
+![DBmodel](https://github.com/user-attachments/assets/f063d041-617e-4677-8bfd-8fdb6b954c16)
 
 
 

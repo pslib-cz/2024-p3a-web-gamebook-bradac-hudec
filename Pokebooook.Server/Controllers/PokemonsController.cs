@@ -23,36 +23,36 @@ namespace Pokebooook.Server.Controllers
 
         // GET: api/Pokemons
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Pokemons>>> GetPokemons()
+        public async Task<ActionResult<IEnumerable<Pokemon>>> GetPokemons()
         {
             return await _context.Pokemons.ToListAsync();
         }
 
         // GET: api/Pokemons/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Pokemons>> GetPokemons(int id)
+        public async Task<ActionResult<Pokemon>> GetPokemon(int id)
         {
-            var pokemons = await _context.Pokemons.FindAsync(id);
+            var pokemon = await _context.Pokemons.FindAsync(id);
 
-            if (pokemons == null)
+            if (pokemon == null)
             {
                 return NotFound();
             }
 
-            return pokemons;
+            return pokemon;
         }
 
         // PUT: api/Pokemons/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPokemons(int id, Pokemons pokemons)
+        public async Task<IActionResult> PutPokemon(int id, Pokemon pokemon)
         {
-            if (id != pokemons.PokedexId)
+            if (id != pokemon.PokedexId)
             {
                 return BadRequest();
             }
 
-            _context.Entry(pokemons).State = EntityState.Modified;
+            _context.Entry(pokemon).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace Pokebooook.Server.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PokemonsExists(id))
+                if (!PokemonExists(id))
                 {
                     return NotFound();
                 }
@@ -76,65 +76,31 @@ namespace Pokebooook.Server.Controllers
         // POST: api/Pokemons
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<IEnumerable<Pokemons>>> PostPokemons([FromBody] List<Pokemons> pokemons)
+        public async Task<ActionResult<Pokemon>> PostPokemon(Pokemon pokemon)
         {
-            if (pokemons == null || pokemons.Count == 0)
-            {
-                return BadRequest("No pokemons provided.");
-            }
+            _context.Pokemons.Add(pokemon);
+            await _context.SaveChangesAsync();
 
-            const int batchSize = 50; // Nastavíme velikost dávky na 50
-            var totalPokemons = pokemons.Count;
-            var batches = (int)Math.Ceiling((double)totalPokemons / batchSize); // Počet dávek, které budeme zpracovávat
-
-            using (var transaction = await _context.Database.BeginTransactionAsync())
-            {
-                try
-                {
-                    // Vkládáme Pokémony po dávkách
-                    for (int i = 0; i < batches; i++)
-                    {
-                        // Vytvoříme dávku pro každý cyklus
-                        var batch = pokemons.Skip(i * batchSize).Take(batchSize).ToList();
-
-                        // Přidáme dávku Pokémonů do DB
-                        await _context.Pokemons.AddRangeAsync(batch);
-
-                        // Uložíme změny pro tuto dávku
-                        await _context.SaveChangesAsync();
-                    }
-
-                    // Potvrdíme transakci, všechny změny budou uloženy
-                    await transaction.CommitAsync();
-
-                    return CreatedAtAction("GetPokemons", new { ids = string.Join(",", pokemons.Select(p => p.PokedexId)) }, pokemons);
-                }
-                catch (Exception ex)
-                {
-                    // Pokud dojde k chybě, vrátíme všechny změny zpět
-                    await transaction.RollbackAsync();
-                    return StatusCode(500, $"An error occurred while inserting pokemons: {ex.Message}");
-                }
-            }
+            return CreatedAtAction("GetPokemon", new { id = pokemon.PokedexId }, pokemon);
         }
 
         // DELETE: api/Pokemons/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePokemons(int id)
+        public async Task<IActionResult> DeletePokemon(int id)
         {
-            var pokemons = await _context.Pokemons.FindAsync(id);
-            if (pokemons == null)
+            var pokemon = await _context.Pokemons.FindAsync(id);
+            if (pokemon == null)
             {
                 return NotFound();
             }
 
-            _context.Pokemons.Remove(pokemons);
+            _context.Pokemons.Remove(pokemon);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool PokemonsExists(int id)
+        private bool PokemonExists(int id)
         {
             return _context.Pokemons.Any(e => e.PokedexId == id);
         }

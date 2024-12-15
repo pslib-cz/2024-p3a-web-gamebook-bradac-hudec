@@ -2,7 +2,7 @@
 
 namespace Pokebooook.Server.Models
 {
-    public class PokemonTypes
+    public class PokemonType
     {
         [Key]
         public int TypeId { get; set; }
@@ -29,4 +29,5 @@ namespace Pokebooook.Server.Models
         public required double ToNormal { get; set; }
 
     }
+
 }

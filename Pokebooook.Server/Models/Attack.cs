@@ -2,14 +2,18 @@
 
 namespace Pokebooook.Server.Models
 {
-    public class Attacks
+    public class Attack
     {
         [Key]
-        public required int AttackId { get; set; }
+        public int AttackId { get; set; }
 
+        [Required]
         public required string Name { get; set; }
-        public required double EnergyCost { get; set; }
-        public required double BaseDamage { get; set; }
 
+        [Required]
+        public required double EnergyCost { get; set; }
+
+        [Required]
+        public required double BaseDamage { get; set; }
     }
 }

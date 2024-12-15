@@ -5,23 +5,24 @@
 namespace Pokebooook.Server.Migrations
 {
     /// <inheritdoc />
-    public partial class Types : Migration
+    public partial class contextUpdate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "PokemonTypes",
+                name: "Item",
                 columns: table => new
                 {
-                    TypeId = table.Column<int>(type: "INTEGER", nullable: false)
+                    ItemId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
-                    TypeIcon = table.Column<string>(type: "TEXT", nullable: false)
+                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    IconId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PokemonTypes", x => x.TypeId);
+                    table.PrimaryKey("PK_Item", x => x.ItemId);
                 });
         }
 
@@ -29,7 +30,7 @@ namespace Pokebooook.Server.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "PokemonTypes");
+                name: "Item");
         }
     }
 }

@@ -12,47 +12,47 @@ namespace Pokebooook.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class LocationsController : ControllerBase
+    public class ConnectionsController : ControllerBase
     {
         private readonly AppDbContext _context;
 
-        public LocationsController(AppDbContext context)
+        public ConnectionsController(AppDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Locations
+        // GET: api/Connections
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Location>>> GetLocations()
+        public async Task<ActionResult<IEnumerable<Connection>>> GetConnections()
         {
-            return await _context.Locations.ToListAsync();
+            return await _context.Connections.ToListAsync();
         }
 
-        // GET: api/Locations/5
+        // GET: api/Connections/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Location>> GetLocation(int id)
+        public async Task<ActionResult<Connection>> GetConnection(int id)
         {
-            var location = await _context.Locations.FindAsync(id);
+            var connection = await _context.Connections.FindAsync(id);
 
-            if (location == null)
+            if (connection == null)
             {
                 return NotFound();
             }
 
-            return location;
+            return connection;
         }
 
-        // PUT: api/Locations/5
+        // PUT: api/Connections/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutLocation(int id, Location location)
+        public async Task<IActionResult> PutConnection(int id, Connection connection)
         {
-            if (id != location.LocationId)
+            if (id != connection.ConnectionId)
             {
                 return BadRequest();
             }
 
-            _context.Entry(location).State = EntityState.Modified;
+            _context.Entry(connection).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace Pokebooook.Server.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!LocationExists(id))
+                if (!ConnectionExists(id))
                 {
                     return NotFound();
                 }
@@ -73,36 +73,36 @@ namespace Pokebooook.Server.Controllers
             return NoContent();
         }
 
-        // POST: api/Locations
+        // POST: api/Connections
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Location>> PostLocation(Location location)
+        public async Task<ActionResult<Connection>> PostConnection(Connection connection)
         {
-            _context.Locations.Add(location);
+            _context.Connections.Add(connection);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetLocation", new { id = location.LocationId }, location);
+            return CreatedAtAction("GetConnection", new { id = connection.ConnectionId }, connection);
         }
 
-        // DELETE: api/Locations/5
+        // DELETE: api/Connections/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteLocation(int id)
+        public async Task<IActionResult> DeleteConnection(int id)
         {
-            var location = await _context.Locations.FindAsync(id);
-            if (location == null)
+            var connection = await _context.Connections.FindAsync(id);
+            if (connection == null)
             {
                 return NotFound();
             }
 
-            _context.Locations.Remove(location);
+            _context.Connections.Remove(connection);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool LocationExists(int id)
+        private bool ConnectionExists(int id)
         {
-            return _context.Locations.Any(e => e.LocationId == id);
+            return _context.Connections.Any(e => e.ConnectionId == id);
         }
     }
 }

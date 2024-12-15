@@ -23,36 +23,36 @@ namespace Pokebooook.Server.Controllers
 
         // GET: api/Attacks
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Attacks>>> GetAttacks()
+        public async Task<ActionResult<IEnumerable<Attack>>> GetAttacks()
         {
             return await _context.Attacks.ToListAsync();
         }
 
         // GET: api/Attacks/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Attacks>> GetAttacks(int id)
+        public async Task<ActionResult<Attack>> GetAttack(int id)
         {
-            var attacks = await _context.Attacks.FindAsync(id);
+            var attack = await _context.Attacks.FindAsync(id);
 
-            if (attacks == null)
+            if (attack == null)
             {
                 return NotFound();
             }
 
-            return attacks;
+            return attack;
         }
 
         // PUT: api/Attacks/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAttacks(int id, Attacks attacks)
+        public async Task<IActionResult> PutAttack(int id, Attack attack)
         {
-            if (id != attacks.AttackId)
+            if (id != attack.AttackId)
             {
                 return BadRequest();
             }
 
-            _context.Entry(attacks).State = EntityState.Modified;
+            _context.Entry(attack).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace Pokebooook.Server.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!AttacksExists(id))
+                if (!AttackExists(id))
                 {
                     return NotFound();
                 }
@@ -76,31 +76,31 @@ namespace Pokebooook.Server.Controllers
         // POST: api/Attacks
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Attacks>> PostAttacks(Attacks attacks)
+        public async Task<ActionResult<Attack>> PostAttack(Attack attack)
         {
-            _context.Attacks.Add(attacks);
+            _context.Attacks.Add(attack);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetAttacks", new { id = attacks.AttackId }, attacks);
+            return CreatedAtAction("GetAttack", new { id = attack.AttackId }, attack);
         }
 
         // DELETE: api/Attacks/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAttacks(int id)
+        public async Task<IActionResult> DeleteAttack(int id)
         {
-            var attacks = await _context.Attacks.FindAsync(id);
-            if (attacks == null)
+            var attack = await _context.Attacks.FindAsync(id);
+            if (attack == null)
             {
                 return NotFound();
             }
 
-            _context.Attacks.Remove(attacks);
+            _context.Attacks.Remove(attack);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool AttacksExists(int id)
+        private bool AttackExists(int id)
         {
             return _context.Attacks.Any(e => e.AttackId == id);
         }

@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\sim.png",
+      "PackagePath": "staticwebassets\\uploads\\sim.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pokebooook.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pokebooook.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Pokebooook.Server.props",
+      "PackagePath": "build\\Pokebooook.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Pokebooook.Server.props",
+      "PackagePath": "buildMultiTargeting\\Pokebooook.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Pokebooook.Server.props",
+      "PackagePath": "buildTransitive\\Pokebooook.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
