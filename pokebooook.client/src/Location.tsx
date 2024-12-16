@@ -1,67 +1,47 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 
-const LocationList = () => {
-    const [locations, setLocations] = useState([]);
+interface ImageData {
+    id: number;
+    type: string;
+    data: string; 
+}
 
-    const fetchLocations = async () => {
-        const response = await fetch(`/api/locations`);
-        const data = await response.json();
-        setLocations(data.results);
-    }
+interface LocationProps {
+    locationId: number;
+}
 
-    useEffect(() => {
-       fetchLocations();
-    }, []);
-
-    return (
-        <div>
-            <ul>
-                {locations.map(location => (
-                    <li key={location.id}>
-                        <a href={`/location/${location.id}`}>{location.name}</a>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
-};
-
-const LocationDetail = () => {
-    const { id } = useParams();
-    const [location, setLocation] = useState(null);
+const Location: React.FC<LocationProps> = ({ locationId }) => {
+    const [locationName, setLocationName] = useState<string | null>(null);
+    const [imageData, setImageData] = useState<ImageData | null>(null);
 
     const fetchLocation = async () => {
-        const response = await fetch(`/api/locations/${id}`);
+        const response = await fetch(`http://localhost:5212/api/Locations/${locationId}`);
         const data = await response.json();
-        setLocation(data);
-    }
+        setLocationName(data.name);
+        fetchImage(data.imageId);
+    };
+
+    const fetchImage = async (imageId: number) => {
+        const response = await fetch(`http://localhost:5212/api/Images/${imageId}`);
+        const data = await response.json();
+        setImageData(data);
+    };
 
     useEffect(() => {
         fetchLocation();
-    }, [id]);
+    }, [locationId]);
 
-    if (!location) {
+    if (!locationName) {
         return <div>Loading...</div>;
     }
-
+    
     return (
         <div>
-            <h1>{location.name}</h1>
-            <p>{location.description}</p>
+            <h1>{locationName}</h1>
+            <p>Location ID: <b>{locationId}</b></p>
+            {imageData && <img src={`data:${imageData.type};base64,${imageData.data}`} alt="location" />}
         </div>
     );
 };
 
-const App = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<LocationList />} />
-                <Route path="/location/:id" element={<LocationDetail />} />
-            </Routes>
-        </BrowserRouter>
-    );
-};
-
-export default App;
+export default Location;
