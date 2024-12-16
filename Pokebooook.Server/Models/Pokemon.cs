@@ -6,7 +6,7 @@ namespace Pokebooook.Server.Models
     public class Pokemon
     {
         [Key]
-        public int PokedexId { get; set; }
+        public int PokemonId { get; set; }
 
         [Required]
         [MaxLength(100)]
@@ -20,11 +20,8 @@ namespace Pokebooook.Server.Models
 
         [ForeignKey("PokemonType")]
         public int TypeId { get; set; }
-        public PokemonType? Type { get; set; }
-
 
         [ForeignKey("Image")]
         public int? ImageId { get; set; }
-        public Image? Image { get; set; }
     }
 }

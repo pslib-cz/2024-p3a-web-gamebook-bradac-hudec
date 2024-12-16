@@ -51,10 +51,6 @@ namespace Pokebooook.Server.Migrations
 
                     b.HasKey("ConnectionId");
 
-                    b.HasIndex("LocationFromId");
-
-                    b.HasIndex("LocationToId");
-
                     b.ToTable("Connections");
                 });
 
@@ -110,13 +106,13 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("ConnectionId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<bool>("HasPokemon")
                         .HasColumnType("INTEGER");
 
                     b.Property<int?>("ImageId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("LocationId1")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
@@ -132,18 +128,12 @@ namespace Pokebooook.Server.Migrations
 
                     b.HasKey("LocationId");
 
-                    b.HasIndex("ImageId");
-
-                    b.HasIndex("LocationId1");
-
-                    b.HasIndex("PokemonId");
-
                     b.ToTable("Locations");
                 });
 
             modelBuilder.Entity("Pokebooook.Server.Models.Pokemon", b =>
                 {
-                    b.Property<int>("PokedexId")
+                    b.Property<int>("PokemonId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -164,11 +154,7 @@ namespace Pokebooook.Server.Migrations
                     b.Property<int>("TypeId")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("PokedexId");
-
-                    b.HasIndex("ImageId");
-
-                    b.HasIndex("TypeId");
+                    b.HasKey("PokemonId");
 
                     b.ToTable("Pokemons");
                 });
@@ -267,66 +253,6 @@ namespace Pokebooook.Server.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("Pokebooook.Server.Models.Connection", b =>
-                {
-                    b.HasOne("Pokebooook.Server.Models.Location", "LocationFrom")
-                        .WithMany()
-                        .HasForeignKey("LocationFromId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Pokebooook.Server.Models.Location", "LocationTo")
-                        .WithMany()
-                        .HasForeignKey("LocationToId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("LocationFrom");
-
-                    b.Navigation("LocationTo");
-                });
-
-            modelBuilder.Entity("Pokebooook.Server.Models.Location", b =>
-                {
-                    b.HasOne("Pokebooook.Server.Models.Image", "Image")
-                        .WithMany()
-                        .HasForeignKey("ImageId");
-
-                    b.HasOne("Pokebooook.Server.Models.Location", null)
-                        .WithMany("Paths")
-                        .HasForeignKey("LocationId1");
-
-                    b.HasOne("Pokebooook.Server.Models.Pokemon", "Pokemon")
-                        .WithMany()
-                        .HasForeignKey("PokemonId");
-
-                    b.Navigation("Image");
-
-                    b.Navigation("Pokemon");
-                });
-
-            modelBuilder.Entity("Pokebooook.Server.Models.Pokemon", b =>
-                {
-                    b.HasOne("Pokebooook.Server.Models.Image", "Image")
-                        .WithMany()
-                        .HasForeignKey("ImageId");
-
-                    b.HasOne("Pokebooook.Server.Models.PokemonType", "Type")
-                        .WithMany()
-                        .HasForeignKey("TypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Image");
-
-                    b.Navigation("Type");
-                });
-
-            modelBuilder.Entity("Pokebooook.Server.Models.Location", b =>
-                {
-                    b.Navigation("Paths");
                 });
 #pragma warning restore 612, 618
         }
