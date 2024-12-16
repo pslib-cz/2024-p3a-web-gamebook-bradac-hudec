@@ -1,0 +1,3 @@
+C:\Users\Filip\Source\Repos\2024-p3a-web-gamebook-bradac-hudec.git\Pokebooook.Server\wwwroot\uploads\bulbasaur.png
+C:\Users\Filip\Source\Repos\2024-p3a-web-gamebook-bradac-hudec.git\Pokebooook.Server\wwwroot\uploads\sim.png
+C:\Users\Filip\Source\Repos\2024-p3a-web-gamebook-bradac-hudec.git\Pokebooook.Server\wwwroot\uploads\simdva.png

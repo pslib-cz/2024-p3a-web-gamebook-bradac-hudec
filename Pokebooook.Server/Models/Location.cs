@@ -12,6 +12,10 @@ namespace Pokebooook.Server.Models
         [MaxLength(255)]
         public required string Name { get; set; }
 
+        public required bool HasPokemon { get; set; }
+
+        public required Location[] Paths { get; set; }
+
         public double RocketChance { get; set; }
 
         [ForeignKey("Pokemon")]
