@@ -1,13 +1,18 @@
 import { useEffect, useState } from 'react';
-import Upload from "./Upload.tsx"
+import Location from "./Location.tsx";
 import './App.css';
 
 
 function App() {
+    
+
+   
+
     return (
         <div>
             <h1>Pokebooook</h1>
-            <Upload />
+            <Location />
+            
         </div>
     )
 }

@@ -1,1 +1,3 @@
+wwwroot\uploads\bulbasaur.png
 wwwroot\uploads\sim.png
+wwwroot\uploads\simdva.png

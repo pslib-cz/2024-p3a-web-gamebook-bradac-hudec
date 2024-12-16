@@ -15,14 +15,16 @@ namespace Pokebooook.Server.Models
         [Required]
         public int Health { get; set; }
 
+
         public int? Energy { get; set; }
 
         [ForeignKey("PokemonType")]
         public int TypeId { get; set; }
-        public required PokemonType PokemonType { get; set; } 
+        public PokemonType? Type { get; set; }
+
 
         [ForeignKey("Image")]
         public int? ImageId { get; set; }
-        public required Image Image { get; set; } 
+        public Image? Image { get; set; }
     }
 }

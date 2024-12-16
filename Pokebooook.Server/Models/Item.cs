@@ -16,6 +16,6 @@ namespace Pokebooook.Server.Models
 
         [ForeignKey("Image")]
         [Required]
-        public required int IconId { get; set; }
+        public required int ImageId { get; set; }
     }
 }

@@ -83,7 +83,7 @@ namespace Pokebooook.Server.Controllers
             _context.Images.Add(image);
             await _context.SaveChangesAsync();
 
-            return Ok(new { ImageId = image.ImageId });
+            return Ok(new { ImageId = image.ImageId, Name = image.Name, Type = image.Type });
         }
 
         // PUT: api/Images/5

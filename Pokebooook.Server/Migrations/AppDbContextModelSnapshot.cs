@@ -92,7 +92,7 @@ namespace Pokebooook.Server.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("IconId")
+                    b.Property<int>("ImageId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
@@ -110,7 +110,13 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<bool>("HasPokemon")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int?>("ImageId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("LocationId1")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
@@ -127,6 +133,8 @@ namespace Pokebooook.Server.Migrations
                     b.HasKey("LocationId");
 
                     b.HasIndex("ImageId");
+
+                    b.HasIndex("LocationId1");
 
                     b.HasIndex("PokemonId");
 
@@ -286,6 +294,10 @@ namespace Pokebooook.Server.Migrations
                         .WithMany()
                         .HasForeignKey("ImageId");
 
+                    b.HasOne("Pokebooook.Server.Models.Location", null)
+                        .WithMany("Paths")
+                        .HasForeignKey("LocationId1");
+
                     b.HasOne("Pokebooook.Server.Models.Pokemon", "Pokemon")
                         .WithMany()
                         .HasForeignKey("PokemonId");
@@ -301,7 +313,7 @@ namespace Pokebooook.Server.Migrations
                         .WithMany()
                         .HasForeignKey("ImageId");
 
-                    b.HasOne("Pokebooook.Server.Models.PokemonType", "PokemonType")
+                    b.HasOne("Pokebooook.Server.Models.PokemonType", "Type")
                         .WithMany()
                         .HasForeignKey("TypeId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -309,7 +321,12 @@ namespace Pokebooook.Server.Migrations
 
                     b.Navigation("Image");
 
-                    b.Navigation("PokemonType");
+                    b.Navigation("Type");
+                });
+
+            modelBuilder.Entity("Pokebooook.Server.Models.Location", b =>
+                {
+                    b.Navigation("Paths");
                 });
 #pragma warning restore 612, 618
         }

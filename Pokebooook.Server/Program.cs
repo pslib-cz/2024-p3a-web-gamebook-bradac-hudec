@@ -10,13 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(builder =>
-    {
-        builder.SetIsOriginAllowed(origin => new Uri(origin).IsLoopback);
-    });
-});
+
 
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -29,7 +23,7 @@ var app = builder.Build();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
-app.UseCors(x => x.AllowAnyMethod().SetIsOriginAllowed(origin => new Uri(origin).IsLoopback));
+
 
 
 // Configure the HTTP request pipeline.
