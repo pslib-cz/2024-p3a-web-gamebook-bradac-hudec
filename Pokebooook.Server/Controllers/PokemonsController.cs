@@ -47,7 +47,7 @@ namespace Pokebooook.Server.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPokemon(int id, Pokemon pokemon)
         {
-            if (id != pokemon.PokedexId)
+            if (id != pokemon.PokemonId)
             {
                 return BadRequest();
             }
@@ -81,7 +81,7 @@ namespace Pokebooook.Server.Controllers
             _context.Pokemons.Add(pokemon);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPokemon", new { id = pokemon.PokedexId }, pokemon);
+            return CreatedAtAction("GetPokemon", new { id = pokemon.PokemonId }, pokemon);
         }
 
         // DELETE: api/Pokemons/5
@@ -102,7 +102,7 @@ namespace Pokebooook.Server.Controllers
 
         private bool PokemonExists(int id)
         {
-            return _context.Pokemons.Any(e => e.PokedexId == id);
+            return _context.Pokemons.Any(e => e.PokemonId == id);
         }
     }
 }
