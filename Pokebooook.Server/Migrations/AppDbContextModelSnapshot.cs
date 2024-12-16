@@ -137,6 +137,9 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.PrimitiveCollection<string>("AttackId")
+                        .HasColumnType("TEXT");
+
                     b.Property<int?>("Energy")
                         .HasColumnType("INTEGER");
 
