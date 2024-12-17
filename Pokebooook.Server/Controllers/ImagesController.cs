@@ -47,7 +47,7 @@ namespace Pokebooook.Server.Controllers
 
 
         [HttpPost("Upload")]
-        public async Task<IActionResult> UploadImage(IFormFile file)
+        public async Task<IActionResult> UploadImage(IFormFile file, [FromForm] int? id = null)
         {
             if (file == null || file.Length == 0)
             {
@@ -72,9 +72,20 @@ namespace Pokebooook.Server.Controllers
                 await file.CopyToAsync(fileStream);
             }
 
+            // Pokud je ID poskytnuto, ověř, že takové ID ještě neexistuje.
+            if (id.HasValue)
+            {
+                var existingImage = await _context.Images.FindAsync(id.Value);
+                if (existingImage != null)
+                {
+                    return BadRequest($"Image with ID {id.Value} already exists.");
+                }
+            }
 
+            // Vytvoř nový obrázek s poskytnutým nebo automaticky generovaným ID.
             var image = new Image
             {
+                ImageId = id ?? 0, // Pokud není ID zadáno, použije se hodnota 0 (autoincrement databáze ji nahradí).
                 Name = fileName,
                 Type = contentType,
                 Data = System.IO.File.ReadAllBytes(filePath)
@@ -85,6 +96,7 @@ namespace Pokebooook.Server.Controllers
 
             return Ok(new { ImageId = image.ImageId, Name = image.Name, Type = image.Type });
         }
+
 
         // PUT: api/Images/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
