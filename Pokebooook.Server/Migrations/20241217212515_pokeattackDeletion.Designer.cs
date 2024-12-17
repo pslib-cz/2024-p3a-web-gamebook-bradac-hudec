@@ -10,8 +10,8 @@ using Pokebooook.Server.Data;
 namespace Pokebooook.Server.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241216120606_forgorTyp")]
-    partial class forgorTyp
+    [Migration("20241217212515_pokeattackDeletion")]
+    partial class pokeattackDeletion
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -113,6 +113,9 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<bool>("HasPokemon")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int?>("ImageId")
                         .HasColumnType("INTEGER");
 
@@ -129,17 +132,16 @@ namespace Pokebooook.Server.Migrations
 
                     b.HasKey("LocationId");
 
-                    b.HasIndex("ImageId");
-
-                    b.HasIndex("PokemonId");
-
                     b.ToTable("Locations");
                 });
 
             modelBuilder.Entity("Pokebooook.Server.Models.Pokemon", b =>
                 {
-                    b.Property<int>("PokedexId")
+                    b.Property<int>("PokemonId")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("AttackId")
                         .HasColumnType("INTEGER");
 
                     b.Property<int?>("Energy")
@@ -159,11 +161,7 @@ namespace Pokebooook.Server.Migrations
                     b.Property<int>("TypeId")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("PokedexId");
-
-                    b.HasIndex("ImageId");
-
-                    b.HasIndex("TypeId");
+                    b.HasKey("PokemonId");
 
                     b.ToTable("Pokemons");
                 });
@@ -267,13 +265,13 @@ namespace Pokebooook.Server.Migrations
             modelBuilder.Entity("Pokebooook.Server.Models.Connection", b =>
                 {
                     b.HasOne("Pokebooook.Server.Models.Location", "LocationFrom")
-                        .WithMany()
+                        .WithMany("ConnectionsFrom")
                         .HasForeignKey("LocationFromId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Pokebooook.Server.Models.Location", "LocationTo")
-                        .WithMany()
+                        .WithMany("ConnectionsTo")
                         .HasForeignKey("LocationToId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -285,34 +283,9 @@ namespace Pokebooook.Server.Migrations
 
             modelBuilder.Entity("Pokebooook.Server.Models.Location", b =>
                 {
-                    b.HasOne("Pokebooook.Server.Models.Image", "Image")
-                        .WithMany()
-                        .HasForeignKey("ImageId");
+                    b.Navigation("ConnectionsFrom");
 
-                    b.HasOne("Pokebooook.Server.Models.Pokemon", "Pokemon")
-                        .WithMany()
-                        .HasForeignKey("PokemonId");
-
-                    b.Navigation("Image");
-
-                    b.Navigation("Pokemon");
-                });
-
-            modelBuilder.Entity("Pokebooook.Server.Models.Pokemon", b =>
-                {
-                    b.HasOne("Pokebooook.Server.Models.Image", "Image")
-                        .WithMany()
-                        .HasForeignKey("ImageId");
-
-                    b.HasOne("Pokebooook.Server.Models.PokemonType", "Type")
-                        .WithMany()
-                        .HasForeignKey("TypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Image");
-
-                    b.Navigation("Type");
+                    b.Navigation("ConnectionsTo");
                 });
 #pragma warning restore 612, 618
         }

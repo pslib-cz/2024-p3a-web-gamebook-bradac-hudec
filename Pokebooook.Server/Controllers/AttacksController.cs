@@ -76,13 +76,23 @@ namespace Pokebooook.Server.Controllers
         // POST: api/Attacks
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Attack>> PostAttack(Attack attack)
+        public async Task<ActionResult<IEnumerable<Attack>>> PostAttack(IEnumerable<Attack> attacks)
         {
-            _context.Attacks.Add(attack);
+            if (attacks == null || !attacks.Any())
+            {
+                return BadRequest("No attacks provided.");
+            }
+
+            _context.Attacks.AddRange(attacks);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetAttack", new { id = attack.AttackId }, attack);
+            return Ok(new
+            {
+                Count = attacks.Count(),
+                AddedAttacks = attacks.Select(a => new { a.AttackId, a.Name, a.EnergyCost, a.BaseDamage })
+            });
         }
+
 
         // DELETE: api/Attacks/5
         [HttpDelete("{id}")]

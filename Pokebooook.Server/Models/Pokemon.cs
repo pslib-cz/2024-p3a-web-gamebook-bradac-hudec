@@ -24,6 +24,6 @@ namespace Pokebooook.Server.Models
         [ForeignKey("Image")]
         public int? ImageId { get; set; }
         [ForeignKey("Attack")]
-        public required int[]? AttackId { get; set; }
+        public int? AttackId { get; set; }
     }
 }
