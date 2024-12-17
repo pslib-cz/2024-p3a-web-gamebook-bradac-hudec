@@ -100,6 +100,17 @@ namespace Pokebooook.Server.Controllers
             return NoContent();
         }
 
+        // GET: api/Locations/5/Connections
+        [HttpGet("{id}/Connections")]
+        public async Task<ActionResult<IEnumerable<Connection>>> GetLocationConnections(int id)
+        {
+            return await _context.Connections
+                .Where(c => c.LocationFromId == id || c.LocationToId == id)
+                .Include(c => c.LocationFrom)
+                .Include(c => c.LocationTo)
+                .ToListAsync();
+        }
+
         private bool LocationExists(int id)
         {
             return _context.Locations.Any(e => e.LocationId == id);
