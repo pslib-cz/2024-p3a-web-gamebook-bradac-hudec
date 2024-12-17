@@ -3,170 +3,6 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
-      "Route": "uploads/Snímek obrazovky 2024-03-15 103305.7q9kf8wuga.png",
-      "AssetFile": "uploads/Snímek obrazovky 2024-03-15 103305.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "140688"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 16 Dec 2024 22:34:42 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7q9kf8wuga"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU="
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Snímek obrazovky 2024-03-15 103305.png"
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Snímek obrazovky 2024-03-15 103305.png",
-      "AssetFile": "uploads/Snímek obrazovky 2024-03-15 103305.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "140688"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 16 Dec 2024 22:34:42 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/nemocnice.hwnk12xv0v.png",
-      "AssetFile": "uploads/nemocnice.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1903940"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 16 Dec 2024 20:08:51 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "hwnk12xv0v"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM="
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/nemocnice.png"
-        }
-      ]
-    },
-    {
-      "Route": "uploads/nemocnice.png",
-      "AssetFile": "uploads/nemocnice.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1903940"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 16 Dec 2024 20:08:51 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM="
-        }
-      ]
-    },
-    {
       "Route": "uploads/pokebook_first_location.jpg",
       "AssetFile": "uploads/pokebook_first_location.jpg",
       "Selectors": [],
@@ -193,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Dec 2024 20:45:45 GMT"
+          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
         }
       ],
       "EndpointProperties": [
@@ -230,7 +66,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Dec 2024 20:45:45 GMT"
+          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
         }
       ],
       "EndpointProperties": [
@@ -245,6 +81,170 @@
         {
           "Name": "label",
           "Value": "uploads/pokebook_first_location.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/pokebook_mountains.jpg",
+      "AssetFile": "uploads/pokebook_mountains.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "883821"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b3DVEopWX0zY4GMNjcfbMwudaaFCLDLWrK6dD1rF07M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b3DVEopWX0zY4GMNjcfbMwudaaFCLDLWrK6dD1rF07M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/pokebook_mountains.pqlyt4q6be.jpg",
+      "AssetFile": "uploads/pokebook_mountains.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "883821"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b3DVEopWX0zY4GMNjcfbMwudaaFCLDLWrK6dD1rF07M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pqlyt4q6be"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b3DVEopWX0zY4GMNjcfbMwudaaFCLDLWrK6dD1rF07M="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/pokebook_mountains.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/pokebook_pokecenter.4xs4apa65t.jpg",
+      "AssetFile": "uploads/pokebook_pokecenter.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "793847"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aNkye+OzrIpUfC4mqPG+gMD1w+PECD70HI/FpZnjnqo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4xs4apa65t"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aNkye+OzrIpUfC4mqPG+gMD1w+PECD70HI/FpZnjnqo="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/pokebook_pokecenter.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/pokebook_pokecenter.jpg",
+      "AssetFile": "uploads/pokebook_pokecenter.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "793847"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aNkye+OzrIpUfC4mqPG+gMD1w+PECD70HI/FpZnjnqo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aNkye+OzrIpUfC4mqPG+gMD1w+PECD70HI/FpZnjnqo="
         }
       ]
     }

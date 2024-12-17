@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import LocationType from './types/LocationType';
 import ConnectionType from './types/ConnectionType';
+import LocationCSS from './Location.module.css';
 
 interface ImageData {
     id: number;
@@ -50,21 +51,25 @@ const Location: React.FC = () => {
         return <div>Loading...</div>;
     }
     
-    return (
-        <div>
-            <h1>{location.name}</h1>
-            <p>Location ID: <b>{locationId}</b></p>
-            <p>{((location.rocketChance/100) > Math.random()) ? 'ROCKET' : 'BASIC'}</p>
-            {imageData && <img src={`data:${imageData.type};base64,${imageData.data}`} alt="location" />}
+    return (    
+        <div className={LocationCSS.location__container}>
+            <div className={LocationCSS.location__info}>
+                <div className={LocationCSS.info__text}>
+                    <h1>{location.name}</h1>
+                    <p>Location ID: <b>{locationId}</b></p>
+                    <p>Location type: <b>{((location.rocketChance/100) > Math.random()) ? 'ROCKET' : 'BASIC'}</b></p>
+                </div>
+                {imageData && <img className={LocationCSS.location__img} src={`data:${imageData.type};base64,${imageData.data}`} alt="location" />}
+            </div>
             {
                 locationConnections && (
-                    <div>
+                    <div className={LocationCSS.connections__container}>
                         <h2>Connections</h2>
-                        <ul>
+                        <ul className={LocationCSS.connections__list}>
                             {locationConnections.map((connection: ConnectionType) => (
                                 <li key={connection.connectionId}>
                                     <Link to={`/locations/${connection.locationFromId == locationId ? connection.locationToId : connection.locationFromId }`}>
-                                        <button>{connection.locationFromId == locationId ? connection.locationTo.name : connection.locationFrom.name}</button>
+                                        <button className={LocationCSS.connections__btn}>{connection.locationFromId == locationId ? connection.locationTo.name : connection.locationFrom.name}</button>
                                     </Link>
                                 </li>
                             ))}
