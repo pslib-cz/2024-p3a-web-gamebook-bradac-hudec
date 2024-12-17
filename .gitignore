@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/Pokebooook.Server
+/Pokebooook.Server/app.db-shm
+/Pokebooook.Server/app.db-wal
