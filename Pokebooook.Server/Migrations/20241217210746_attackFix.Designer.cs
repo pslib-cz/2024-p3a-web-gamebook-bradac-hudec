@@ -10,8 +10,8 @@ using Pokebooook.Server.Data;
 namespace Pokebooook.Server.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241216120425_revertingChanges")]
-    partial class revertingChanges
+    [Migration("20241217210746_attackFix")]
+    partial class attackFix
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -113,6 +113,9 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<bool>("HasPokemon")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int?>("ImageId")
                         .HasColumnType("INTEGER");
 
@@ -129,17 +132,22 @@ namespace Pokebooook.Server.Migrations
 
                     b.HasKey("LocationId");
 
-                    b.HasIndex("ImageId");
-
-                    b.HasIndex("PokemonId");
-
                     b.ToTable("Locations");
                 });
 
             modelBuilder.Entity("Pokebooook.Server.Models.Pokemon", b =>
                 {
-                    b.Property<int>("PokedexId")
+                    b.Property<int>("PokemonId")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Attack1Id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Attack2Id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Attack3Id")
                         .HasColumnType("INTEGER");
 
                     b.Property<int?>("Energy")
@@ -159,9 +167,13 @@ namespace Pokebooook.Server.Migrations
                     b.Property<int>("TypeId")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("PokedexId");
+                    b.HasKey("PokemonId");
 
-                    b.HasIndex("ImageId");
+                    b.HasIndex("Attack1Id");
+
+                    b.HasIndex("Attack2Id");
+
+                    b.HasIndex("Attack3Id");
 
                     b.ToTable("Pokemons");
                 });
@@ -265,13 +277,13 @@ namespace Pokebooook.Server.Migrations
             modelBuilder.Entity("Pokebooook.Server.Models.Connection", b =>
                 {
                     b.HasOne("Pokebooook.Server.Models.Location", "LocationFrom")
-                        .WithMany()
+                        .WithMany("ConnectionsFrom")
                         .HasForeignKey("LocationFromId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Pokebooook.Server.Models.Location", "LocationTo")
-                        .WithMany()
+                        .WithMany("ConnectionsTo")
                         .HasForeignKey("LocationToId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -281,28 +293,32 @@ namespace Pokebooook.Server.Migrations
                     b.Navigation("LocationTo");
                 });
 
-            modelBuilder.Entity("Pokebooook.Server.Models.Location", b =>
-                {
-                    b.HasOne("Pokebooook.Server.Models.Image", "Image")
-                        .WithMany()
-                        .HasForeignKey("ImageId");
-
-                    b.HasOne("Pokebooook.Server.Models.Pokemon", "Pokemon")
-                        .WithMany()
-                        .HasForeignKey("PokemonId");
-
-                    b.Navigation("Image");
-
-                    b.Navigation("Pokemon");
-                });
-
             modelBuilder.Entity("Pokebooook.Server.Models.Pokemon", b =>
                 {
-                    b.HasOne("Pokebooook.Server.Models.Image", "Image")
+                    b.HasOne("Pokebooook.Server.Models.Attack", "Attack1")
                         .WithMany()
-                        .HasForeignKey("ImageId");
+                        .HasForeignKey("Attack1Id");
 
-                    b.Navigation("Image");
+                    b.HasOne("Pokebooook.Server.Models.Attack", "Attack2")
+                        .WithMany()
+                        .HasForeignKey("Attack2Id");
+
+                    b.HasOne("Pokebooook.Server.Models.Attack", "Attack3")
+                        .WithMany()
+                        .HasForeignKey("Attack3Id");
+
+                    b.Navigation("Attack1");
+
+                    b.Navigation("Attack2");
+
+                    b.Navigation("Attack3");
+                });
+
+            modelBuilder.Entity("Pokebooook.Server.Models.Location", b =>
+                {
+                    b.Navigation("ConnectionsFrom");
+
+                    b.Navigation("ConnectionsTo");
                 });
 #pragma warning restore 612, 618
         }

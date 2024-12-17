@@ -31,12 +31,45 @@ namespace Pokebooook.Server.Migrations
                 {
                     ImageId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
                     Type = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
                     Data = table.Column<byte[]>(type: "BLOB", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Images", x => x.ImageId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Item",
+                columns: table => new
+                {
+                    ItemId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    ImageId = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Item", x => x.ItemId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Locations",
+                columns: table => new
+                {
+                    LocationId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", maxLength: 255, nullable: false),
+                    HasPokemon = table.Column<bool>(type: "INTEGER", nullable: false),
+                    RocketChance = table.Column<double>(type: "REAL", nullable: false),
+                    PokemonId = table.Column<int>(type: "INTEGER", nullable: true),
+                    ImageId = table.Column<int>(type: "INTEGER", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Locations", x => x.LocationId);
                 });
 
             migrationBuilder.CreateTable(
@@ -90,54 +123,35 @@ namespace Pokebooook.Server.Migrations
                 name: "Pokemons",
                 columns: table => new
                 {
-                    PokedexId = table.Column<int>(type: "INTEGER", nullable: false)
+                    PokemonId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
                     Health = table.Column<int>(type: "INTEGER", nullable: false),
                     Energy = table.Column<int>(type: "INTEGER", nullable: true),
                     TypeId = table.Column<int>(type: "INTEGER", nullable: false),
-                    ImageId = table.Column<int>(type: "INTEGER", nullable: true)
+                    ImageId = table.Column<int>(type: "INTEGER", nullable: true),
+                    Attack1Id = table.Column<int>(type: "INTEGER", nullable: true),
+                    Attack2Id = table.Column<int>(type: "INTEGER", nullable: true),
+                    Attack3Id = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Pokemons", x => x.PokedexId);
+                    table.PrimaryKey("PK_Pokemons", x => x.PokemonId);
                     table.ForeignKey(
-                        name: "FK_Pokemons_Images_ImageId",
-                        column: x => x.ImageId,
-                        principalTable: "Images",
-                        principalColumn: "ImageId");
+                        name: "FK_Pokemons_Attacks_Attack1Id",
+                        column: x => x.Attack1Id,
+                        principalTable: "Attacks",
+                        principalColumn: "AttackId");
                     table.ForeignKey(
-                        name: "FK_Pokemons_PokemonTypes_TypeId",
-                        column: x => x.TypeId,
-                        principalTable: "PokemonTypes",
-                        principalColumn: "TypeId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Locations",
-                columns: table => new
-                {
-                    LocationId = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", maxLength: 255, nullable: false),
-                    RocketChance = table.Column<double>(type: "REAL", nullable: false),
-                    PokemonId = table.Column<int>(type: "INTEGER", nullable: true),
-                    ImageId = table.Column<int>(type: "INTEGER", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Locations", x => x.LocationId);
+                        name: "FK_Pokemons_Attacks_Attack2Id",
+                        column: x => x.Attack2Id,
+                        principalTable: "Attacks",
+                        principalColumn: "AttackId");
                     table.ForeignKey(
-                        name: "FK_Locations_Images_ImageId",
-                        column: x => x.ImageId,
-                        principalTable: "Images",
-                        principalColumn: "ImageId");
-                    table.ForeignKey(
-                        name: "FK_Locations_Pokemons_PokemonId",
-                        column: x => x.PokemonId,
-                        principalTable: "Pokemons",
-                        principalColumn: "PokedexId");
+                        name: "FK_Pokemons_Attacks_Attack3Id",
+                        column: x => x.Attack3Id,
+                        principalTable: "Attacks",
+                        principalColumn: "AttackId");
                 });
 
             migrationBuilder.CreateTable(
@@ -177,34 +191,38 @@ namespace Pokebooook.Server.Migrations
                 column: "LocationToId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Locations_ImageId",
-                table: "Locations",
-                column: "ImageId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Locations_PokemonId",
-                table: "Locations",
-                column: "PokemonId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Pokemons_ImageId",
+                name: "IX_Pokemons_Attack1Id",
                 table: "Pokemons",
-                column: "ImageId");
+                column: "Attack1Id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Pokemons_TypeId",
+                name: "IX_Pokemons_Attack2Id",
                 table: "Pokemons",
-                column: "TypeId");
+                column: "Attack2Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Pokemons_Attack3Id",
+                table: "Pokemons",
+                column: "Attack3Id");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Attacks");
+                name: "Connections");
 
             migrationBuilder.DropTable(
-                name: "Connections");
+                name: "Images");
+
+            migrationBuilder.DropTable(
+                name: "Item");
+
+            migrationBuilder.DropTable(
+                name: "Pokemons");
+
+            migrationBuilder.DropTable(
+                name: "PokemonTypes");
 
             migrationBuilder.DropTable(
                 name: "Users");
@@ -213,13 +231,7 @@ namespace Pokebooook.Server.Migrations
                 name: "Locations");
 
             migrationBuilder.DropTable(
-                name: "Pokemons");
-
-            migrationBuilder.DropTable(
-                name: "Images");
-
-            migrationBuilder.DropTable(
-                name: "PokemonTypes");
+                name: "Attacks");
         }
     }
 }

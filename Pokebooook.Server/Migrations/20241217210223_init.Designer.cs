@@ -10,8 +10,8 @@ using Pokebooook.Server.Data;
 namespace Pokebooook.Server.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241216222522_Attack")]
-    partial class Attack
+    [Migration("20241217210223_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,6 +53,10 @@ namespace Pokebooook.Server.Migrations
                         .HasColumnType("INTEGER");
 
                     b.HasKey("ConnectionId");
+
+                    b.HasIndex("LocationFromId");
+
+                    b.HasIndex("LocationToId");
 
                     b.ToTable("Connections");
                 });
@@ -109,9 +113,6 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("ConnectionId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<bool>("HasPokemon")
                         .HasColumnType("INTEGER");
 
@@ -140,8 +141,14 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.PrimitiveCollection<string>("AttackId")
-                        .HasColumnType("TEXT");
+                    b.Property<int?>("Attack1Id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Attack2Id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Attack3Id")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int?>("Energy")
                         .HasColumnType("INTEGER");
@@ -161,6 +168,12 @@ namespace Pokebooook.Server.Migrations
                         .HasColumnType("INTEGER");
 
                     b.HasKey("PokemonId");
+
+                    b.HasIndex("Attack1Id");
+
+                    b.HasIndex("Attack2Id");
+
+                    b.HasIndex("Attack3Id");
 
                     b.ToTable("Pokemons");
                 });
@@ -259,6 +272,53 @@ namespace Pokebooook.Server.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Pokebooook.Server.Models.Connection", b =>
+                {
+                    b.HasOne("Pokebooook.Server.Models.Location", "LocationFrom")
+                        .WithMany("ConnectionsFrom")
+                        .HasForeignKey("LocationFromId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Pokebooook.Server.Models.Location", "LocationTo")
+                        .WithMany("ConnectionsTo")
+                        .HasForeignKey("LocationToId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("LocationFrom");
+
+                    b.Navigation("LocationTo");
+                });
+
+            modelBuilder.Entity("Pokebooook.Server.Models.Pokemon", b =>
+                {
+                    b.HasOne("Pokebooook.Server.Models.Attack", "Attack1")
+                        .WithMany()
+                        .HasForeignKey("Attack1Id");
+
+                    b.HasOne("Pokebooook.Server.Models.Attack", "Attack2")
+                        .WithMany()
+                        .HasForeignKey("Attack2Id");
+
+                    b.HasOne("Pokebooook.Server.Models.Attack", "Attack3")
+                        .WithMany()
+                        .HasForeignKey("Attack3Id");
+
+                    b.Navigation("Attack1");
+
+                    b.Navigation("Attack2");
+
+                    b.Navigation("Attack3");
+                });
+
+            modelBuilder.Entity("Pokebooook.Server.Models.Location", b =>
+                {
+                    b.Navigation("ConnectionsFrom");
+
+                    b.Navigation("ConnectionsTo");
                 });
 #pragma warning restore 612, 618
         }

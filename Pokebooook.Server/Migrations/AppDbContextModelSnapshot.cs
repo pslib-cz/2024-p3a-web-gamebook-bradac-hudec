@@ -51,6 +51,10 @@ namespace Pokebooook.Server.Migrations
 
                     b.HasKey("ConnectionId");
 
+                    b.HasIndex("LocationFromId");
+
+                    b.HasIndex("LocationToId");
+
                     b.ToTable("Connections");
                 });
 
@@ -134,8 +138,8 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.PrimitiveCollection<string>("AttackId")
-                        .HasColumnType("TEXT");
+                    b.Property<int?>("AttackId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int?>("Energy")
                         .HasColumnType("INTEGER");
@@ -253,6 +257,32 @@ namespace Pokebooook.Server.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Pokebooook.Server.Models.Connection", b =>
+                {
+                    b.HasOne("Pokebooook.Server.Models.Location", "LocationFrom")
+                        .WithMany("ConnectionsFrom")
+                        .HasForeignKey("LocationFromId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Pokebooook.Server.Models.Location", "LocationTo")
+                        .WithMany("ConnectionsTo")
+                        .HasForeignKey("LocationToId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("LocationFrom");
+
+                    b.Navigation("LocationTo");
+                });
+
+            modelBuilder.Entity("Pokebooook.Server.Models.Location", b =>
+                {
+                    b.Navigation("ConnectionsFrom");
+
+                    b.Navigation("ConnectionsTo");
                 });
 #pragma warning restore 612, 618
         }
