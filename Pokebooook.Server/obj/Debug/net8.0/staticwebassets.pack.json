@@ -1,16 +1,16 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\bulbasaur.png",
-      "PackagePath": "staticwebassets\\uploads\\bulbasaur.png"
+      "Id": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\Snímek obrazovky 2024-03-15 103305.png",
+      "PackagePath": "staticwebassets\\uploads\\Snímek obrazovky 2024-03-15 103305.png"
     },
     {
-      "Id": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\sim.png",
-      "PackagePath": "staticwebassets\\uploads\\sim.png"
+      "Id": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\nemocnice.png",
+      "PackagePath": "staticwebassets\\uploads\\nemocnice.png"
     },
     {
-      "Id": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\simdva.png",
-      "PackagePath": "staticwebassets\\uploads\\simdva.png"
+      "Id": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "PackagePath": "staticwebassets\\uploads\\pokebook_first_location.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pokebooook.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

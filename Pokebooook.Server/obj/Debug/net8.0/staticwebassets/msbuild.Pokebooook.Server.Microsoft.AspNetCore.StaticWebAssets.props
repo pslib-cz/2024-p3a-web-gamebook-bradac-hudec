@@ -1,58 +1,58 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\bulbasaur.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\nemocnice.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Pokebooook.Server</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Pokebooook.Server</BasePath>
-      <RelativePath>uploads/bulbasaur.png</RelativePath>
+      <RelativePath>uploads/nemocnice.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6zwaadtwld</Fingerprint>
-      <Integrity>cjPY2LA7X6kdg1owadJXaRVduTye+RtgZuIV7TiV6dg=</Integrity>
+      <Fingerprint>hwnk12xv0v</Fingerprint>
+      <Integrity>AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\bulbasaur.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\nemocnice.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\sim.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokebook_first_location.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Pokebooook.Server</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Pokebooook.Server</BasePath>
-      <RelativePath>uploads/sim.png</RelativePath>
+      <RelativePath>uploads/pokebook_first_location.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>85qyxmsw5v</Fingerprint>
-      <Integrity>3FEfxyqphuQFPSgnYHzNS0gvHf0YmxZjxxKFFP3LaD0=</Integrity>
+      <Fingerprint>t6p2kpzfoc</Fingerprint>
+      <Integrity>+4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\sim.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokebook_first_location.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\simdva.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Snímek obrazovky 2024-03-15 103305.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Pokebooook.Server</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Pokebooook.Server</BasePath>
-      <RelativePath>uploads/simdva.png</RelativePath>
+      <RelativePath>uploads/Snímek obrazovky 2024-03-15 103305.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>85qyxmsw5v</Fingerprint>
-      <Integrity>3FEfxyqphuQFPSgnYHzNS0gvHf0YmxZjxxKFFP3LaD0=</Integrity>
+      <Fingerprint>7q9kf8wuga</Fingerprint>
+      <Integrity>P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\simdva.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Snímek obrazovky 2024-03-15 103305.png'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

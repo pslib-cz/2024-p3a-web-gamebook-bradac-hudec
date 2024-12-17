@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IawcDpMs/pvvdpBydFBALhemzZiWLVplxChqX66U/BI=",
+  "Hash": "bCIGG0tF3BuuvapJ9KfgYaGZyNq6hU+r3pDw3YoU3dM=",
   "Source": "Pokebooook.Server",
   "BasePath": "_content/Pokebooook.Server",
   "Mode": "Default",
@@ -27,6 +27,317 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\nemocnice.png",
+      "SourceId": "Pokebooook.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\",
+      "BasePath": "_content/Pokebooook.Server",
+      "RelativePath": "uploads/nemocnice#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hwnk12xv0v",
+      "Integrity": "AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\nemocnice.png"
+    },
+    {
+      "Identity": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "SourceId": "Pokebooook.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\",
+      "BasePath": "_content/Pokebooook.Server",
+      "RelativePath": "uploads/pokebook_first_location#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t6p2kpzfoc",
+      "Integrity": "+4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\pokebook_first_location.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\Snímek obrazovky 2024-03-15 103305.png",
+      "SourceId": "Pokebooook.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\",
+      "BasePath": "_content/Pokebooook.Server",
+      "RelativePath": "uploads/Snímek obrazovky 2024-03-15 103305#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7q9kf8wuga",
+      "Integrity": "P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Snímek obrazovky 2024-03-15 103305.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/nemocnice.hwnk12xv0v.png",
+      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\nemocnice.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1903940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 20:08:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hwnk12xv0v"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/nemocnice.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/nemocnice.png",
+      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\nemocnice.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1903940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 20:08:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/pokebook_first_location.jpg",
+      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "817680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 20:45:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/pokebook_first_location.t6p2kpzfoc.jpg",
+      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "817680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 20:45:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t6p2kpzfoc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/pokebook_first_location.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Snímek obrazovky 2024-03-15 103305.7q9kf8wuga.png",
+      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\Snímek obrazovky 2024-03-15 103305.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140688"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 22:34:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7q9kf8wuga"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Snímek obrazovky 2024-03-15 103305.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Snímek obrazovky 2024-03-15 103305.png",
+      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\Snímek obrazovky 2024-03-15 103305.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140688"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 22:34:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU="
+        }
+      ]
+    }
+  ]
 }

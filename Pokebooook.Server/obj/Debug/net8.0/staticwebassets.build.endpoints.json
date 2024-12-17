@@ -1,5 +1,252 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "uploads/Snímek obrazovky 2024-03-15 103305.7q9kf8wuga.png",
+      "AssetFile": "uploads/Snímek obrazovky 2024-03-15 103305.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140688"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 22:34:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7q9kf8wuga"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Snímek obrazovky 2024-03-15 103305.png"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Snímek obrazovky 2024-03-15 103305.png",
+      "AssetFile": "uploads/Snímek obrazovky 2024-03-15 103305.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140688"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 22:34:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P33J+1ZGpiMeC+vTx+YmYXn3zzCp8iTsh916zTHE5IU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/nemocnice.hwnk12xv0v.png",
+      "AssetFile": "uploads/nemocnice.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1903940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 20:08:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hwnk12xv0v"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/nemocnice.png"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/nemocnice.png",
+      "AssetFile": "uploads/nemocnice.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1903940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 20:08:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AW9E0gzfqJULGsPwsGQ83mR2AamMOprziOzYiX/H0rM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/pokebook_first_location.jpg",
+      "AssetFile": "uploads/pokebook_first_location.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "817680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 20:45:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/pokebook_first_location.t6p2kpzfoc.jpg",
+      "AssetFile": "uploads/pokebook_first_location.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "817680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 20:45:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t6p2kpzfoc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/pokebook_first_location.jpg"
+        }
+      ]
+    }
+  ]
 }

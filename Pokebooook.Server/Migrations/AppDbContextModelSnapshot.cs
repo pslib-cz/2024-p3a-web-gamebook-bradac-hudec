@@ -106,9 +106,6 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("ConnectionId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<bool>("HasPokemon")
                         .HasColumnType("INTEGER");
 
