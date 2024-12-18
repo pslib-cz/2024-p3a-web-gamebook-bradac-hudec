@@ -6,11 +6,13 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import './index.css'
 import App from './App.tsx'
 import Location from './Location.tsx'
+import Upload from './Upload.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route path="/upload" element={<Upload />} />
         <Route path="/" element={<App />} />
         <Route path="/locations/:locationId" element={<Location />} />
       </Routes>

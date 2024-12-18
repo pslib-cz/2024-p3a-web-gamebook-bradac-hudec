@@ -5,7 +5,7 @@ function App() {
 
     return (
         <div>
-            POKE BOOK
+            <h1>Pokebook</h1>
         </div>
     );
 }
