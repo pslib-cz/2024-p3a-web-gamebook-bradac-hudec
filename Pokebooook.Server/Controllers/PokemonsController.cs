@@ -76,12 +76,13 @@ namespace Pokebooook.Server.Controllers
         // POST: api/Pokemons
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Pokemon>> PostPokemon(Pokemon pokemon)
+        public async Task<ActionResult<IEnumerable<Pokemon>>> PostPokemons(IEnumerable<Pokemon> pokemons)
         {
-            _context.Pokemons.Add(pokemon);
+            _context.Pokemons.AddRange(pokemons);
+
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPokemon", new { id = pokemon.PokemonId }, pokemon);
+            return CreatedAtAction("GetPokemons", new { }, pokemons);
         }
 
         // DELETE: api/Pokemons/5

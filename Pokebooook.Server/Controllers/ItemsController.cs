@@ -76,12 +76,13 @@ namespace Pokebooook.Server.Controllers
         // POST: api/Items
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Item>> PostItem(Item item)
+        public async Task<ActionResult<IEnumerable<Item>>> PostItems(IEnumerable<Item> items)
         {
-            _context.Item.Add(item);
+            _context.Item.AddRange(items);
+
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetItem", new { id = item.ItemId }, item);
+            return CreatedAtAction("GetItems", new { }, items);
         }
 
         // DELETE: api/Items/5

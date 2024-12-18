@@ -76,12 +76,13 @@ namespace Pokebooook.Server.Controllers
         // POST: api/PokemonTypes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<PokemonType>> PostPokemonType(PokemonType pokemonType)
+        public async Task<ActionResult<IEnumerable<PokemonType>>> PostPokemonTypes(IEnumerable<PokemonType> pokemonTypes)
         {
-            _context.PokemonTypes.Add(pokemonType);
+            _context.PokemonTypes.AddRange(pokemonTypes);
+
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPokemonType", new { id = pokemonType.TypeId }, pokemonType);
+            return CreatedAtAction("GetPokemonTypes", new { }, pokemonTypes);
         }
 
         // DELETE: api/PokemonTypes/5
