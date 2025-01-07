@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NSskI+AmL7izT1ZIaTfuqSpxBV4Qp19iu3lu5J5HIfw=",
+  "Hash": "bUt/LIoJfO34eguXffPjKaxoF+K18XUHeLAtwWgvAf0=",
   "Source": "Pokebooook.Server",
   "BasePath": "_content/Pokebooook.Server",
   "Mode": "Default",
@@ -90,27 +90,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\pokebook_pokecenter.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/pokemon_stadium#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "npvlimwrek",
-      "Integrity": "NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\pokemon_stadium.png"
     }
   ],
   "Endpoints": [
@@ -357,88 +336,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-aNkye+OzrIpUfC4mqPG+gMD1w+PECD70HI/FpZnjnqo="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/pokemon_stadium.npvlimwrek.png",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1532564"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 20:38:45 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "npvlimwrek"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/pokemon_stadium.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/pokemon_stadium.png",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1532564"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 20:38:45 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ="
         }
       ]
     }

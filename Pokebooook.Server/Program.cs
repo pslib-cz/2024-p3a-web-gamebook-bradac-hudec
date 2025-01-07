@@ -29,7 +29,7 @@ var app = builder.Build();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
-app.UseCors(x => x.AllowAnyMethod().SetIsOriginAllowed(origin => new Uri(origin).IsLoopback));
+app.UseCors(x => x.AllowAnyMethod().AllowAnyOrigin().SetIsOriginAllowed(origin => new Uri(origin).IsLoopback));
 
 
 

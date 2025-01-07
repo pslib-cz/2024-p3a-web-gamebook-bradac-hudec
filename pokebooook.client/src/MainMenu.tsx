@@ -22,7 +22,7 @@ const MainMenu: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        fetchBackgroundImage(151);
+        fetchBackgroundImage(153);
     }, [fetchBackgroundImage]);
 
     return (

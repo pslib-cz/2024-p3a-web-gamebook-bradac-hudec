@@ -1,4 +1,3 @@
 wwwroot\uploads\pokebook_first_location.jpg
 wwwroot\uploads\pokebook_mountains.jpg
 wwwroot\uploads\pokebook_pokecenter.jpg
-wwwroot\uploads\pokemon_stadium.png

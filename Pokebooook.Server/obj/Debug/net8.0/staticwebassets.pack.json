@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\uploads\\pokebook_pokecenter.jpg"
     },
     {
-      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
-      "PackagePath": "staticwebassets\\uploads\\pokemon_stadium.png"
-    },
-    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pokebooook.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
