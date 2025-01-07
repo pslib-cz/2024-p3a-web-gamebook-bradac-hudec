@@ -23,7 +23,8 @@ namespace Pokebooook.Server.Models
 
         [ForeignKey("Image")]
         public int? ImageId { get; set; }
-        [ForeignKey("Attack")]
-        public int? AttackId { get; set; }
+
+        [Required]
+        public ICollection<PokemonAttack>? PokemonAttacks { get; set; }
     }
 }

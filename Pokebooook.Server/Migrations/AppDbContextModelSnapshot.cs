@@ -138,9 +138,6 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("AttackId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int?>("Energy")
                         .HasColumnType("INTEGER");
 
@@ -161,6 +158,27 @@ namespace Pokebooook.Server.Migrations
                     b.HasKey("PokemonId");
 
                     b.ToTable("Pokemons");
+                });
+
+            modelBuilder.Entity("Pokebooook.Server.Models.PokemonAttack", b =>
+                {
+                    b.Property<int>("PokemonAttackId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("AttackId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("PokemonId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("PokemonAttackId");
+
+                    b.HasIndex("AttackId");
+
+                    b.HasIndex("PokemonId");
+
+                    b.ToTable("PokemonAttack");
                 });
 
             modelBuilder.Entity("Pokebooook.Server.Models.PokemonType", b =>
@@ -278,11 +296,33 @@ namespace Pokebooook.Server.Migrations
                     b.Navigation("LocationTo");
                 });
 
+            modelBuilder.Entity("Pokebooook.Server.Models.PokemonAttack", b =>
+                {
+                    b.HasOne("Pokebooook.Server.Models.Attack", "Attack")
+                        .WithMany()
+                        .HasForeignKey("AttackId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Pokebooook.Server.Models.Pokemon", null)
+                        .WithMany("PokemonAttacks")
+                        .HasForeignKey("PokemonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Attack");
+                });
+
             modelBuilder.Entity("Pokebooook.Server.Models.Location", b =>
                 {
                     b.Navigation("ConnectionsFrom");
 
                     b.Navigation("ConnectionsTo");
+                });
+
+            modelBuilder.Entity("Pokebooook.Server.Models.Pokemon", b =>
+                {
+                    b.Navigation("PokemonAttacks");
                 });
 #pragma warning restore 612, 618
         }

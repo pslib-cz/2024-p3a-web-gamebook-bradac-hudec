@@ -36,5 +36,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aNkye\u002BOzrIpUfC4mqPG\u002BgMD1w\u002BPECD70HI/FpZnjnqo="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"793847"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aNkye\u002BOzrIpUfC4mqPG\u002BgMD1w\u002BPECD70HI/FpZnjnqo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 05 Jan 2025 19:31:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/pokemon_stadium.npvlimwrek.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokemon_stadium.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"npvlimwrek"},{"Name":"integrity","Value":"sha256-NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/pokemon_stadium.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1532564"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 07 Jan 2025 20:57:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/pokemon_stadium.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokemon_stadium.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1532564"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 07 Jan 2025 20:57:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>
