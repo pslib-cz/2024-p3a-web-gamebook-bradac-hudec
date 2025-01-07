@@ -25,22 +25,48 @@ namespace Pokebooook.Server.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Pokemon>>> GetPokemons()
         {
-            return await _context.Pokemons.ToListAsync();
+            return await _context.Pokemons
+                .Include(p => p.PokemonAttacks) // Eagerly load the PokemonAttacks
+                .ToListAsync();
         }
+
 
         // GET: api/Pokemons/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Pokemon>> GetPokemon(int id)
         {
-            var pokemon = await _context.Pokemons.FindAsync(id);
+            var pokemon = await _context.Pokemons
+                .Include(p => p.PokemonAttacks)  
+                .ThenInclude(pa => pa.Attack)    
+                .FirstOrDefaultAsync(p => p.PokemonId == id); 
 
             if (pokemon == null)
             {
                 return NotFound();
             }
 
-            return pokemon;
+
+            var result = new
+            {
+                pokemon.PokemonId,
+                pokemon.Name,
+                pokemon.Health,
+                pokemon.Energy,
+                pokemon.TypeId,
+                pokemon.ImageId,
+                PokemonAttacks = pokemon.PokemonAttacks?.Select(pa => new
+                {
+                    pa.PokemonAttackId,
+                    AttackName = pa.Attack.Name,  // Get the name of the attack
+                    EnergyCost = pa.Attack.EnergyCost,
+                    BaseDamage = pa.Attack.BaseDamage
+                }).ToList()
+            };
+
+            return Ok(result);
         }
+
+
 
         // PUT: api/Pokemons/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

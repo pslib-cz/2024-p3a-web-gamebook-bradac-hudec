@@ -17,6 +17,7 @@ namespace Pokebooook.Server.Data
         public required DbSet<Connection> Connections { get; set; }
         public required DbSet<Attack> Attacks { get; set; }
         public required DbSet<Image> Images { get; set; }
+        public required DbSet<PokemonAttack> PokemonAttacks { get; set; }
         public DbSet<Pokebooook.Server.Models.Item> Item { get; set; } = default!;
 
         // onmodel
@@ -58,6 +59,7 @@ namespace Pokebooook.Server.Data
                 .WithMany()
                 .HasForeignKey(i => i.ImageId);*/
         }
+        public DbSet<Pokebooook.Server.Models.PokemonAttack> PokemonAttack { get; set; } = default!;
 
     }
 }

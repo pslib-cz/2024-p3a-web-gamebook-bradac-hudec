@@ -10,6 +10,19 @@ interface ImageData {
 
 const MainMenu: React.FC = () => {
     const [backgroundImage, setBackgroundImage] = useState<ImageData | null>(null);
+    const [pokemonAttack, setPokemonAttack] = useState<string | null>("");
+
+    const FetchPokemonAttack = useCallback(async () => {
+        const response = await fetch(`http://localhost:5212/api/Pokemon/1/Attack`);
+        const data = await response.json();
+        setPokemonAttack(data);
+    }, []);
+
+    useEffect(() => {
+        FetchPokemonAttack();
+       console.log(pokemonAttack);
+    }, [pokemonAttack]);
+
 
     const fetchBackgroundImage = useCallback(async (imageId: number) => {
         try {
