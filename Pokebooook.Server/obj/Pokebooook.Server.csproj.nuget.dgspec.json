@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\Pokebooook.Server.csproj": {}
+    "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\Pokebooook.Server.csproj": {
+    "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\Pokebooook.Server.csproj",
+        "projectUniqueName": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj",
         "projectName": "Pokebooook.Server",
-        "projectPath": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\Pokebooook.Server.csproj",
-        "packagesPath": "C:\\Users\\Filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\obj\\",
+        "projectPath": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj",
+        "packagesPath": "C:\\Users\\fildi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fildi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,7 +43,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -97,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

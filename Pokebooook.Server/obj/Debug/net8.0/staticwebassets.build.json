@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "EFPD2L9Ve4LH3W5DMan2LIKHzBCA9H6tfbymA3vaZYc=",
+  "Hash": "bUt/LIoJfO34eguXffPjKaxoF+K18XUHeLAtwWgvAf0=",
   "Source": "Pokebooook.Server",
   "BasePath": "_content/Pokebooook.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\pokebooook.client\\pokebooook.client.esproj",
+      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\pokebooook.client\\pokebooook.client.esproj",
       "Version": 2,
       "Source": "pokebooook.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "Pokebooook.Server\\wwwroot",
       "Source": "Pokebooook.Server",
-      "ContentRoot": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/pokebook_first_location#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -50,10 +50,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\pokebook_first_location.jpg"
     },
     {
-      "Identity": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
+      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/pokebook_mountains#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -71,10 +71,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\pokebook_mountains.jpg"
     },
     {
-      "Identity": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
+      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/pokebook_pokecenter#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -95,7 +95,7 @@
   "Endpoints": [
     {
       "Route": "uploads/pokebook_first_location.jpg",
-      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -116,7 +116,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
+          "Value": "Sun, 05 Jan 2025 19:31:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -132,7 +132,7 @@
     },
     {
       "Route": "uploads/pokebook_first_location.t6p2kpzfoc.jpg",
-      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -153,7 +153,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
+          "Value": "Sun, 05 Jan 2025 19:31:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -177,7 +177,7 @@
     },
     {
       "Route": "uploads/pokebook_mountains.jpg",
-      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -198,7 +198,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
+          "Value": "Sun, 05 Jan 2025 19:31:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -214,7 +214,7 @@
     },
     {
       "Route": "uploads/pokebook_mountains.pqlyt4q6be.jpg",
-      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -235,7 +235,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
+          "Value": "Sun, 05 Jan 2025 19:31:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -259,7 +259,7 @@
     },
     {
       "Route": "uploads/pokebook_pokecenter.4xs4apa65t.jpg",
-      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -280,7 +280,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
+          "Value": "Sun, 05 Jan 2025 19:31:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -304,7 +304,7 @@
     },
     {
       "Route": "uploads/pokebook_pokecenter.jpg",
-      "AssetFile": "C:\\Users\\Filip\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec.git\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -325,7 +325,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 21:29:50 GMT"
+          "Value": "Sun, 05 Jan 2025 19:31:42 GMT"
         },
         {
           "Name": "Cache-Control",
