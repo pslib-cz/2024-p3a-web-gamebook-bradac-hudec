@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Pokebooook.Server.Models
 {
@@ -14,6 +15,7 @@ namespace Pokebooook.Server.Models
         [ForeignKey("Pokemon")]
         public int PokemonId { get; set; }
 
+        [JsonIgnore]
         public Attack? Attack { get; set; }
     }
 }
