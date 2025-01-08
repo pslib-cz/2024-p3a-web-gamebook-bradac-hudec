@@ -26,7 +26,7 @@ namespace Pokebooook.Server.Controllers
         public async Task<ActionResult<IEnumerable<Pokemon>>> GetPokemons()
         {
             return await _context.Pokemons
-                .Include(p => p.PokemonAttacks) // Eagerly load the PokemonAttacks
+                .Include(p => p.PokemonAttacks)
                 .ToListAsync();
         }
 
@@ -57,7 +57,7 @@ namespace Pokebooook.Server.Controllers
                 PokemonAttacks = pokemon.PokemonAttacks?.Select(pa => new
                 {
                     pa.PokemonAttackId,
-                    AttackName = pa.Attack.Name,  // Get the name of the attack
+                    AttackName = pa.Attack.Name,  
                     EnergyCost = pa.Attack.EnergyCost,
                     BaseDamage = pa.Attack.BaseDamage
                 }).ToList()
