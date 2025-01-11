@@ -30,17 +30,28 @@ namespace Pokebooook.Server.Controllers
 
         // GET: api/PokemonAttacks/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<PokemonAttack>> GetPokemonAttack(int id)
+        public async Task<ActionResult<object>> GetPokemonAttack(int id)
         {
-            var pokemonAttack = await _context.PokemonAttack.FindAsync(id);
+            var pokemonAttack = await _context.PokemonAttack
+                .Include(pa => pa.Attack) 
+                .Where(pa => pa.PokemonAttackId == id)
+                .Select(pa => new
+                {
+                    pa.PokemonAttackId,
+                    pa.AttackId,
+                    pa.PokemonId,
+                    AttackName = pa.Attack != null ? pa.Attack.Name : null 
+                })
+                .FirstOrDefaultAsync();
 
             if (pokemonAttack == null)
             {
                 return NotFound();
             }
 
-            return pokemonAttack;
+            return Ok(pokemonAttack);
         }
+
 
         // PUT: api/PokemonAttacks/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

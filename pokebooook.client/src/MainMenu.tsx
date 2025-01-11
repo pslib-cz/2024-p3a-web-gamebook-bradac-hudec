@@ -8,13 +8,15 @@ const MainMenu: React.FC = () => {
 
     const fetchPokemonAttack = useCallback(async () => {
         try {
-            const response = await fetch(`http://localhost:5212/api/Pokemon/1/Attack`);
+            const response = await fetch(`http://localhost:5212/api/pokemonAttacks/1/`);
             const data = await response.json();
-            setPokemonAttack(data);
+            setPokemonAttack(data.attackName);
+            console.log(data);
         } catch (error) {
             console.error('Failed to fetch Pokemon attack:', error);
         }
     }, []);
+
 
     useEffect(() => {
         fetchPokemonAttack();
@@ -39,6 +41,7 @@ const MainMenu: React.FC = () => {
             }}
         >
             <div className={MainMenuCSS.mainMenu__buttons__container}>
+                {/*<h1>{pokemonAttack}</h1>*/}
                 <button className={MainMenuCSS.mainMenu__btn}><b>Hrát</b></button>
                 <button className={MainMenuCSS.mainMenu__btn}><b>Statistiky</b></button>
             </div>
