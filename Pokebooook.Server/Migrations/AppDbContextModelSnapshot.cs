@@ -187,6 +187,9 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("ImageId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -244,10 +247,6 @@ namespace Pokebooook.Server.Migrations
 
                     b.Property<double>("ToWater")
                         .HasColumnType("REAL");
-
-                    b.Property<string>("TypeIcon")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
 
                     b.HasKey("TypeId");
 
