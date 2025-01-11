@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Pokebooook.Server.Models
 {
@@ -6,9 +7,9 @@ namespace Pokebooook.Server.Models
     {
         [Key]
         public int TypeId { get; set; }
-
+        [ForeignKey("Image")]
+        public int? ImageId { get; set; }
         public required string Name { get; set; }
-        public required string TypeIcon { get; set; }
         public required double ToGround { get; set; }
         public required double ToGrass { get; set; }
         public required double ToFire { get; set; }
