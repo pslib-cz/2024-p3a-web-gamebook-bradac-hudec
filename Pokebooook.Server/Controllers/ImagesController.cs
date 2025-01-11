@@ -33,7 +33,7 @@ namespace Pokebooook.Server.Controllers
 
         // GET: api/Images/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Image>> GetImage(int id)
+        public async Task<IActionResult> GetImage(int id)
         {
             var image = await _context.Images.FindAsync(id);
 
@@ -42,8 +42,9 @@ namespace Pokebooook.Server.Controllers
                 return NotFound();
             }
 
-            return image;
+            return File(image.Data, image.Type);
         }
+
 
 
         [HttpPost("Upload")]

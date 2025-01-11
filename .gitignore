@@ -8,3 +8,4 @@
 /Pokebooook.Server/app.db-wal
 /Pokebooook.Server/bin/Debug/net8.0/Pokebooook.Server.dll
 /Pokebooook.Server/bin/Debug/net8.0/Pokebooook.Server.exe
+*.env

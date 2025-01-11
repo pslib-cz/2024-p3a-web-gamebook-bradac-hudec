@@ -1,6 +1,66 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
+      "PackagePath": "staticwebassets\\uploads\\001.png"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
+      "PackagePath": "staticwebassets\\uploads\\bug.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
+      "PackagePath": "staticwebassets\\uploads\\dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
+      "PackagePath": "staticwebassets\\uploads\\dragon.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
+      "PackagePath": "staticwebassets\\uploads\\electric.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
+      "PackagePath": "staticwebassets\\uploads\\fairy.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
+      "PackagePath": "staticwebassets\\uploads\\fighting.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
+      "PackagePath": "staticwebassets\\uploads\\fire.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
+      "PackagePath": "staticwebassets\\uploads\\flying.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
+      "PackagePath": "staticwebassets\\uploads\\ghost.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
+      "PackagePath": "staticwebassets\\uploads\\grass.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
+      "PackagePath": "staticwebassets\\uploads\\ground.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
+      "PackagePath": "staticwebassets\\uploads\\ice.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
+      "PackagePath": "staticwebassets\\uploads\\normal.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
+      "PackagePath": "staticwebassets\\uploads\\poison.svg"
+    },
+    {
       "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
       "PackagePath": "staticwebassets\\uploads\\pokebook_first_location.jpg"
     },
@@ -15,6 +75,22 @@
     {
       "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
       "PackagePath": "staticwebassets\\uploads\\pokemon_stadium.png"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
+      "PackagePath": "staticwebassets\\uploads\\psychic.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
+      "PackagePath": "staticwebassets\\uploads\\rock.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
+      "PackagePath": "staticwebassets\\uploads\\steel.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
+      "PackagePath": "staticwebassets\\uploads\\water.svg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pokebooook.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
