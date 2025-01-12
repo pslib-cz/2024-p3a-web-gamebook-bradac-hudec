@@ -4,24 +4,7 @@ import MainMenuCSS from './MainMenu.module.css';
 
 const MainMenu: React.FC = () => {
     const [backgroundImageUrl, setBackgroundImageUrl] = useState<string | null>(null);
-    const [pokemonAttack, setPokemonAttack] = useState<string | null>(null);
-
-    const fetchPokemonAttack = useCallback(async () => {
-        try {
-            const response = await fetch(`http://localhost:5212/api/pokemonAttacks/1/`);
-            const data = await response.json();
-            setPokemonAttack(data.attackName);
-            console.log(data);
-        } catch (error) {
-            console.error('Failed to fetch Pokemon attack:', error);
-        }
-    }, []);
-
-
-    useEffect(() => {
-        fetchPokemonAttack();
-    }, [fetchPokemonAttack]);
-
+    
     const fetchBackgroundImage = useCallback((imageId: number) => {
         const imageUrl = `http://localhost:5212/api/Images/${imageId}`;
         setBackgroundImageUrl(imageUrl);
@@ -41,9 +24,12 @@ const MainMenu: React.FC = () => {
             }}
         >
             <div className={MainMenuCSS.mainMenu__buttons__container}>
-                {/*<h1>{pokemonAttack}</h1>*/}
+            <Link to={'/nickname'}>
                 <button className={MainMenuCSS.mainMenu__btn}><b>Hrát</b></button>
+            </Link>
+            <Link to={'/statistics'}>
                 <button className={MainMenuCSS.mainMenu__btn}><b>Statistiky</b></button>
+            </Link>
             </div>
 
             <Link to={'/admin'}>
