@@ -1,0 +1,63 @@
+.mainMenu__container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mainMenu__heading {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.mainMenu__buttons__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    gap: 1em;
+}
+
+.mainMenu__btn {
+    width: 400px;
+    height: 120px;
+    border: solid 5px #a1a1a1;
+    color: #fff;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    text-shadow: 1px 1px 30px #000;
+    font-size: 2em;
+}
+
+.mainMenu__btn:hover {
+    background-color: #a1a1a1;
+    cursor: pointer;
+}
+
+.mainMenu__adminlink {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    text-shadow: 2px 2px 15px #000;
+}
+.mainMenu__input {
+    border: solid 5px #a1a1a1;
+    padding: 0 8px;
+    font-size: 16px;
+    border-radius: 16px;
+    height: 40px;
+    width: 300px;
+    text-align: start;
+}
