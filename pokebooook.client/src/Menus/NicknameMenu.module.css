@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
-    height: 100vh;
+    height: 100vh; 
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@
     border-radius: 20px;
     text-shadow: 1px 1px 30px #000;
     font-size: 1.25em;
-} 
+} =
 
 .nicknameMenu__btn:hover {
     background-color: #a1a1a1;
