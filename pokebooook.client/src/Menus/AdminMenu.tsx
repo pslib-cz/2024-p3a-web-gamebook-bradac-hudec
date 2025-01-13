@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import AdminTable from "../components/AdminTable";
-import MenuBtn from "../components/MenuBtn";
 import MenuBg from "../components/MenuBg";
+import BackBtn from "../components/BackBtn";
 
 const AdminMenu = () => {
   return (
     <MenuBg>
       <h1>Admin Menu</h1>
       <Link to={"/"}>
-        <MenuBtn btnText="Zpět" />
+        <BackBtn btnText="Zpět" />
       </Link>
       <AdminTable name="items" id="itemId" cols={["name", "description"]} />
       <AdminTable
