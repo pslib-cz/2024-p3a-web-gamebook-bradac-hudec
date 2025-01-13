@@ -1,0 +1,15 @@
+.menu__btn {
+    width: 200px;
+    height: 80px;
+    border: solid 5px #a1a1a1;
+    color: #fff;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    text-shadow: 1px 1px 30px #000;
+    font-size: 1.25em;
+}
+
+.menu__btn:hover {
+    background-color: #a1a1a1;
+    cursor: pointer;
+}

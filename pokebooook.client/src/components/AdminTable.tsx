@@ -52,8 +52,7 @@ const AdminTable: React.FC<AdminTableProps> = ({id, name, cols}) => {
                                             const value = e.target.value;
                                             console.log(value);
                                             row[col] = value;
-                                            const newData = [...data];
-                                            // @ts-expect-error from index signature
+                                            const newData = [...data];                                   
                                             newData[index][col] = value;
                                             setData(newData);
                                             updateData(name, id, row);
