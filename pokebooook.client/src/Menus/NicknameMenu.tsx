@@ -5,8 +5,7 @@ import MenuBtn from "../components/MenuBtn";
 import MenuBg from "../components/MenuBg";
 
 const NicknameMenu = () => {
-  return (
-    <>
+  return (    
       <MenuBg>
         <h1 className={NicknameMenuCSS.input__container__heading}>
           Zvolte vaši přezdívku
@@ -35,8 +34,7 @@ const NicknameMenu = () => {
             <b>Administrace</b>
           </p>
         </Link>
-      </MenuBg>
-    </>
+      </MenuBg>   
   );
 };
 export default NicknameMenu;
