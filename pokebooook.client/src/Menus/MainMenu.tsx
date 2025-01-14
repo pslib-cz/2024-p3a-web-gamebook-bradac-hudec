@@ -1,4 +1,3 @@
-import React, { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import MainMenuCSS from "./MainMenu.module.css";
 import MenuBtn from "../components/MenuBtn";
