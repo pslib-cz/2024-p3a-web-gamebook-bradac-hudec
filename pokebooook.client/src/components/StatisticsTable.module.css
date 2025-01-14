@@ -1,0 +1,26 @@
+
+.statisticsTable__content {
+    background-color: #d9d9d9;
+    border: solid 5px #a1a1a1;
+    border-radius: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 600px;
+    height: 400px;
+}
+
+.statisticsTable__content__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statisticsTable__content__text {
+
+}
+
+.statisticsTable__content__heading {
+
+}

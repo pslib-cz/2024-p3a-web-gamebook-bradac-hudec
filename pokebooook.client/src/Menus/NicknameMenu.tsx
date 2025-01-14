@@ -1,61 +1,40 @@
-import React, { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NicknameMenuCSS from "./NicknameMenu.module.css";
+import BackBtn from "../components/BackBtn";
+import MenuBtn from "../components/MenuBtn";
+import MenuBg from "../components/MenuBg";
 
 const NicknameMenu = () => {
-  const [backgroundImageUrl, setBackgroundImageUrl] = useState<string | null>(
-    null
-  );
+  return (    
+      <MenuBg>
+        <h1 className={NicknameMenuCSS.input__container__heading}>
+          Zvolte vaši přezdívku
+        </h1>
 
-  const fetchBackgroundImage = useCallback((imageId: number) => {
-    const imageUrl = `http://localhost:5212/api/Images/${imageId}`;
-    setBackgroundImageUrl(imageUrl);
-  }, []);
+        <div className={NicknameMenuCSS.input__container}>
+          <input
+            type="text"
+            className={NicknameMenuCSS.nickname__input}
+            placeholder="Přezdívka"
+          />
 
-  useEffect(() => {
-    fetchBackgroundImage(153);
-  }, [fetchBackgroundImage]);
+          <div className={NicknameMenuCSS.buttons__container}>
+            <Link to={"/locations/1"}>
+              <MenuBtn btnText="Pokračovat" />
+            </Link>
 
-  return (
-    <div
-      className={NicknameMenuCSS.nicknameMenu__container}
-      style={{
-        backgroundImage: backgroundImageUrl
-          ? `url(${backgroundImageUrl})`
-          : "none",
-      }}
-    >
-      <h1 className={NicknameMenuCSS.input__container__heading}>
-        Zvolte vaši přezdívku
-      </h1>
-
-      <div className={NicknameMenuCSS.input__container}>
-        <input
-          type="text"
-          className={NicknameMenuCSS.nickname__input}
-          placeholder="Přezdívka"
-        />
-
-        <div className={NicknameMenuCSS.buttons__container}>
-          <Link to={"/locations/1"}>
-            <button className={NicknameMenuCSS.nicknameMenu__btn}>
-              <b>Pokračovat</b>
-            </button>
-          </Link>
-          <Link to={"/"}>
-            <button className={NicknameMenuCSS.nicknameMenu__btn}>
-              <b>Zpět</b>
-            </button>
-          </Link>
+            <Link to={"/"}>
+              <BackBtn btnText="Zpět" />
+            </Link>
+          </div>
         </div>
-      </div>
 
-      <Link to={"/admin"}>
-        <p className={NicknameMenuCSS.nicknameMenu__adminlink}>
-          <b>Administrace</b>
-        </p>
-      </Link>
-    </div>
+        <Link to={"/admin"}>
+          <p className={NicknameMenuCSS.nicknameMenu__adminlink}>
+            <b>Administrace</b>
+          </p>
+        </Link>
+      </MenuBg>   
   );
 };
 export default NicknameMenu;
