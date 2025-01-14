@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Pokebooook.Server.Models
 {
@@ -11,11 +12,13 @@ namespace Pokebooook.Server.Models
         [ForeignKey("LocationFrom")]
         public int LocationFromId { get; set; }
 
+        [JsonIgnore]
         public Location? LocationFrom { get; set; }
 
         [ForeignKey("LocationTo")]
         public int LocationToId { get; set; }
 
+        [JsonIgnore]
         public Location? LocationTo { get; set; }
     }
 }
