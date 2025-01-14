@@ -23,6 +23,7 @@ namespace Pokebooook.Server.Models
 
         [ForeignKey("Image")]
         public int? ImageId { get; set; }
+        public List<string> Descriptions { get; set; } = new List<string>();
 
         [JsonIgnore]
         public List<Connection> ConnectionsFrom { get; set; } = [];

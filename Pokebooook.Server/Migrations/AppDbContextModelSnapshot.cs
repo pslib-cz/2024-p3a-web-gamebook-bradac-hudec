@@ -110,6 +110,10 @@ namespace Pokebooook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.PrimitiveCollection<string>("Descriptions")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<bool>("HasPokemon")
                         .HasColumnType("INTEGER");
 
