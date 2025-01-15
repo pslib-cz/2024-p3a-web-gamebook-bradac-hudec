@@ -1,11 +1,11 @@
 import { Link } from "react-router";
 import BackBtn from "../components/BackBtn";
-import MenuBg from "../components/MenuBg";
+import Bg from "../components/Bg";
 import StatisticsTable from "../components/StatisticsTable";
 
 const StatisticsMenu = () => {
   return (    
-      <MenuBg>
+      <Bg imageId={153}>
 
         <Link to={"/"}>
           <BackBtn btnText="Hlavní menu" />
@@ -13,7 +13,7 @@ const StatisticsMenu = () => {
 
         <StatisticsTable />
 
-      </MenuBg>  
+      </Bg>  
   );
 };
 export default StatisticsMenu;

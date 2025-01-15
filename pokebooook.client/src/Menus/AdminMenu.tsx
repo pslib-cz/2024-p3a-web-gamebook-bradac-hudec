@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import AdminTable from "../components/AdminTable";
-import MenuBg from "../components/MenuBg";
+import Bg from "../components/Bg";
 import BackBtn from "../components/BackBtn";
 
 const AdminMenu = () => {
   return (
-    <MenuBg>
+    <Bg imageId={153}>
       <h1>Admin Menu</h1>
       <Link to={"/"}>
         <BackBtn btnText="Zpět" />
@@ -16,7 +16,7 @@ const AdminMenu = () => {
         id="locationId"
         cols={["name", "pokemonId", "rocketChance", "imageId", "hasPokemon"]}
       />
-    </MenuBg>    
+    </Bg>    
   );
 };
 export default AdminMenu;

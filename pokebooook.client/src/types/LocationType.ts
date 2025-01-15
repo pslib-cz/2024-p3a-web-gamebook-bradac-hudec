@@ -3,8 +3,9 @@ interface LocationType {
     name: string;
     hasPokemon: boolean;
     rocketChance: number;
-    imageId: number;
     pokemonId: number;
+    imageId: number;
+    descriptions: string[]; 
 }
 
-export default LocationType;	
+export default LocationType;
