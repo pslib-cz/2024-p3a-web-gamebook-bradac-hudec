@@ -11,14 +11,10 @@ namespace Pokebooook.Server.Models
 
         [ForeignKey("LocationFrom")]
         public int LocationFromId { get; set; }
-
-        [JsonIgnore]
         public Location? LocationFrom { get; set; }
 
         [ForeignKey("LocationTo")]
         public int LocationToId { get; set; }
-
-        [JsonIgnore]
         public Location? LocationTo { get; set; }
     }
 }
