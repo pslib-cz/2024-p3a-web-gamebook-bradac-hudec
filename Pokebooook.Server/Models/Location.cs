@@ -15,11 +15,11 @@ namespace Pokebooook.Server.Models
 
         public required bool HasPokemon { get; set; }
 
-        public double RocketChance { get; set; }
+        public double RocketChance { get; set; }    
 
         [ForeignKey("Pokemon")]
         
-        public int? PokemonId { get; set; }
+        public int? PokemonId { get; set; }     
 
         [ForeignKey("Image")]
         public int? ImageId { get; set; }
