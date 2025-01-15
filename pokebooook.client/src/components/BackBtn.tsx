@@ -9,11 +9,6 @@ type MenuBtnProps = {
 
 
 const BackBtn: FC<MenuBtnProps> = ({ btnText }) => { 
-
-
-
-
-
     return (
             <button className={BackBtnCSS.back__btn}>{btnText}</button>
     );

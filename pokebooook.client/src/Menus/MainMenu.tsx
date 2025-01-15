@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import MainMenuCSS from "./MainMenu.module.css";
 import MenuBtn from "../components/MenuBtn";
-import MenuBg from "../components/MenuBg";
+import Bg from "../components/Bg";
 
 const MainMenu: React.FC = () => {
   return (
     <>
-      <MenuBg>
+      <Bg imageId={153}>
         <div className={MainMenuCSS.mainMenu__buttons__container}>
           <Link to={"/nickname"}>
             <MenuBtn btnText="Hrát" />
@@ -21,7 +21,7 @@ const MainMenu: React.FC = () => {
             <b>Administrace</b>
           </p>
         </Link>
-      </MenuBg>
+      </Bg>
     </>
   );
 };

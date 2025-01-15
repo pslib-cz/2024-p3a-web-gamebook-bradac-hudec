@@ -1,0 +1,12 @@
+.item__cell {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 40px; 
+    height: 40px; 
+    padding: 1em;
+    background-color: #d3d3d3; 
+    border: 5px solid #a1a1a1; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
