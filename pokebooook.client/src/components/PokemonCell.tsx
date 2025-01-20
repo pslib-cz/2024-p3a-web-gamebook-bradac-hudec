@@ -11,3 +11,5 @@ const PokemonCell = () => {
     );
 };
 export default PokemonCell;
+
+

@@ -1,0 +1,27 @@
+.healthBarContainer {
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #ccc;
+    overflow: hidden;
+    position: relative; 
+}
+
+.healthBar {
+    height: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, red, darkred);
+}
+
+.healthText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    color: white; 
+    font-weight: bold;
+    line-height: 20px; 
+    margin: 0;
+    padding: 0; 
+}

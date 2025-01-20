@@ -1,0 +1,28 @@
+.energyBarContainer {
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 200px; 
+    background-color: #ccc;
+    margin: 0 auto; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.energyBar {
+    height: 20px;
+    border-radius: 5px;
+    background: linear-gradient(to right, blue, darkblue);
+}
+
+.energyText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    color: white; 
+    font-weight: bold;
+    line-height: 20px; 
+    margin: 0; 
+    padding: 0; 
+}
