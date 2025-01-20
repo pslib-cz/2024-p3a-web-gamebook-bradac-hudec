@@ -16,6 +16,16 @@ const AdminMenu = () => {
         id="locationId"
         cols={["name", "pokemonId", "rocketChance", "imageId", "hasPokemon"]}
       />
+      <AdminTable
+        name="connections"
+        id="connectionId"
+        cols={["locationFromId", "locationToId"]}
+      />
+      <AdminTable
+        name="pokemons"
+        id="pokemonId"
+        cols={["name", "imageId", "locationId", "energy", "health", "typeId"]}
+      />
     </Bg>    
   );
 };
