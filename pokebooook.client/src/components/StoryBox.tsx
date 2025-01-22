@@ -1,21 +1,19 @@
-import { FC } from "react";
-import ActionBoxCSS from './StoryBox.module.css';
+import React from 'react';
+import StoryBoxCSS from './StoryBox.module.css';
 
-type ActionBoxProps = {
+type StoryBoxProps = {
     children: React.ReactNode;
-    onClick?: () => void;
     showContinueText?: boolean;
+    onClick?: () => void;
 };
 
-const ActionBox: FC<ActionBoxProps> = ({ children, onClick, showContinueText = true }) => {
+const StoryBox: React.FC<StoryBoxProps> = ({ children, showContinueText = true, onClick }) => {
     return (
-        <div onClick={onClick} className={ActionBoxCSS.actionBox__container}>
+        <div className={StoryBoxCSS.actionBox__container} onClick={onClick}>
             {children}
-            {showContinueText && (
-                <div className={ActionBoxCSS.clickToContinue}><b>klikněte pro pokračování...</b></div>
-            )}
+            {showContinueText && <div className={StoryBoxCSS.clickToContinue}>Klikněte pro pokračování</div>}
         </div>
     );
 };
 
-export default ActionBox;
+export default StoryBox;

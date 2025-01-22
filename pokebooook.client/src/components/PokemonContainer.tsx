@@ -2,20 +2,15 @@ import React from 'react';
 import PokemonContainerCSS from './PokemonContainer.module.css';
 import HealthBar from './HealthBar';
 import EnergyBar from './EnergyBar';
-
-type PokemonType = {
-    id: number;
-    name: string;
-    imageId: number;
-    health: number;
-    energy: number;
-};
+import PokemonType from '../types/PokemonType';
 
 type PokemonContainerProps = {
     pokemon: PokemonType | null;
+    health: number;
+    isPlayer: boolean;
 };
 
-const PokemonContainer: React.FC<PokemonContainerProps> = ({ pokemon }) => {
+const PokemonContainer: React.FC<PokemonContainerProps> = ({ pokemon, health, isPlayer }) => {
     if (!pokemon) return null;
 
     return (
@@ -26,8 +21,11 @@ const PokemonContainer: React.FC<PokemonContainerProps> = ({ pokemon }) => {
                 alt={pokemon.name}
             />
             <p className={PokemonContainerCSS.pokemon__name}>{pokemon.name}</p>
-            <HealthBar health={pokemon.health} maxHealth={pokemon.health} />
-            <EnergyBar energy={pokemon.energy} maxEnergy={pokemon.energy} />
+            <HealthBar health={health} maxHealth={pokemon.health} />
+
+            {isPlayer && (
+                <EnergyBar energy={pokemon.energy} maxEnergy={pokemon.energy} />
+            )}
         </div>
     );
 };

@@ -1,10 +1,8 @@
 import React from 'react';
 import HealthbarCSS from './HealthBar.module.css';
+import HealthBarProps  from '../types/HealthBarType';
 
-type HealthBarProps = {
-    health: number;
-    maxHealth: number;
-};
+
 
 const HealthBar: React.FC<HealthBarProps> = ({ health, maxHealth }) => {
     const healthPercentage = (health / maxHealth) * 100;
