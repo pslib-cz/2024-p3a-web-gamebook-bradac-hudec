@@ -11,7 +11,17 @@ wwwroot\uploads\ghost.svg
 wwwroot\uploads\grass.svg
 wwwroot\uploads\ground.svg
 wwwroot\uploads\ice.svg
+wwwroot\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg
+wwwroot\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg
+wwwroot\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg
+wwwroot\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg
+wwwroot\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg
+wwwroot\uploads\les.jpg
+wwwroot\uploads\les2.jpg
+wwwroot\uploads\les3.jpg
+wwwroot\uploads\lespokemon.jpg
 wwwroot\uploads\normal.svg
+wwwroot\uploads\plateau.jpg
 wwwroot\uploads\poison.svg
 wwwroot\uploads\pokebook_first_location.jpg
 wwwroot\uploads\pokebook_mountains.jpg

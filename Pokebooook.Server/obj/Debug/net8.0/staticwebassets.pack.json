@@ -5,6 +5,26 @@
       "PackagePath": "staticwebassets\\uploads\\001.png"
     },
     {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
+      "PackagePath": "staticwebassets\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
+      "PackagePath": "staticwebassets\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
+      "PackagePath": "staticwebassets\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
+      "PackagePath": "staticwebassets\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg"
+    },
+    {
       "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
       "PackagePath": "staticwebassets\\uploads\\bug.svg"
     },
@@ -53,8 +73,28 @@
       "PackagePath": "staticwebassets\\uploads\\ice.svg"
     },
     {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
+      "PackagePath": "staticwebassets\\uploads\\les.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\les2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\les3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
+      "PackagePath": "staticwebassets\\uploads\\lespokemon.jpg"
+    },
+    {
       "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
       "PackagePath": "staticwebassets\\uploads\\normal.svg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
+      "PackagePath": "staticwebassets\\uploads\\plateau.jpg"
     },
     {
       "Id": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",

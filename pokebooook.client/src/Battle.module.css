@@ -1,0 +1,15 @@
+.battle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.battle__pokemons {
+   display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}

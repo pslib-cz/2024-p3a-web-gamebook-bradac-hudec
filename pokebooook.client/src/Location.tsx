@@ -11,6 +11,7 @@ import PokemonCell from './components/PokemonCell';
 import ItemInventory from './Menus/ItemInventory';
 import ItemInventoryCell from './components/ItemInventoryCell';
 import PokemonContainer from './components/PokemonContainer';
+import Battle from './Battle';
 
 type PokemonType = {
     id: number;
@@ -19,7 +20,6 @@ type PokemonType = {
     health: number;
     energy: number;
 };
-
 const Location: React.FC = () => {
     const { locationId } = useParams<{ locationId: string }>();
     if (!locationId) throw new Error('No location ID provided');
@@ -29,6 +29,7 @@ const Location: React.FC = () => {
     const [currentTextIndex, setCurrentTextIndex] = useState<number>(0);
     const [showOptions, setShowOptions] = useState<boolean>(false);
     const [showText, setShowText] = useState<boolean>(true);
+    const [showBattle, setShowBattle] = useState<boolean>(false);
     const [pokemon, setPokemon] = useState<PokemonType | null>(null);
 
     const nickname = localStorage.getItem('nickname') || 'trenér';
@@ -46,6 +47,11 @@ const Location: React.FC = () => {
         const data = await response.json();
         setLocation(data);
         fetchLocationConnections();
+
+        // If the location has a Pokémon encounter, prepare the Pokémon data
+        if (data.hasPokemon) {
+            fetchRandomPokemon();
+        }
     }, [fetchLocationConnections, locationId]);
 
     const fetchRandomPokemon = useCallback(async () => {
@@ -57,13 +63,13 @@ const Location: React.FC = () => {
 
     useEffect(() => {
         fetchLocation();
-        fetchRandomPokemon();
-    }, [fetchLocation, fetchRandomPokemon]);
+    }, [fetchLocation]);
 
     useEffect(() => {
         setCurrentTextIndex(0);
         setShowText(true);
         setShowOptions(false);
+        setShowBattle(false);
     }, [locationId]);
 
     const handleStoryBoxClick = () => {
@@ -71,7 +77,11 @@ const Location: React.FC = () => {
             setCurrentTextIndex((prevIndex) => prevIndex + 1);
         } else {
             setShowText(false);
-            setShowOptions(true);
+            if (location?.hasPokemon) {
+                setShowBattle(true); // Trigger battle component if `hasPokemon` is true
+            } else {
+                setShowOptions(true);
+            }
         }
     };
 
@@ -79,28 +89,33 @@ const Location: React.FC = () => {
 
     return (
         <Bg key={location.imageId} imageId={location.imageId}>
-            <PokemonContainer pokemon={pokemon} />
-            <PokemonInventory>
-                <PokemonCell />
-                <PokemonCell />
-                <PokemonCell />
-                <PokemonCell />
-                <PokemonCell />
-                <PokemonCell />
-            </PokemonInventory>
-            <StoryBox onClick={handleStoryBoxClick} showContinueText={showText}>
-                {showText && <StoryText text={replaceNickname(location.descriptions[currentTextIndex])} />}
-                {showOptions && <LocationBtn connections={locationConnections} currentLocationId={parseInt(locationId)} />}
-            </StoryBox>
-            <ItemInventory>
-                <ItemInventoryCell />
-                <ItemInventoryCell />
-                <ItemInventoryCell />
-                <ItemInventoryCell />
-                <ItemInventoryCell />
-            </ItemInventory>
+            {!showBattle && (
+                <>
+                    <PokemonInventory>
+                        <PokemonCell />
+                        <PokemonCell />
+                        <PokemonCell />
+                        <PokemonCell />
+                        <PokemonCell />
+                        <PokemonCell />
+                    </PokemonInventory>
+                    <StoryBox onClick={handleStoryBoxClick} showContinueText={showText}>
+                        {showText && <StoryText text={replaceNickname(location.descriptions[currentTextIndex])} />}
+                        {showOptions && <LocationBtn connections={locationConnections} currentLocationId={parseInt(locationId)} />}
+                    </StoryBox>
+                    <ItemInventory>
+                        <ItemInventoryCell />
+                        <ItemInventoryCell />
+                        <ItemInventoryCell />
+                        <ItemInventoryCell />
+                        <ItemInventoryCell />
+                    </ItemInventory>
+                </>
+            )}
+            {showBattle && pokemon && (
+                <Battle/>
+            )}
         </Bg>
     );
 };
-
 export default Location;
