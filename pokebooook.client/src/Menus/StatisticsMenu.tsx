@@ -4,16 +4,14 @@ import Bg from "../components/Bg";
 import StatisticsTable from "../components/StatisticsTable";
 
 const StatisticsMenu = () => {
-  return (    
-      <Bg imageId={153}>
+    return (
+        <Bg imageId={300}>
+            <Link to={"/"}>
+                <BackBtn btnText="Hlavní menu" />
+            </Link>
 
-        <Link to={"/"}>
-          <BackBtn btnText="Hlavní menu" />
-        </Link>
-
-        <StatisticsTable />
-
-      </Bg>  
-  );
+            <StatisticsTable />
+        </Bg>
+    );
 };
 export default StatisticsMenu;

@@ -24,7 +24,7 @@ const NicknameMenu: React.FC = () => {
     };
 
     return (
-        <Bg imageId={153}>
+        <Bg imageId={300}>
             <h1 className={NicknameMenuCSS.input__container__heading}>
                 Zvolte vaši přezdívku
             </h1>
