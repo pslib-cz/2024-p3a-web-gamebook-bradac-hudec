@@ -1,14 +1,69 @@
+/* Main container */
 .adminTable {
     color: #fff;
     text-shadow: 2px 2px 10px #000;
-    overflow-y: auto;
     background-color: rgba(0, 0, 0, 0.5);
     border: 5px solid #fff;
     margin: 1em;
-    min-height: 50vh;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
 }
+
+/* Table header */
 .adminTable__heading {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
     margin-bottom: 1em;
+}
+
+/* Table structure */
+.adminTable__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.adminTable__th {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #fff;
+    font-weight: bold;
+}
+
+.adminTable__td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #fff;
+}
+
+/* Form elements */
+.adminTable__input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+}
+
+.adminTable__button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.adminTable__button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Error message */
+.error {
+    color: red;
+    padding: 1em;
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid red;
+    margin: 1em;
 }

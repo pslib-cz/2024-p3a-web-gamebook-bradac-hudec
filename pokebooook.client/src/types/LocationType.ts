@@ -5,7 +5,7 @@ interface LocationType {
     rocketChance: number;
     pokemonId: number;
     imageId: number;
-    descriptions: string[]; 
+    descriptions: string[];
 }
 
 export default LocationType;

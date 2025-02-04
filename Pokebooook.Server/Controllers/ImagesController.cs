@@ -153,6 +153,26 @@ namespace Pokebooook.Server.Controllers
 
 
 
+        [HttpPost]
+        public async Task<ActionResult<Image>> PostImage(Image image)
+        {
+            if (image.ImageId != 0)
+            {
+                // Check if ID already exists
+                var existingImage = await _context.Images.FindAsync(image.ImageId);
+                if (existingImage != null)
+                {
+                    return BadRequest($"Image with ID {image.ImageId} already exists.");
+                }
+            }
+
+            _context.Images.Add(image);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetImage), new { id = image.ImageId }, image);
+        }
+
+
         private bool ImageExists(int id)
         {
             return _context.Images.Any(e => e.ImageId == id);
