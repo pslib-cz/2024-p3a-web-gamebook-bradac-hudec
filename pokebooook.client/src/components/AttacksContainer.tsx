@@ -1,19 +1,28 @@
-import React from 'react';
-import AttackType from '../types/AttackType';
-import AttackButton from './AttackButton';
-import styles from './AttacksContainer.module.css';
+import React from "react";
+import AttackButton from "./AttackButton";
+import AttackType from "../types/AttackType";
+import styles from "./AttacksContainer.module.css";
 
-type AttacksContainerProps = {
+interface AttacksContainerProps {
     attacks: AttackType[];
     onAttack: (attack: AttackType) => void;
-};
+}
 
-const AttacksContainer: React.FC<AttacksContainerProps> = ({ attacks, onAttack }) => {
+const AttacksContainer: React.FC<AttacksContainerProps> = ({
+    attacks,
+    onAttack,
+}) => {
+    console.log("Attacks in AttacksContainer:", attacks); // Debug log
+
+    if (!attacks || attacks.length === 0) {
+        return <div>No attacks available</div>;
+    }
+
     return (
         <div className={styles.attacksContainer}>
-            {attacks.map((attack, index) => (
+            {attacks.map((attack) => (
                 <AttackButton
-                    key={index}
+                    key={attack.attackId}
                     attack={attack}
                     onAttack={onAttack}
                 />

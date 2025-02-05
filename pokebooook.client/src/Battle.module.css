@@ -8,8 +8,49 @@
 }
 
 .battle__pokemons {
-   display: flex;
+    display: flex;
     justify-content: space-between;
     width: 100%;
-    
+}
+
+.attack__stats {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.energy__cost {
+    color: #4a90e2;
+}
+
+.damage {
+    color: #e24a4a;
+}
+
+.pokemonSelection {
+    text-align: center;
+    padding: 2rem;
+}
+
+.pokemonSelection h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.pokemonGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pokemonOption {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pokemonOption:hover {
+    transform: scale(1.05);
 }
