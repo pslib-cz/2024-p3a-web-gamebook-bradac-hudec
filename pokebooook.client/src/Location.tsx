@@ -22,7 +22,7 @@ type PokemonType = {
     health: number;
     maxHealth: number;
     energy: number;
-    pokemonAttacks: any[]; // or define proper type if available
+    pokemonAttacks: any[];
 };
 
 const replaceText = (
@@ -74,14 +74,13 @@ const Location: React.FC = () => {
         }
     }, [locationId]);
 
-    const fetchRandomPokemon = useCallback(async () => {
+    const fetchLocationPokemon = useCallback(async (pokemonId: number) => {
         try {
-            const randomId = Math.floor(Math.random() * 9) + 1;
             const response = await fetch(
-                `http://localhost:5212/api/Pokemons/${randomId}`
+                `http://localhost:5212/api/Pokemons/${pokemonId}`
             );
             if (!response.ok) {
-                throw new Error("Failed to fetch random pokemon");
+                throw new Error("Failed to fetch location pokemon");
             }
             const data = await response.json();
             setPokemon(data);
@@ -102,13 +101,13 @@ const Location: React.FC = () => {
             setLocation(data);
             await fetchLocationConnections();
 
-            if (data.hasPokemon) {
-                await fetchRandomPokemon();
+            if (data.hasPokemon && data.pokemonId) {
+                await fetchLocationPokemon(data.pokemonId);
             }
         } catch (error) {
             console.error("Error fetching location:", error);
         }
-    }, [fetchLocationConnections, fetchRandomPokemon, locationId]);
+    }, [fetchLocationConnections, locationId, fetchLocationPokemon]);
 
     useEffect(() => {
         fetchLocation();
@@ -211,7 +210,9 @@ const Location: React.FC = () => {
             {showStarterSelection && (
                 <StarterSelection onSelect={handleStarterSelection} />
             )}
-            {showBattle && pokemon && <Battle />}
+            {showBattle && pokemon && (
+                <Battle locationPokemonId={location.pokemonId} />
+            )}
         </Bg>
     );
 };

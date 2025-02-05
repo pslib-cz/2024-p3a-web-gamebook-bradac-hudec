@@ -1,4 +1,4 @@
-import PokemonAttack from './pokemonAttacks';
+import PokemonAttack from "./pokemonAttacks";
 
 type PokemonType = {
     pokemonId: number;
@@ -6,8 +6,9 @@ type PokemonType = {
     imageId: string;
     maxHealth: number;
     health: number;
-    energy: number; 
+    energy: number;
+    type: number;
     pokemonAttacks: PokemonAttack[];
-}
+};
 
 export default PokemonType;
