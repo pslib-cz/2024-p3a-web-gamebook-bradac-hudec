@@ -32,9 +32,10 @@ const ENEMY_ATTACK_DELAY = 1000;
 
 interface BattleProps {
     locationPokemonId: number;
+    onBattleEnd: (won: boolean, capturedPokemon?: PokemonType) => void;
 }
 
-const Battle: React.FC<BattleProps> = ({ locationPokemonId }) => {
+const Battle: React.FC<BattleProps> = ({ locationPokemonId, onBattleEnd }) => {
     const [battleState, setBattleState] = useState<BattleState>({
         player: {
             pokemon: null,
@@ -205,13 +206,38 @@ const Battle: React.FC<BattleProps> = ({ locationPokemonId }) => {
                 `${battleState.enemy.pokemon?.name} fainted! You won!`
             );
             setBattleEnded(true);
+
+            // Prepare the captured Pokemon data
+            if (battleState.enemy.pokemon) {
+                const capturedPokemon: PokemonType = {
+                    pokemonId: battleState.enemy.pokemon.pokemonId,
+                    name: battleState.enemy.pokemon.name,
+                    imageId: battleState.enemy.pokemon.imageId,
+                    health: battleState.enemy.maxHealth,
+                    maxHealth: battleState.enemy.maxHealth,
+                    energy: 100, // Start with full energy
+                    type: battleState.enemy.pokemon.type,
+                    pokemonAttacks: battleState.enemy.pokemon.pokemonAttacks,
+                };
+
+                // Wait for the victory message to be read
+                setTimeout(() => {
+                    onBattleEnd(true, capturedPokemon);
+                }, 2000);
+            }
             return true;
         }
+
         if (playerHealth <= 0) {
             setCurrentMessage(
                 `${battleState.player.pokemon?.name} fainted! You lost!`
             );
             setBattleEnded(true);
+
+            // Wait for the defeat message to be read
+            setTimeout(() => {
+                onBattleEnd(false);
+            }, 2000);
             return true;
         }
         return false;

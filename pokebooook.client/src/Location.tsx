@@ -159,6 +159,23 @@ const Location: React.FC = () => {
         setShowOptions(true);
     };
 
+    const handleBattleEnd = (won: boolean, capturedPokemon?: PokemonType) => {
+        if (won && capturedPokemon) {
+            if (playerPokemons.length >= 6) {
+                alert("You can't carry more than 6 Pokémon!");
+            } else {
+                const updatedPokemons = [...playerPokemons, capturedPokemon];
+                setPlayerPokemons(updatedPokemons);
+                localStorage.setItem(
+                    "playerPokemons",
+                    JSON.stringify(updatedPokemons)
+                );
+            }
+        }
+        setShowBattle(false);
+        setShowOptions(true);
+    };
+
     if (!location) return <div>Loading...</div>;
 
     return (
@@ -211,7 +228,10 @@ const Location: React.FC = () => {
                 <StarterSelection onSelect={handleStarterSelection} />
             )}
             {showBattle && pokemon && (
-                <Battle locationPokemonId={location.pokemonId} />
+                <Battle
+                    locationPokemonId={location.pokemonId}
+                    onBattleEnd={handleBattleEnd}
+                />
             )}
         </Bg>
     );
