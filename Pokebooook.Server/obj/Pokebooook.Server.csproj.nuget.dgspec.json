@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj": {}
+    "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj": {
+    "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj",
+        "projectUniqueName": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj",
         "projectName": "Pokebooook.Server",
-        "projectPath": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj",
+        "projectPath": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj",
         "packagesPath": "C:\\Users\\fildi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\obj\\",
+        "outputPath": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

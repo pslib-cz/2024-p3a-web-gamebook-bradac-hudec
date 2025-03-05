@@ -1,29 +1,41 @@
 .attackButton {
-    background-color: #f0f0f0;
-    border: 0.125em solid #ccc;
-    color: #333;
-    padding: 0.5em 1em;
+    background: linear-gradient(to right, #ffffff, #f5f5f5);
+    border: 2px solid #e0e0e0;
+    color: #333333;
+    padding: 0.75em 1.25em;
     text-align: left;
     text-decoration: none;
     display: flex;
     align-items: center;
-    font-size: 0.9em;
-    height: 2.5em;
-    margin: 0.25em 0.125em;
+    font-size: 1em;
+    height: 3em;
+    margin: 0.35em 0.15em;
     cursor: pointer;
-    border-radius: 0.5em;
+    border-radius: 0.75em;
     position: relative;
-    transition: background-color 0.3s, border-color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .attackButton:hover {
-    background-color: #e0e0e0;
-    border-color: #bbb;
+    background: linear-gradient(to right, #f5f5f5, #e8e8e8);
+    border-color: #d0d0d0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.attackButton:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .attackButton__name {
     margin-right: 4em;
-    font-size: 0.95em;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333333;
+    text-shadow: none;
 }
 
 .attackButton__stats {
@@ -36,31 +48,35 @@
 }
 
 .attackButton__damage {
-    background-color: #dc3545;
+    background: linear-gradient(135deg, #ff5f5f 0%, #e23636 100%);
     color: white;
-    padding: 0 0.5em;
+    padding: 0 0.75em;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 2em;
+    min-width: 2.5em;
     text-align: center;
     height: 100%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .attackButton__energy {
-    background-color: #007bff;
+    background: linear-gradient(135deg, #7cc9ff 0%, #2196f3 100%);
     color: white;
-    padding: 0 0.5em;
+    padding: 0 0.75em;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 2em;
+    min-width: 2.5em;
     text-align: center;
     height: 100%;
-    border-top-right-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.75em;
+    border-bottom-right-radius: 0.75em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
 }

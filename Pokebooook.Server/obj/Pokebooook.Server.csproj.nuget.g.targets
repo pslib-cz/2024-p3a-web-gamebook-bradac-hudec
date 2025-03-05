@@ -8,6 +8,6 @@
     <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.options\9.0.0\buildTransitive\net8.0\Microsoft.Extensions.Options.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.options\9.0.0\buildTransitive\net8.0\Microsoft.Extensions.Options.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\9.0.0\buildTransitive\net8.0\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\9.0.0\buildTransitive\net8.0\Microsoft.Extensions.Logging.Abstractions.targets')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.spaproxy\8.0.11\build\Microsoft.AspNetCore.SpaProxy.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.spaproxy\8.0.11\build\Microsoft.AspNetCore.SpaProxy.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.spaproxy\8.0.13\build\Microsoft.AspNetCore.SpaProxy.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.spaproxy\8.0.13\build\Microsoft.AspNetCore.SpaProxy.targets')" />
   </ImportGroup>
 </Project>

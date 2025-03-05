@@ -15,12 +15,10 @@ const NicknameMenu: React.FC = () => {
     };
 
     const handleContinueClick = () => {
-        // Reset game progress
-        localStorage.clear(); // Clear all stored data
-        // Set the new nickname
+        localStorage.clear(); 
         localStorage.setItem("nickname", nickname);
-        // Initialize empty pokemon array
         localStorage.setItem("playerPokemons", JSON.stringify([]));
+        localStorage.setItem("visitedLocations", JSON.stringify([]));
     };
 
     return (

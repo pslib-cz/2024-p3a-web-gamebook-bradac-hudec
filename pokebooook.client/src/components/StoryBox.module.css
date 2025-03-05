@@ -20,6 +20,7 @@
     border-radius: 20px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     margin: 0; 
+    user-select: none;
 }
 
 
@@ -30,4 +31,8 @@
     font-size: 1rem;
     color: white;
     text-shadow: 1px 1px 10px #000;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }

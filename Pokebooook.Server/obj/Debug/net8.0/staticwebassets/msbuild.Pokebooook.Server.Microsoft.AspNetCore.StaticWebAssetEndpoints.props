@@ -4,397 +4,397 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\001.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6zwaadtwld"},{"Name":"integrity","Value":"sha256-cjPY2LA7X6kdg1owadJXaRVduTye\u002BRtgZuIV7TiV6dg="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/001.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"203385"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022cjPY2LA7X6kdg1owadJXaRVduTye\u002BRtgZuIV7TiV6dg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"203385"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022cjPY2LA7X6kdg1owadJXaRVduTye\u002BRtgZuIV7TiV6dg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/001.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\001.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-cjPY2LA7X6kdg1owadJXaRVduTye\u002BRtgZuIV7TiV6dg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"203385"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022cjPY2LA7X6kdg1owadJXaRVduTye\u002BRtgZuIV7TiV6dg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"203385"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022cjPY2LA7X6kdg1owadJXaRVduTye\u002BRtgZuIV7TiV6dg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/bug.aq3mw6xp82.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\bug.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"aq3mw6xp82"},{"Name":"integrity","Value":"sha256-YgR5gjdimvgOIBK6LD5\u002BaiUMATkk\u002BbGN0gRIMAnhv1c="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/bug.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1074"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022YgR5gjdimvgOIBK6LD5\u002BaiUMATkk\u002BbGN0gRIMAnhv1c=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1074"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022YgR5gjdimvgOIBK6LD5\u002BaiUMATkk\u002BbGN0gRIMAnhv1c=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/bug.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\bug.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YgR5gjdimvgOIBK6LD5\u002BaiUMATkk\u002BbGN0gRIMAnhv1c="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1074"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022YgR5gjdimvgOIBK6LD5\u002BaiUMATkk\u002BbGN0gRIMAnhv1c=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1074"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022YgR5gjdimvgOIBK6LD5\u002BaiUMATkk\u002BbGN0gRIMAnhv1c=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/dark.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\dark.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4z4uHHwQYKPc08VM0TPioautiXB98JZ/Gb1nUtmqQ4k="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"627"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00224z4uHHwQYKPc08VM0TPioautiXB98JZ/Gb1nUtmqQ4k=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"627"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00224z4uHHwQYKPc08VM0TPioautiXB98JZ/Gb1nUtmqQ4k=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/dark.x704rv1sz4.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\dark.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x704rv1sz4"},{"Name":"integrity","Value":"sha256-4z4uHHwQYKPc08VM0TPioautiXB98JZ/Gb1nUtmqQ4k="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/dark.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"627"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00224z4uHHwQYKPc08VM0TPioautiXB98JZ/Gb1nUtmqQ4k=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"627"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00224z4uHHwQYKPc08VM0TPioautiXB98JZ/Gb1nUtmqQ4k=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/dragon.q5b8ddogce.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\dragon.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q5b8ddogce"},{"Name":"integrity","Value":"sha256-fuv\u002Bk/wru\u002B9wjADrFT8fRGx/ZFHf8Wl2SsTmYRHuZao="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/dragon.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2434"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022fuv\u002Bk/wru\u002B9wjADrFT8fRGx/ZFHf8Wl2SsTmYRHuZao=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2434"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022fuv\u002Bk/wru\u002B9wjADrFT8fRGx/ZFHf8Wl2SsTmYRHuZao=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/dragon.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\dragon.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fuv\u002Bk/wru\u002B9wjADrFT8fRGx/ZFHf8Wl2SsTmYRHuZao="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2434"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022fuv\u002Bk/wru\u002B9wjADrFT8fRGx/ZFHf8Wl2SsTmYRHuZao=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2434"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022fuv\u002Bk/wru\u002B9wjADrFT8fRGx/ZFHf8Wl2SsTmYRHuZao=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/electric.s5x2qavdab.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\electric.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"s5x2qavdab"},{"Name":"integrity","Value":"sha256-YAbJmDAVp1w0uEpeeWEuj5h/dz/Xa0ZLDb2JsSgibPs="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/electric.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"597"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022YAbJmDAVp1w0uEpeeWEuj5h/dz/Xa0ZLDb2JsSgibPs=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"597"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022YAbJmDAVp1w0uEpeeWEuj5h/dz/Xa0ZLDb2JsSgibPs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/electric.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\electric.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YAbJmDAVp1w0uEpeeWEuj5h/dz/Xa0ZLDb2JsSgibPs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"597"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022YAbJmDAVp1w0uEpeeWEuj5h/dz/Xa0ZLDb2JsSgibPs=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"597"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022YAbJmDAVp1w0uEpeeWEuj5h/dz/Xa0ZLDb2JsSgibPs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/fairy.1suamur6sz.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\fairy.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1suamur6sz"},{"Name":"integrity","Value":"sha256-rwexOIf2IFmLVA9u7o7nYoLBFip7leuJOlbu1PY7B9Q="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/fairy.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1178"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022rwexOIf2IFmLVA9u7o7nYoLBFip7leuJOlbu1PY7B9Q=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1178"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022rwexOIf2IFmLVA9u7o7nYoLBFip7leuJOlbu1PY7B9Q=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/fairy.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\fairy.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rwexOIf2IFmLVA9u7o7nYoLBFip7leuJOlbu1PY7B9Q="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1178"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022rwexOIf2IFmLVA9u7o7nYoLBFip7leuJOlbu1PY7B9Q=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1178"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022rwexOIf2IFmLVA9u7o7nYoLBFip7leuJOlbu1PY7B9Q=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/fighting.ef1t8tzhuj.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\fighting.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ef1t8tzhuj"},{"Name":"integrity","Value":"sha256-erhBhM182WlgK9CKrqndGKwtZWcG6PCU5O\u002BiGlPgeXI="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/fighting.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"932"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022erhBhM182WlgK9CKrqndGKwtZWcG6PCU5O\u002BiGlPgeXI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"932"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022erhBhM182WlgK9CKrqndGKwtZWcG6PCU5O\u002BiGlPgeXI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/fighting.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\fighting.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-erhBhM182WlgK9CKrqndGKwtZWcG6PCU5O\u002BiGlPgeXI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"932"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022erhBhM182WlgK9CKrqndGKwtZWcG6PCU5O\u002BiGlPgeXI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"932"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022erhBhM182WlgK9CKrqndGKwtZWcG6PCU5O\u002BiGlPgeXI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/fire.l01pz5g8td.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\fire.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"l01pz5g8td"},{"Name":"integrity","Value":"sha256-ZQiM8BcMLfQk2axkULOtJcLB2UiiRJ5WlwHV9FnoNEo="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/fire.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1350"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022ZQiM8BcMLfQk2axkULOtJcLB2UiiRJ5WlwHV9FnoNEo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1350"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022ZQiM8BcMLfQk2axkULOtJcLB2UiiRJ5WlwHV9FnoNEo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/fire.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\fire.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZQiM8BcMLfQk2axkULOtJcLB2UiiRJ5WlwHV9FnoNEo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1350"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022ZQiM8BcMLfQk2axkULOtJcLB2UiiRJ5WlwHV9FnoNEo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1350"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022ZQiM8BcMLfQk2axkULOtJcLB2UiiRJ5WlwHV9FnoNEo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/flying.qr3xxpiuun.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\flying.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qr3xxpiuun"},{"Name":"integrity","Value":"sha256-VvbzIOjXYuZspyRePQvDq5\u002B4X5v/0Oxia/jNuZ\u002BPFiY="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/flying.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"962"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022VvbzIOjXYuZspyRePQvDq5\u002B4X5v/0Oxia/jNuZ\u002BPFiY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"962"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022VvbzIOjXYuZspyRePQvDq5\u002B4X5v/0Oxia/jNuZ\u002BPFiY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/flying.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\flying.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VvbzIOjXYuZspyRePQvDq5\u002B4X5v/0Oxia/jNuZ\u002BPFiY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"962"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022VvbzIOjXYuZspyRePQvDq5\u002B4X5v/0Oxia/jNuZ\u002BPFiY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"962"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022VvbzIOjXYuZspyRePQvDq5\u002B4X5v/0Oxia/jNuZ\u002BPFiY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/ghost.8qb2ayr4pq.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ghost.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8qb2ayr4pq"},{"Name":"integrity","Value":"sha256-IJYjdUod6KfAj5lzR036FeC7t/1PotEVkHN5LrIO3d8="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/ghost.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"965"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022IJYjdUod6KfAj5lzR036FeC7t/1PotEVkHN5LrIO3d8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"965"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022IJYjdUod6KfAj5lzR036FeC7t/1PotEVkHN5LrIO3d8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/ghost.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ghost.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IJYjdUod6KfAj5lzR036FeC7t/1PotEVkHN5LrIO3d8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"965"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022IJYjdUod6KfAj5lzR036FeC7t/1PotEVkHN5LrIO3d8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"965"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022IJYjdUod6KfAj5lzR036FeC7t/1PotEVkHN5LrIO3d8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/grass.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\grass.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Ay/nQ9hFQFWHZQ9BIa0\u002Bq8Arj78QmdPqtIz9DqI7oPE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"565"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022Ay/nQ9hFQFWHZQ9BIa0\u002Bq8Arj78QmdPqtIz9DqI7oPE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"565"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022Ay/nQ9hFQFWHZQ9BIa0\u002Bq8Arj78QmdPqtIz9DqI7oPE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/grass.t02rqhti5z.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\grass.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t02rqhti5z"},{"Name":"integrity","Value":"sha256-Ay/nQ9hFQFWHZQ9BIa0\u002Bq8Arj78QmdPqtIz9DqI7oPE="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/grass.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"565"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022Ay/nQ9hFQFWHZQ9BIa0\u002Bq8Arj78QmdPqtIz9DqI7oPE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"565"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022Ay/nQ9hFQFWHZQ9BIa0\u002Bq8Arj78QmdPqtIz9DqI7oPE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/ground.5dqc2gywjz.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ground.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5dqc2gywjz"},{"Name":"integrity","Value":"sha256-h00iBRYlF/DIc\u002ButC12mOv0jQkINuU9Ipq7HZCgjR20="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/ground.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"690"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022h00iBRYlF/DIc\u002ButC12mOv0jQkINuU9Ipq7HZCgjR20=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"690"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022h00iBRYlF/DIc\u002ButC12mOv0jQkINuU9Ipq7HZCgjR20=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/ground.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ground.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-h00iBRYlF/DIc\u002ButC12mOv0jQkINuU9Ipq7HZCgjR20="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"690"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022h00iBRYlF/DIc\u002ButC12mOv0jQkINuU9Ipq7HZCgjR20=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"690"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022h00iBRYlF/DIc\u002ButC12mOv0jQkINuU9Ipq7HZCgjR20=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/ice.cic7uur43u.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ice.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cic7uur43u"},{"Name":"integrity","Value":"sha256-FAHQ0Ss8Dyh8PD7oCrYGLEAD5ix/7KPSXi4CB67sLoY="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/ice.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"989"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022FAHQ0Ss8Dyh8PD7oCrYGLEAD5ix/7KPSXi4CB67sLoY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"989"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022FAHQ0Ss8Dyh8PD7oCrYGLEAD5ix/7KPSXi4CB67sLoY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/ice.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ice.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FAHQ0Ss8Dyh8PD7oCrYGLEAD5ix/7KPSXi4CB67sLoY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"989"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022FAHQ0Ss8Dyh8PD7oCrYGLEAD5ix/7KPSXi4CB67sLoY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"989"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022FAHQ0Ss8Dyh8PD7oCrYGLEAD5ix/7KPSXi4CB67sLoY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qTMZnGxSNp1lZXtwj/9bBtH1f3bZblo9Fwyue3MPaUc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"744705"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022qTMZnGxSNp1lZXtwj/9bBtH1f3bZblo9Fwyue3MPaUc=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"744705"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022qTMZnGxSNp1lZXtwj/9bBtH1f3bZblo9Fwyue3MPaUc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).ltsvcdnp6s.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ltsvcdnp6s"},{"Name":"integrity","Value":"sha256-qTMZnGxSNp1lZXtwj/9bBtH1f3bZblo9Fwyue3MPaUc="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"744705"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022qTMZnGxSNp1lZXtwj/9bBtH1f3bZblo9Fwyue3MPaUc=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"744705"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022qTMZnGxSNp1lZXtwj/9bBtH1f3bZblo9Fwyue3MPaUc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).h9h1cef6we.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"h9h1cef6we"},{"Name":"integrity","Value":"sha256-pQFp64/0JnN7rwLdzFKEYciO8JbpLUniM2ZcW1n\u002B8pg="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"834969"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pQFp64/0JnN7rwLdzFKEYciO8JbpLUniM2ZcW1n\u002B8pg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"834969"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pQFp64/0JnN7rwLdzFKEYciO8JbpLUniM2ZcW1n\u002B8pg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pQFp64/0JnN7rwLdzFKEYciO8JbpLUniM2ZcW1n\u002B8pg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"834969"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pQFp64/0JnN7rwLdzFKEYciO8JbpLUniM2ZcW1n\u002B8pg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"834969"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pQFp64/0JnN7rwLdzFKEYciO8JbpLUniM2ZcW1n\u002B8pg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8rIiCuq1sv8wZGcdZWEQ6OIqRTAG4cXNW25pyzdxll8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"802502"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00228rIiCuq1sv8wZGcdZWEQ6OIqRTAG4cXNW25pyzdxll8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"802502"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00228rIiCuq1sv8wZGcdZWEQ6OIqRTAG4cXNW25pyzdxll8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.ysijdwex65.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ysijdwex65"},{"Name":"integrity","Value":"sha256-8rIiCuq1sv8wZGcdZWEQ6OIqRTAG4cXNW25pyzdxll8="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"802502"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00228rIiCuq1sv8wZGcdZWEQ6OIqRTAG4cXNW25pyzdxll8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"802502"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00228rIiCuq1sv8wZGcdZWEQ6OIqRTAG4cXNW25pyzdxll8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).d07hb94o99.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"d07hb94o99"},{"Name":"integrity","Value":"sha256-vSzFiTjbBEsZrWxJq8EKsTkPSxOzKt81vEwJxU\u002B2CZw="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"730413"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022vSzFiTjbBEsZrWxJq8EKsTkPSxOzKt81vEwJxU\u002B2CZw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"730413"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022vSzFiTjbBEsZrWxJq8EKsTkPSxOzKt81vEwJxU\u002B2CZw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vSzFiTjbBEsZrWxJq8EKsTkPSxOzKt81vEwJxU\u002B2CZw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"730413"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022vSzFiTjbBEsZrWxJq8EKsTkPSxOzKt81vEwJxU\u002B2CZw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"730413"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022vSzFiTjbBEsZrWxJq8EKsTkPSxOzKt81vEwJxU\u002B2CZw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ueY1ioFIe75oRgWRy7fbReS4ldcijPuY8jAo61y1\u002BSg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"702360"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ueY1ioFIe75oRgWRy7fbReS4ldcijPuY8jAo61y1\u002BSg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"702360"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ueY1ioFIe75oRgWRy7fbReS4ldcijPuY8jAo61y1\u002BSg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).x6gbk3ks5n.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x6gbk3ks5n"},{"Name":"integrity","Value":"sha256-ueY1ioFIe75oRgWRy7fbReS4ldcijPuY8jAo61y1\u002BSg="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"702360"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ueY1ioFIe75oRgWRy7fbReS4ldcijPuY8jAo61y1\u002BSg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"702360"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ueY1ioFIe75oRgWRy7fbReS4ldcijPuY8jAo61y1\u002BSg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/les.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\les.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mS3T9Cn67Y6RNWIK2BNr\u002Bgo1EJMIcX8Fid0t0kWO634="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"813480"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mS3T9Cn67Y6RNWIK2BNr\u002Bgo1EJMIcX8Fid0t0kWO634=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"813480"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mS3T9Cn67Y6RNWIK2BNr\u002Bgo1EJMIcX8Fid0t0kWO634=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/les.rroojrwohb.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\les.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rroojrwohb"},{"Name":"integrity","Value":"sha256-mS3T9Cn67Y6RNWIK2BNr\u002Bgo1EJMIcX8Fid0t0kWO634="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/les.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"813480"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mS3T9Cn67Y6RNWIK2BNr\u002Bgo1EJMIcX8Fid0t0kWO634=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"813480"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mS3T9Cn67Y6RNWIK2BNr\u002Bgo1EJMIcX8Fid0t0kWO634=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/les2.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\les2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fYeoM88X7EZWLE95A1\u002BGALd\u002BRrdIt/5lEeTs6ht2o2k="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"851645"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fYeoM88X7EZWLE95A1\u002BGALd\u002BRrdIt/5lEeTs6ht2o2k=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"851645"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fYeoM88X7EZWLE95A1\u002BGALd\u002BRrdIt/5lEeTs6ht2o2k=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/les2.l2q274qkca.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\les2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"l2q274qkca"},{"Name":"integrity","Value":"sha256-fYeoM88X7EZWLE95A1\u002BGALd\u002BRrdIt/5lEeTs6ht2o2k="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/les2.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"851645"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fYeoM88X7EZWLE95A1\u002BGALd\u002BRrdIt/5lEeTs6ht2o2k=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"851645"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fYeoM88X7EZWLE95A1\u002BGALd\u002BRrdIt/5lEeTs6ht2o2k=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/les3.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\les3.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-86A3oKGLX3Yv5SVNMat6fvfCOztTWOD/koH2/4TMQZ8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"791515"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002286A3oKGLX3Yv5SVNMat6fvfCOztTWOD/koH2/4TMQZ8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"791515"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002286A3oKGLX3Yv5SVNMat6fvfCOztTWOD/koH2/4TMQZ8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/les3.z8fvysr13a.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\les3.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z8fvysr13a"},{"Name":"integrity","Value":"sha256-86A3oKGLX3Yv5SVNMat6fvfCOztTWOD/koH2/4TMQZ8="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/les3.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"791515"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002286A3oKGLX3Yv5SVNMat6fvfCOztTWOD/koH2/4TMQZ8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"791515"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002286A3oKGLX3Yv5SVNMat6fvfCOztTWOD/koH2/4TMQZ8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/lespokemon.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\lespokemon.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KyGyJtNoUYH2\u002B0GShIq\u002BS41Px\u002BqxziTr37kLnYwXoFQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"765822"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022KyGyJtNoUYH2\u002B0GShIq\u002BS41Px\u002BqxziTr37kLnYwXoFQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"765822"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022KyGyJtNoUYH2\u002B0GShIq\u002BS41Px\u002BqxziTr37kLnYwXoFQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/lespokemon.x5kbsmfw48.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\lespokemon.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x5kbsmfw48"},{"Name":"integrity","Value":"sha256-KyGyJtNoUYH2\u002B0GShIq\u002BS41Px\u002BqxziTr37kLnYwXoFQ="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/lespokemon.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"765822"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022KyGyJtNoUYH2\u002B0GShIq\u002BS41Px\u002BqxziTr37kLnYwXoFQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"765822"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022KyGyJtNoUYH2\u002B0GShIq\u002BS41Px\u002BqxziTr37kLnYwXoFQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/normal.1xv1l3def0.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\normal.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1xv1l3def0"},{"Name":"integrity","Value":"sha256-KzcqRlw/R1bJoodIedQN9NVmjG\u002B3tKuhGP4rl/ShfyA="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/normal.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"496"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022KzcqRlw/R1bJoodIedQN9NVmjG\u002B3tKuhGP4rl/ShfyA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"496"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022KzcqRlw/R1bJoodIedQN9NVmjG\u002B3tKuhGP4rl/ShfyA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/normal.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\normal.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KzcqRlw/R1bJoodIedQN9NVmjG\u002B3tKuhGP4rl/ShfyA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"496"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022KzcqRlw/R1bJoodIedQN9NVmjG\u002B3tKuhGP4rl/ShfyA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"496"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022KzcqRlw/R1bJoodIedQN9NVmjG\u002B3tKuhGP4rl/ShfyA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/plateau.ayhhem0f59.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\plateau.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ayhhem0f59"},{"Name":"integrity","Value":"sha256-3uTzxlwtw9OxA4lSOaqyy5kj4eKlKJEdENx/BfVJl2E="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/plateau.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"792778"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00223uTzxlwtw9OxA4lSOaqyy5kj4eKlKJEdENx/BfVJl2E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"792778"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00223uTzxlwtw9OxA4lSOaqyy5kj4eKlKJEdENx/BfVJl2E=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/plateau.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\plateau.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3uTzxlwtw9OxA4lSOaqyy5kj4eKlKJEdENx/BfVJl2E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"792778"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00223uTzxlwtw9OxA4lSOaqyy5kj4eKlKJEdENx/BfVJl2E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 20:42:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"792778"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00223uTzxlwtw9OxA4lSOaqyy5kj4eKlKJEdENx/BfVJl2E=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/poison.e72mnt9qlc.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\poison.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"e72mnt9qlc"},{"Name":"integrity","Value":"sha256-VjD/9D6GdW2iq4ZTSXH/n02D/hK03oKyqCMt7p4Faug="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/poison.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"881"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022VjD/9D6GdW2iq4ZTSXH/n02D/hK03oKyqCMt7p4Faug=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"881"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022VjD/9D6GdW2iq4ZTSXH/n02D/hK03oKyqCMt7p4Faug=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/poison.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\poison.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VjD/9D6GdW2iq4ZTSXH/n02D/hK03oKyqCMt7p4Faug="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"881"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022VjD/9D6GdW2iq4ZTSXH/n02D/hK03oKyqCMt7p4Faug=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"881"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022VjD/9D6GdW2iq4ZTSXH/n02D/hK03oKyqCMt7p4Faug=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/pokebook_first_location.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokebook_first_location.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002B4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"817680"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022\u002B4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"817680"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022\u002B4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/pokebook_first_location.t6p2kpzfoc.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokebook_first_location.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t6p2kpzfoc"},{"Name":"integrity","Value":"sha256-\u002B4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/pokebook_first_location.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"817680"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022\u002B4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"817680"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022\u002B4t2eoPTB178YUq9tn8qvxzZk4tynzzhmz4WR1OGGdM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/pokebook_mountains.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokebook_mountains.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-b3DVEopWX0zY4GMNjcfbMwudaaFCLDLWrK6dD1rF07M="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"883821"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b3DVEopWX0zY4GMNjcfbMwudaaFCLDLWrK6dD1rF07M=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"883821"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b3DVEopWX0zY4GMNjcfbMwudaaFCLDLWrK6dD1rF07M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/pokebook_mountains.pqlyt4q6be.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokebook_mountains.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pqlyt4q6be"},{"Name":"integrity","Value":"sha256-b3DVEopWX0zY4GMNjcfbMwudaaFCLDLWrK6dD1rF07M="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/pokebook_mountains.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"883821"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b3DVEopWX0zY4GMNjcfbMwudaaFCLDLWrK6dD1rF07M=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"883821"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b3DVEopWX0zY4GMNjcfbMwudaaFCLDLWrK6dD1rF07M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/pokebook_pokecenter.4xs4apa65t.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokebook_pokecenter.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4xs4apa65t"},{"Name":"integrity","Value":"sha256-aNkye\u002BOzrIpUfC4mqPG\u002BgMD1w\u002BPECD70HI/FpZnjnqo="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/pokebook_pokecenter.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"793847"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aNkye\u002BOzrIpUfC4mqPG\u002BgMD1w\u002BPECD70HI/FpZnjnqo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"793847"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aNkye\u002BOzrIpUfC4mqPG\u002BgMD1w\u002BPECD70HI/FpZnjnqo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/pokebook_pokecenter.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokebook_pokecenter.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aNkye\u002BOzrIpUfC4mqPG\u002BgMD1w\u002BPECD70HI/FpZnjnqo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"793847"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aNkye\u002BOzrIpUfC4mqPG\u002BgMD1w\u002BPECD70HI/FpZnjnqo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"793847"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aNkye\u002BOzrIpUfC4mqPG\u002BgMD1w\u002BPECD70HI/FpZnjnqo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/pokemon_stadium.npvlimwrek.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokemon_stadium.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"npvlimwrek"},{"Name":"integrity","Value":"sha256-NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/pokemon_stadium.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1532564"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1532564"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/pokemon_stadium.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\pokemon_stadium.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1532564"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1532564"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022NUJYKSe5z034OgFHU9vJLNMEq5onq6XmA1aOwglQTBQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/psychic.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\psychic.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-G21cN9TkNFRgaI6E1IAa6ltKlJaLYOeh8zDLuuhEuE0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1334"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022G21cN9TkNFRgaI6E1IAa6ltKlJaLYOeh8zDLuuhEuE0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1334"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022G21cN9TkNFRgaI6E1IAa6ltKlJaLYOeh8zDLuuhEuE0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/psychic.vjhl182900.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\psychic.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vjhl182900"},{"Name":"integrity","Value":"sha256-G21cN9TkNFRgaI6E1IAa6ltKlJaLYOeh8zDLuuhEuE0="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/psychic.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1334"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022G21cN9TkNFRgaI6E1IAa6ltKlJaLYOeh8zDLuuhEuE0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1334"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022G21cN9TkNFRgaI6E1IAa6ltKlJaLYOeh8zDLuuhEuE0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/rock.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\rock.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0wgpKOtoOb4JY7N/rS4noeZSh4k/nHoXbeXqglJIZW4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1076"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00220wgpKOtoOb4JY7N/rS4noeZSh4k/nHoXbeXqglJIZW4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1076"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00220wgpKOtoOb4JY7N/rS4noeZSh4k/nHoXbeXqglJIZW4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/rock.vh5ksp9ivj.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\rock.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vh5ksp9ivj"},{"Name":"integrity","Value":"sha256-0wgpKOtoOb4JY7N/rS4noeZSh4k/nHoXbeXqglJIZW4="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/rock.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1076"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00220wgpKOtoOb4JY7N/rS4noeZSh4k/nHoXbeXqglJIZW4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1076"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00220wgpKOtoOb4JY7N/rS4noeZSh4k/nHoXbeXqglJIZW4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/steel.cm5wn2vjz9.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\steel.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cm5wn2vjz9"},{"Name":"integrity","Value":"sha256-dFOilnvicidhpMhtAqQuRW\u002BqHXkiITGY8ADkpjsYbFc="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/steel.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"757"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022dFOilnvicidhpMhtAqQuRW\u002BqHXkiITGY8ADkpjsYbFc=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"757"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022dFOilnvicidhpMhtAqQuRW\u002BqHXkiITGY8ADkpjsYbFc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/steel.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\steel.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dFOilnvicidhpMhtAqQuRW\u002BqHXkiITGY8ADkpjsYbFc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"757"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022dFOilnvicidhpMhtAqQuRW\u002BqHXkiITGY8ADkpjsYbFc=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"757"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022dFOilnvicidhpMhtAqQuRW\u002BqHXkiITGY8ADkpjsYbFc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/water.gpysjl2xpq.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\water.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gpysjl2xpq"},{"Name":"integrity","Value":"sha256-TJoPMUrNu8jkkoMINs0O/zbZ3axo6he6853olLwoxRY="},{"Name":"label","Value":"_content/Pokebooook.Server/uploads/water.svg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"623"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022TJoPMUrNu8jkkoMINs0O/zbZ3axo6he6853olLwoxRY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"623"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022TJoPMUrNu8jkkoMINs0O/zbZ3axo6he6853olLwoxRY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokebooook.Server/uploads/water.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\water.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-TJoPMUrNu8jkkoMINs0O/zbZ3axo6he6853olLwoxRY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"623"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022TJoPMUrNu8jkkoMINs0O/zbZ3axo6he6853olLwoxRY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Jan 2025 18:49:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"623"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022TJoPMUrNu8jkkoMINs0O/zbZ3axo6he6853olLwoxRY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:57:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

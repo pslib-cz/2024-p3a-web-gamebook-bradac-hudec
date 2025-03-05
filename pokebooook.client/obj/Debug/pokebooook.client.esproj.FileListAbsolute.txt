@@ -1,2 +1,3 @@
 C:\Users\Filip\Source\Repos\2024-p3a-web-gamebook-bradac-hudec.git\pokebooook.client\obj\Debug\pokebooook.client.esproj.CoreCompileInputs.cache
 C:\Users\fildi\Source\Repos\2024-p3a-web-gamebook-bradac-hudec\pokebooook.client\obj\Debug\pokebooook.client.esproj.CoreCompileInputs.cache
+C:\Users\fildi\Documents\2024-p3a-web-gamebook-bradac-hudec\pokebooook.client\obj\Debug\pokebooook.client.esproj.CoreCompileInputs.cache

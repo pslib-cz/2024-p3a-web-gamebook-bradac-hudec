@@ -28,7 +28,18 @@ const StarterSelection: React.FC<StarterSelectionProps> = ({ onSelect }) => {
                     )
                 );
                 const pokemonData = await Promise.all(pokemonPromises);
-                setStarters(pokemonData);
+                console.log("Fetched starter pokemon data:", pokemonData);
+                
+                // Transform the data to match StarterPokemon type
+                const transformedData = pokemonData.map(pokemon => ({
+                    id: pokemon.pokemonId,
+                    name: pokemon.name,
+                    imageId: pokemon.imageId,
+                    health: pokemon.health,
+                    energy: pokemon.energy || 100
+                }));
+                console.log("Transformed starter data:", transformedData);
+                setStarters(transformedData);
             } catch (error) {
                 console.error("Failed to fetch starter Pokemon:", error);
             }
@@ -37,18 +48,14 @@ const StarterSelection: React.FC<StarterSelectionProps> = ({ onSelect }) => {
     }, []);
 
     const handlePokemonClick = (pokemon: StarterPokemon) => {
+        console.log("Selected starter pokemon:", pokemon);
         setSelectedPokemon(pokemon);
     };
 
     const handleConfirm = () => {
         if (selectedPokemon) {
-            if (
-                window.confirm(
-                    `Chceš si vybrat pokémona ${selectedPokemon.name}?`
-                )
-            ) {
-                onSelect(selectedPokemon);
-            }
+            console.log("Confirming starter pokemon:", selectedPokemon);
+            onSelect(selectedPokemon);
         }
     };
 
@@ -58,7 +65,7 @@ const StarterSelection: React.FC<StarterSelectionProps> = ({ onSelect }) => {
             <div className={styles.pokemonGrid}>
                 {starters.map((pokemon) => (
                     <div
-                        key={pokemon.id}
+                        key={`starter-${pokemon.id}`}
                         className={`${styles.pokemonCard} ${
                             selectedPokemon?.id === pokemon.id
                                 ? styles.selected
