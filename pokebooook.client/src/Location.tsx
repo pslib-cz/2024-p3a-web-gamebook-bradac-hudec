@@ -13,17 +13,9 @@ import ItemInventoryCell from "./components/ItemInventoryCell";
 import Battle from "./Battle";
 import StarterSelection from "./components/StarterSelection";
 import StarterPokemon from "./types/StarterPokemon";
-
-type PokemonType = {
-    pokemonId: number;
-    id: number;
-    name: string;
-    imageId: number;
-    health: number;
-    maxHealth: number;
-    energy: number;
-    pokemonAttacks: any[];
-};
+import PokemonAttack from "./types/pokemonAttacks";
+import PokemonType from "./types/PokemonType";
+import GameItem from "./types/GameItem";
 
 const replaceText = (
     text: string,
@@ -52,8 +44,19 @@ const Location: React.FC = () => {
     const [pokemon, setPokemon] = useState<PokemonType | null>(null);
     const [showStarterSelection, setShowStarterSelection] =
         useState<boolean>(false);
+    const [hasCompletedIntro, setHasCompletedIntro] = useState<boolean>(false);
+    const [showSelectionSuccess, setShowSelectionSuccess] = useState<boolean>(false);
+    const [selectedStarterPokemon, setSelectedStarterPokemon] = useState<PokemonType | null>(null);
     const [playerPokemons, setPlayerPokemons] = useState<PokemonType[]>(() => {
         const saved = localStorage.getItem("playerPokemons");
+        return saved ? JSON.parse(saved) : [];
+    });
+    const [playerItems, setPlayerItems] = useState<GameItem[]>(() => {
+        const saved = localStorage.getItem("playerItems");
+        return saved ? JSON.parse(saved) : [];
+    });
+    const [visitedLocations, setVisitedLocations] = useState<number[]>(() => {
+        const saved = localStorage.getItem("visitedLocations");
         return saved ? JSON.parse(saved) : [];
     });
 
@@ -62,22 +65,28 @@ const Location: React.FC = () => {
     const fetchLocationConnections = useCallback(async () => {
         try {
             const response = await fetch(
-                `http://localhost:5212/api/Locations/${locationId}/Connections`
+                `/api/Locations/${locationId}/Connections`
             );
             if (!response.ok) {
                 throw new Error("Failed to fetch location connections");
             }
             const data = await response.json();
-            setLocationConnections(data);
+            const filteredConnections = data.filter((connection: ConnectionType) => {
+                const targetLocationId = connection.locationFromId === parseInt(locationId) 
+                    ? connection.locationToId 
+                    : connection.locationFromId;
+                return !visitedLocations.includes(targetLocationId);
+            });
+            setLocationConnections(filteredConnections);
         } catch (error) {
             console.error("Error fetching location connections:", error);
         }
-    }, [locationId]);
+    }, [locationId, visitedLocations]);
 
     const fetchLocationPokemon = useCallback(async (pokemonId: number) => {
         try {
             const response = await fetch(
-                `http://localhost:5212/api/Pokemons/${pokemonId}`
+                `/api/Pokemons/${pokemonId}`
             );
             if (!response.ok) {
                 throw new Error("Failed to fetch location pokemon");
@@ -92,7 +101,7 @@ const Location: React.FC = () => {
     const fetchLocation = useCallback(async () => {
         try {
             const response = await fetch(
-                `http://localhost:5212/api/Locations/${locationId}`
+                `/api/Locations/${locationId}`
             );
             if (!response.ok) {
                 throw new Error("Failed to fetch location");
@@ -119,18 +128,49 @@ const Location: React.FC = () => {
         setShowOptions(false);
         setShowBattle(false);
         setShowStarterSelection(false);
+        setHasCompletedIntro(false);
+        setShowSelectionSuccess(false);
+        setSelectedStarterPokemon(null);
+    }, [locationId]);
+
+    useEffect(() => {
+        if (!visitedLocations.includes(parseInt(locationId))) {
+            const updatedLocations = [...visitedLocations, parseInt(locationId)];
+            setVisitedLocations(updatedLocations);
+            localStorage.setItem("visitedLocations", JSON.stringify(updatedLocations));
+        }
     }, [locationId]);
 
     const handleStoryBoxClick = () => {
         if (!location) return;
 
+        if (location.locationId === 2 && showSelectionSuccess) {
+            if (currentTextIndex < location.descriptions.length - 1) {
+                setCurrentTextIndex((prevIndex) => prevIndex + 1);
+            } else {
+                setShowText(false);
+                setShowOptions(true);
+            }
+            return;
+        }
+
+        if (location.locationId === 2) {
+            if (currentTextIndex < 2) {
+                setCurrentTextIndex((prevIndex) => prevIndex + 1);
+            } else {
+                setShowText(false);
+                setHasCompletedIntro(true);
+                setShowStarterSelection(true);
+            }
+            return;
+        }
+
         if (currentTextIndex < location.descriptions.length - 1) {
             setCurrentTextIndex((prevIndex) => prevIndex + 1);
         } else {
             setShowText(false);
-            if (location.locationId === 2) {
-                setShowStarterSelection(true);
-            } else if (location.hasPokemon) {
+            setHasCompletedIntro(true);
+            if (location.hasPokemon) {
                 setShowBattle(true);
             } else {
                 setShowOptions(true);
@@ -139,6 +179,8 @@ const Location: React.FC = () => {
     };
 
     const handleStarterSelection = (selectedPokemon: StarterPokemon) => {
+        console.log("Handling starter selection with:", selectedPokemon);
+        
         if (playerPokemons.length >= 6) {
             alert("Nemůžeš mít více než 6 pokémonů!");
             setShowStarterSelection(false);
@@ -146,20 +188,85 @@ const Location: React.FC = () => {
             return;
         }
 
-        const pokemonData: PokemonType = {
-            ...selectedPokemon,
-            pokemonId: selectedPokemon.id,
-            maxHealth: selectedPokemon.health,
-            pokemonAttacks: [],
-        };
-        const updatedPokemons = [...playerPokemons, pokemonData];
-        setPlayerPokemons(updatedPokemons);
-        localStorage.setItem("playerPokemons", JSON.stringify(updatedPokemons));
-        setShowStarterSelection(false);
-        setShowOptions(true);
+        if (!selectedPokemon.id) {
+            console.error("Selected pokemon has no ID!");
+            alert("Chyba při výběru pokémona!");
+            return;
+        }
+
+        // Fetch complete pokemon data from API
+        fetch(`/api/Pokemons/${selectedPokemon.id}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(pokemonData => {
+                console.log("Received pokemon data from API:", pokemonData);
+                
+                if (!pokemonData || !pokemonData.pokemonId) {
+                    throw new Error("Invalid pokemon data received from API");
+                }
+
+                // Transform attacks data to match the AttackType format
+                const transformedAttacks = pokemonData.pokemonAttacks?.map((attack: any) => ({
+                    attackId: attack.pokemonAttackId,
+                    attackName: attack.attackName,
+                    energyCost: attack.energyCost,
+                    baseDamage: attack.baseDamage
+                })) || [];
+
+                console.log("Transformed attacks:", transformedAttacks);
+
+                const completeData: PokemonType = {
+                    pokemonId: pokemonData.pokemonId,
+                    name: pokemonData.name,
+                    imageId: (pokemonData.imageId || selectedPokemon.imageId).toString(),
+                    health: pokemonData.health || selectedPokemon.health,
+                    maxHealth: pokemonData.health || selectedPokemon.health,
+                    energy: pokemonData.energy || selectedPokemon.energy || 100,
+                    type: "Normal", // We'll fetch this from PokemonTypes API
+                    typeImageId: 1,
+                    pokemonAttacks: transformedAttacks
+                };
+
+                console.log("Created pokemon data:", completeData);
+                
+                const updatedPokemons = [...playerPokemons, completeData];
+                console.log("Updated pokemons array:", updatedPokemons);
+                
+                setPlayerPokemons(updatedPokemons);
+                localStorage.setItem("playerPokemons", JSON.stringify(updatedPokemons));
+                setSelectedStarterPokemon(completeData);
+                setShowStarterSelection(false);
+                setShowText(true);
+                setShowSelectionSuccess(true);
+                setCurrentTextIndex(3);
+            })
+            .catch(error => {
+                console.error("Error fetching complete pokemon data:", error);
+                alert("Chyba při získávání dat o pokémonovi!");
+            });
     };
 
     if (!location) return <div>Loading...</div>;
+
+    if (location.locationId === 2 && !hasCompletedIntro) {
+        return (
+            <Bg key={location.imageId} imageId={location.imageId}>
+                <StoryBox onClick={handleStoryBoxClick} showContinueText={true}>
+                    <StoryText
+                        text={replaceText(
+                            location.descriptions[currentTextIndex],
+                            nickname,
+                            ""
+                        )}
+                    />
+                </StoryBox>
+            </Bg>
+        );
+    }
 
     return (
         <Bg key={location.imageId} imageId={location.imageId}>
@@ -178,31 +285,34 @@ const Location: React.FC = () => {
                                 <PokemonCell key={`empty-${index}`} />
                             ))}
                     </PokemonInventory>
-                    <StoryBox
-                        onClick={handleStoryBoxClick}
-                        showContinueText={showText}
-                    >
-                        {showText && (
+                    {(showText || showSelectionSuccess) && (
+                        <StoryBox
+                            onClick={handleStoryBoxClick}
+                            showContinueText={true}
+                        >
                             <StoryText
                                 text={replaceText(
                                     location.descriptions[currentTextIndex],
                                     nickname,
-                                    pokemon?.name
+                                    selectedStarterPokemon?.name || pokemon?.name
                                 )}
                             />
-                        )}
-                        {showOptions && (
-                            <LocationBtn
-                                connections={locationConnections}
-                                currentLocationId={parseInt(locationId)}
-                            />
-                        )}
-                    </StoryBox>
+                        </StoryBox>
+                    )}
+                    {showOptions && (
+                        <LocationBtn
+                            connections={locationConnections}
+                            currentLocationId={parseInt(locationId)}
+                        />
+                    )}
                     <ItemInventory>
-                        {Array(5)
+                        {playerItems.slice(0, 5).map((item, index) => (
+                            <ItemInventoryCell key={index} item={item} />
+                        ))}
+                        {Array(Math.max(0, 5 - playerItems.length))
                             .fill(null)
                             .map((_, index) => (
-                                <ItemInventoryCell key={`item-${index}`} />
+                                <ItemInventoryCell key={`empty-${index}`} />
                             ))}
                     </ItemInventory>
                 </>

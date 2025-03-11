@@ -7,7 +7,8 @@ type PokemonType = {
     maxHealth: number;
     health: number;
     energy: number;
-    type: number;
+    type: string;
+    typeImageId: number;
     pokemonAttacks: PokemonAttack[];
 };
 

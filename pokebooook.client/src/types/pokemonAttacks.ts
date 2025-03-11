@@ -1,6 +1,8 @@
 type PokemonAttack = {
     pokemonAttackId: number;
-    attackId: number;
-    pokemonId: number;
+    attackName: string;
+    energyCost: number;
+    baseDamage: number;
 };
+
 export default PokemonAttack;

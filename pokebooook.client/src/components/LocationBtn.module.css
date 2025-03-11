@@ -1,13 +1,101 @@
+.locationOptions__container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40em);
+    background-color: rgba(217, 217, 217, 0.5);
+    padding: 1rem;
+    z-index: 100;
+    border: solid 5px #a1a1a1;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    margin-bottom: 1em;
+}
+
+.locationOptions__wrapper {
+    max-height: 180px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.locationOptions__wrapper::-webkit-scrollbar {
+    width: 10px;
+}
+
+.locationOptions__wrapper::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.locationOptions__wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.locationOptions__wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
 .locationOptions__btn {
-    display: inline-block;
-    padding: 1em 0;
+    display: block;
     width: 100%;
     background-color: #d9d9d9;
     color: #fff;
-    border: 6px solid #ccc;
-    padding: 1em 2em;
-    border-radius: 10px;
+    border: 4px solid #ccc;
+    padding: 1em 1.5em;
+    border-radius: 12px;
     cursor: pointer;
-    text-shadow: 1px 1px 15px #000;
-    font-size: .8em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.locationOptions__btn:hover {
+    background-color: #e6e6e6;
+    border-color: #999;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.locationOptions__btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .locationOptions__container {
+        width: 90%;
+        padding: 0.5rem;
+    }
+
+    .locationOptions__wrapper {
+        max-height: 150px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .locationOptions__btn {
+        padding: 0.8em 1.2em;
+        font-size: 1rem;
+        min-height: 50px;
+    }
 }

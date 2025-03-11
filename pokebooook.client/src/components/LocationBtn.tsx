@@ -10,15 +10,21 @@ interface LocationOptionsProps {
 
 const LocationOptions: React.FC<LocationOptionsProps> = ({ connections, currentLocationId }) => {
     return (
-        <>
-            {connections.map((connection) => (
-                <Link key={connection.connectionId} to={`/locations/${connection.locationFromId === currentLocationId ? connection.locationToId : connection.locationFromId}`}>
-                    <button className={LocationBtnCSS.locationOptions__btn}>
-                        {connection.locationFromId === currentLocationId ? connection.locationTo.name : connection.locationFrom.name}
-                    </button>
-                </Link>
-            ))}
-        </>
+        <div className={LocationBtnCSS.locationOptions__container}>
+            <div className={LocationBtnCSS.locationOptions__wrapper}>
+                {connections.map((connection) => (
+                    <Link 
+                        key={connection.connectionId} 
+                        to={`/locations/${connection.locationFromId === currentLocationId ? connection.locationToId : connection.locationFromId}`}
+                        style={{ textDecoration: 'none' }}
+                    >
+                        <button className={LocationBtnCSS.locationOptions__btn}>
+                            {connection.locationFromId === currentLocationId ? connection.locationTo.name : connection.locationFrom.name}
+                        </button>
+                    </Link>
+                ))}
+            </div>
+        </div>
     );
 };
 
