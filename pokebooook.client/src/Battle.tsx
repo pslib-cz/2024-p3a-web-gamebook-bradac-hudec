@@ -115,7 +115,7 @@ const Battle: React.FC<BattleProps> = ({ locationPokemonId }) => {
 
   const fetchPokemonTypes = async () => {
     try {
-      const response = await fetch("http://localhost:5212/api/PokemonTypes");
+      const response = await fetch("/api/PokemonTypes");
       if (!response.ok) {
         throw new Error("Failed to fetch Pokemon types");
       }
@@ -142,11 +142,11 @@ const Battle: React.FC<BattleProps> = ({ locationPokemonId }) => {
       }
 
       const playerResponse = await fetch(
-        `http://localhost:5212/api/Pokemons/${selectedPokemon.pokemonId}`
+        `/api/Pokemons/${selectedPokemon.pokemonId}`
       );
 
       const enemyResponse = await fetch(
-        `http://localhost:5212/api/Pokemons/${locationPokemonId}`
+        `/api/Pokemons/${locationPokemonId}`
       );
 
       if (!playerResponse.ok || !enemyResponse.ok) {

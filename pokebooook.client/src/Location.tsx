@@ -65,7 +65,7 @@ const Location: React.FC = () => {
     const fetchLocationConnections = useCallback(async () => {
         try {
             const response = await fetch(
-                `http://localhost:5212/api/Locations/${locationId}/Connections`
+                `/api/Locations/${locationId}/Connections`
             );
             if (!response.ok) {
                 throw new Error("Failed to fetch location connections");
@@ -86,7 +86,7 @@ const Location: React.FC = () => {
     const fetchLocationPokemon = useCallback(async (pokemonId: number) => {
         try {
             const response = await fetch(
-                `http://localhost:5212/api/Pokemons/${pokemonId}`
+                `/api/Pokemons/${pokemonId}`
             );
             if (!response.ok) {
                 throw new Error("Failed to fetch location pokemon");
@@ -101,7 +101,7 @@ const Location: React.FC = () => {
     const fetchLocation = useCallback(async () => {
         try {
             const response = await fetch(
-                `http://localhost:5212/api/Locations/${locationId}`
+                `/api/Locations/${locationId}`
             );
             if (!response.ok) {
                 throw new Error("Failed to fetch location");
@@ -195,7 +195,7 @@ const Location: React.FC = () => {
         }
 
         // Fetch complete pokemon data from API
-        fetch(`http://localhost:5212/api/Pokemons/${selectedPokemon.id}`)
+        fetch(`/api/Pokemons/${selectedPokemon.id}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);

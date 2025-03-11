@@ -53,8 +53,8 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            "^/api": {
-                target: "https://localhost:5212",
+            "/api": {
+                target: "http://localhost:5212",
                 changeOrigin: true,
                 secure: false,
             },
