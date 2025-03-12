@@ -23,9 +23,7 @@ const replaceText = (
   pokemonName: string | undefined
 ) => {
   let processedText = text.replace("{nickname}", `${nickname}`);
-
   processedText = processedText.replace("{pokemonname}", `${pokemonName}`);
-
   return processedText;
 };
 
@@ -34,21 +32,16 @@ const Location: React.FC = () => {
   if (!locationId) throw new Error("No location ID provided");
 
   const [location, setLocation] = useState<LocationType | null>(null);
-  const [locationConnections, setLocationConnections] = useState<
-    ConnectionType[]
-  >([]);
+  const [locationConnections, setLocationConnections] = useState<ConnectionType[]>([]);
   const [currentTextIndex, setCurrentTextIndex] = useState<number>(0);
   const [showOptions, setShowOptions] = useState<boolean>(false);
   const [showText, setShowText] = useState<boolean>(true);
   const [showBattle, setShowBattle] = useState<boolean>(false);
   const [pokemon, setPokemon] = useState<PokemonType | null>(null);
-  const [showStarterSelection, setShowStarterSelection] =
-    useState<boolean>(false);
+  const [showStarterSelection, setShowStarterSelection] = useState<boolean>(false);
   const [hasCompletedIntro, setHasCompletedIntro] = useState<boolean>(false);
-  const [showSelectionSuccess, setShowSelectionSuccess] =
-    useState<boolean>(false);
-  const [selectedStarterPokemon, setSelectedStarterPokemon] =
-    useState<PokemonType | null>(null);
+  const [showSelectionSuccess, setShowSelectionSuccess] = useState<boolean>(false);
+  const [selectedStarterPokemon, setSelectedStarterPokemon] = useState<PokemonType | null>(null);
   const [playerPokemons, setPlayerPokemons] = useState<PokemonType[]>(() => {
     const saved = localStorage.getItem("playerPokemons");
     return saved ? JSON.parse(saved) : [];
@@ -115,6 +108,21 @@ const Location: React.FC = () => {
     }
   }, [fetchLocationConnections, locationId, fetchLocationPokemon]);
 
+  const handleBattleComplete = (wasVictorious: boolean, earnedItems?: GameItem[]) => {
+    setShowBattle(false);
+    
+    if (wasVictorious) {
+      setShowOptions(true);
+      
+      if (earnedItems && earnedItems.length > 0) {
+        setPlayerItems(prev => {
+          const updated = [...prev, ...earnedItems];
+          return updated;
+        });
+      }
+    }
+  };
+
   useEffect(() => {
     fetchLocation();
   }, [fetchLocation]);
@@ -134,12 +142,9 @@ const Location: React.FC = () => {
     if (!visitedLocations.includes(parseInt(locationId))) {
       const updatedLocations = [...visitedLocations, parseInt(locationId)];
       setVisitedLocations(updatedLocations);
-      localStorage.setItem(
-        "visitedLocations",
-        JSON.stringify(updatedLocations)
-      );
+      localStorage.setItem("visitedLocations", JSON.stringify(updatedLocations));
     }
-  }, [locationId]);
+  }, [locationId, visitedLocations]);
 
   const handleStoryBoxClick = () => {
     if (!location) return;
@@ -180,8 +185,6 @@ const Location: React.FC = () => {
   };
 
   const handleStarterSelection = (selectedPokemon: StarterPokemon) => {
-    console.log("Handling starter selection with:", selectedPokemon);
-
     if (playerPokemons.length >= 6) {
       alert("Nemůžeš mít více než 6 pokémonů!");
       setShowStarterSelection(false);
@@ -190,12 +193,10 @@ const Location: React.FC = () => {
     }
 
     if (!selectedPokemon.id) {
-      console.error("Selected pokemon has no ID!");
       alert("Chyba při výběru pokémona!");
       return;
     }
 
-    // Fetch complete pokemon data from API
     fetch(`/api/Pokemons/${selectedPokemon.id}`)
       .then((response) => {
         if (!response.ok) {
@@ -204,13 +205,10 @@ const Location: React.FC = () => {
         return response.json();
       })
       .then((pokemonData) => {
-        console.log("Received pokemon data from API:", pokemonData);
-
         if (!pokemonData || !pokemonData.pokemonId) {
           throw new Error("Invalid pokemon data received from API");
         }
 
-        // Transform attacks data to match the AttackType format
         const transformedAttacks =
           pokemonData.pokemonAttacks?.map((attack: any) => ({
             attackId: attack.pokemonAttackId,
@@ -218,8 +216,6 @@ const Location: React.FC = () => {
             energyCost: attack.energyCost,
             baseDamage: attack.baseDamage,
           })) || [];
-
-        console.log("Transformed attacks:", transformedAttacks);
 
         const completeData: PokemonType = {
           pokemonId: pokemonData.pokemonId,
@@ -233,11 +229,7 @@ const Location: React.FC = () => {
           pokemonAttacks: transformedAttacks,
         };
 
-        console.log("Created pokemon data:", completeData);
-
         const updatedPokemons = [...playerPokemons, completeData];
-        console.log("Updated pokemons array:", updatedPokemons);
-
         setPlayerPokemons(updatedPokemons);
         localStorage.setItem("playerPokemons", JSON.stringify(updatedPokemons));
         setSelectedStarterPokemon(completeData);
@@ -317,7 +309,10 @@ const Location: React.FC = () => {
         <StarterSelection onSelect={handleStarterSelection} />
       )}
       {showBattle && pokemon && (
-        <Battle locationPokemonId={location.pokemonId} />
+        <Battle 
+          locationPokemonId={location.pokemonId} 
+          onBattleComplete={handleBattleComplete}
+        />
       )}
     </Bg>
   );

@@ -16,7 +16,7 @@ const AdminMenu: React.FC = () => {
                 <AdminTable
                     name="items"
                     id="itemId"
-                    cols={["name", "description"]}
+                    cols={["name", "description", "effect", "value", "imageId"]}
                 />
                 <AdminTable
                     name="locations"

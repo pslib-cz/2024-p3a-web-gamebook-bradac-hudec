@@ -92,12 +92,19 @@ namespace Pokebooook.Server.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Effect")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("ImageId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Value")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("ItemId");
 

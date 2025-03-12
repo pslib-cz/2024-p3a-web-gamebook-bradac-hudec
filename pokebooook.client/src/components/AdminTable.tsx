@@ -126,7 +126,13 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
         setData([...data, uploadedImage]);
         setSelectedFile(null);
       } else {
-        const addedRow = await addData(name, newRow);
+        // For items, ensure 'value' is sent as a number
+        let rowToAdd = {...newRow};
+        if (name.toLowerCase() === "items" && rowToAdd.value) {
+          rowToAdd.value = parseInt(rowToAdd.value.toString()) || 0;
+        }
+        
+        const addedRow = await addData(name, rowToAdd);
         setData([...data, addedRow]);
       }
       setNewRow({});
@@ -145,6 +151,12 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
   const handleSaveRow = async (row: TableRow) => {
     try {
       const newId = editingId[row[id]];
+      
+      // For items, ensure 'value' is sent as a number
+      if (name.toLowerCase() === "items" && typeof row.value === 'string') {
+        row.value = parseInt(row.value) || 0;
+      }
+      
       await updateData(name, id, row, newId);
 
       const refreshedData = await fetchData(name);
@@ -235,6 +247,38 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
         </td>
       );
     }
+    
+    // Special handling for item effect field
+    if (name.toLowerCase() === "items" && col === "effect") {
+      return (
+        <td key={col} className={AdminTableCSS.adminTable__td}>
+          <select
+            defaultValue={row[col] as string || "other"}
+            className={AdminTableCSS.adminTable__input}
+            onChange={(e) => (row[col] = e.target.value)}
+          >
+            <option value="heal">heal</option>
+            <option value="energy">energy</option>
+            <option value="other">other</option>
+          </select>
+        </td>
+      );
+    }
+    
+    // Special handling for item value field
+    if (name.toLowerCase() === "items" && col === "value") {
+      return (
+        <td key={col} className={AdminTableCSS.adminTable__td}>
+          <input
+            type="number"
+            defaultValue={row[col]}
+            className={AdminTableCSS.adminTable__input}
+            onChange={(e) => (row[col] = parseInt(e.target.value) || 0)}
+          />
+        </td>
+      );
+    }
+    
     return (
       <td key={col} className={AdminTableCSS.adminTable__td}>
         <input
@@ -332,15 +376,37 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
               <td className={AdminTableCSS.adminTable__td}>New</td>
               {cols.map((col, index) => (
                 <td key={index} className={AdminTableCSS.adminTable__td}>
-                  <input
-                    type="text"
-                    value={newRow[col] || ""}
-                    className={AdminTableCSS.adminTable__input}
-                    onChange={(e) => {
-                      const value = e.target.value;
-                      setNewRow({ ...newRow, [col]: value });
-                    }}
-                  />
+                  {name.toLowerCase() === "items" && col === "effect" ? (
+                    <select
+                      value={newRow[col] as string || "other"}
+                      className={AdminTableCSS.adminTable__input}
+                      onChange={(e) => {
+                        setNewRow({ ...newRow, [col]: e.target.value });
+                      }}
+                    >
+                      <option value="heal">heal</option>
+                      <option value="energy">energy</option>
+                      <option value="other">other</option>
+                    </select>
+                  ) : name.toLowerCase() === "items" && col === "value" ? (
+                    <input
+                      type="number"
+                      value={newRow[col] || "0"}
+                      className={AdminTableCSS.adminTable__input}
+                      onChange={(e) => {
+                        setNewRow({ ...newRow, [col]: parseInt(e.target.value) || 0 });
+                      }}
+                    />
+                  ) : (
+                    <input
+                      type="text"
+                      value={newRow[col] || ""}
+                      className={AdminTableCSS.adminTable__input}
+                      onChange={(e) => {
+                        setNewRow({ ...newRow, [col]: e.target.value });
+                      }}
+                    />
+                  )}
                 </td>
               ))}
               <td className={AdminTableCSS.adminTable__td}>
