@@ -6,16 +6,14 @@ Hráč vstupuje do světa Pokémonů jako nový trenér, kterého právě čeká
 
 
 ### Funkční požadavky
-2. Pohyb mezi místnostmi (různé lokace)
-3. Boje s Pokémony (1v1, po dokončení získá hráč pokémona + předmět)
-4. Bitvy s Rakeťáky (povinné bitvy bez jakékoliv odměny, náhodně se objevují)
-5. Inventář/batoh (předměty) + samostatné menu pro hráčovi chycené pokémony 
-6. Mechanika útoků a typové výhody
-7. Správa životů a energie
-8. Obchod s evolucemi vašich pokémonů (Pokud jste moc slabý, můžete se posilnit evolucí, evoluce by stály mince)
-9. Hlavní menu a přihlašovací systém
-10. Legenda k předmětům (K čemu každý předmět slouží)
-11. Statistiky (počet chycených pokémonů, počet dohrání)
+1. Pohyb mezi místnostmi (různé lokace)
+2. Boje s Pokémony (1v1, po dokončení získá hráč pokémona + předmět)
+3. Bitvy s Rakeťáky (povinné bitvy bez jakékoliv odměny, náhodně se objevují)
+4. Inventář/batoh (předměty) + samostatné menu pro hráčovi chycené pokémony 
+5. Mechanika útoků a typové výhody
+6. Správa životů a energie
+7. Hlavní menu a přihlašovací systém pro správce
+8. Statistiky (počet chycených pokémonů, počet dohrání)
 
 
 

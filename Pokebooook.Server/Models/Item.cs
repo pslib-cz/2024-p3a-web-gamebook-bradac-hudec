@@ -14,6 +14,11 @@ namespace Pokebooook.Server.Models
         [Required]
         public required string Description { get; set; }
 
+        [Required]
+        public required string Effect { get; set; }
+        [Required]
+        public int Value { get; set; }
+
         [ForeignKey("Image")]
         [Required]
         public required int ImageId { get; set; }

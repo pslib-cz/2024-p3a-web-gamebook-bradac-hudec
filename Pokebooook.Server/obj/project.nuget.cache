@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QBFZaQTCwpM=",
+  "dgSpecHash": "4eCDBzdoHOM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\fildi\\Documents\\Gamebook\\Pokebooook.Server\\Pokebooook.Server.csproj",
+  "projectFilePath": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fildi\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\fildi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
