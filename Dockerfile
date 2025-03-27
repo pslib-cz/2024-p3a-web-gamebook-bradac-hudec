@@ -1,9 +1,9 @@
+# Použijeme oficiální .NET SDK image pro build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Zkopírujeme všechny projektové soubory
+# Zkopírujeme projektový soubor serveru
 COPY ["Pokebooook.Server/Pokebooook.Server.csproj", "Pokebooook.Server/"]
-COPY ["pokebooook.client/pokebooook.client.esproj", "pokebooook.client/"]
 
 # Obnovíme závislosti
 RUN dotnet restore "Pokebooook.Server/Pokebooook.Server.csproj"
