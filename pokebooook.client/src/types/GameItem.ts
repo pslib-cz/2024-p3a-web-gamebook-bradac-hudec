@@ -3,6 +3,8 @@ interface GameItem {
     name: string;
     imageId: string;
     description: string;
+    effect: string;
+    value: number;
     count?: number;
 }
 

@@ -1,20 +1,24 @@
 import ItemInventoryCellCSS from './ItemInventoryCell.module.css';
-
-interface GameItem {
-    id: number;
-    name: string;
-    imageId: string;
-    description: string;
-    count?: number;
-}
+import GameItem from '../types/GameItem';
 
 interface ItemInventoryCellProps {
     item?: GameItem;
+    onClick?: (item: GameItem) => void;
 }
 
-const ItemInventoryCell: React.FC<ItemInventoryCellProps> = ({ item }) => {
+const ItemInventoryCell: React.FC<ItemInventoryCellProps> = ({ item, onClick }) => {
+    const handleClick = () => {
+        if (item && onClick) {
+            onClick(item);
+        }
+    };
+
     return (
-        <div className={ItemInventoryCellCSS.item__cell} title={item?.description}>
+        <div 
+            className={`${ItemInventoryCellCSS.item__cell} ${item && onClick ? ItemInventoryCellCSS.item__cell__clickable : ''}`} 
+            title={item?.description}
+            onClick={handleClick}
+        >
             {item && (
                 <>
                     <img 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router-dom";
 import LocationType from "./types/LocationType";
 import ConnectionType from "./types/ConnectionType";
 import StoryBox from "./components/StoryBox";
@@ -15,7 +15,7 @@ import StarterSelection from "./components/StarterSelection";
 import StarterPokemon from "./types/StarterPokemon";
 import PokemonType from "./types/PokemonType";
 import GameItem from "./types/GameItem";
-
+import LocationCSS from './Location.module.css';
 
 const replaceText = (
   text: string,
@@ -29,6 +29,7 @@ const replaceText = (
 
 const Location: React.FC = () => {
   const { locationId } = useParams<{ locationId: string }>();
+  const navigate = useNavigate();
   if (!locationId) throw new Error("No location ID provided");
 
   
@@ -44,6 +45,7 @@ const Location: React.FC = () => {
   const [showSelectionSuccess, setShowSelectionSuccess] = useState<boolean>(false);
   const [selectedStarterPokemon, setSelectedStarterPokemon] = useState<PokemonType | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [selectedPokemonForItem, setSelectedPokemonForItem] = useState<GameItem | null>(null);
   
  
   const [playerPokemons, setPlayerPokemons] = useState<PokemonType[]>(() => {
@@ -97,15 +99,14 @@ const Location: React.FC = () => {
       const connectionsResponse = await fetch(`/api/Locations/${locId}/Connections`);
       const connectionsData = connectionsResponse.ok ? await connectionsResponse.json() : [];
       
-     
+      // Vždy filtrujeme spojení tak, aby bylo možné jít pouze dopředu
       const filteredConnections = connectionsData.filter((connection: ConnectionType) => {
         const targetLocationId =
           connection.locationFromId === locId
             ? connection.locationToId
             : connection.locationFromId;
-        return !visitedLocations.includes(targetLocationId);
+        return targetLocationId > locId; // Zobrazujeme pouze lokace s vyšším ID
       });
-      
       setLocationConnections(filteredConnections);
 
       
@@ -134,7 +135,7 @@ const Location: React.FC = () => {
 
 
   useEffect(() => {
-   
+    // Resetujeme stav komponenty
     setCurrentTextIndex(0);
     setShowText(true);
     setShowOptions(false);
@@ -144,7 +145,22 @@ const Location: React.FC = () => {
     setShowSelectionSuccess(false);
     setSelectedStarterPokemon(null);
     
+    // Načteme vždy aktuální pokémony z localStorage
+    try {
+      const savedPokemons = localStorage.getItem("playerPokemons");
+      if (savedPokemons) {
+        setPlayerPokemons(JSON.parse(savedPokemons));
+      }
+      
+      const savedItems = localStorage.getItem("playerItems");
+      if (savedItems) {
+        setPlayerItems(JSON.parse(savedItems));
+      }
+    } catch (error) {
+      console.error("Chyba při načítání dat z localStorage:", error);
+    }
     
+    // Načteme lokaci
     loadLocation();
   }, [locationId]);
 
@@ -155,54 +171,121 @@ const Location: React.FC = () => {
     if (wasVictorious) {
       setShowOptions(true);
       
+      // Po vítězném souboji načteme aktuální seznam pokémonů z localStorage
+      try {
+        const savedPokemons = localStorage.getItem("playerPokemons");
+        if (savedPokemons) {
+          const parsedPokemons = JSON.parse(savedPokemons);
+          // Aktualizujeme stav playerPokemons, aby reflektoval chyceného pokémona z Battle komponenty
+          setPlayerPokemons(parsedPokemons);
+          console.log("Aktualizován seznam pokémonů po souboji:", parsedPokemons);
+        }
+      } catch (error) {
+        console.error("Chyba při načítání pokémonů:", error);
+      }
       
+      // Zpracování získaných předmětů
       if (earnedItems && Array.isArray(earnedItems) && earnedItems.length > 0) {
         console.log("Hráč získal předměty:", earnedItems);
         
-     
         const updatedItems = [...playerItems];
         
-       
         earnedItems.forEach(newItem => {
-          
-          const existingItemIndex = updatedItems.findIndex(item => item.id === newItem.id);
+          // Důležité: Hledáme existující položku PŘESNĚ podle názvu
+          // Tímto způsobem zajistíme, že každý typ předmětu bude mít vždy vlastní políčko v inventáři
+          const existingItemIndex = updatedItems.findIndex(
+            item => item.name === newItem.name
+          );
           
           if (existingItemIndex !== -1) {
-         
+            // Existující položka se stejným názvem byla nalezena, zvýšíme počet
             const existingItem = updatedItems[existingItemIndex];
             updatedItems[existingItemIndex] = {
               ...existingItem,
               count: (existingItem.count || 1) + 1
             };
           } else {
-            
-            updatedItems.push(newItem);
+            // Položka s tímto názvem neexistuje, přidáme ji jako novou
+            // Použijeme spread operátor pro vytvoření kopie, abychom předešli sdílení reference
+            updatedItems.push({
+              ...newItem,
+              count: 1
+            });
           }
         });
         
+        // Vypíšeme pro kontrolu výsledný seznam předmětů
+        console.log("Aktualizovaný seznam předmětů:", updatedItems);
         
         setPlayerItems(updatedItems);
-        
-        
         localStorage.setItem("playerItems", JSON.stringify(updatedItems));
       }
     } else {
-     
       const allExhausted = playerPokemons.every(pokemon => pokemon.health <= 0);
       
       if (allExhausted) {
-       
         console.log("Všichni pokémoni jsou vyčerpaní, resetuji hru");
-        
-       
         localStorage.clear();
-        
-        
-        window.location.href = "/nickname";
+        navigate("/nickname");
       } else {
-        
         setShowOptions(true);
       }
+    }
+  }
+
+  // Funkce pro použití předmětu na pokémona
+  function handleUseItem(item: GameItem, pokemonIndex: number) {
+    if (!item || pokemonIndex < 0 || pokemonIndex >= playerPokemons.length) {
+      return;
+    }
+
+    // Vytvoříme kopii pokémona a pole pokémonů, abychom neměnili přímo stav
+    const updatedPokemons = [...playerPokemons];
+    const pokemon = { ...updatedPokemons[pokemonIndex] };
+
+    // Aplikujeme efekt předmětu
+    if (item.effect === "heal") {
+      // Výpočet obnovení zdraví
+      const newHealth = Math.min(pokemon.health + item.value, pokemon.maxHealth);
+      pokemon.health = newHealth;
+      console.log(`Použit ${item.name} na ${pokemon.name}. Zdraví: ${pokemon.health}/${pokemon.maxHealth}`);
+    } else if (item.effect === "energy") {
+      // Výpočet obnovení energie - používáme hodnotu 100 jako maximum
+      const MAX_ENERGY = 100; // Definujeme konstantu pro max energii
+      const newEnergy = Math.min(pokemon.energy + item.value, MAX_ENERGY);
+      pokemon.energy = newEnergy;
+      console.log(`Použit ${item.name} na ${pokemon.name}. Energie: ${pokemon.energy}/${MAX_ENERGY}`);
+    } else {
+      console.log(`Předmět ${item.name} nemá implementovaný efekt: ${item.effect}`);
+      return; // Pokud efekt není implementován, nepokračujeme
+    }
+
+    // Aktualizujeme pokémona v poli
+    updatedPokemons[pokemonIndex] = pokemon;
+    setPlayerPokemons(updatedPokemons);
+
+    // Aktualizujeme lokální úložiště
+    localStorage.setItem('playerPokemons', JSON.stringify(updatedPokemons));
+
+    // Aktualizujeme stav předmětů - snížíme počet
+    const updatedItems = [...playerItems];
+    const itemIndex = updatedItems.findIndex(i => i.id === item.id);
+    
+    if (itemIndex >= 0) {
+      if (updatedItems[itemIndex].count && updatedItems[itemIndex].count! > 1) {
+        // Snížíme počet předmětu o 1
+        updatedItems[itemIndex] = {
+          ...updatedItems[itemIndex],
+          count: updatedItems[itemIndex].count! - 1
+        };
+      } else {
+        // Pokud je to poslední předmět, odstraníme ho z inventáře
+        updatedItems.splice(itemIndex, 1);
+      }
+      
+      // Aktualizujeme stav a lokální úložiště
+      setPlayerItems(updatedItems);
+      localStorage.setItem('playerItems', JSON.stringify(updatedItems));
     }
   }
 
@@ -311,6 +394,27 @@ const Location: React.FC = () => {
       });
   }
 
+  // Přidám funkci pro výběr předmětu
+  function handleItemSelect(item: GameItem) {
+    // Pokud byl vybrán předmět, zobrazíme výběr pokémona
+    setSelectedPokemonForItem(item);
+  }
+
+  // Funkce pro výběr pokémona pro aplikaci předmětu
+  function handlePokemonSelectForItem(pokemonIndex: number) {
+    if (selectedPokemonForItem) {
+      // Použijeme vybraný předmět na vybraného pokémona
+      handleUseItem(selectedPokemonForItem, pokemonIndex);
+      // Resetujeme výběr
+      setSelectedPokemonForItem(null);
+    }
+  }
+
+  function cancelItemSelection() {
+    // Zrušení výběru předmětu
+    setSelectedPokemonForItem(null);
+  }
+
   if (isLoading) return <div className="loading-spinner">Načítání...</div>;
   if (!location) return <div>Lokace nenalezena</div>;
 
@@ -332,7 +436,39 @@ const Location: React.FC = () => {
 
   return (
     <Bg key={location.imageId} imageId={location.imageId}>
-      {!showBattle && !showStarterSelection && (
+      {/* Výběr pokémona pro použití předmětu */}
+      {selectedPokemonForItem && (
+        <div className={LocationCSS["item-pokemon-selection"]}>
+          <h3>Vyber pokémona pro použití předmětu {selectedPokemonForItem.name}</h3>
+          <div className={LocationCSS["pokemon-selection-grid"]}>
+            {playerPokemons.map((pokemon, index) => (
+              <div 
+                key={index} 
+                className={`${LocationCSS["pokemon-option"]} ${pokemon.health <= 0 ? LocationCSS["disabled"] : ''}`}
+                onClick={() => pokemon.health > 0 ? handlePokemonSelectForItem(index) : null}
+              >
+                <img
+                  src={`http://localhost:5212/api/Images/${pokemon.imageId}`}
+                  alt={pokemon.name}
+                  className={LocationCSS["pokemon-image"]}
+                />
+                <div className={LocationCSS["pokemon-info"]}>
+                  <span className={LocationCSS["pokemon-name"]}>{pokemon.name}</span>
+                  <span>HP: {pokemon.health}/{pokemon.maxHealth}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <button 
+            className={LocationCSS["cancel-button"]} 
+            onClick={cancelItemSelection}
+          >
+            Zrušit
+          </button>
+        </div>
+      )}
+
+      {!showBattle && !showStarterSelection && !selectedPokemonForItem && (
         <>
           <PokemonInventory>
             {playerPokemons.map((pokemon, index) => (
@@ -366,7 +502,11 @@ const Location: React.FC = () => {
           
           <ItemInventory>
             {playerItems.slice(0, 5).map((item) => (
-              <ItemInventoryCell key={item.id} item={item} />
+              <ItemInventoryCell 
+                key={item.id} 
+                item={item} 
+                onClick={handleItemSelect}
+              />
             ))}
             {Array(Math.max(0, 5 - playerItems.length))
               .fill(null)

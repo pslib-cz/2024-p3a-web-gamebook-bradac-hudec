@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import BattleCSS from "../Battle.module.css";
 import GameItem from "../types/GameItem";
+import PokemonType from "../types/PokemonType";
 
 interface VictoryScreenProps {
   earnedItems: GameItem[];
+  capturedPokemon?: PokemonType | null;
   onContinue: () => void;
 }
 
@@ -14,11 +16,15 @@ interface GroupedItem {
 
 const VictoryScreen: React.FC<VictoryScreenProps> = ({
   earnedItems,
+  capturedPokemon,
   onContinue,
 }) => {
   useEffect(() => {
     console.log("VictoryScreen - předané předměty:", earnedItems);
-  }, [earnedItems]);
+    if (capturedPokemon) {
+      console.log("VictoryScreen - chycený pokémon:", capturedPokemon);
+    }
+  }, [earnedItems, capturedPokemon]);
 
   const handleContinue = () => {
     console.log("Hráč klikl na Pokračovat");
@@ -28,14 +34,14 @@ const VictoryScreen: React.FC<VictoryScreenProps> = ({
   const groupItems = (items: GameItem[]): GroupedItem[] => {
     if (!items || items.length === 0) return [];
 
-    const groupedMap = new Map<number, GroupedItem>();
+    const groupedMap = new Map<string, GroupedItem>();
 
     items.forEach((item) => {
-      if (groupedMap.has(item.id)) {
-        const groupedItem = groupedMap.get(item.id)!;
+      if (groupedMap.has(item.name)) {
+        const groupedItem = groupedMap.get(item.name)!;
         groupedItem.count += 1;
       } else {
-        groupedMap.set(item.id, { item, count: 1 });
+        groupedMap.set(item.name, { item, count: 1 });
       }
     });
 
@@ -47,6 +53,30 @@ const VictoryScreen: React.FC<VictoryScreenProps> = ({
   return (
     <div className={BattleCSS.victoryScreen}>
       <h2>Vítězství!</h2>
+      
+      {capturedPokemon && (
+        <div className={BattleCSS.capturedPokemon}>
+          <h3>Chytil jsi nového pokémona!</h3>
+          <div className={BattleCSS.pokemonCard}>
+            <img
+              src={`http://localhost:5212/api/Images/${capturedPokemon.imageId}`}
+              alt={capturedPokemon.name}
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = "none";
+                const parent = (e.target as HTMLImageElement).parentNode;
+                if (parent) {
+                  const textNode = document.createElement("div");
+                  textNode.className = BattleCSS.itemPlaceholder;
+                  textNode.innerText = "?";
+                  parent.prepend(textNode);
+                }
+              }}
+            />
+            <span>{capturedPokemon.name}</span>
+          </div>
+        </div>
+      )}
+      
       {earnedItems && earnedItems.length > 0 ? (
         <div className={BattleCSS.earnedItems}>
           <h3>Získal jsi tyto předměty:</h3>
