@@ -46,12 +46,6 @@ const NicknameMenu: React.FC = () => {
                     </Link>
                 </div>
             </div>
-
-            <Link to="/admin">
-                <p className={NicknameMenuCSS.nicknameMenu__adminlink}>
-                    <b>Administrace</b>
-                </p>
-            </Link>
         </Bg>
     );
 };

@@ -1174,3 +1174,4 @@ C:\Users\fildi\Documents\Gamebook\Pokebooook.Server\obj\Debug\net8.0\refint\Poke
 C:\Users\fildi\Documents\Gamebook\Pokebooook.Server\obj\Debug\net8.0\Pokebooook.Server.pdb
 C:\Users\fildi\Documents\Gamebook\Pokebooook.Server\obj\Debug\net8.0\Pokebooook.Server.genruntimeconfig.cache
 C:\Users\fildi\Documents\Gamebook\Pokebooook.Server\obj\Debug\net8.0\ref\Pokebooook.Server.dll
+C:\Users\fildi\Documents\2024-p3a-web-gamebook-bradac-hudec\Pokebooook.Server\bin\Debug\net8.0\BCrypt.Net-Next.dll

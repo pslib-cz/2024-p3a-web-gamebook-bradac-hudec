@@ -16,7 +16,7 @@ const MainMenu: React.FC = () => {
                     </Link>
                 </div>
 
-                <Link to={"/admin"}>
+                <Link to={"/login"}>
                     <p className={MainMenuCSS.mainMenu__adminlink}>
                         <b>Administrace</b>
                     </p>

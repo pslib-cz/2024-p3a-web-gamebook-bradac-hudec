@@ -524,11 +524,11 @@ const Location: React.FC = () => {
       {showBattle && pokemon && (
         <Battle 
           locationPokemonId={pokemon.pokemonId} 
-          onBattleComplete={handleBattleComplete}
+          onBattleComplete={handleBattleComplete} 
         />
       )}
     </Bg>
   );
 };
 
-export default Location;
+export default Location; 

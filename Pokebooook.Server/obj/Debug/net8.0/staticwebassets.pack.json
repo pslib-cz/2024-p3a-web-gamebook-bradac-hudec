@@ -5,6 +5,54 @@
       "PackagePath": "staticwebassets\\uploads\\001.png"
     },
     {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\AbandonedCottage.webp",
+      "PackagePath": "staticwebassets\\uploads\\AbandonedCottage.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Arbok.webp",
+      "PackagePath": "staticwebassets\\uploads\\Arbok.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\BerryJuice.webp",
+      "PackagePath": "staticwebassets\\uploads\\BerryJuice.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\CaveEntrance.webp",
+      "PackagePath": "staticwebassets\\uploads\\CaveEntrance.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Championsville.webp",
+      "PackagePath": "staticwebassets\\uploads\\Championsville.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\DarkCave.webp",
+      "PackagePath": "staticwebassets\\uploads\\DarkCave.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\DeepForest.webp",
+      "PackagePath": "staticwebassets\\uploads\\DeepForest.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Ekans.webp",
+      "PackagePath": "staticwebassets\\uploads\\Ekans.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Fearow.webp",
+      "PackagePath": "staticwebassets\\uploads\\Fearow.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\FieldPath.webp",
+      "PackagePath": "staticwebassets\\uploads\\FieldPath.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ForestEntrance.webp",
+      "PackagePath": "staticwebassets\\uploads\\ForestEntrance.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Lemonade.webp",
+      "PackagePath": "staticwebassets\\uploads\\Lemonade.webp"
+    },
+    {
       "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
       "PackagePath": "staticwebassets\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg"
     },
@@ -23,6 +71,66 @@
     {
       "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
       "PackagePath": "staticwebassets\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Meadow.webp",
+      "PackagePath": "staticwebassets\\uploads\\Meadow.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Mudflats.webp",
+      "PackagePath": "staticwebassets\\uploads\\Mudflats.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgeot.webp",
+      "PackagePath": "staticwebassets\\uploads\\Pidgeot.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgeotto.webp",
+      "PackagePath": "staticwebassets\\uploads\\Pidgeotto.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgey.webp",
+      "PackagePath": "staticwebassets\\uploads\\Pidgey.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pikachu.webp",
+      "PackagePath": "staticwebassets\\uploads\\Pikachu.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Raichu.webp",
+      "PackagePath": "staticwebassets\\uploads\\Raichu.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Raticate.webp",
+      "PackagePath": "staticwebassets\\uploads\\Raticate.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Rattata.webp",
+      "PackagePath": "staticwebassets\\uploads\\Rattata.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Sandshrew.webp",
+      "PackagePath": "staticwebassets\\uploads\\Sandshrew.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Sandslash.webp",
+      "PackagePath": "staticwebassets\\uploads\\Sandslash.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\SlateMountains.webp",
+      "PackagePath": "staticwebassets\\uploads\\SlateMountains.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Spearow.webp",
+      "PackagePath": "staticwebassets\\uploads\\Spearow.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\WildRiver.webp",
+      "PackagePath": "staticwebassets\\uploads\\WildRiver.webp"
+    },
+    {
+      "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Windmill.webp",
+      "PackagePath": "staticwebassets\\uploads\\Windmill.webp"
     },
     {
       "Id": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
