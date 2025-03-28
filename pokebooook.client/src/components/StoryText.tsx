@@ -1,5 +1,5 @@
 import { FC } from "react";
-import StoryTextCSS from "./StoryText.module.css";
+import StoryTextCSS from "../styles/components/StoryText.module.css";
 
 type StoryTextProps = {
     text: string;

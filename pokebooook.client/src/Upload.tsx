@@ -1,5 +1,4 @@
-
-import UploadCSS from './Upload.module.css';
+import UploadCSS from "./styles/pages/Upload.module.css";
 
 const Upload = () => {
     return (

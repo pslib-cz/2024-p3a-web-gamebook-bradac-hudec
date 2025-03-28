@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import BattleCSS from "../Battle.module.css";
+import BattleCSS from "../styles/pages/Battle.module.css";
 import GameItem from "../types/GameItem";
 import PokemonType from "../types/PokemonType";
 

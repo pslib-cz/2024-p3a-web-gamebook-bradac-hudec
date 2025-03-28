@@ -1,6 +1,6 @@
 import React from "react";
 import AttackType from "../types/AttackType";
-import styles from "./AttackButton.module.css";
+import AttackButtonCSS from "../styles/components/AttackButton.module.css";
 
 type AttackButtonProps = {
     attack: AttackType;
@@ -10,17 +10,17 @@ type AttackButtonProps = {
 const AttackButton: React.FC<AttackButtonProps> = ({ attack, onAttack }) => {
     return (
         <button
-            className={styles.attackButton}
+            className={AttackButtonCSS.attackButton}
             onClick={() => onAttack(attack)}
         >
-            <span className={styles.attackButton__name}>
+            <span className={AttackButtonCSS.attackButton__name}>
                 {attack.attackName}
             </span>
-            <div className={styles.attackButton__stats}>
-                <span className={styles.attackButton__damage}>
+            <div className={AttackButtonCSS.attackButton__stats}>
+                <span className={AttackButtonCSS.attackButton__damage}>
                     {attack.baseDamage}
                 </span>
-                <span className={styles.attackButton__energy}>
+                <span className={AttackButtonCSS.attackButton__energy}>
                     {attack.energyCost}
                 </span>
             </div>

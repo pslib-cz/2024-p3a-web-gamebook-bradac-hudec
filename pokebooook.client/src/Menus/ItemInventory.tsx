@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import ItemInventoryCSS from './ItemInventory.module.css';
+import ItemInventoryCSS from "../styles/menus/ItemInventory.module.css";
 
 type ItemInventoryProps = { 
     children: React.ReactNode;  

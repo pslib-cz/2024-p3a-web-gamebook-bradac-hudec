@@ -1,4 +1,4 @@
-import StatisticsTableCSS from './StatisticsTable.module.css';
+import StatisticsTableCSS from "../styles/components/StatisticsTable.module.css";
 
 const StatisticsTable = () => { 
    return (

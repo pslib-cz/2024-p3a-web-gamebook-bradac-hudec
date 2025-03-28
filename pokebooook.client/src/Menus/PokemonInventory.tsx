@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import PokemonInventoryCSS from './PokemonInventory.module.css';
+import PokemonInventoryCSS from "../styles/menus/PokemonInventory.module.css";
 import PokemonType from '../types/PokemonType';
 
 type PokemonInventoryProps = { 

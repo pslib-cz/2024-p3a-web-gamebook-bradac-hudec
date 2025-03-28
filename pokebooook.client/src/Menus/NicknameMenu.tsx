@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import NicknameMenuCSS from "./NicknameMenu.module.css";
+import NicknameMenuCSS from "../styles/menus/NicknameMenu.module.css";
 import BackBtn from "../components/BackBtn";
 import MenuBtn from "../components/MenuBtn";
 import Bg from "../components/Bg";

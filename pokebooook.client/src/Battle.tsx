@@ -4,7 +4,7 @@ import StoryBox from "./components/StoryBox";
 import AttacksContainer from "./components/AttacksContainer";
 import PokemonType from "./types/PokemonType";
 import AttackType from "./types/AttackType";
-import BattleCSS from "./Battle.module.css";
+import BattleCSS from "./styles/pages/Battle.module.css";
 import ItemInventory from "./Menus/ItemInventory";
 import PokemonInventory from "./Menus/PokemonInventory";
 import ItemInventoryCell from "./components/ItemInventoryCell";

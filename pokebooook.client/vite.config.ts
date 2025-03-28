@@ -37,7 +37,8 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
     }
 }
 
-const target = env.ASPNETCORE_HTTPS_PORT
+// Používám původní proměnnou target, ale přejmenuji ji na apiTarget 
+const apiTarget = env.ASPNETCORE_HTTPS_PORT
     ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}`
     : env.ASPNETCORE_URLS
     ? env.ASPNETCORE_URLS.split(";")[0]
@@ -54,18 +55,18 @@ export default defineConfig({
     server: {
         proxy: {
             "/api": {
-                target: "http://localhost:5212",
+                target: apiTarget,
                 changeOrigin: true,
                 secure: false,
                 ws: true,
-                configure: (proxy, _options) => {
-                    proxy.on('error', (err, _req, _res) => {
+                configure: (proxy) => {
+                    proxy.on('error', (err) => {
                         console.log('proxy error', err);
                     });
-                    proxy.on('proxyReq', (proxyReq, req, _res) => {
+                    proxy.on('proxyReq', (_, req) => {
                         console.log('Sending Request to the Target:', req.method, req.url);
                     });
-                    proxy.on('proxyRes', (proxyRes, req, _res) => {
+                    proxy.on('proxyRes', (proxyRes, req) => {
                         console.log('Received Response from the Target:', proxyRes.statusCode, req.url);
                     });
                 },

@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import BackBtn from "../components/BackBtn";
 import Bg from "../components/Bg";
 import StatisticsTable from "../components/StatisticsTable";

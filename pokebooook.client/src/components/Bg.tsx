@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import BgCSS from './Bg.module.css';
+import BgCSS from "../styles/components/Bg.module.css";
 
 interface BgProps {
     imageId?: number;

@@ -1,5 +1,5 @@
 import React from 'react';
-import HealthbarCSS from './HealthBar.module.css';
+import HealthbarCSS from '../styles/components/HealthBar.module.css';
 import HealthBarProps  from '../types/HealthBarType';
 
 

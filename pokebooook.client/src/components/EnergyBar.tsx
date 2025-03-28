@@ -1,5 +1,5 @@
 import React from "react";
-import EnergyBarCSS from "./EnergyBar.module.css";
+import EnergyBarCSS from "../styles/components/EnergyBar.module.css";
 import EnergyBarProps from "../types/EnergyBarType";
 
 const EnergyBar: React.FC<EnergyBarProps> = ({ energy, maxEnergy }) => {

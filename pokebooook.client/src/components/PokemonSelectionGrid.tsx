@@ -1,6 +1,6 @@
 import React from 'react';
 import PokemonType from '../types/PokemonType';
-import BattleCSS from '../Battle.module.css';
+import BattleCSS from '../styles/pages/Battle.module.css';
 
 interface PokemonSelectionGridProps {
   playerPokemons: PokemonType[];

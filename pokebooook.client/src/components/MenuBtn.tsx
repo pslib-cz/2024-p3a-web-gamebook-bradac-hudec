@@ -1,5 +1,5 @@
 import {FC} from "react";
-import MenuBtnCSS from "./MenuBtn.module.css";
+import MenuBtnCSS from "../styles/components/MenuBtn.module.css";
 
 
 type MenuBtnProps = {

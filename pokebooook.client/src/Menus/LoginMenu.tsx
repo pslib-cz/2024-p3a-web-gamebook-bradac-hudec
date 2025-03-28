@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import Bg from "../components/Bg";
 import BackBtn from "../components/BackBtn";
-import LoginMenuCSS from "./LoginMenu.module.css";
+import LoginMenuCSS from "../styles/menus/LoginMenu.module.css";
 
 
 interface LoginResponse {

@@ -1,5 +1,5 @@
 import {FC} from "react";
-import BackBtnCSS from "./BackBtn.module.css";
+import BackBtnCSS from "../styles/components/BackBtn.module.css";
 
 
 type MenuBtnProps = {

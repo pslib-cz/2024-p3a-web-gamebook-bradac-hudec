@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import AdminTable from "../components/AdminTable";
 import Bg from "../components/Bg";
 import BackBtn from "../components/BackBtn";
-import AdminMenuCSS from "./AdminMenu.module.css";
+import AdminMenuCSS from "../styles/menus/AdminMenu.module.css";
 
 const AdminMenu: React.FC = () => {
     const [shouldRedirect, setShouldRedirect] = useState<boolean>(false);

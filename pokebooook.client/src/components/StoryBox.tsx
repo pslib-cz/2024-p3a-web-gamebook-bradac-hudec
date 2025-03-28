@@ -1,5 +1,5 @@
 import React from 'react';
-import StoryBoxCSS from './StoryBox.module.css';
+import StoryBoxCSS from "../styles/components/StoryBox.module.css";
 
 type StoryBoxProps = {
     children: React.ReactNode;

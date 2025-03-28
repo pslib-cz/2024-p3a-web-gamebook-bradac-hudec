@@ -15,7 +15,7 @@ import StarterSelection from "./components/StarterSelection";
 import StarterPokemon from "./types/StarterPokemon";
 import PokemonType from "./types/PokemonType";
 import GameItem from "./types/GameItem";
-import LocationCSS from './Location.module.css';
+import LocationCSS from "./styles/pages/Location.module.css";
 
 const replaceText = (
   text: string,

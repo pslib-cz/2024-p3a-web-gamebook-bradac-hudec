@@ -1,5 +1,5 @@
 import React from "react";
-import PokemonContainerCSS from "./PokemonContainer.module.css";
+import PokemonContainerCSS from "../styles/components/PokemonContainer.module.css";
 import HealthBar from "./HealthBar";
 import EnergyBar from "./EnergyBar";
 import PokemonType from "../types/PokemonType";

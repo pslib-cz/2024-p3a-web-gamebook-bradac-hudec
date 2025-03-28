@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./StarterSelection.module.css";
+import StarterSelectionCSS from "../styles/components/StarterSelection.module.css";
 
 interface StarterPokemon {
     id: number;
@@ -60,15 +60,15 @@ const StarterSelection: React.FC<StarterSelectionProps> = ({ onSelect }) => {
     };
 
     return (
-        <div className={styles.container}>
-            <h2 className={styles.title}>Vyber si svého prvního pokémona!</h2>
-            <div className={styles.pokemonGrid}>
+        <div className={StarterSelectionCSS.container}>
+            <h2 className={StarterSelectionCSS.title}>Vyber si svého prvního pokémona!</h2>
+            <div className={StarterSelectionCSS.pokemonGrid}>
                 {starters.map((pokemon) => (
                     <div
                         key={`starter-${pokemon.id}`}
-                        className={`${styles.pokemonCard} ${
+                        className={`${StarterSelectionCSS.pokemonCard} ${
                             selectedPokemon?.id === pokemon.id
-                                ? styles.selected
+                                ? StarterSelectionCSS.selected
                                 : ""
                         }`}
                         onClick={() => handlePokemonClick(pokemon)}
@@ -76,15 +76,15 @@ const StarterSelection: React.FC<StarterSelectionProps> = ({ onSelect }) => {
                         <img
                             src={`http://localhost:5212/api/Images/${pokemon.imageId}`}
                             alt={pokemon.name}
-                            className={styles.pokemonImage}
+                            className={StarterSelectionCSS.pokemonImage}
                         />
-                        <h3 className={styles.pokemonName}>{pokemon.name}</h3>
+                        <h3 className={StarterSelectionCSS.pokemonName}>{pokemon.name}</h3>
                     </div>
                 ))}
             </div>
             {selectedPokemon && (
                 <button
-                    className={styles.confirmButton}
+                    className={StarterSelectionCSS.confirmButton}
                     onClick={handleConfirm}
                 >
                     Vybrat {selectedPokemon.name}

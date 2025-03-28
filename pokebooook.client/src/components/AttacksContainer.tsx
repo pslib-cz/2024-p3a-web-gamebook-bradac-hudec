@@ -1,7 +1,7 @@
 import React from "react";
 import AttackButton from "./AttackButton";
 import AttackType from "../types/AttackType";
-import styles from "./AttacksContainer.module.css";
+import AttacksContainerCSS from "../styles/components/AttacksContainer.module.css";
 
 interface AttacksContainerProps {
     attacks: AttackType[];
@@ -19,7 +19,7 @@ const AttacksContainer: React.FC<AttacksContainerProps> = ({
     }
 
     return (
-        <div className={styles.attacksContainer}>
+        <div className={AttacksContainerCSS.attacksContainer}>
             {attacks.map((attack) => (
                 <AttackButton
                     key={attack.attackId}

@@ -1,4 +1,4 @@
-import ItemInventoryCellCSS from './ItemInventoryCell.module.css';
+import ItemInventoryCellCSS from '../styles/components/ItemInventoryCell.module.css';
 import GameItem from '../types/GameItem';
 
 interface ItemInventoryCellProps {

@@ -1,5 +1,5 @@
 import React from 'react';
-import BattleCSS from '../Battle.module.css';
+import BattleCSS from "../styles/pages/Battle.module.css";
 
 interface GameOverScreenProps {
   onRestart: () => void;

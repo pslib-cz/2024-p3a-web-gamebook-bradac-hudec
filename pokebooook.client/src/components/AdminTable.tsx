@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import AdminTableCSS from "./AdminTable.module.css";
+import AdminTableCSS from "../styles/components/AdminTable.module.css";
 
 type AdminTableProps = {
   id: string;

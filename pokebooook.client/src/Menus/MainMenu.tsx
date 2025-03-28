@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import MainMenuCSS from "./MainMenu.module.css";
+import MainMenuCSS from "../styles/menus/MainMenu.module.css";
 import MenuBtn from "../components/MenuBtn";
 import Bg from "../components/Bg";
 

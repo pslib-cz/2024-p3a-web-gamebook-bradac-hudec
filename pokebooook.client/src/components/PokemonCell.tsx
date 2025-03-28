@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PokemonCellCSS from "./PokemonCell.module.css";
+import PokemonCellCSS from "../styles/components/PokemonCell.module.css";
 import PokemonType from "../types/PokemonType";
 import ConfirmationDialog from './ConfirmationDialog';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LocationBtnCSS from './LocationBtn.module.css';
+import LocationBtnCSS from "../styles/components/LocationBtn.module.css";
 import ConnectionType from '../types/ConnectionType';
 
 interface LocationOptionsProps {
