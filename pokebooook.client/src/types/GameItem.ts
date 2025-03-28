@@ -3,6 +3,7 @@ interface GameItem {
     name: string;
     imageId: string;
     description: string;
+    count?: number;
 }
 
 export default GameItem; 

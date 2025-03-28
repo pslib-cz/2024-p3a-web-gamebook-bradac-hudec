@@ -2,12 +2,18 @@ import React, { useEffect } from 'react';
 import BgCSS from './Bg.module.css';
 
 interface BgProps {
-    imageId: number;
-    children: React.ReactNode;
+    imageId?: number;
+    bgImage?: string;
+    children?: React.ReactNode;
 }
 
-const Bg: React.FC<BgProps> = ({ imageId, children }) => {
-    const backgroundImageUrl = `http://localhost:5212/api/Images/${imageId}`; 
+const Bg: React.FC<BgProps> = ({ imageId, bgImage, children }) => {
+    let backgroundImageUrl = bgImage || '';
+    
+    // Pokud máme imageId, použijeme ho pro získání URL
+    if (imageId && !bgImage) {
+        backgroundImageUrl = `http://localhost:5212/api/Images/${imageId}`;
+    }
 
     useEffect(() => {
         console.log('Background image updated:', backgroundImageUrl);

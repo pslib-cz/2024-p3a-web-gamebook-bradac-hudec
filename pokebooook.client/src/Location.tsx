@@ -1,11 +1,11 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import LocationType from "./types/LocationType";
 import ConnectionType from "./types/ConnectionType";
 import StoryBox from "./components/StoryBox";
 import StoryText from "./components/StoryText";
 import Bg from "./components/Bg";
-import LocationBtn from "./components/LocationBtn";
+import LocationOptions from "./components/LocationBtn";
 import PokemonInventory from "./Menus/PokemonInventory";
 import PokemonCell from "./components/PokemonCell";
 import ItemInventory from "./Menus/ItemInventory";
@@ -13,17 +13,17 @@ import ItemInventoryCell from "./components/ItemInventoryCell";
 import Battle from "./Battle";
 import StarterSelection from "./components/StarterSelection";
 import StarterPokemon from "./types/StarterPokemon";
-import PokemonAttack from "./types/pokemonAttacks";
 import PokemonType from "./types/PokemonType";
 import GameItem from "./types/GameItem";
+
 
 const replaceText = (
   text: string,
   nickname: string,
   pokemonName: string | undefined
 ) => {
-  let processedText = text.replace("{nickname}", `${nickname}`);
-  processedText = processedText.replace("{pokemonname}", `${pokemonName}`);
+  let processedText = text.replace("{nickname}", nickname);
+  processedText = processedText.replace("{pokemonname}", pokemonName || "");
   return processedText;
 };
 
@@ -31,6 +31,7 @@ const Location: React.FC = () => {
   const { locationId } = useParams<{ locationId: string }>();
   if (!locationId) throw new Error("No location ID provided");
 
+  
   const [location, setLocation] = useState<LocationType | null>(null);
   const [locationConnections, setLocationConnections] = useState<ConnectionType[]>([]);
   const [currentTextIndex, setCurrentTextIndex] = useState<number>(0);
@@ -42,92 +43,98 @@ const Location: React.FC = () => {
   const [hasCompletedIntro, setHasCompletedIntro] = useState<boolean>(false);
   const [showSelectionSuccess, setShowSelectionSuccess] = useState<boolean>(false);
   const [selectedStarterPokemon, setSelectedStarterPokemon] = useState<PokemonType | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  
+ 
   const [playerPokemons, setPlayerPokemons] = useState<PokemonType[]>(() => {
-    const saved = localStorage.getItem("playerPokemons");
-    return saved ? JSON.parse(saved) : [];
+    try {
+      const saved = localStorage.getItem("playerPokemons");
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
   });
+  
   const [playerItems, setPlayerItems] = useState<GameItem[]>(() => {
-    const saved = localStorage.getItem("playerItems");
-    return saved ? JSON.parse(saved) : [];
+    try {
+      const saved = localStorage.getItem("playerItems");
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
   });
+  
   const [visitedLocations, setVisitedLocations] = useState<number[]>(() => {
-    const saved = localStorage.getItem("visitedLocations");
-    return saved ? JSON.parse(saved) : [];
+    try {
+      const saved = localStorage.getItem("visitedLocations");
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
   });
 
   const nickname = localStorage.getItem("nickname") || "trenér";
 
-  const fetchLocationConnections = useCallback(async () => {
+  
+  async function loadLocation() {
+    setIsLoading(true);
+    
     try {
-      const response = await fetch(`/api/Locations/${locationId}/Connections`);
-      if (!response.ok) {
-        throw new Error("Failed to fetch location connections");
+     
+      if (!locationId) {
+        throw new Error("Neplatné ID lokace");
       }
-      const data = await response.json();
-      const filteredConnections = data.filter((connection: ConnectionType) => {
+      
+      const locId = parseInt(locationId);
+      
+     
+      const locationResponse = await fetch(`/api/Locations/${locId}`);
+      if (!locationResponse.ok) throw new Error("Failed to fetch location");
+      const locationData = await locationResponse.json();
+      setLocation(locationData);
+
+     
+      const connectionsResponse = await fetch(`/api/Locations/${locId}/Connections`);
+      const connectionsData = connectionsResponse.ok ? await connectionsResponse.json() : [];
+      
+     
+      const filteredConnections = connectionsData.filter((connection: ConnectionType) => {
         const targetLocationId =
-          connection.locationFromId === parseInt(locationId)
+          connection.locationFromId === locId
             ? connection.locationToId
             : connection.locationFromId;
         return !visitedLocations.includes(targetLocationId);
       });
-      setLocationConnections(filteredConnections);
-    } catch (error) {
-      console.error("Error fetching location connections:", error);
-    }
-  }, [locationId, visitedLocations]);
-
-  const fetchLocationPokemon = useCallback(async (pokemonId: number) => {
-    try {
-      const response = await fetch(`/api/Pokemons/${pokemonId}`);
-      if (!response.ok) {
-        throw new Error("Failed to fetch location pokemon");
-      }
-      const data = await response.json();
-      setPokemon(data);
-    } catch (error) {
-      console.error("Error fetching Pokemon:", error);
-    }
-  }, []);
-
-  const fetchLocation = useCallback(async () => {
-    try {
-      const response = await fetch(`/api/Locations/${locationId}`);
-      if (!response.ok) {
-        throw new Error("Failed to fetch location");
-      }
-      const data = await response.json();
-      setLocation(data);
-      await fetchLocationConnections();
-
-      if (data.hasPokemon && data.pokemonId) {
-        await fetchLocationPokemon(data.pokemonId);
-      }
-    } catch (error) {
-      console.error("Error fetching location:", error);
-    }
-  }, [fetchLocationConnections, locationId, fetchLocationPokemon]);
-
-  const handleBattleComplete = (wasVictorious: boolean, earnedItems?: GameItem[]) => {
-    setShowBattle(false);
-    
-    if (wasVictorious) {
-      setShowOptions(true);
       
-      if (earnedItems && earnedItems.length > 0) {
-        setPlayerItems(prev => {
-          const updated = [...prev, ...earnedItems];
-          return updated;
-        });
+      setLocationConnections(filteredConnections);
+
+      
+      if (locationData.hasPokemon && locationData.pokemonId) {
+        const pokemonResponse = await fetch(`/api/Pokemons/${locationData.pokemonId}`);
+        if (pokemonResponse.ok) {
+          const pokemonData = await pokemonResponse.json();
+          setPokemon(pokemonData);
+        } else {
+          setPokemon(null);
+        }
       }
+
+    
+      if (!visitedLocations.includes(locId)) {
+        const updatedLocations = [...visitedLocations, locId];
+        localStorage.setItem("visitedLocations", JSON.stringify(updatedLocations));
+        setVisitedLocations(updatedLocations);
+      }
+    } catch (error) {
+      console.error("Chyba při načítání lokace:", error);
+    } finally {
+      setIsLoading(false);
     }
-  };
+  }
+
 
   useEffect(() => {
-    fetchLocation();
-  }, [fetchLocation]);
-
-  useEffect(() => {
+   
     setCurrentTextIndex(0);
     setShowText(true);
     setShowOptions(false);
@@ -136,22 +143,75 @@ const Location: React.FC = () => {
     setHasCompletedIntro(false);
     setShowSelectionSuccess(false);
     setSelectedStarterPokemon(null);
+    
+    
+    loadLocation();
   }, [locationId]);
 
-  useEffect(() => {
-    if (!visitedLocations.includes(parseInt(locationId))) {
-      const updatedLocations = [...visitedLocations, parseInt(locationId)];
-      setVisitedLocations(updatedLocations);
-      localStorage.setItem("visitedLocations", JSON.stringify(updatedLocations));
+ 
+  function handleBattleComplete(wasVictorious: boolean, earnedItems?: GameItem[]) {
+    setShowBattle(false);
+    
+    if (wasVictorious) {
+      setShowOptions(true);
+      
+      
+      if (earnedItems && Array.isArray(earnedItems) && earnedItems.length > 0) {
+        console.log("Hráč získal předměty:", earnedItems);
+        
+     
+        const updatedItems = [...playerItems];
+        
+       
+        earnedItems.forEach(newItem => {
+          
+          const existingItemIndex = updatedItems.findIndex(item => item.id === newItem.id);
+          
+          if (existingItemIndex !== -1) {
+         
+            const existingItem = updatedItems[existingItemIndex];
+            updatedItems[existingItemIndex] = {
+              ...existingItem,
+              count: (existingItem.count || 1) + 1
+            };
+          } else {
+            
+            updatedItems.push(newItem);
+          }
+        });
+        
+        
+        setPlayerItems(updatedItems);
+        
+        
+        localStorage.setItem("playerItems", JSON.stringify(updatedItems));
+      }
+    } else {
+     
+      const allExhausted = playerPokemons.every(pokemon => pokemon.health <= 0);
+      
+      if (allExhausted) {
+       
+        console.log("Všichni pokémoni jsou vyčerpaní, resetuji hru");
+        
+       
+        localStorage.clear();
+        
+        
+        window.location.href = "/nickname";
+      } else {
+        
+        setShowOptions(true);
+      }
     }
-  }, [locationId, visitedLocations]);
+  }
 
-  const handleStoryBoxClick = () => {
+  function handleStoryBoxClick() {
     if (!location) return;
 
     if (location.locationId === 2 && showSelectionSuccess) {
       if (currentTextIndex < location.descriptions.length - 1) {
-        setCurrentTextIndex((prevIndex) => prevIndex + 1);
+        setCurrentTextIndex(prevIndex => prevIndex + 1);
       } else {
         setShowText(false);
         setShowOptions(true);
@@ -162,7 +222,7 @@ const Location: React.FC = () => {
 
     if (location.locationId === 2) {
       if (currentTextIndex < 2) {
-        setCurrentTextIndex((prevIndex) => prevIndex + 1);
+        setCurrentTextIndex(prevIndex => prevIndex + 1);
       } else {
         setShowText(false);
         setHasCompletedIntro(true);
@@ -172,19 +232,20 @@ const Location: React.FC = () => {
     }
 
     if (currentTextIndex < location.descriptions.length - 1) {
-      setCurrentTextIndex((prevIndex) => prevIndex + 1);
+      setCurrentTextIndex(prevIndex => prevIndex + 1);
     } else {
       setShowText(false);
       setHasCompletedIntro(true);
+      
       if (location.hasPokemon) {
         setShowBattle(true);
       } else {
         setShowOptions(true);
       }
     }
-  };
+  }
 
-  const handleStarterSelection = (selectedPokemon: StarterPokemon) => {
+  function handleStarterSelection(selectedPokemon: StarterPokemon) {
     if (playerPokemons.length >= 6) {
       alert("Nemůžeš mít více než 6 pokémonů!");
       setShowStarterSelection(false);
@@ -197,20 +258,24 @@ const Location: React.FC = () => {
       return;
     }
 
+    setIsLoading(true);
     fetch(`/api/Pokemons/${selectedPokemon.id}`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         return response.json();
       })
-      .then((pokemonData) => {
+      .then(pokemonData => {
         if (!pokemonData || !pokemonData.pokemonId) {
           throw new Error("Invalid pokemon data received from API");
         }
 
-        const transformedAttacks =
-          pokemonData.pokemonAttacks?.map((attack: any) => ({
+        const transformedAttacks = 
+          pokemonData.pokemonAttacks?.map((attack: {
+            pokemonAttackId: number;
+            attackName: string;
+            energyCost: number;
+            baseDamage: number;
+          }) => ({
             attackId: attack.pokemonAttackId,
             attackName: attack.attackName,
             energyCost: attack.energyCost,
@@ -230,21 +295,24 @@ const Location: React.FC = () => {
         };
 
         const updatedPokemons = [...playerPokemons, completeData];
-        setPlayerPokemons(updatedPokemons);
         localStorage.setItem("playerPokemons", JSON.stringify(updatedPokemons));
+        setPlayerPokemons(updatedPokemons);
         setSelectedStarterPokemon(completeData);
         setShowStarterSelection(false);
         setShowText(true);
         setShowSelectionSuccess(true);
         setCurrentTextIndex(3);
       })
-      .catch((error) => {
-        console.error("Error fetching complete pokemon data:", error);
+      .catch(() => {
         alert("Chyba při získávání dat o pokémonovi!");
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
-  };
+  }
 
-  if (!location) return <div>Loading...</div>;
+  if (isLoading) return <div className="loading-spinner">Načítání...</div>;
+  if (!location) return <div>Lokace nenalezena</div>;
 
   if (location.locationId === 2 && !hasCompletedIntro) {
     return (
@@ -270,12 +338,13 @@ const Location: React.FC = () => {
             {playerPokemons.map((pokemon, index) => (
               <PokemonCell key={`pokemon-${index}`} pokemon={pokemon} />
             ))}
-            {Array(6 - playerPokemons.length)
+            {Array(Math.max(0, 6 - playerPokemons.length))
               .fill(null)
               .map((_, index) => (
                 <PokemonCell key={`empty-${index}`} />
               ))}
           </PokemonInventory>
+
           {(showText || showSelectionSuccess) && (
             <StoryBox onClick={handleStoryBoxClick} showContinueText={true}>
               <StoryText
@@ -287,15 +356,17 @@ const Location: React.FC = () => {
               />
             </StoryBox>
           )}
+          
           {showOptions && (
-            <LocationBtn
+            <LocationOptions
               connections={locationConnections}
               currentLocationId={parseInt(locationId)}
             />
           )}
+          
           <ItemInventory>
-            {playerItems.slice(0, 5).map((item, index) => (
-              <ItemInventoryCell key={index} item={item} />
+            {playerItems.slice(0, 5).map((item) => (
+              <ItemInventoryCell key={item.id} item={item} />
             ))}
             {Array(Math.max(0, 5 - playerItems.length))
               .fill(null)
@@ -305,12 +376,14 @@ const Location: React.FC = () => {
           </ItemInventory>
         </>
       )}
+
       {showStarterSelection && (
         <StarterSelection onSelect={handleStarterSelection} />
       )}
+      
       {showBattle && pokemon && (
         <Battle 
-          locationPokemonId={location.pokemonId} 
+          locationPokemonId={pokemon.pokemonId} 
           onBattleComplete={handleBattleComplete}
         />
       )}

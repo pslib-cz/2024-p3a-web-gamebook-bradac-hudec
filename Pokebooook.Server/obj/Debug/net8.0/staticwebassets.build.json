@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "JKNa52/9EBA0KbOETNBXcfdW4intsajrv9W3EPDq4bs=",
+  "Hash": "VQwkfgTNLxAiTtDbsOxQvOXcx/0kBOrgRts/k7U6YoQ=",
   "Source": "Pokebooook.Server",
   "BasePath": "_content/Pokebooook.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\pokebooook.client\\pokebooook.client.esproj",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\pokebooook.client\\pokebooook.client.esproj",
       "Version": 2,
       "Source": "pokebooook.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "Pokebooook.Server\\wwwroot",
       "Source": "Pokebooook.Server",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/001#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -50,10 +50,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\001.png"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/bug#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -71,10 +71,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\bug.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/dark#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -92,10 +92,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\dark.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/dragon#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -113,10 +113,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\dragon.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/electric#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -134,10 +134,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\electric.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/fairy#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -155,10 +155,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\fairy.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/fighting#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -176,10 +176,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\fighting.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/fire#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -197,10 +197,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\fire.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/flying#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -218,10 +218,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\flying.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/ghost#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -239,10 +239,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ghost.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/grass#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -260,10 +260,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\grass.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/ground#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -281,10 +281,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ground.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/ice#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ice.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2)#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4)#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -344,10 +344,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -365,10 +365,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1)#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -386,10 +386,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4)#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -407,10 +407,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/les#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -428,10 +428,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\les.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/les2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -449,10 +449,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\les2.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/les3#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -470,10 +470,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\les3.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/lespokemon#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -491,10 +491,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\lespokemon.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/normal#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -512,10 +512,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\normal.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/plateau#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -533,10 +533,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\plateau.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/poison#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -554,10 +554,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\poison.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/pokebook_first_location#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -575,10 +575,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\pokebook_first_location.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/pokebook_mountains#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -596,10 +596,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\pokebook_mountains.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/pokebook_pokecenter#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -617,10 +617,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\pokebook_pokecenter.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/pokemon_stadium#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -638,10 +638,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\pokemon_stadium.png"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/psychic#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -659,10 +659,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\psychic.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/rock#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\rock.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/steel#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\steel.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/water#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -725,7 +725,7 @@
   "Endpoints": [
     {
       "Route": "uploads/001.6zwaadtwld.png",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -746,7 +746,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -770,7 +770,7 @@
     },
     {
       "Route": "uploads/001.png",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -791,7 +791,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -807,7 +807,7 @@
     },
     {
       "Route": "uploads/bug.aq3mw6xp82.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -828,7 +828,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -852,7 +852,7 @@
     },
     {
       "Route": "uploads/bug.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -873,7 +873,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -889,7 +889,7 @@
     },
     {
       "Route": "uploads/dark.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -910,7 +910,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -926,7 +926,7 @@
     },
     {
       "Route": "uploads/dark.x704rv1sz4.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -947,7 +947,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -971,7 +971,7 @@
     },
     {
       "Route": "uploads/dragon.q5b8ddogce.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -992,7 +992,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1016,7 +1016,7 @@
     },
     {
       "Route": "uploads/dragon.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1037,7 +1037,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1053,7 +1053,7 @@
     },
     {
       "Route": "uploads/electric.s5x2qavdab.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1074,7 +1074,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1098,7 +1098,7 @@
     },
     {
       "Route": "uploads/electric.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1119,7 +1119,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1135,7 +1135,7 @@
     },
     {
       "Route": "uploads/fairy.1suamur6sz.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1156,7 +1156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1180,7 +1180,7 @@
     },
     {
       "Route": "uploads/fairy.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1201,7 +1201,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1217,7 +1217,7 @@
     },
     {
       "Route": "uploads/fighting.ef1t8tzhuj.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1238,7 +1238,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1262,7 +1262,7 @@
     },
     {
       "Route": "uploads/fighting.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1283,7 +1283,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1299,7 +1299,7 @@
     },
     {
       "Route": "uploads/fire.l01pz5g8td.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1320,7 +1320,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1344,7 +1344,7 @@
     },
     {
       "Route": "uploads/fire.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1365,7 +1365,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1381,7 +1381,7 @@
     },
     {
       "Route": "uploads/flying.qr3xxpiuun.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1402,7 +1402,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1426,7 +1426,7 @@
     },
     {
       "Route": "uploads/flying.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1447,7 +1447,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1463,7 +1463,7 @@
     },
     {
       "Route": "uploads/ghost.8qb2ayr4pq.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1484,7 +1484,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1508,7 +1508,7 @@
     },
     {
       "Route": "uploads/ghost.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1529,7 +1529,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1545,7 +1545,7 @@
     },
     {
       "Route": "uploads/grass.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1566,7 +1566,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1582,7 +1582,7 @@
     },
     {
       "Route": "uploads/grass.t02rqhti5z.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1603,7 +1603,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1627,7 +1627,7 @@
     },
     {
       "Route": "uploads/ground.5dqc2gywjz.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1648,7 +1648,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1672,7 +1672,7 @@
     },
     {
       "Route": "uploads/ground.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1693,7 +1693,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1709,7 +1709,7 @@
     },
     {
       "Route": "uploads/ice.cic7uur43u.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1730,7 +1730,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1754,7 +1754,7 @@
     },
     {
       "Route": "uploads/ice.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1775,7 +1775,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1791,7 +1791,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1812,7 +1812,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1828,7 +1828,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).ltsvcdnp6s.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1849,7 +1849,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1873,7 +1873,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).h9h1cef6we.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1894,7 +1894,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1918,7 +1918,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1939,7 +1939,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1955,7 +1955,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1976,7 +1976,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1992,7 +1992,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.ysijdwex65.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2013,7 +2013,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2037,7 +2037,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).d07hb94o99.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2058,7 +2058,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2082,7 +2082,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2103,7 +2103,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2119,7 +2119,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2140,7 +2140,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2156,7 +2156,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).x6gbk3ks5n.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2177,7 +2177,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2201,7 +2201,7 @@
     },
     {
       "Route": "uploads/les.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2222,7 +2222,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2238,7 +2238,7 @@
     },
     {
       "Route": "uploads/les.rroojrwohb.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2259,7 +2259,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2283,7 +2283,7 @@
     },
     {
       "Route": "uploads/les2.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2304,7 +2304,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2320,7 +2320,7 @@
     },
     {
       "Route": "uploads/les2.l2q274qkca.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2341,7 +2341,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2365,7 +2365,7 @@
     },
     {
       "Route": "uploads/les3.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2386,7 +2386,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2402,7 +2402,7 @@
     },
     {
       "Route": "uploads/les3.z8fvysr13a.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2423,7 +2423,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2447,7 +2447,7 @@
     },
     {
       "Route": "uploads/lespokemon.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2468,7 +2468,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2484,7 +2484,7 @@
     },
     {
       "Route": "uploads/lespokemon.x5kbsmfw48.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2505,7 +2505,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2529,7 +2529,7 @@
     },
     {
       "Route": "uploads/normal.1xv1l3def0.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2550,7 +2550,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2574,7 +2574,7 @@
     },
     {
       "Route": "uploads/normal.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2595,7 +2595,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2611,7 +2611,7 @@
     },
     {
       "Route": "uploads/plateau.ayhhem0f59.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2632,7 +2632,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2656,7 +2656,7 @@
     },
     {
       "Route": "uploads/plateau.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2677,7 +2677,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2693,7 +2693,7 @@
     },
     {
       "Route": "uploads/poison.e72mnt9qlc.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2714,7 +2714,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2738,7 +2738,7 @@
     },
     {
       "Route": "uploads/poison.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2759,7 +2759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2775,7 +2775,7 @@
     },
     {
       "Route": "uploads/pokebook_first_location.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2796,7 +2796,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2812,7 +2812,7 @@
     },
     {
       "Route": "uploads/pokebook_first_location.t6p2kpzfoc.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2833,7 +2833,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2857,7 +2857,7 @@
     },
     {
       "Route": "uploads/pokebook_mountains.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2878,7 +2878,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2894,7 +2894,7 @@
     },
     {
       "Route": "uploads/pokebook_mountains.pqlyt4q6be.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2915,7 +2915,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:21 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2939,7 +2939,7 @@
     },
     {
       "Route": "uploads/pokebook_pokecenter.4xs4apa65t.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2960,7 +2960,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2984,7 +2984,7 @@
     },
     {
       "Route": "uploads/pokebook_pokecenter.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3005,7 +3005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3021,7 +3021,7 @@
     },
     {
       "Route": "uploads/pokemon_stadium.npvlimwrek.png",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3042,7 +3042,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3066,7 +3066,7 @@
     },
     {
       "Route": "uploads/pokemon_stadium.png",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3087,7 +3087,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3103,7 +3103,7 @@
     },
     {
       "Route": "uploads/psychic.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3124,7 +3124,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3140,7 +3140,7 @@
     },
     {
       "Route": "uploads/psychic.vjhl182900.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3161,7 +3161,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3185,7 +3185,7 @@
     },
     {
       "Route": "uploads/rock.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3206,7 +3206,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3222,7 +3222,7 @@
     },
     {
       "Route": "uploads/rock.vh5ksp9ivj.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3243,7 +3243,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3267,7 +3267,7 @@
     },
     {
       "Route": "uploads/steel.cm5wn2vjz9.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3288,7 +3288,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3312,7 +3312,7 @@
     },
     {
       "Route": "uploads/steel.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3333,7 +3333,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3349,7 +3349,7 @@
     },
     {
       "Route": "uploads/water.gpysjl2xpq.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3370,7 +3370,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3394,7 +3394,7 @@
     },
     {
       "Route": "uploads/water.svg",
-      "AssetFile": "C:\\Users\\fildi\\Source\\Repos\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3415,7 +3415,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:36:22 GMT"
+          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -27,7 +27,7 @@ const PokemonContainer: React.FC<PokemonContainerProps> = ({
 }) => {
     if (!pokemon) return null;
 
-    console.log("Pokemon type image ID:", typeImageId); // Debug log
+    console.log("Pokemon type image ID:", typeImageId); 
 
     return (
         <div className={PokemonContainerCSS.pokemon__container}>

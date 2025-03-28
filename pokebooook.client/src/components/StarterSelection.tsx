@@ -30,7 +30,7 @@ const StarterSelection: React.FC<StarterSelectionProps> = ({ onSelect }) => {
                 const pokemonData = await Promise.all(pokemonPromises);
                 console.log("Fetched starter pokemon data:", pokemonData);
                 
-                // Transform the data to match StarterPokemon type
+            
                 const transformedData = pokemonData.map(pokemon => ({
                     id: pokemon.pokemonId,
                     name: pokemon.name,
