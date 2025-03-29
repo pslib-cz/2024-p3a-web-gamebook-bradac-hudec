@@ -1,45 +1,31 @@
+# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+# This stage is used when running from VS in fast mode (Default for Debug configuration)
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER $APP_UID
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
+EXPOSE 8080
 
+
+# This stage is used to build the service project
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-
-# Kopírujeme pouze .csproj server projektu
+COPY ["pokebooook.client/nuget.config", "pokebooook.client/"]
 COPY ["Pokebooook.Server/Pokebooook.Server.csproj", "Pokebooook.Server/"]
-# Obnovíme závislosti serveru
-RUN dotnet restore "Pokebooook.Server/Pokebooook.Server.csproj"
-
-# Teď kopírujeme všechny zdrojové soubory
+COPY ["pokebooook.client/pokebooook.client.esproj", "pokebooook.client/"]
+RUN dotnet restore "./Pokebooook.Server/Pokebooook.Server.csproj"
 COPY . .
-
-# Sestavíme serverový projekt
 WORKDIR "/src/Pokebooook.Server"
-RUN dotnet build "Pokebooook.Server.csproj" -c Release -o /app/build
+RUN dotnet build "./Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
+# This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
-# Instalace Node.js a npm pro sestavení React aplikace
-RUN apt-get update && apt-get install -y nodejs npm
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
-# Nejdříve sestavíme React aplikaci
-WORKDIR "/src/pokebooook.client"
-RUN npm install
-RUN npm run build
-
-# Poté publikujeme ASP.NET aplikaci
-WORKDIR "/src/Pokebooook.Server"
-RUN dotnet publish "Pokebooook.Server.csproj" -c Release -o /app/publish
-
+# This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-RUN mkdir -p /data
-# Přesunout databázi do /data (pokud existuje)
-COPY --from=publish /src/data/app.db /data/app.db || true
-# Změnit vlastníka adresáře /data
-RUN chmod 777 /data
-# Upravit appsettings.json, aby ukazoval na správnou cestu k databázi
-RUN sed -i 's/\.\.\/data\/app\.db/\/data\/app\.db/g' appsettings.json || true
-
-ENTRYPOINT ["dotnet", "Pokebooook.Server.dll"] 
+ENTRYPOINT ["dotnet", "Pokebooook.Server.dll"]
