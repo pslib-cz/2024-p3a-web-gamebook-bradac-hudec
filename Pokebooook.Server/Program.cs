@@ -47,10 +47,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// Endpoint pro API
-app.MapGet("/api", () => "Pokebook API je funkční! Pro dokumentaci navštivte /swagger");
+// Endpoint pro API informace
+app.MapGet("/api/info", () => "Pokebook API je funkční! Pro dokumentaci navštivte /swagger");
 
-// Mapování pro SPA aplikaci
-app.MapFallbackToFile("/index.html");
+// Mapování pro SPA aplikaci - zajišťuje, že všechny URL, které nejsou explicitně
+// namapované na API, budou přesměrovány na index.html React aplikace
+app.MapFallbackToFile("index.html");
 
 app.Run();
