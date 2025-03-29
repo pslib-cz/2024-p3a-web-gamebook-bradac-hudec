@@ -3,10 +3,10 @@
 ################################################################################
 
 /.vs
-/Pokebooook.Server
+# Místo ignorování celé složky serveru, ignorujeme jen konkrétní soubory
 /Pokebooook.Server/app.db-shm
 /Pokebooook.Server/app.db-wal
-/Pokebooook.Server/bin/Debug/net8.0/Pokebooook.Server.dll
-/Pokebooook.Server/bin/Debug/net8.0/Pokebooook.Server.exe
+/Pokebooook.Server/bin/
+/Pokebooook.Server/obj/
 *.env
 /Pokebooook.Server/app.db
