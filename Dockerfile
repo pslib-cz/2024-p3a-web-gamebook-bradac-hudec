@@ -5,19 +5,31 @@ EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
+# Instalace Node.js a npm pro sestavení React aplikace
+RUN apt-get update && apt-get install -y nodejs npm
 WORKDIR /src
 
 # Kopírování projektových souborů pro obnovení závislostí
 COPY ["Pokebooook.Server/Pokebooook.Server.csproj", "Pokebooook.Server/"]
+COPY ["pokebooook.client/package.json", "pokebooook.client/"]
+COPY ["pokebooook.client/package-lock.json", "pokebooook.client/"]
 
 # Obnovení závislostí ASP.NET
 RUN dotnet restore "Pokebooook.Server/Pokebooook.Server.csproj"
 
-# Kopírování všech souborů serveru
+# Kopírování všech souborů
 COPY Pokebooook.Server/. Pokebooook.Server/
+COPY pokebooook.client/. pokebooook.client/
 
-# Kopírování již sestavené React aplikace
-COPY pokebooook.client/dist/. Pokebooook.Server/wwwroot/
+# Oprava importů v main.tsx - změna z react-router na react-router-dom
+RUN sed -i 's/import { BrowserRouter, Route, Routes } from "react-router";/import { BrowserRouter, Route, Routes } from "react-router-dom";/g' pokebooook.client/src/main.tsx
+
+# Sestavení React aplikace
+WORKDIR "/src/pokebooook.client"
+RUN npm install && npm run build
+
+# Kontrola a kopírování sestavené React aplikace
+RUN if [ -d "dist" ]; then ls -la dist && cp -r dist/* ../Pokebooook.Server/wwwroot/; else echo "Sestavení React aplikace selhalo"; exit 1; fi
 
 # Sestavení ASP.NET aplikace
 WORKDIR "/src/Pokebooook.Server"
