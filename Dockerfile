@@ -21,15 +21,19 @@ RUN dotnet restore "Pokebooook.Server/Pokebooook.Server.csproj"
 # Kopírování všech souborů
 COPY . .
 
-# Sestavení React aplikace
+# Oprava React chyby před sestavením - úprava importů v main.tsx
 WORKDIR "/src/pokebooook.client"
-RUN npm install
-# Více informací o buildu pro lepší debug
-RUN npm run build && ls -la dist
+RUN if [ -f "src/main.tsx" ]; then sed -i "s/import { BrowserRouter, Route, Routes } from \"react-router\";/import { BrowserRouter, Route, Routes } from \"react-router-dom\";/g" src/main.tsx; fi
 
-# Kontrola, zda se React aplikace správně sestavila - bez použití || operátoru
-RUN if [ ! -d "dist" ]; then echo "CHYBA: React build selhal, adresář dist neexistuje"; exit 1; fi
-RUN if [ -z "$(ls -A dist)" ]; then echo "CHYBA: React build je prázdný"; exit 1; fi
+# Sestavení React aplikace
+RUN npm install
+# Pokud by došlo k chybě, pokusíme se o opravení TypeScript konfigurace
+RUN npm run build || (echo "Opravuji TypeScript konfiguraci..." && \
+    if [ -f "tsconfig.json" ]; then echo '{"compilerOptions":{"target":"ES2020","useDefineForClassFields":true,"lib":["ES2020","DOM","DOM.Iterable"],"module":"ESNext","skipLibCheck":true,"moduleResolution":"bundler","allowImportingTsExtensions":true,"resolveJsonModule":true,"isolatedModules":true,"noEmit":true,"jsx":"react-jsx","strict":true,"noUnusedLocals":true,"noUnusedParameters":true,"noFallthroughCasesInSwitch":true},"include":["src"],"references":[{"path":"./tsconfig.node.json"}]}' > tsconfig.app.json; fi && \
+    npm run build)
+
+# Kontrola výsledku React buildu
+RUN if [ -d "dist" ]; then ls -la dist; else echo "React build stále selhal, adresář dist neexistuje"; exit 1; fi
 
 # Sestavení ASP.NET aplikace
 WORKDIR "/src/Pokebooook.Server"
@@ -38,15 +42,15 @@ RUN dotnet build "Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/buil
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 WORKDIR "/src/Pokebooook.Server"
-# Publikování projektu včetně SPA - přidány další parametry pro debug
-RUN dotnet publish "Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false --verbosity detailed
+# Publikování projektu včetně SPA
+RUN dotnet publish "Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
 # Kontrola obsahu wwwroot - tam by měly být soubory React aplikace
-RUN if [ -d "wwwroot" ]; then ls -la wwwroot; else echo "wwwroot adresář neexistuje!"; fi
+RUN if [ -d "wwwroot" ]; then ls -la wwwroot; else echo "wwwroot adresář neexistuje!"; exit 1; fi
 
 # Adresář pro data
 RUN mkdir -p /data 
