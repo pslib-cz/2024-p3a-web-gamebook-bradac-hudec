@@ -1,5 +1,4 @@
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-USER $APP_UID
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8081
@@ -23,10 +22,11 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-# Adresář pro data
-RUN mkdir -p /data && chmod 777 /data
+# Vytvoření adresáře pro data během sestavení
+RUN mkdir -p /data 
+RUN chmod 777 /data
 
-# Kopírování databáze přímo z kořenového adresáře
+# Kopírování databáze
 COPY data/app.db /data/ 
 
 # Úprava appsettings.json pro cestu k databázi
