@@ -31,8 +31,8 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 # Vytvoření adresáře /data a přesun databáze
 RUN mkdir -p /data
-COPY --from=publish /src/data/app.db /data/app.db || echo "Databáze neexistuje"
+COPY --from=publish /src/data/app.db /data/app.db || true
 RUN chmod 777 /data
 # Upravit appsettings.json, aby ukazoval na správnou cestu k databázi
-RUN sed -i 's/\.\.\/data\/app\.db/\/data\/app\.db/g' appsettings.json || echo "Úprava konfigurace se nezdařila"
+RUN sed -i 's/\.\.\/data\/app\.db/\/data\/app\.db/g' appsettings.json || true
 ENTRYPOINT ["dotnet", "Pokebooook.Server.dll"]
