@@ -224,7 +224,7 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
           console.log("Přidaný řádek:", addedRow);
           setData([...data, addedRow]);
         } else if (name.toLowerCase() === "locations") {
-          // Locations - zpracování číselných hodnot a boolean
+          // Locations - zpracování číselných hodnot
           if (rowToAdd.pokemonId) {
             rowToAdd.pokemonId = parseInt(rowToAdd.pokemonId.toString()) || 0;
           }
@@ -237,14 +237,49 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
             rowToAdd.imageId = parseInt(rowToAdd.imageId.toString()) || 1;
           }
           
-          // Převod hasPokemon na boolean - převedeme na string "true" nebo "false"
-          if (typeof rowToAdd.hasPokemon === 'string') {
-            rowToAdd.hasPokemon = rowToAdd.hasPokemon.toLowerCase() === 'true' ? "true" : "false";
+          // Pro locations musíme vytvořit objekt, který je validní pro API
+          // Se správně typovanými hodnotami
+          const locationId = rowToAdd.locationId ? parseInt(rowToAdd.locationId.toString()) : undefined;
+          
+          // Kontrola povinných polí pro lokaci
+          if (!rowToAdd.name) {
+            throw new Error("Pole 'name' je povinné");
           }
           
-          console.log("Odesílám data pro lokaci:", JSON.stringify(rowToAdd, null, 2));
-          const addedRow = await addData(name, rowToAdd);
-          console.log("Přidaný řádek:", addedRow);
+          // Pokud je zadané ID, zkontrolujeme, že není prázdné
+          if (locationId !== undefined && isNaN(locationId)) {
+            throw new Error("ID lokace musí být číslo");
+          }
+          
+          const locationToAdd = {
+            locationId: locationId,
+            name: rowToAdd.name as string,
+            hasPokemon: rowToAdd.hasPokemon === "true", // Převod na skutečný boolean
+            rocketChance: parseFloat(rowToAdd.rocketChance?.toString() || "0"),
+            pokemonId: parseInt(rowToAdd.pokemonId?.toString() || "0"),
+            imageId: parseInt(rowToAdd.imageId?.toString() || "1"),
+            descriptions: ["Toto místo jsi ještě neprozkoumal."]
+          };
+          
+          console.log("Odesílám data pro lokaci:", JSON.stringify(locationToAdd, null, 2));
+          
+          // Přímé volání fetch místo addData pro lepší kontrolu
+          const response = await fetch(`http://localhost:5212/api/${name}`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(locationToAdd),
+          });
+          
+          if (!response.ok) {
+            const errorText = await response.text();
+            console.error(`Chyba při vytváření lokace:`, response.status, errorText);
+            throw new Error(`Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`);
+          }
+          
+          const addedRow = await response.json();
+          console.log("Přidaná lokace:", addedRow);
           setData([...data, addedRow]);
         } else if (name.toLowerCase() === "pokemons") {
           // Pokemons - zpracování číselných hodnot
@@ -451,8 +486,8 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
             className={AdminTableCSS.adminTable__input}
             onChange={(e) => (row[col] = e.target.value)}
           >
-            <option value="true">true</option>
-            <option value="false">false</option>
+            <option value="true">Ano</option>
+            <option value="false">Ne</option>
           </select>
         </td>
       );
@@ -460,6 +495,20 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
     
     // Special handling for numeric fields in locations
     if (name.toLowerCase() === "locations" && (col === "pokemonId" || col === "rocketChance" || col === "imageId")) {
+      return (
+        <td key={col} className={AdminTableCSS.adminTable__td}>
+          <input
+            type="number"
+            defaultValue={row[col]}
+            className={AdminTableCSS.adminTable__input}
+            onChange={(e) => (row[col] = e.target.value ? parseInt(e.target.value) : "")}
+          />
+        </td>
+      );
+    }
+    
+    // Přidám speciální zpracování pro locationId v existujících lokacích
+    if (name.toLowerCase() === "locations" && col === "locationId") {
       return (
         <td key={col} className={AdminTableCSS.adminTable__td}>
           <input
@@ -489,6 +538,14 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
       value.toString().toLowerCase().includes(filter.toLowerCase())
     )
   );
+
+  // Převod cols na proměnnou, abychom ji mohli upravit
+  let displayCols = [...cols];
+
+  // Pokud jde o locations, přidáme locationId do displayCols, pokud tam ještě není
+  if (name.toLowerCase() === "locations" && !cols.includes("locationId")) {
+    displayCols = ["locationId", ...cols];
+  }
 
   if (error) {
     return <div className={AdminTableCSS.error}>{error}</div>;
@@ -533,7 +590,7 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
         <thead>
           <tr>
             <th className={AdminTableCSS.adminTable__th}>ID</th>
-            {cols.map((col, index) => (
+            {displayCols.map((col, index) => (
               <th key={index} className={AdminTableCSS.adminTable__th}>
                 {col}
               </th>
@@ -546,7 +603,7 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
             return (
               <tr key={row[id]} className={AdminTableCSS.adminTable__tr}>
                 {renderIdCell(row)}
-                {cols.map((col) => renderCell(row, col))}
+                {displayCols.map((col) => renderCell(row, col))}
                 <td className={AdminTableCSS.adminTable__td}>
                   <button
                     className={AdminTableCSS.adminTable__button}
@@ -567,7 +624,7 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
           {name !== "Images" && (
             <tr className={AdminTableCSS.adminTable__tr}>
               <td className={AdminTableCSS.adminTable__td}>New</td>
-              {cols.map((col, index) => (
+              {displayCols.map((col, index) => (
                 <td key={index} className={AdminTableCSS.adminTable__td}>
                   {name.toLowerCase() === "items" && col === "effect" ? (
                     <select
@@ -598,8 +655,8 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
                         setNewRow({ ...newRow, [col]: e.target.value });
                       }}
                     >
-                      <option value="true">true</option>
-                      <option value="false">false</option>
+                      <option value="true">Ano</option>
+                      <option value="false">Ne</option>
                     </select>
                   ) : name.toLowerCase() === "locations" && (col === "pokemonId" || col === "rocketChance" || col === "imageId") ? (
                     <input
@@ -609,6 +666,16 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
                       onChange={(e) => {
                         setNewRow({ ...newRow, [col]: e.target.value });
                       }}
+                    />
+                  ) : name.toLowerCase() === "locations" && col === "locationId" ? (
+                    <input
+                      type="number"
+                      value={newRow[col] || ""}
+                      className={AdminTableCSS.adminTable__input}
+                      onChange={(e) => {
+                        setNewRow({ ...newRow, [col]: e.target.value });
+                      }}
+                      placeholder="Ponech prázdné pro automatické ID"
                     />
                   ) : (
                     <input

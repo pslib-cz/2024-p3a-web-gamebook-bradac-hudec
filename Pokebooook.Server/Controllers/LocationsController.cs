@@ -78,7 +78,26 @@ namespace Pokebooook.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<Location>> PostLocation(Location location)
         {
-            _context.Locations.Add(location);
+            // Zkontrolujeme, zda je ID nastaveno a zda již lokace s tímto ID existuje
+            if (location.LocationId != 0)
+            {
+                // Pokud lokace s tímto ID již existuje, vrátíme BadRequest
+                if (_context.Locations.Any(l => l.LocationId == location.LocationId))
+                {
+                    return BadRequest($"Lokace s ID {location.LocationId} již existuje.");
+                }
+
+                // V opačném případě zkusíme nastavit ID pomocí metody Entity.Property().CurrentValue
+                var entry = _context.Entry(location);
+                entry.Property(e => e.LocationId).CurrentValue = location.LocationId;
+                entry.State = EntityState.Added;
+            }
+            else
+            {
+                // Pokud klient nezadal ID, použijeme standardní způsob přidání
+                _context.Locations.Add(location);
+            }
+
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetLocation", new { id = location.LocationId }, location);
