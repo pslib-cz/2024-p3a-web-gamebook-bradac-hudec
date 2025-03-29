@@ -1,9 +1,9 @@
 {
 "SpaProxyServer": {
-"ServerUrl": "",
+"ServerUrl": "https://localhost:5173",
 "RedirectUrl": "",
-"LaunchCommand": "",
-"WorkingDirectory": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\..\\pokebooook.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

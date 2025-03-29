@@ -47,10 +47,10 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// Přidávám minimální endpoint pro kořenovou URL
-app.MapGet("/", () => "Pokebook API je funkční! Pro dokumentaci navštivte /swagger");
+// Endpoint pro API
+app.MapGet("/api", () => "Pokebook API je funkční! Pro dokumentaci navštivte /swagger");
 
-// Odkomentujte následující řádek pouze pokud máte SPA aplikaci
-// app.MapFallbackToFile("/index.html");
+// Mapování pro SPA aplikaci
+app.MapFallbackToFile("/index.html");
 
 app.Run();
