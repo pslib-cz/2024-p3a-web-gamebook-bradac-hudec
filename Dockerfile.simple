@@ -1,0 +1,34 @@
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER $APP_UID
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8081
+
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+
+# Kopírování celého projektu najednou
+COPY . .
+
+# Sestavení ASP.NET projektu
+WORKDIR "/src/Pokebooook.Server"
+RUN dotnet restore "Pokebooook.Server.csproj" --verbosity detailed
+RUN dotnet build "Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/build --verbosity detailed
+
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+WORKDIR "/src/Pokebooook.Server"
+# Publikování projektu
+RUN dotnet publish "Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false --verbosity detailed
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+# Vytvoření adresáře /data a přesun databáze
+RUN mkdir -p /data
+COPY --from=publish /src/data/app.db /data/app.db || true
+RUN chmod 777 /data
+# Upravit appsettings.json, aby ukazoval na správnou cestu k databázi
+RUN sed -i 's/\.\.\/data\/app\.db/\/data\/app\.db/g' appsettings.json || true
+ENTRYPOINT ["dotnet", "Pokebooook.Server.dll"] 

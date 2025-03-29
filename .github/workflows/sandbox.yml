@@ -21,10 +21,15 @@ jobs:
         with:
           node-version: '20'
       
-      - name: Ověření struktury projektu
+      - name: Ověření ASP.NET projektu
         run: |
           chmod +x .github/workflows/scripts/check-dotnet-project.sh
           .github/workflows/scripts/check-dotnet-project.sh
+      
+      - name: Ověření React projektu
+        run: |
+          chmod +x .github/workflows/scripts/check-react-project.sh
+          .github/workflows/scripts/check-react-project.sh
       
       - name: Seznam souborů v repozitáři
         run: ls -la
