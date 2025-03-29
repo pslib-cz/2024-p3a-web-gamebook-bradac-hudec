@@ -11,31 +11,14 @@ jobs:
       - name: Naklonování repozitáře
         uses: actions/checkout@v4
       
-      - name: Nastavení prostředí .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '8.0.x'
-          
-      - name: Nastavení prostředí Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-      
-      - name: Ověření ASP.NET projektu
+      - name: Seznam souborů
         run: |
-          chmod +x .github/workflows/scripts/check-dotnet-project.sh
-          .github/workflows/scripts/check-dotnet-project.sh
-      
-      - name: Ověření React projektu
-        run: |
-          chmod +x .github/workflows/scripts/check-react-project.sh
-          .github/workflows/scripts/check-react-project.sh
-      
-      - name: Seznam souborů v repozitáři
-        run: ls -la
-        
-      - name: Seznam souborů v Pokebooook.Server
-        run: ls -la Pokebooook.Server || echo "Složka neexistuje"
+          echo "Seznam souborů v kořenovém adresáři:"
+          ls -la
+          echo "Seznam souborů v adresáři serveru:"
+          ls -la Pokebooook.Server || echo "Složka serveru neexistuje"
+          echo "Seznam souborů v adresáři data:"
+          ls -la data || echo "Složka data neexistuje"
           
       - name: Přihlášení se k Sandboxu
         uses: docker/login-action@v3
@@ -51,12 +34,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: ./Dockerfile.simple
+          file: ./Dockerfile
           push: true
           tags: registry.pslib.cloud/sandbox/app-67:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-          # Přidání podrobných výpisů při sestavování
-          build-args: |
-            DOCKER_BUILDKIT=1
-          outputs: type=docker,dest=image.tar

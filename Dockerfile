@@ -8,48 +8,29 @@ EXPOSE 8080
 EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG BUILD_CONFIGURATION=Release
-RUN apt update && apt install nodejs npm -y
 WORKDIR /src
 
-# Kopírování celého projektu najednou
+# Kopírování zdrojových souborů
 COPY . .
 
-# Nejprve sestavíme klientskou React aplikaci
-WORKDIR "/src/pokebooook.client"
-# Zobrazení obsahu adresáře
-RUN ls -la
-# Zobrazení obsahu package.json
-RUN cat package.json || echo "Soubor package.json neexistuje"
-# Instalace závislostí s výpisem
-RUN npm install --verbose
-# Zobrazení nainstalovaných modulů
-RUN ls -la node_modules
-# Zkusíme jednodušší způsob buildu
-RUN NODE_ENV=production npm run build || echo "Build selhal, zkusíme alternativní přístup"
-# Alternativně pouze zkopírujeme statické soubory, pokud build selhal
-RUN mkdir -p dist || true
+# Sestavení a publikování
+WORKDIR /src/Pokebooook.Server
+RUN dotnet publish -c Release -o /app/publish
 
-# Poté sestavíme server projekt
-WORKDIR "/src/Pokebooook.Server"
-RUN dotnet restore "Pokebooook.Server.csproj" --verbosity detailed
-RUN dotnet build "Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/build --verbosity detailed
-
-# This stage is used to publish the service project to be copied to the final stage
-FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-WORKDIR "/src/Pokebooook.Server"
-# Zkusíme publikovat s explicitními paramerty
-RUN dotnet publish "Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false /p:SpaProxyServerUrl=http://localhost:5173 --verbosity detailed
-
-# This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
-FROM base AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
-# Vytvoření adresáře /data a přesun databáze
+COPY --from=build /app/publish .
+
+# Příprava adresáře pro data
 RUN mkdir -p /data
-COPY --from=publish /src/data/app.db /data/app.db || true
 RUN chmod 777 /data
-# Upravit appsettings.json, aby ukazoval na správnou cestu k databázi
-RUN sed -i 's/\.\.\/data\/app\.db/\/data\/app\.db/g' appsettings.json || true
+
+# Kopírování databáze
+COPY data/app.db /data/app.db 2>/dev/null || true
+
+# Úprava konfigurace pro cestu k databázi
+RUN if [ -f "appsettings.json" ]; then sed -i 's|../data/app.db|/data/app.db|g' appsettings.json; fi
+
+EXPOSE 80
+EXPOSE 443
 ENTRYPOINT ["dotnet", "Pokebooook.Server.dll"]
