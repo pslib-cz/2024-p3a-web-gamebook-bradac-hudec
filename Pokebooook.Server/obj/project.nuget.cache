@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8CWeLIK77a8=",
+  "dgSpecHash": "ketr1/qTTV8=",
   "success": true,
   "projectFilePath": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj",
   "expectedPackageFiles": [
@@ -97,6 +97,7 @@
     "C:\\Users\\fildi\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0\\microsoft.extensions.primitives.9.0.0.nupkg.sha512",
     "C:\\Users\\fildi\\.nuget\\packages\\microsoft.net.stringtools\\17.8.3\\microsoft.net.stringtools.17.8.3.nupkg.sha512",
     "C:\\Users\\fildi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\fildi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512",
     "C:\\Users\\fildi\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\8.0.7\\microsoft.visualstudio.web.codegeneration.8.0.7.nupkg.sha512",
     "C:\\Users\\fildi\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\8.0.7\\microsoft.visualstudio.web.codegeneration.core.8.0.7.nupkg.sha512",
     "C:\\Users\\fildi\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\8.0.7\\microsoft.visualstudio.web.codegeneration.design.8.0.7.nupkg.sha512",
