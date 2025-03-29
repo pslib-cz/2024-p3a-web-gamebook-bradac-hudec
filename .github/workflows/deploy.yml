@@ -24,6 +24,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: registry.pslib.cloud/sandbox/pokebooook:latest
+          tags: registry.pslib.cloud/sandbox/app-67:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max 
