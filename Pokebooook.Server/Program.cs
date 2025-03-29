@@ -29,56 +29,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var app = builder.Build();
 
-// Hashování existujících hesel, pokud byl zadán argument příkazové řádky
-if (args.Length > 0 && args[0] == "hash-passwords")
-{
-    using (var scope = app.Services.CreateScope())
-    {
-        var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-        
-        try
-        {
-            // Najdi všechny uživatele, jejichž hesla nejsou hashovaná
-            var usersWithPlaintextPasswords = context.Users
-                .Where(u => !u.Password.StartsWith("$2a$") && 
-                          !u.Password.StartsWith("$2b$") && 
-                          !u.Password.StartsWith("$2y$"))
-                .ToList();
 
-            if (usersWithPlaintextPasswords.Count == 0)
-            {
-                Console.WriteLine("Žádná hesla k hashování nebyla nalezena.");
-            }
-            else
-            {
-                Console.WriteLine($"Nalezeno {usersWithPlaintextPasswords.Count} nehashovaných hesel.");
-                
-                foreach (var user in usersWithPlaintextPasswords)
-                {
-                    var plaintextPassword = user.Password;
-                    var hashedPassword = BCrypt.Net.BCrypt.HashPassword(plaintextPassword);
-                    
-                    user.Password = hashedPassword;
-                    
-                    Console.WriteLine($"Zahashováno heslo pro uživatele: {user.Email}");
-                }
-
-                context.SaveChanges();
-                Console.WriteLine("Všechna hesla byla úspěšně zahashována.");
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Došlo k chybě při hashování hesel: {ex.Message}");
-        }
-    }
-    
-    // Pokud byl pouze požadavek na hashování, ukončíme aplikaci
-    if (args.Length > 1 && args[1] == "--exit")
-    {
-        return;
-    }
-}
 
 // Konfigurace HTTP pipeline
 if (app.Environment.IsDevelopment())
