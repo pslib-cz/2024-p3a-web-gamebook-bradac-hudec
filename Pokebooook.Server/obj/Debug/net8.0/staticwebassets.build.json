@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "1cHBFabBPZD+tnW+Jn4eKwx/RptMPKFBXLzqkfiFF5k=",
+  "Hash": "6zAd6wu2HMQWktYzIAnLlhoFXkUh/qnYQVZNvca1f5I=",
   "Source": "Pokebooook.Server",
   "BasePath": "_content/Pokebooook.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\pokebooook.client\\pokebooook.client.esproj",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\pokebooook.client\\pokebooook.client.esproj",
       "Version": 2,
       "Source": "pokebooook.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "Pokebooook.Server\\wwwroot",
       "Source": "Pokebooook.Server",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/001#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -50,73 +50,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\001.png"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\AbandonedCottage.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/AbandonedCottage#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "l30fbfk3pz",
-      "Integrity": "QTUxuHI7ZPkPvdSkuPBf6TQJbifU5h6QdE7inTygak4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\AbandonedCottage.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Arbok.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Arbok#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "v0mzvyg47f",
-      "Integrity": "P6H6AWRDRShmLjaAm9DdSnVhajWUTC1xSBW3+rVxkJA=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Arbok.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\BerryJuice.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/BerryJuice#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "49pyk9llum",
-      "Integrity": "WJwWSlGiCCwUbmWZVTbV4AH9nLEKxksk81r3s6l0BnE=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\BerryJuice.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/bug#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -134,31 +71,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\bug.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\CaveEntrance.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/CaveEntrance#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "cdzwijwj65",
-      "Integrity": "ELkZ1wh5fxYZeTMEzK5BRfi6WO990WQ8TOzEd51nvzM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\CaveEntrance.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/dark#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -176,52 +92,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\dark.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\DarkCave.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/DarkCave#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "xjhwp9l1j7",
-      "Integrity": "I9IegILJkt2CKqeGCIVwqNJ3Xu3dUHN93p58zQ0x1kY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\DarkCave.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\DeepForest.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/DeepForest#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "27m7rtdni8",
-      "Integrity": "4nRUn4gWT+nbJXPnTtutHEpQ2xn1kj2vOqcCykoMHBc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\DeepForest.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/dragon#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -239,31 +113,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\dragon.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Ekans.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Ekans#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "s4s8vj5rvy",
-      "Integrity": "lARCNbsxnkS/cavw2vK8Nf38dbAjmphdsGWpiepm8Fg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Ekans.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/electric#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -281,10 +134,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\electric.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/fairy#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -302,52 +155,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\fairy.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Fearow.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Fearow#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "8019k9m9l3",
-      "Integrity": "qJp8v0OQpY/9CPV/u93LQMeN27ERwHChCfdrkXwZsms=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Fearow.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\FieldPath.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/FieldPath#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "vuyy6bz615",
-      "Integrity": "92YRom/NrwEKcZkQ54uX6fvlz5LjaMk/HBUuKO85ea0=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\FieldPath.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/fighting#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -365,10 +176,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\fighting.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/fire#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -386,10 +197,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\fire.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/flying#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -407,31 +218,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\flying.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ForestEntrance.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/ForestEntrance#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "5gm8hmtzc9",
-      "Integrity": "pXxL/xN6gQ53zM6jly39lEGLnDKI/22CRv5C25wceEY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\ForestEntrance.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/ghost#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -449,10 +239,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ghost.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/grass#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -470,10 +260,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\grass.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/ground#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -491,31 +281,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ground.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Championsville.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Championsville#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "q4w4joe0zx",
-      "Integrity": "VlHs7CZOQ0fJpia9zPjk5zZYo0y31EcOHpTdKJhlm04=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Championsville.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/ice#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -533,31 +302,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ice.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Lemonade.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Lemonade#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "mhnn2thfxg",
-      "Integrity": "qnyvgmzKU/VypWKfg5ONHGe8eSiJDG87cmarKSPkvks=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Lemonade.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2)#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -575,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4)#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -596,10 +344,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -617,10 +365,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1)#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -638,10 +386,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4)#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -659,10 +407,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/les#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -680,10 +428,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\les.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/les2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -701,10 +449,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\les2.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/les3#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -722,10 +470,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\les3.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/lespokemon#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -743,52 +491,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\lespokemon.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Meadow.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Meadow#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "l59raxo7sl",
-      "Integrity": "5+pvgrQ1o3b+/tiDTjWjl3xybzldZJajyghB0jwW2i8=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Meadow.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Mudflats.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Mudflats#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "8fah2wwaia",
-      "Integrity": "/G5hWrU+kx+LHV+dKWzmXrU8ewbDRMXRiwAiY2lGu2o=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Mudflats.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/normal#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -806,94 +512,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\normal.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgeot.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Pidgeot#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "7c78z4jq84",
-      "Integrity": "2eXVW4phDvC6gvWx3E/cZR56FrCT3lGaUYmxitevBAk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Pidgeot.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgeotto.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Pidgeotto#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "x1drhv6507",
-      "Integrity": "1ade5yRgp1ARd5XSnJkzFP3kKTGaGxuwIBkOEB3eHck=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Pidgeotto.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgey.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Pidgey#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "e3b1uei219",
-      "Integrity": "amSHyiT0aqFAFdGVKJdjZ64emGHOsVvHC8FQfAPC0Rs=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Pidgey.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pikachu.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Pikachu#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "86zjqbrz4d",
-      "Integrity": "MPHAziEVaF/i0LMrFyVyNDReBi6qPmNgrnJaR2loZhU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Pikachu.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/plateau#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -911,10 +533,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\plateau.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/poison#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -932,10 +554,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\poison.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/pokebook_first_location#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -953,10 +575,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\pokebook_first_location.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/pokebook_mountains#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -974,10 +596,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\pokebook_mountains.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/pokebook_pokecenter#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -995,10 +617,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\pokebook_pokecenter.jpg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/pokemon_stadium#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1016,10 +638,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\pokemon_stadium.png"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/psychic#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -1037,73 +659,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\psychic.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Raichu.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Raichu#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "yr06nireai",
-      "Integrity": "bngRjINi8u45RL7F1JkyDaqm6LcuFXcfKQBHQM97J/Q=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Raichu.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Raticate.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Raticate#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "19gfupxa05",
-      "Integrity": "+422gHgsXSqmPaHljFF8ukDK9Q8uOfNTQm4KaZHracM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Raticate.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Rattata.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Rattata#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "t8qmrdb0p7",
-      "Integrity": "o9ImDrmwi1iEg6jScZ5z2BZuqNIXk+Z/Zl4u0gwOsYU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Rattata.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/rock#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -1121,94 +680,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\rock.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Sandshrew.webp",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Sandshrew#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "0z73ukspo1",
-      "Integrity": "5AaSfZ4lQp+fveMjQRAKt5omYOo5RMOHqcmUrotkME4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Sandshrew.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Sandslash.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Sandslash#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "4kticgh1ip",
-      "Integrity": "JIJfBrx1S8cKOndVOwQgnfk+Pz9zD83nvYgTt8HTtjg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Sandslash.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\SlateMountains.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/SlateMountains#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "cwaeoqohqr",
-      "Integrity": "rK53Xo/AcRAMeOJ8Z5DmXeRk1aDZQga1N/PiYZR4LtM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\SlateMountains.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Spearow.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Spearow#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "63sohxsh5s",
-      "Integrity": "Mnnh0EKdXjQ1ERPZN+6ryE15WVZ5G8OeHIyAkemYnps=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Spearow.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/steel#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -1226,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\steel.svg"
     },
     {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
+      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
       "SourceId": "Pokebooook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\",
       "BasePath": "_content/Pokebooook.Server",
       "RelativePath": "uploads/water#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -1245,54 +720,12 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\water.svg"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\WildRiver.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/WildRiver#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "lkity0wua7",
-      "Integrity": "uxqwJG11Rp6dN3oYuLpUKEQSkLHvJsVpjZ2p6kTho0Q=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\WildRiver.webp"
-    },
-    {
-      "Identity": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Windmill.webp",
-      "SourceId": "Pokebooook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\",
-      "BasePath": "_content/Pokebooook.Server",
-      "RelativePath": "uploads/Windmill#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "tvnhggmwbl",
-      "Integrity": "KUMTj6F+dWJD9kEOdcii1CDidBzezTNMIsKJOwqfo+g=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Windmill.webp"
     }
   ],
   "Endpoints": [
     {
       "Route": "uploads/001.6zwaadtwld.png",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1313,7 +746,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1337,7 +770,7 @@
     },
     {
       "Route": "uploads/001.png",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\001.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1358,7 +791,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1373,254 +806,8 @@
       ]
     },
     {
-      "Route": "uploads/AbandonedCottage.l30fbfk3pz.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\AbandonedCottage.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1193576"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"QTUxuHI7ZPkPvdSkuPBf6TQJbifU5h6QdE7inTygak4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l30fbfk3pz"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/AbandonedCottage.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-QTUxuHI7ZPkPvdSkuPBf6TQJbifU5h6QdE7inTygak4="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/AbandonedCottage.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\AbandonedCottage.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1193576"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"QTUxuHI7ZPkPvdSkuPBf6TQJbifU5h6QdE7inTygak4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-QTUxuHI7ZPkPvdSkuPBf6TQJbifU5h6QdE7inTygak4="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Arbok.v0mzvyg47f.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Arbok.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23698"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"P6H6AWRDRShmLjaAm9DdSnVhajWUTC1xSBW3+rVxkJA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "v0mzvyg47f"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Arbok.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-P6H6AWRDRShmLjaAm9DdSnVhajWUTC1xSBW3+rVxkJA="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Arbok.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Arbok.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23698"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"P6H6AWRDRShmLjaAm9DdSnVhajWUTC1xSBW3+rVxkJA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-P6H6AWRDRShmLjaAm9DdSnVhajWUTC1xSBW3+rVxkJA="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/BerryJuice.49pyk9llum.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\BerryJuice.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16692"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"WJwWSlGiCCwUbmWZVTbV4AH9nLEKxksk81r3s6l0BnE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 18:39:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "49pyk9llum"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/BerryJuice.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-WJwWSlGiCCwUbmWZVTbV4AH9nLEKxksk81r3s6l0BnE="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/BerryJuice.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\BerryJuice.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16692"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"WJwWSlGiCCwUbmWZVTbV4AH9nLEKxksk81r3s6l0BnE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 18:39:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-WJwWSlGiCCwUbmWZVTbV4AH9nLEKxksk81r3s6l0BnE="
-        }
-      ]
-    },
-    {
       "Route": "uploads/bug.aq3mw6xp82.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1641,7 +828,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1665,7 +852,7 @@
     },
     {
       "Route": "uploads/bug.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\bug.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1686,7 +873,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1701,90 +888,8 @@
       ]
     },
     {
-      "Route": "uploads/CaveEntrance.cdzwijwj65.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\CaveEntrance.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1133068"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ELkZ1wh5fxYZeTMEzK5BRfi6WO990WQ8TOzEd51nvzM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:24:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "cdzwijwj65"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/CaveEntrance.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ELkZ1wh5fxYZeTMEzK5BRfi6WO990WQ8TOzEd51nvzM="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/CaveEntrance.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\CaveEntrance.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1133068"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ELkZ1wh5fxYZeTMEzK5BRfi6WO990WQ8TOzEd51nvzM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:24:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ELkZ1wh5fxYZeTMEzK5BRfi6WO990WQ8TOzEd51nvzM="
-        }
-      ]
-    },
-    {
       "Route": "uploads/dark.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1805,7 +910,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1821,7 +926,7 @@
     },
     {
       "Route": "uploads/dark.x704rv1sz4.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\dark.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1842,7 +947,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1865,172 +970,8 @@
       ]
     },
     {
-      "Route": "uploads/DarkCave.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\DarkCave.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1011580"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"I9IegILJkt2CKqeGCIVwqNJ3Xu3dUHN93p58zQ0x1kY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:24:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-I9IegILJkt2CKqeGCIVwqNJ3Xu3dUHN93p58zQ0x1kY="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/DarkCave.xjhwp9l1j7.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\DarkCave.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1011580"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"I9IegILJkt2CKqeGCIVwqNJ3Xu3dUHN93p58zQ0x1kY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:24:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xjhwp9l1j7"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/DarkCave.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-I9IegILJkt2CKqeGCIVwqNJ3Xu3dUHN93p58zQ0x1kY="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/DeepForest.27m7rtdni8.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\DeepForest.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1261112"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4nRUn4gWT+nbJXPnTtutHEpQ2xn1kj2vOqcCykoMHBc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:24:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "27m7rtdni8"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/DeepForest.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-4nRUn4gWT+nbJXPnTtutHEpQ2xn1kj2vOqcCykoMHBc="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/DeepForest.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\DeepForest.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1261112"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4nRUn4gWT+nbJXPnTtutHEpQ2xn1kj2vOqcCykoMHBc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:24:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4nRUn4gWT+nbJXPnTtutHEpQ2xn1kj2vOqcCykoMHBc="
-        }
-      ]
-    },
-    {
       "Route": "uploads/dragon.q5b8ddogce.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2051,7 +992,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2075,7 +1016,7 @@
     },
     {
       "Route": "uploads/dragon.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\dragon.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2096,7 +1037,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2111,90 +1052,8 @@
       ]
     },
     {
-      "Route": "uploads/Ekans.s4s8vj5rvy.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Ekans.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23572"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lARCNbsxnkS/cavw2vK8Nf38dbAjmphdsGWpiepm8Fg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s4s8vj5rvy"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Ekans.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lARCNbsxnkS/cavw2vK8Nf38dbAjmphdsGWpiepm8Fg="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Ekans.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Ekans.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23572"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lARCNbsxnkS/cavw2vK8Nf38dbAjmphdsGWpiepm8Fg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lARCNbsxnkS/cavw2vK8Nf38dbAjmphdsGWpiepm8Fg="
-        }
-      ]
-    },
-    {
       "Route": "uploads/electric.s5x2qavdab.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2215,7 +1074,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2239,7 +1098,7 @@
     },
     {
       "Route": "uploads/electric.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\electric.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2260,7 +1119,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2276,7 +1135,7 @@
     },
     {
       "Route": "uploads/fairy.1suamur6sz.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2297,7 +1156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2321,7 +1180,7 @@
     },
     {
       "Route": "uploads/fairy.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\fairy.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2342,7 +1201,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2357,172 +1216,8 @@
       ]
     },
     {
-      "Route": "uploads/Fearow.8019k9m9l3.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Fearow.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "33212"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qJp8v0OQpY/9CPV/u93LQMeN27ERwHChCfdrkXwZsms=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:45:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8019k9m9l3"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Fearow.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qJp8v0OQpY/9CPV/u93LQMeN27ERwHChCfdrkXwZsms="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Fearow.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Fearow.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "33212"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qJp8v0OQpY/9CPV/u93LQMeN27ERwHChCfdrkXwZsms=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:45:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qJp8v0OQpY/9CPV/u93LQMeN27ERwHChCfdrkXwZsms="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/FieldPath.vuyy6bz615.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\FieldPath.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1166410"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"92YRom/NrwEKcZkQ54uX6fvlz5LjaMk/HBUuKO85ea0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:24:45 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vuyy6bz615"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/FieldPath.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-92YRom/NrwEKcZkQ54uX6fvlz5LjaMk/HBUuKO85ea0="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/FieldPath.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\FieldPath.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1166410"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"92YRom/NrwEKcZkQ54uX6fvlz5LjaMk/HBUuKO85ea0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:24:45 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-92YRom/NrwEKcZkQ54uX6fvlz5LjaMk/HBUuKO85ea0="
-        }
-      ]
-    },
-    {
       "Route": "uploads/fighting.ef1t8tzhuj.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2543,7 +1238,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2567,7 +1262,7 @@
     },
     {
       "Route": "uploads/fighting.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\fighting.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2588,7 +1283,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2604,7 +1299,7 @@
     },
     {
       "Route": "uploads/fire.l01pz5g8td.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2625,7 +1320,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2649,7 +1344,7 @@
     },
     {
       "Route": "uploads/fire.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\fire.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2670,7 +1365,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2686,7 +1381,7 @@
     },
     {
       "Route": "uploads/flying.qr3xxpiuun.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2707,7 +1402,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2731,7 +1426,7 @@
     },
     {
       "Route": "uploads/flying.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\flying.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2752,7 +1447,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2767,90 +1462,8 @@
       ]
     },
     {
-      "Route": "uploads/ForestEntrance.5gm8hmtzc9.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ForestEntrance.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "180108"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pXxL/xN6gQ53zM6jly39lEGLnDKI/22CRv5C25wceEY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:23:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5gm8hmtzc9"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/ForestEntrance.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pXxL/xN6gQ53zM6jly39lEGLnDKI/22CRv5C25wceEY="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/ForestEntrance.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ForestEntrance.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "180108"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pXxL/xN6gQ53zM6jly39lEGLnDKI/22CRv5C25wceEY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:23:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-pXxL/xN6gQ53zM6jly39lEGLnDKI/22CRv5C25wceEY="
-        }
-      ]
-    },
-    {
       "Route": "uploads/ghost.8qb2ayr4pq.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2871,7 +1484,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2895,7 +1508,7 @@
     },
     {
       "Route": "uploads/ghost.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\ghost.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2916,7 +1529,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2932,7 +1545,7 @@
     },
     {
       "Route": "uploads/grass.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2953,7 +1566,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2969,7 +1582,7 @@
     },
     {
       "Route": "uploads/grass.t02rqhti5z.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\grass.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2990,7 +1603,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3014,7 +1627,7 @@
     },
     {
       "Route": "uploads/ground.5dqc2gywjz.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3035,7 +1648,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3059,7 +1672,7 @@
     },
     {
       "Route": "uploads/ground.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\ground.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3080,7 +1693,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3095,90 +1708,8 @@
       ]
     },
     {
-      "Route": "uploads/Championsville.q4w4joe0zx.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Championsville.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1071532"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VlHs7CZOQ0fJpia9zPjk5zZYo0y31EcOHpTdKJhlm04=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "q4w4joe0zx"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Championsville.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-VlHs7CZOQ0fJpia9zPjk5zZYo0y31EcOHpTdKJhlm04="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Championsville.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Championsville.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1071532"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VlHs7CZOQ0fJpia9zPjk5zZYo0y31EcOHpTdKJhlm04=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-VlHs7CZOQ0fJpia9zPjk5zZYo0y31EcOHpTdKJhlm04="
-        }
-      ]
-    },
-    {
       "Route": "uploads/ice.cic7uur43u.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3199,7 +1730,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3223,7 +1754,7 @@
     },
     {
       "Route": "uploads/ice.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\ice.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3244,7 +1775,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3259,90 +1790,8 @@
       ]
     },
     {
-      "Route": "uploads/Lemonade.mhnn2thfxg.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Lemonade.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13228"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qnyvgmzKU/VypWKfg5ONHGe8eSiJDG87cmarKSPkvks=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 18:40:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mhnn2thfxg"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Lemonade.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qnyvgmzKU/VypWKfg5ONHGe8eSiJDG87cmarKSPkvks="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Lemonade.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Lemonade.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13228"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qnyvgmzKU/VypWKfg5ONHGe8eSiJDG87cmarKSPkvks=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 18:40:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qnyvgmzKU/VypWKfg5ONHGe8eSiJDG87cmarKSPkvks="
-        }
-      ]
-    },
-    {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3363,7 +1812,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3379,7 +1828,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).ltsvcdnp6s.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(2).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3400,7 +1849,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3424,7 +1873,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).h9h1cef6we.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3445,7 +1894,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3469,7 +1918,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_0(4).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3490,7 +1939,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3506,7 +1955,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3527,7 +1976,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3543,7 +1992,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.ysijdwex65.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3564,7 +2013,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3588,7 +2037,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).d07hb94o99.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3609,7 +2058,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3633,7 +2082,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(1).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3654,7 +2103,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3670,7 +2119,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3691,7 +2140,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3707,7 +2156,7 @@
     },
     {
       "Route": "uploads/Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).x6gbk3ks5n.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\Leonardo_Anime_XL_A_colorful_and_dynamic_Pokmonthemed_illustra_2(4).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3728,7 +2177,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3752,7 +2201,7 @@
     },
     {
       "Route": "uploads/les.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3773,7 +2222,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3789,7 +2238,7 @@
     },
     {
       "Route": "uploads/les.rroojrwohb.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\les.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3810,7 +2259,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3834,7 +2283,7 @@
     },
     {
       "Route": "uploads/les2.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3855,7 +2304,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3871,7 +2320,7 @@
     },
     {
       "Route": "uploads/les2.l2q274qkca.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\les2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3892,7 +2341,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3916,7 +2365,7 @@
     },
     {
       "Route": "uploads/les3.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3937,7 +2386,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3953,7 +2402,7 @@
     },
     {
       "Route": "uploads/les3.z8fvysr13a.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\les3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3974,7 +2423,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3998,7 +2447,7 @@
     },
     {
       "Route": "uploads/lespokemon.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4019,7 +2468,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4035,7 +2484,7 @@
     },
     {
       "Route": "uploads/lespokemon.x5kbsmfw48.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\lespokemon.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4056,7 +2505,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4079,172 +2528,8 @@
       ]
     },
     {
-      "Route": "uploads/Meadow.l59raxo7sl.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Meadow.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "164088"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5+pvgrQ1o3b+/tiDTjWjl3xybzldZJajyghB0jwW2i8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:24:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l59raxo7sl"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Meadow.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-5+pvgrQ1o3b+/tiDTjWjl3xybzldZJajyghB0jwW2i8="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Meadow.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Meadow.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "164088"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5+pvgrQ1o3b+/tiDTjWjl3xybzldZJajyghB0jwW2i8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:24:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-5+pvgrQ1o3b+/tiDTjWjl3xybzldZJajyghB0jwW2i8="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Mudflats.8fah2wwaia.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Mudflats.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1098454"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/G5hWrU+kx+LHV+dKWzmXrU8ewbDRMXRiwAiY2lGu2o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8fah2wwaia"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Mudflats.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/G5hWrU+kx+LHV+dKWzmXrU8ewbDRMXRiwAiY2lGu2o="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Mudflats.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Mudflats.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1098454"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/G5hWrU+kx+LHV+dKWzmXrU8ewbDRMXRiwAiY2lGu2o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-/G5hWrU+kx+LHV+dKWzmXrU8ewbDRMXRiwAiY2lGu2o="
-        }
-      ]
-    },
-    {
       "Route": "uploads/normal.1xv1l3def0.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4265,7 +2550,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4289,7 +2574,7 @@
     },
     {
       "Route": "uploads/normal.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\normal.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4310,7 +2595,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4325,336 +2610,8 @@
       ]
     },
     {
-      "Route": "uploads/Pidgeot.7c78z4jq84.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgeot.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27348"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"2eXVW4phDvC6gvWx3E/cZR56FrCT3lGaUYmxitevBAk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:45:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7c78z4jq84"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Pidgeot.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-2eXVW4phDvC6gvWx3E/cZR56FrCT3lGaUYmxitevBAk="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Pidgeot.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgeot.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27348"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"2eXVW4phDvC6gvWx3E/cZR56FrCT3lGaUYmxitevBAk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:45:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-2eXVW4phDvC6gvWx3E/cZR56FrCT3lGaUYmxitevBAk="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Pidgeotto.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgeotto.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30918"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1ade5yRgp1ARd5XSnJkzFP3kKTGaGxuwIBkOEB3eHck=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:44:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1ade5yRgp1ARd5XSnJkzFP3kKTGaGxuwIBkOEB3eHck="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Pidgeotto.x1drhv6507.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgeotto.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30918"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1ade5yRgp1ARd5XSnJkzFP3kKTGaGxuwIBkOEB3eHck=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:44:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "x1drhv6507"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Pidgeotto.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1ade5yRgp1ARd5XSnJkzFP3kKTGaGxuwIBkOEB3eHck="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Pidgey.e3b1uei219.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgey.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24302"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"amSHyiT0aqFAFdGVKJdjZ64emGHOsVvHC8FQfAPC0Rs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:44:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e3b1uei219"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Pidgey.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-amSHyiT0aqFAFdGVKJdjZ64emGHOsVvHC8FQfAPC0Rs="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Pidgey.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pidgey.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24302"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"amSHyiT0aqFAFdGVKJdjZ64emGHOsVvHC8FQfAPC0Rs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:44:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-amSHyiT0aqFAFdGVKJdjZ64emGHOsVvHC8FQfAPC0Rs="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Pikachu.86zjqbrz4d.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pikachu.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21384"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MPHAziEVaF/i0LMrFyVyNDReBi6qPmNgrnJaR2loZhU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "86zjqbrz4d"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Pikachu.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-MPHAziEVaF/i0LMrFyVyNDReBi6qPmNgrnJaR2loZhU="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Pikachu.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Pikachu.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21384"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MPHAziEVaF/i0LMrFyVyNDReBi6qPmNgrnJaR2loZhU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MPHAziEVaF/i0LMrFyVyNDReBi6qPmNgrnJaR2loZhU="
-        }
-      ]
-    },
-    {
       "Route": "uploads/plateau.ayhhem0f59.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4675,7 +2632,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4699,7 +2656,7 @@
     },
     {
       "Route": "uploads/plateau.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\plateau.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4720,7 +2677,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4736,7 +2693,7 @@
     },
     {
       "Route": "uploads/poison.e72mnt9qlc.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4757,7 +2714,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4781,7 +2738,7 @@
     },
     {
       "Route": "uploads/poison.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\poison.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4802,7 +2759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4818,7 +2775,7 @@
     },
     {
       "Route": "uploads/pokebook_first_location.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4839,7 +2796,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4855,7 +2812,7 @@
     },
     {
       "Route": "uploads/pokebook_first_location.t6p2kpzfoc.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_first_location.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4876,7 +2833,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4900,7 +2857,7 @@
     },
     {
       "Route": "uploads/pokebook_mountains.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4921,7 +2878,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4937,7 +2894,7 @@
     },
     {
       "Route": "uploads/pokebook_mountains.pqlyt4q6be.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_mountains.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4958,7 +2915,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4982,7 +2939,7 @@
     },
     {
       "Route": "uploads/pokebook_pokecenter.4xs4apa65t.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5003,7 +2960,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5027,7 +2984,7 @@
     },
     {
       "Route": "uploads/pokebook_pokecenter.jpg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokebook_pokecenter.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5048,7 +3005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5064,7 +3021,7 @@
     },
     {
       "Route": "uploads/pokemon_stadium.npvlimwrek.png",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5085,7 +3042,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5109,7 +3066,7 @@
     },
     {
       "Route": "uploads/pokemon_stadium.png",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\pokemon_stadium.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5130,7 +3087,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5146,7 +3103,7 @@
     },
     {
       "Route": "uploads/psychic.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5167,7 +3124,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5183,7 +3140,7 @@
     },
     {
       "Route": "uploads/psychic.vjhl182900.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\psychic.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5204,7 +3161,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5227,254 +3184,8 @@
       ]
     },
     {
-      "Route": "uploads/Raichu.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Raichu.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21002"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bngRjINi8u45RL7F1JkyDaqm6LcuFXcfKQBHQM97J/Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-bngRjINi8u45RL7F1JkyDaqm6LcuFXcfKQBHQM97J/Q="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Raichu.yr06nireai.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Raichu.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21002"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bngRjINi8u45RL7F1JkyDaqm6LcuFXcfKQBHQM97J/Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "yr06nireai"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Raichu.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bngRjINi8u45RL7F1JkyDaqm6LcuFXcfKQBHQM97J/Q="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Raticate.19gfupxa05.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Raticate.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27716"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+422gHgsXSqmPaHljFF8ukDK9Q8uOfNTQm4KaZHracM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:45:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "19gfupxa05"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Raticate.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+422gHgsXSqmPaHljFF8ukDK9Q8uOfNTQm4KaZHracM="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Raticate.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Raticate.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27716"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+422gHgsXSqmPaHljFF8ukDK9Q8uOfNTQm4KaZHracM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:45:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+422gHgsXSqmPaHljFF8ukDK9Q8uOfNTQm4KaZHracM="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Rattata.t8qmrdb0p7.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Rattata.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "22112"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"o9ImDrmwi1iEg6jScZ5z2BZuqNIXk+Z/Zl4u0gwOsYU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:45:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "t8qmrdb0p7"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Rattata.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-o9ImDrmwi1iEg6jScZ5z2BZuqNIXk+Z/Zl4u0gwOsYU="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Rattata.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Rattata.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "22112"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"o9ImDrmwi1iEg6jScZ5z2BZuqNIXk+Z/Zl4u0gwOsYU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:45:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-o9ImDrmwi1iEg6jScZ5z2BZuqNIXk+Z/Zl4u0gwOsYU="
-        }
-      ]
-    },
-    {
       "Route": "uploads/rock.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5495,7 +3206,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5511,7 +3222,7 @@
     },
     {
       "Route": "uploads/rock.vh5ksp9ivj.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\rock.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5532,7 +3243,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5555,336 +3266,8 @@
       ]
     },
     {
-      "Route": "uploads/Sandshrew.0z73ukspo1.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Sandshrew.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "29152"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5AaSfZ4lQp+fveMjQRAKt5omYOo5RMOHqcmUrotkME4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0z73ukspo1"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Sandshrew.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-5AaSfZ4lQp+fveMjQRAKt5omYOo5RMOHqcmUrotkME4="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Sandshrew.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Sandshrew.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "29152"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5AaSfZ4lQp+fveMjQRAKt5omYOo5RMOHqcmUrotkME4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-5AaSfZ4lQp+fveMjQRAKt5omYOo5RMOHqcmUrotkME4="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Sandslash.4kticgh1ip.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Sandslash.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26278"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JIJfBrx1S8cKOndVOwQgnfk+Pz9zD83nvYgTt8HTtjg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4kticgh1ip"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Sandslash.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-JIJfBrx1S8cKOndVOwQgnfk+Pz9zD83nvYgTt8HTtjg="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Sandslash.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Sandslash.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26278"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JIJfBrx1S8cKOndVOwQgnfk+Pz9zD83nvYgTt8HTtjg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:46:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-JIJfBrx1S8cKOndVOwQgnfk+Pz9zD83nvYgTt8HTtjg="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/SlateMountains.cwaeoqohqr.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\SlateMountains.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1144628"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rK53Xo/AcRAMeOJ8Z5DmXeRk1aDZQga1N/PiYZR4LtM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "cwaeoqohqr"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/SlateMountains.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-rK53Xo/AcRAMeOJ8Z5DmXeRk1aDZQga1N/PiYZR4LtM="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/SlateMountains.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\SlateMountains.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1144628"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rK53Xo/AcRAMeOJ8Z5DmXeRk1aDZQga1N/PiYZR4LtM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-rK53Xo/AcRAMeOJ8Z5DmXeRk1aDZQga1N/PiYZR4LtM="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Spearow.63sohxsh5s.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Spearow.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25754"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Mnnh0EKdXjQ1ERPZN+6ryE15WVZ5G8OeHIyAkemYnps=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:45:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "63sohxsh5s"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Spearow.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Mnnh0EKdXjQ1ERPZN+6ryE15WVZ5G8OeHIyAkemYnps="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Spearow.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Spearow.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25754"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Mnnh0EKdXjQ1ERPZN+6ryE15WVZ5G8OeHIyAkemYnps=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:45:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Mnnh0EKdXjQ1ERPZN+6ryE15WVZ5G8OeHIyAkemYnps="
-        }
-      ]
-    },
-    {
       "Route": "uploads/steel.cm5wn2vjz9.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5905,7 +3288,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5929,7 +3312,7 @@
     },
     {
       "Route": "uploads/steel.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\steel.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5950,7 +3333,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5966,7 +3349,7 @@
     },
     {
       "Route": "uploads/water.gpysjl2xpq.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5987,7 +3370,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6011,7 +3394,7 @@
     },
     {
       "Route": "uploads/water.svg",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
+      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\wwwroot\\uploads\\water.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6032,7 +3415,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 16:16:17 GMT"
+          "Value": "Sat, 29 Mar 2025 15:53:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6043,170 +3426,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-TJoPMUrNu8jkkoMINs0O/zbZ3axo6he6853olLwoxRY="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/WildRiver.lkity0wua7.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\WildRiver.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1221900"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uxqwJG11Rp6dN3oYuLpUKEQSkLHvJsVpjZ2p6kTho0Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lkity0wua7"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/WildRiver.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-uxqwJG11Rp6dN3oYuLpUKEQSkLHvJsVpjZ2p6kTho0Q="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/WildRiver.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\WildRiver.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1221900"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uxqwJG11Rp6dN3oYuLpUKEQSkLHvJsVpjZ2p6kTho0Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-uxqwJG11Rp6dN3oYuLpUKEQSkLHvJsVpjZ2p6kTho0Q="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Windmill.tvnhggmwbl.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Windmill.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "968038"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KUMTj6F+dWJD9kEOdcii1CDidBzezTNMIsKJOwqfo+g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tvnhggmwbl"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Windmill.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-KUMTj6F+dWJD9kEOdcii1CDidBzezTNMIsKJOwqfo+g="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Windmill.webp",
-      "AssetFile": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\wwwroot\\uploads\\Windmill.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "968038"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KUMTj6F+dWJD9kEOdcii1CDidBzezTNMIsKJOwqfo+g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:25:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-KUMTj6F+dWJD9kEOdcii1CDidBzezTNMIsKJOwqfo+g="
         }
       ]
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8CWeLIK77a8=",
+  "dgSpecHash": "l3YThJqSzmE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec\\Pokebooook.Server\\Pokebooook.Server.csproj",
+  "projectFilePath": "C:\\Users\\fildi\\Documents\\2024-p3a-web-gamebook-bradac-hudec-2\\Pokebooook.Server\\Pokebooook.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fildi\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\fildi\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
