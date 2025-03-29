@@ -29,8 +29,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var app = builder.Build();
 
-
-
 // Konfigurace HTTP pipeline
 if (app.Environment.IsDevelopment())
 {
@@ -49,6 +47,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapFallbackToFile("/index.html");
+// Odkomentujte následující řádek pouze pokud máte SPA aplikaci
+// app.MapFallbackToFile("/index.html");
 
 app.Run();
