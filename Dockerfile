@@ -1,6 +1,3 @@
-# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-# This stage is used when running from VS in fast mode (Default for Debug configuration)
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER $APP_UID
 WORKDIR /app
@@ -8,28 +5,29 @@ EXPOSE 8080
 EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /app
-
-# Kopírování všeho
+ARG BUILD_CONFIGURATION=Release
+RUN apt update && apt install nodejs npm -y
+WORKDIR /src
+COPY ["Pokebooook.Server/Pokebooook.Server.csproj", "Pokebooook.Server/"]
+COPY ["pokebooook.client/pokebooook.client.esproj", "pokebooook.client/"]
+RUN dotnet restore "Pokebooook.Server/Pokebooook.Server.csproj"
 COPY . .
+WORKDIR "/src/Pokebooook.Server"
+RUN dotnet build "Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# Publikování serveru
-WORKDIR /app/Pokebooook.Server
-RUN dotnet publish -c Release -o /out
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
+FROM base AS final
 WORKDIR /app
-COPY --from=build /out .
+COPY --from=publish /app/publish .
 
-# Příprava složky data
-RUN mkdir -p /data
-RUN chmod 777 /data
+# Adresář pro data
+RUN mkdir -p /data && chmod 777 /data
+COPY --from=build /src/data/app.db /data/ 2>/dev/null || true
 
-# Kopírování databáze - ošetření chyby pomocí -f
-RUN if [ -f "data/app.db" ]; then cp data/app.db /data/; fi
+# Úprava appsettings.json pro cestu k databázi
+RUN grep -q "../data/app.db" appsettings.json && sed -i 's|../data/app.db|/data/app.db|g' appsettings.json || true
 
-# Úprava cesty v konfiguraci - ošetření chyby pomocí -f
-RUN if [ -f "appsettings.json" ]; then sed -i 's/\.\.\/data\/app\.db/\/data\/app\.db/g' appsettings.json; fi
-
-EXPOSE 80
-ENTRYPOINT ["dotnet", "Pokebooook.Server.dll"]
+ENTRYPOINT ["dotnet", "Pokebooook.Server.dll"] 
