@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pokebooook.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b59a9020b80a4dcecdb3212cdaa7dfe006da492c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b7eb4e073b094bfd03f2de7e5d704d6e147d701")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pokebooook.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pokebooook.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
