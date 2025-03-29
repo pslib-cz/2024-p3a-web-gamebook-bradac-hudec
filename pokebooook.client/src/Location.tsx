@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import LocationType from "./types/LocationType";
 import ConnectionType from "./types/ConnectionType";
 import StoryBox from "./components/StoryBox";
@@ -29,7 +29,8 @@ const replaceText = (
 
 const Location: React.FC = () => {
   const { locationId } = useParams<{ locationId: string }>();
-  const navigate = useNavigate();
+  const [redirectPath, setRedirectPath] = useState<string | null>(null);
+  
   if (!locationId) throw new Error("No location ID provided");
 
   
@@ -226,7 +227,7 @@ const Location: React.FC = () => {
       if (allExhausted) {
         console.log("Všichni pokémoni jsou vyčerpaní, resetuji hru");
         localStorage.clear();
-        navigate("/nickname");
+        setRedirectPath("/nickname");
       } else {
         setShowOptions(true);
       }
@@ -314,6 +315,17 @@ const Location: React.FC = () => {
       return;
     }
 
+    // Speciální případ pro lokaci s ID 19 - konec příběhu
+    if (location.locationId === 19) {
+      if (currentTextIndex < location.descriptions.length - 1) {
+        setCurrentTextIndex(prevIndex => prevIndex + 1);
+      } else {
+        // Místo skrytí textu pouze upravíme stav, aby se zobrazilo tlačítko
+        setHasCompletedIntro(true);
+      }
+      return;
+    }
+
     if (currentTextIndex < location.descriptions.length - 1) {
       setCurrentTextIndex(prevIndex => prevIndex + 1);
     } else {
@@ -326,6 +338,39 @@ const Location: React.FC = () => {
         setShowOptions(true);
       }
     }
+  }
+
+  // Funkce pro návrat do hlavního menu a resetování localStorage
+  function handleReturnToMainMenu() {
+    // Nejprve aktualizujeme statistiky
+    try {
+      // Přičteme jeden průchod hry do statistik
+      const completedGames = localStorage.getItem("stats_completedGames");
+      const newCompletedGames = completedGames ? parseInt(completedGames) + 1 : 1;
+      localStorage.setItem("stats_completedGames", newCompletedGames.toString());
+
+      console.log("Dokončený průchod hry zaznamenán do statistik:", newCompletedGames);
+    } catch (error) {
+      console.error("Chyba při aktualizaci statistik:", error);
+    }
+
+    // Resetujeme pouze herní data, ne statistiky
+    const statsCompletedGames = localStorage.getItem("stats_completedGames");
+    const statsCaughtPokemon = localStorage.getItem("stats_caughtPokemon");
+    
+    // Resetujeme localStorage
+    localStorage.clear();
+    
+    // Obnovíme statistiky
+    if (statsCompletedGames) {
+      localStorage.setItem("stats_completedGames", statsCompletedGames);
+    }
+    if (statsCaughtPokemon) {
+      localStorage.setItem("stats_caughtPokemon", statsCaughtPokemon);
+    }
+    
+    // Místo navigate použijeme setRedirectPath
+    setRedirectPath("/");
   }
 
   function handleStarterSelection(selectedPokemon: StarterPokemon) {
@@ -415,6 +460,11 @@ const Location: React.FC = () => {
     setSelectedPokemonForItem(null);
   }
 
+  // Pokud máme nastavený redirectPath, přesměrujeme
+  if (redirectPath) {
+    return <Navigate to={redirectPath} replace />;
+  }
+
   if (isLoading) return <div className="loading-spinner">Načítání...</div>;
   if (!location) return <div>Lokace nenalezena</div>;
 
@@ -482,7 +532,7 @@ const Location: React.FC = () => {
           </PokemonInventory>
 
           {(showText || showSelectionSuccess) && (
-            <StoryBox onClick={handleStoryBoxClick} showContinueText={true}>
+            <StoryBox onClick={location?.locationId === 19 && currentTextIndex >= (location.descriptions.length - 1) ? undefined : handleStoryBoxClick} showContinueText={!(location?.locationId === 19 && currentTextIndex >= (location.descriptions.length - 1))}>
               <StoryText
                 text={replaceText(
                   location.descriptions[currentTextIndex],
@@ -490,6 +540,24 @@ const Location: React.FC = () => {
                   selectedStarterPokemon?.name || pokemon?.name
                 )}
               />
+              {location.locationId === 19 && currentTextIndex >= (location.descriptions.length - 1) && (
+                <button 
+                  onClick={handleReturnToMainMenu}
+                  style={{
+                    padding: '15px 30px',
+                    fontSize: '1.5em',
+                    backgroundColor: '#d9d9d9',
+                    border: 'solid 5px #a1a1a1',
+                    borderRadius: '20px',
+                    color: '#fff',
+                    cursor: 'pointer',
+                    textShadow: '1px 1px 30px #000',
+                    marginTop: '20px'
+                  }}
+                >
+                  Zpět do hlavního menu
+                </button>
+              )}
             </StoryBox>
           )}
           

@@ -108,47 +108,57 @@
 }
 
 .item-pokemon-selection {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 20px;
-  border-radius: 15px;
-  border: 3px solid gold;
+  background-color: rgba(217, 217, 217, 0.5);
+  border: solid 5px #a1a1a1;
+  border-radius: 20px;
+  padding: 2rem;
   z-index: 1000;
   width: 80%;
-  max-width: 500px;
+  max-width: 600px;
   text-align: center;
   color: white;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  text-shadow: 1px 1px 10px #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.item-pokemon-selection h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 10px #000;
+  margin-bottom: 1.5rem;
 }
 
 .pokemon-selection-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .pokemon-option {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  padding: 10px;
+  background-color: rgba(217, 217, 217, 0.7);
+  border: solid 3px #a1a1a1;
+  border-radius: 15px;
+  padding: 1rem;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .pokemon-option:hover:not(.disabled) {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(50, 205, 50, 0.8);
-  box-shadow: 0 0 10px rgba(50, 205, 50, 0.5);
-  transform: scale(1.03);
+  background-color: rgba(217, 217, 217, 0.9);
+  border-color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
 }
 
 .pokemon-option.disabled {
@@ -160,7 +170,7 @@
 .pokemon-image {
   width: 80px;
   height: 80px;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .pokemon-info {
@@ -171,26 +181,29 @@
 
 .pokemon-name {
   font-weight: bold;
-  margin-bottom: 3px;
+  margin-bottom: 0.3rem;
+  color: white;
+  text-shadow: 1px 1px 10px #000;
 }
 
 .cancel-button {
-  padding: 10px 20px;
-  background-color: #ff5252;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #d9d9d9;
+  border: solid 5px #a1a1a1;
+  border-radius: 20px;
+  color: #fff;
   cursor: pointer;
+  text-shadow: 1px 1px 30px #000;
   font-weight: bold;
-  font-size: 16px;
   transition: all 0.2s ease;
 }
 
 .cancel-button:hover {
-  background-color: #ff3333;
-  transform: scale(1.05);
+  background-color: #a1a1a1;
+  transform: translateY(-2px);
 }
 
 .cancel-button:active {
-  transform: scale(0.95);
+  transform: translateY(0);
 }

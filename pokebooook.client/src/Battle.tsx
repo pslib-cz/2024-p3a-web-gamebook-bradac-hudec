@@ -385,6 +385,16 @@ const Battle: React.FC<BattleProps> = ({
           
           newPlayerPokemons.push(caughtPokemon);
           setCurrentMessage(`Chytil jsi ${battleState.enemy.pokemon.name}!`);
+
+          // Aktualizace statistik o chycených pokémonech
+          try {
+            const caughtPokemonCount = localStorage.getItem("stats_caughtPokemon");
+            const newCaughtPokemonCount = caughtPokemonCount ? parseInt(caughtPokemonCount) + 1 : 1;
+            localStorage.setItem("stats_caughtPokemon", newCaughtPokemonCount.toString());
+            console.log("Přidán nový pokémon do statistik:", newCaughtPokemonCount);
+          } catch (error) {
+            console.error("Chyba při aktualizaci statistik chycených pokémonů:", error);
+          }
         }
       }
 

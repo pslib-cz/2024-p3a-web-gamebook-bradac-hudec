@@ -1,0 +1,23 @@
+.statistics__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+}
+
+.statistics__title {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px 15px #000;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.statistics__back_button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
