@@ -8,29 +8,28 @@ EXPOSE 8080
 EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
+WORKDIR /app
 
-# Kopírování zdrojových souborů
+# Kopírování všeho
 COPY . .
 
-# Sestavení a publikování
-WORKDIR /src/Pokebooook.Server
-RUN dotnet publish -c Release -o /app/publish
+# Publikování serveru
+WORKDIR /app/Pokebooook.Server
+RUN dotnet publish -c Release -o /out
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build /app/publish .
+COPY --from=build /out .
 
-# Příprava adresáře pro data
+# Příprava složky data
 RUN mkdir -p /data
 RUN chmod 777 /data
 
-# Kopírování databáze
-COPY data/app.db /data/app.db 2>/dev/null || true
+# Kopírování databáze - ošetření chyby pomocí -f
+RUN if [ -f "data/app.db" ]; then cp data/app.db /data/; fi
 
-# Úprava konfigurace pro cestu k databázi
-RUN if [ -f "appsettings.json" ]; then sed -i 's|../data/app.db|/data/app.db|g' appsettings.json; fi
+# Úprava cesty v konfiguraci - ošetření chyby pomocí -f
+RUN if [ -f "appsettings.json" ]; then sed -i 's/\.\.\/data\/app\.db/\/data\/app\.db/g' appsettings.json; fi
 
 EXPOSE 80
-EXPOSE 443
 ENTRYPOINT ["dotnet", "Pokebooook.Server.dll"]
