@@ -25,9 +25,11 @@ COPY --from=publish /app/publish .
 
 # Adresář pro data
 RUN mkdir -p /data && chmod 777 /data
-COPY --from=build /src/data/app.db /data/ 2>/dev/null || true
+
+# Kopírování databáze přímo z kořenového adresáře
+COPY data/app.db /data/ 
 
 # Úprava appsettings.json pro cestu k databázi
-RUN grep -q "../data/app.db" appsettings.json && sed -i 's|../data/app.db|/data/app.db|g' appsettings.json || true
+RUN if [ -f "appsettings.json" ]; then sed -i 's|../data/app.db|/data/app.db|g' appsettings.json; fi
 
 ENTRYPOINT ["dotnet", "Pokebooook.Server.dll"] 
