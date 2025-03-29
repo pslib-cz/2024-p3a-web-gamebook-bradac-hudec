@@ -12,7 +12,8 @@ WORKDIR /src
 COPY ["Pokebooook.Server/Pokebooook.Server.csproj", "Pokebooook.Server/"]
 COPY ["pokebooook.client/pokebooook.client.esproj", "pokebooook.client/"]
 COPY ["pokebooook.client/package.json", "pokebooook.client/"]
-COPY ["pokebooook.client/package-lock.json", "pokebooook.client/"] 2>/dev/null || true
+# Pokus o kopírování package-lock.json, pokud existuje (bez || operátoru)
+RUN if [ -f "pokebooook.client/package-lock.json" ]; then cp "pokebooook.client/package-lock.json" "pokebooook.client/"; fi
 
 # Obnovení závislostí ASP.NET
 RUN dotnet restore "Pokebooook.Server/Pokebooook.Server.csproj"
@@ -26,8 +27,9 @@ RUN npm install
 # Více informací o buildu pro lepší debug
 RUN npm run build && ls -la dist
 
-# Kontrola, zda se React aplikace správně sestavila
-RUN if [ ! -d "dist" ] || [ -z "$(ls -A dist)" ]; then echo "CHYBA: React build selhal nebo je prázdný"; exit 1; fi
+# Kontrola, zda se React aplikace správně sestavila - bez použití || operátoru
+RUN if [ ! -d "dist" ]; then echo "CHYBA: React build selhal, adresář dist neexistuje"; exit 1; fi
+RUN if [ -z "$(ls -A dist)" ]; then echo "CHYBA: React build je prázdný"; exit 1; fi
 
 # Sestavení ASP.NET aplikace
 WORKDIR "/src/Pokebooook.Server"
@@ -44,7 +46,7 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 
 # Kontrola obsahu wwwroot - tam by měly být soubory React aplikace
-RUN ls -la wwwroot || echo "wwwroot adresář neexistuje!"
+RUN if [ -d "wwwroot" ]; then ls -la wwwroot; else echo "wwwroot adresář neexistuje!"; fi
 
 # Adresář pro data
 RUN mkdir -p /data 
