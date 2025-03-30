@@ -52,7 +52,7 @@ const LoginMenu: React.FC = () => {
 
 
    
-      const response = await fetch(`${API_URL}/api/Users/Login`, {
+      const response = await fetch(`${API_URL}api/Users/Login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

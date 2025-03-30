@@ -13,7 +13,7 @@ const Bg: React.FC<BgProps> = ({ imageId, bgImage, children }) => {
     
     // Pokud máme imageId, použijeme ho pro získání URL
     if (imageId && !bgImage) {
-        backgroundImageUrl = `${API_URL}/api/Images/${imageId}`;
+        backgroundImageUrl = `${API_URL}api/Images/${imageId}`;
     }
 
     useEffect(() => {

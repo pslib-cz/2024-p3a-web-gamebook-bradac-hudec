@@ -32,7 +32,7 @@ const PokemonCell: React.FC<PokemonCellProps> = ({ pokemon, onSelect }) => {
                     <>
                         <div className={PokemonCellCSS.pokemon__image__container}>
                             <img
-                                src={`${API_URL}/api/Images/${pokemon.imageId}`}
+                                src={`${API_URL}api/Images/${pokemon.imageId}`}
                                 alt={pokemon.name}
                                 className={PokemonCellCSS.pokemon__image}
                             />

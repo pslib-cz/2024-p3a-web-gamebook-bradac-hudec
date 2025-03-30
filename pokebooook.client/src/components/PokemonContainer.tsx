@@ -33,7 +33,7 @@ const PokemonContainer: React.FC<PokemonContainerProps> = ({
     return (
         <div className={PokemonContainerCSS.pokemon__container}>
             <img
-                src={`${API_URL}/api/Images/${pokemon.imageId}`}
+                src={`${API_URL}api/Images/${pokemon.imageId}`}
                 className={PokemonContainerCSS.pokemon__image}
                 alt={pokemon.name}
             />
@@ -41,7 +41,7 @@ const PokemonContainer: React.FC<PokemonContainerProps> = ({
                 <h3>{pokemon.name}</h3>
                 {typeImageId && (
                     <img
-                        src={`${API_URL}/api/Images/${typeImageId}`}
+                        src={`${API_URL}api/Images/${typeImageId}`}
                         alt={type}
                         className={PokemonContainerCSS.typeIcon}
                     />

@@ -92,13 +92,13 @@ const Location: React.FC = () => {
       const locId = parseInt(locationId);
       
      
-      const locationResponse = await fetch(`${API_URL}/api/Locations/${locId}`);
+      const locationResponse = await fetch(`${API_URL}api/Locations/${locId}`);
       if (!locationResponse.ok) throw new Error("Failed to fetch location");
       const locationData = await locationResponse.json();
       setLocation(locationData);
 
      
-      const connectionsResponse = await fetch(`${API_URL}/api/Locations/${locId}/Connections`);
+      const connectionsResponse = await fetch(`${API_URL}api/Locations/${locId}/Connections`);
       const connectionsData = connectionsResponse.ok ? await connectionsResponse.json() : [];
       
       // Vždy filtrujeme spojení tak, aby bylo možné jít pouze dopředu
@@ -113,7 +113,7 @@ const Location: React.FC = () => {
 
       
       if (locationData.hasPokemon && locationData.pokemonId) {
-        const pokemonResponse = await fetch(`${API_URL}/api/Pokemons/${locationData.pokemonId}`);
+        const pokemonResponse = await fetch(`${API_URL}api/Pokemons/${locationData.pokemonId}`);
         if (pokemonResponse.ok) {
           const pokemonData = await pokemonResponse.json();
           setPokemon(pokemonData);
@@ -388,7 +388,7 @@ const Location: React.FC = () => {
     }
 
     setIsLoading(true);
-      fetch(`${API_URL}/api/Pokemons/${selectedPokemon.id}`)
+      fetch(`${API_URL}api/Pokemons/${selectedPokemon.id}`)
       .then(response => {
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
           return response.json();

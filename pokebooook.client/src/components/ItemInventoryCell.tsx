@@ -23,7 +23,7 @@ const ItemInventoryCell: React.FC<ItemInventoryCellProps> = ({ item, onClick }) 
             {item && (
                 <>
                     <img 
-                        src={`${API_URL}/api/Images/${item.imageId}`} 
+                        src={`${API_URL}api/Images/${item.imageId}`} 
                         alt={item.name}
                         className={ItemInventoryCellCSS.item__image}
                     />
