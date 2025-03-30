@@ -22,7 +22,7 @@ const PokemonCell: React.FC<PokemonCellProps> = ({ pokemon, onSelect }) => {
             onSelect(pokemon);
             setShowConfirmation(false);
         }
-    };
+    };  
 
     return (
         <>
@@ -31,7 +31,7 @@ const PokemonCell: React.FC<PokemonCellProps> = ({ pokemon, onSelect }) => {
                     <>
                         <div className={PokemonCellCSS.pokemon__image__container}>
                             <img
-                                src={`http://localhost:5212/api/Images/${pokemon.imageId}`}
+                                src={`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${pokemon.imageId}`}
                                 alt={pokemon.name}
                                 className={PokemonCellCSS.pokemon__image}
                             />

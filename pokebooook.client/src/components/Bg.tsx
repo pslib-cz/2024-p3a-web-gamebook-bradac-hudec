@@ -12,7 +12,7 @@ const Bg: React.FC<BgProps> = ({ imageId, bgImage, children }) => {
     
     // Pokud máme imageId, použijeme ho pro získání URL
     if (imageId && !bgImage) {
-        backgroundImageUrl = `http://localhost:5212/api/Images/${imageId}`;
+        backgroundImageUrl = `${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${imageId}`;
     }
 
     useEffect(() => {

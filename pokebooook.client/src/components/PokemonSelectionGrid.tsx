@@ -36,7 +36,7 @@ const PokemonSelectionGrid: React.FC<PokemonSelectionGridProps> = ({
             }}
           >
             <img
-              src={`http://localhost:5212/api/Images/${pokemon.imageId}`}
+              src={`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${pokemon.imageId}`}
               alt={pokemon.name}
             />
             <div className={BattleCSS.pokemonInfo}>

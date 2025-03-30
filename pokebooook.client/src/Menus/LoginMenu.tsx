@@ -49,8 +49,9 @@ const LoginMenu: React.FC = () => {
         password: password
       };
 
+
    
-      const response = await fetch('/api/Users/Login', {
+      const response = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Users/Login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -91,13 +91,13 @@ const Location: React.FC = () => {
       const locId = parseInt(locationId);
       
      
-      const locationResponse = await fetch(`/api/Locations/${locId}`);
+      const locationResponse = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Locations/${locId}`);
       if (!locationResponse.ok) throw new Error("Failed to fetch location");
       const locationData = await locationResponse.json();
       setLocation(locationData);
 
      
-      const connectionsResponse = await fetch(`/api/Locations/${locId}/Connections`);
+      const connectionsResponse = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Locations/${locId}/Connections`);
       const connectionsData = connectionsResponse.ok ? await connectionsResponse.json() : [];
       
       // Vždy filtrujeme spojení tak, aby bylo možné jít pouze dopředu
@@ -112,7 +112,7 @@ const Location: React.FC = () => {
 
       
       if (locationData.hasPokemon && locationData.pokemonId) {
-        const pokemonResponse = await fetch(`/api/Pokemons/${locationData.pokemonId}`);
+        const pokemonResponse = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Pokemons/${locationData.pokemonId}`);
         if (pokemonResponse.ok) {
           const pokemonData = await pokemonResponse.json();
           setPokemon(pokemonData);
@@ -387,12 +387,12 @@ const Location: React.FC = () => {
     }
 
     setIsLoading(true);
-    fetch(`/api/Pokemons/${selectedPokemon.id}`)
+      fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Pokemons/${selectedPokemon.id}`)
       .then(response => {
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        return response.json();
-      })
-      .then(pokemonData => {
+          return response.json();
+        })
+        .then(pokemonData => {
         if (!pokemonData || !pokemonData.pokemonId) {
           throw new Error("Invalid pokemon data received from API");
         }

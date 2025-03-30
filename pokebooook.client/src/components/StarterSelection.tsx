@@ -23,7 +23,7 @@ const StarterSelection: React.FC<StarterSelectionProps> = ({ onSelect }) => {
             try {
                 const starterIds = [1, 4, 7];
                 const pokemonPromises = starterIds.map((id) =>
-                    fetch(`http://localhost:5212/api/Pokemons/${id}`).then(
+                    fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Pokemons/${id}`).then(
                         (res) => res.json()
                     )
                 );
@@ -74,7 +74,7 @@ const StarterSelection: React.FC<StarterSelectionProps> = ({ onSelect }) => {
                         onClick={() => handlePokemonClick(pokemon)}
                     >
                         <img
-                            src={`http://localhost:5212/api/Images/${pokemon.imageId}`}
+                            src={`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${pokemon.imageId}`}
                             alt={pokemon.name}
                             className={StarterSelectionCSS.pokemonImage}
                         />

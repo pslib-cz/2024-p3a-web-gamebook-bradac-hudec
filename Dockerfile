@@ -10,7 +10,7 @@ RUN apt update && apt install nodejs npm -y
 WORKDIR /src
 COPY ["Pokebooook.Server/Pokebooook.Server.csproj", "pokebooook.Server/"]
 COPY ["pokebooook.client/pokebooook.client.esproj", "pokebooook.client/"]
-RUN dotnet restore "Pokebooook.Server/pokebooook.Server.csproj"
+RUN dotnet restore "Pokebooook.Server/Pokebooook.Server.csproj"
 COPY . .
 WORKDIR "/src/Pokebooook.Server"
 RUN dotnet build "Pokebooook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/build

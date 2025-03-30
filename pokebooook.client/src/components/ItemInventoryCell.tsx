@@ -22,7 +22,7 @@ const ItemInventoryCell: React.FC<ItemInventoryCellProps> = ({ item, onClick }) 
             {item && (
                 <>
                     <img 
-                        src={`http://localhost:5212/api/Images/${item.imageId}`} 
+                        src={`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${item.imageId}`} 
                         alt={item.name}
                         className={ItemInventoryCellCSS.item__image}
                     />

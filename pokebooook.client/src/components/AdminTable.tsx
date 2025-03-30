@@ -12,7 +12,7 @@ interface TableRow {
 }
 
 const fetchData = async (name: string) => {
-  const response = await fetch(`http://localhost:5212/api/${name}`);
+  const response = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/${name}`);
   return await response.json();
 };
 
@@ -46,7 +46,7 @@ const addData = async (name: string, data: TableRow) => {
     // Logování odesílaných dat
     console.log(`Odesílám POST požadavek na ${name}:`, JSON.stringify(data, null, 2));
     
-    const response = await fetch(`http://localhost:5212/api/${name}`, {
+    const response = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/${name}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const uploadImage = async (file: File) => {
   const formData = new FormData();
   formData.append("file", file);
 
-  const response = await fetch("http://localhost:5212/api/Images/upload", {
+  const response = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/upload`, {
     method: "POST",
     body: formData,
   });
@@ -86,7 +86,7 @@ const updateData = async (
 ) => {
   if (name === "Images" && newId && newId !== data[id]) {
     const response = await fetch(
-      `http://localhost:5212/api/Images/${data[id]}`,
+      `${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${data[id]}`,
       {
         method: "PUT",
         headers: {
@@ -105,7 +105,7 @@ const updateData = async (
     return;
   }
 
-  await fetch(`http://localhost:5212/api/${name}/${data[id]}`, {
+  await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/${name}/${data[id]}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -116,10 +116,10 @@ const updateData = async (
 
 const deleteData = async (name: string, id: string) => {
   console.log(
-    `Sending DELETE request to: http://localhost:5212/api/${name}/${id}`
+    `Sending DELETE request to: ${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/${name}/${id}`
   );
 
-  const response = await fetch(`http://localhost:5212/api/${name}/${id}`, {
+  const response = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/${name}/${id}`, {
     method: "DELETE",
   });
 
@@ -206,7 +206,7 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
           console.log("Odesílám data pro položku (item):", JSON.stringify(requestData, null, 2));
           
           // Přímé volání fetch místo addData pro lepší kontrolu
-          const response = await fetch(`http://localhost:5212/api/${name}`, {
+            const response = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/${name}`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

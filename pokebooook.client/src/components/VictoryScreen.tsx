@@ -106,7 +106,7 @@ const VictoryScreen: React.FC<VictoryScreenProps> = ({
               boxShadow: '0 0 8px rgba(0, 0, 0, 0.5)'
             }}>
               <img
-                src={`http://localhost:5212/api/Images/${capturedPokemon.imageId}`}
+                src={`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${capturedPokemon.imageId}`}
                 alt={capturedPokemon.name}
                 style={{ 
                   width: '100px', 
@@ -162,7 +162,7 @@ const VictoryScreen: React.FC<VictoryScreenProps> = ({
                 boxShadow: '0 0 6px rgba(0, 0, 0, 0.5)'
               }}>
                 <img
-                  src={`http://localhost:5212/api/Images/${groupedItem.item.imageId}`}
+                  src={`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${groupedItem.item.imageId}`}
                   alt={groupedItem.item.name}
                   style={{ 
                     width: '50px', 
