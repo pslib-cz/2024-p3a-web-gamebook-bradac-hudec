@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import BattleCSS from "../styles/pages/Battle.module.css";
 import GameItem from "../types/GameItem";
 import PokemonType from "../types/PokemonType";
+import { API_URL } from "../env";
 
 interface VictoryScreenProps {
   earnedItems: GameItem[];
@@ -106,7 +107,7 @@ const VictoryScreen: React.FC<VictoryScreenProps> = ({
               boxShadow: '0 0 8px rgba(0, 0, 0, 0.5)'
             }}>
               <img
-                src={`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${capturedPokemon.imageId}`}
+                src={`${API_URL}/api/Images/${capturedPokemon.imageId}`}
                 alt={capturedPokemon.name}
                 style={{ 
                   width: '100px', 
@@ -162,7 +163,7 @@ const VictoryScreen: React.FC<VictoryScreenProps> = ({
                 boxShadow: '0 0 6px rgba(0, 0, 0, 0.5)'
               }}>
                 <img
-                  src={`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${groupedItem.item.imageId}`}
+                  src={`${API_URL}/api/Images/${groupedItem.item.imageId}`}
                   alt={groupedItem.item.name}
                   style={{ 
                     width: '50px', 

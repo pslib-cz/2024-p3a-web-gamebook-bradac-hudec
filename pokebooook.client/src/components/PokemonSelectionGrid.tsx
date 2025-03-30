@@ -1,6 +1,7 @@
 import React from 'react';
 import PokemonType from '../types/PokemonType';
 import BattleCSS from '../styles/pages/Battle.module.css';
+import { API_URL } from '../env';
 
 interface PokemonSelectionGridProps {
   playerPokemons: PokemonType[];
@@ -36,7 +37,7 @@ const PokemonSelectionGrid: React.FC<PokemonSelectionGridProps> = ({
             }}
           >
             <img
-              src={`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${pokemon.imageId}`}
+              src={`${API_URL}/api/Images/${pokemon.imageId}`}
               alt={pokemon.name}
             />
             <div className={BattleCSS.pokemonInfo}>

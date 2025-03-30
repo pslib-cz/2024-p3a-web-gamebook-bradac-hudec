@@ -1,3 +1,4 @@
+import { API_URL } from '../env';
 import ItemInventoryCellCSS from '../styles/components/ItemInventoryCell.module.css';
 import GameItem from '../types/GameItem';
 
@@ -22,7 +23,7 @@ const ItemInventoryCell: React.FC<ItemInventoryCellProps> = ({ item, onClick }) 
             {item && (
                 <>
                     <img 
-                        src={`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${item.imageId}`} 
+                        src={`${API_URL}/api/Images/${item.imageId}`} 
                         alt={item.name}
                         className={ItemInventoryCellCSS.item__image}
                     />

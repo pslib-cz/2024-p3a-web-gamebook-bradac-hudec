@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PokemonCellCSS from "../styles/components/PokemonCell.module.css";
 import PokemonType from "../types/PokemonType";
 import ConfirmationDialog from './ConfirmationDialog';
+import { API_URL } from '../env';
 
 interface PokemonCellProps {
     pokemon?: PokemonType;
@@ -31,7 +32,7 @@ const PokemonCell: React.FC<PokemonCellProps> = ({ pokemon, onSelect }) => {
                     <>
                         <div className={PokemonCellCSS.pokemon__image__container}>
                             <img
-                                src={`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${pokemon.imageId}`}
+                                src={`${API_URL}/api/Images/${pokemon.imageId}`}
                                 alt={pokemon.name}
                                 className={PokemonCellCSS.pokemon__image}
                             />

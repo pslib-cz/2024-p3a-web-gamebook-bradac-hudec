@@ -16,6 +16,7 @@ import StarterPokemon from "./types/StarterPokemon";
 import PokemonType from "./types/PokemonType";
 import GameItem from "./types/GameItem";
 import LocationCSS from "./styles/pages/Location.module.css";
+import { API_URL } from "./env";
 
 const replaceText = (
   text: string,
@@ -91,13 +92,13 @@ const Location: React.FC = () => {
       const locId = parseInt(locationId);
       
      
-      const locationResponse = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Locations/${locId}`);
+      const locationResponse = await fetch(`${API_URL}/api/Locations/${locId}`);
       if (!locationResponse.ok) throw new Error("Failed to fetch location");
       const locationData = await locationResponse.json();
       setLocation(locationData);
 
      
-      const connectionsResponse = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Locations/${locId}/Connections`);
+      const connectionsResponse = await fetch(`${API_URL}/api/Locations/${locId}/Connections`);
       const connectionsData = connectionsResponse.ok ? await connectionsResponse.json() : [];
       
       // Vždy filtrujeme spojení tak, aby bylo možné jít pouze dopředu
@@ -112,7 +113,7 @@ const Location: React.FC = () => {
 
       
       if (locationData.hasPokemon && locationData.pokemonId) {
-        const pokemonResponse = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Pokemons/${locationData.pokemonId}`);
+        const pokemonResponse = await fetch(`${API_URL}/api/Pokemons/${locationData.pokemonId}`);
         if (pokemonResponse.ok) {
           const pokemonData = await pokemonResponse.json();
           setPokemon(pokemonData);
@@ -387,7 +388,7 @@ const Location: React.FC = () => {
     }
 
     setIsLoading(true);
-      fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Pokemons/${selectedPokemon.id}`)
+      fetch(`${API_URL}/api/Pokemons/${selectedPokemon.id}`)
       .then(response => {
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
           return response.json();
@@ -498,7 +499,7 @@ const Location: React.FC = () => {
                 onClick={() => pokemon.health > 0 ? handlePokemonSelectForItem(index) : null}
               >
                 <img
-                  src={`http://localhost:5212/api/Images/${pokemon.imageId}`}
+                  src={`${API_URL}/api/Images/${pokemon.imageId}`}
                   alt={pokemon.name}
                   className={LocationCSS["pokemon-image"]}
                 />

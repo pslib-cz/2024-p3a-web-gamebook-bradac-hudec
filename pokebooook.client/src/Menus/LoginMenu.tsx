@@ -3,6 +3,7 @@ import { Link, Navigate } from "react-router-dom";
 import Bg from "../components/Bg";
 import BackBtn from "../components/BackBtn";
 import LoginMenuCSS from "../styles/menus/LoginMenu.module.css";
+import { API_URL } from "../env";
 
 
 interface LoginResponse {
@@ -51,7 +52,7 @@ const LoginMenu: React.FC = () => {
 
 
    
-      const response = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Users/Login`, {
+      const response = await fetch(`${API_URL}/api/Users/Login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

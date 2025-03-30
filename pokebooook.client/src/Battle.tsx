@@ -15,6 +15,7 @@ import GameItem from "./types/GameItem";
 import PokemonSelectionGrid from "./components/PokemonSelectionGrid";
 import VictoryScreen from "./components/VictoryScreen";
 import GameOverScreen from "./components/GameOverScreen";
+import { API_URL } from "./env";
 
 interface BattleState {
   player: {
@@ -157,7 +158,7 @@ const Battle: React.FC<BattleProps> = ({
     try {
       console.log("Začátek generování odměn");
 
-      const response = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Items`);
+      const response = await fetch(`${API_URL}/api/Items`);
 
       if (response.ok) {
         const items = await response.json();
@@ -227,7 +228,7 @@ const Battle: React.FC<BattleProps> = ({
 
   const fetchPokemonTypes = async () => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/PokemonTypes`);
+      const response = await fetch(`${API_URL}/api/PokemonTypes`);
       if (!response.ok) {
         throw new Error("Failed to fetch Pokemon types");
       }
@@ -252,7 +253,7 @@ const Battle: React.FC<BattleProps> = ({
       }
 
       const playerResponse = await fetch(
-        `${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Pokemons/${selectedPokemon.pokemonId}`
+        `${API_URL}/api/Pokemons/${selectedPokemon.pokemonId}`
       );
 
       // Při inicializaci souboje uložíme předchozí stav nepřítele, abychom ho mohli obnovit
@@ -263,7 +264,7 @@ const Battle: React.FC<BattleProps> = ({
         currentEnemyHealth = battleState.enemy.health;
       }
 
-      const enemyResponse = await fetch(`${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Pokemons/${locationPokemonId}`);
+      const enemyResponse = await fetch(`${API_URL}/api/Pokemons/${locationPokemonId}`);
 
       if (!playerResponse.ok || !enemyResponse.ok) {
         throw new Error("Failed to fetch Pokémon data");

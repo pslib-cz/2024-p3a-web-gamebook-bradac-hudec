@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import BgCSS from "../styles/components/Bg.module.css";
+import { API_URL } from '../env';
 
 interface BgProps {
     imageId?: number;
@@ -12,7 +13,7 @@ const Bg: React.FC<BgProps> = ({ imageId, bgImage, children }) => {
     
     // Pokud máme imageId, použijeme ho pro získání URL
     if (imageId && !bgImage) {
-        backgroundImageUrl = `${import.meta.env.VITE_API_PROTOCOL}://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/api/Images/${imageId}`;
+        backgroundImageUrl = `${API_URL}/api/Images/${imageId}`;
     }
 
     useEffect(() => {
