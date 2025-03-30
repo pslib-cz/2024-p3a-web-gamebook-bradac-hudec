@@ -499,7 +499,7 @@ const Location: React.FC = () => {
                 onClick={() => pokemon.health > 0 ? handlePokemonSelectForItem(index) : null}
               >
                 <img
-                  src={`${API_URL}/api/Images/${pokemon.imageId}`}
+                  src={`${API_URL}api/Images/${pokemon.imageId}`}
                   alt={pokemon.name}
                   className={LocationCSS["pokemon-image"]}
                 />
