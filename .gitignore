@@ -4,8 +4,5 @@
 
 /.vs
 # Místo ignorování celé složky serveru, ignorujeme jen konkrétní soubory
-/Pokebooook.Server/app.db-shm
-/Pokebooook.Server/app.db-wal
 /Pokebooook.Server/bin/
 /Pokebooook.Server/obj/
-/Pokebooook.Server/app.db
