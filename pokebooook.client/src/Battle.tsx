@@ -508,10 +508,14 @@ const Battle: React.FC<BattleProps> = ({
           setCurrentMessage(`Chytil jsi ${battleState.enemy.pokemon.name}!`);
 
           try {
-            const caughtPokemonCount = localStorage.getItem("stats_caughtPokemon");
-            const newCaughtPokemonCount = caughtPokemonCount ? parseInt(caughtPokemonCount) + 1 : 1;
+            // Získat současnou hodnotu počítadla chycených pokémonů
+            const caughtPokemonCount = localStorage.getItem("stats_caughtPokemon") || "0";
+            // Převedeme na číslo a přidáme 1
+            const newCaughtPokemonCount = parseInt(caughtPokemonCount) + 1;
+            // Uložíme aktualizovanou hodnotu
             localStorage.setItem("stats_caughtPokemon", newCaughtPokemonCount.toString());
-            console.log("Přidán nový pokémon do statistik:", newCaughtPokemonCount);
+            
+            console.log("Přidán nový pokémon do statistik. Celkem chyceno:", newCaughtPokemonCount);
           } catch (error) {
             console.error("Chyba při aktualizaci statistik chycených pokémonů:", error);
           }
@@ -677,7 +681,23 @@ const Battle: React.FC<BattleProps> = ({
   };
 
   const handleRestartGame = () => {
+    // Zálohujeme statistiky před resetováním localStorage
+    const stats = {
+      completedGames: localStorage.getItem("stats_completedGames"),
+      caughtPokemon: localStorage.getItem("stats_caughtPokemon")
+    };
+    
+    // Resetujeme localStorage
     localStorage.clear();
+    
+    // Obnovíme statistiky ze zálohy
+    if (stats.completedGames) {
+      localStorage.setItem("stats_completedGames", stats.completedGames);
+    }
+    if (stats.caughtPokemon) {
+      localStorage.setItem("stats_caughtPokemon", stats.caughtPokemon);
+    }
+    
     window.location.href = "/nickname";
   };
 

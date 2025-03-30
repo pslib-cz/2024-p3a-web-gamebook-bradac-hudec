@@ -20,14 +20,11 @@ const fetchData = async (name: string) => {
 
 const addData = async (name: string, data: TableRow) => {
   try {
-    // Přidání dodatečné validace pro různé typy entit
     if (name.toLowerCase() === "items") {
-      // Zajistíme správný formát dat pro položky podle API serveru
       if (!data.name) {
         throw new Error("Jméno položky je povinné");
       }
       
-      // Zajištění, že všechna povinná pole mají hodnotu
       const requiredFields = ["name", "description", "effect", "value", "imageId"];
       for (const field of requiredFields) {
         if (data[field] === undefined || data[field] === "") {
@@ -35,7 +32,6 @@ const addData = async (name: string, data: TableRow) => {
         }
       }
       
-      // Zajištění správných typů pro hodnoty
       if (typeof data.value !== "number") {
         data.value = parseInt(data.value?.toString() || "0") || 0;
       }
@@ -45,7 +41,6 @@ const addData = async (name: string, data: TableRow) => {
       }
     }
     
-    // Logování odesílaných dat
     console.log(`Odesílám POST požadavek na ${name}:`, JSON.stringify(data, null, 2));
     
     const response = await fetch(`${API_URL}api/${name}`, {
@@ -90,7 +85,6 @@ const updateData = async (
   
   try {
     if (name === "Images" && newId && newId !== data[id]) {
-      // Pro obrázky musíme nejprve získat aktuální data
       const getResponse = await fetch(`${API_URL}api/Images/${data[id]}`);
       
       if (!getResponse.ok) {
@@ -99,10 +93,8 @@ const updateData = async (
         throw new Error(`Server vrátil chybu: ${getResponse.status} ${getResponse.statusText}\n${errorText}`);
       }
       
-      // Získáme aktuální kompletní data obrázku
       const currentImageData = await getResponse.json();
       
-      // Připravíme všechna povinná pole pro aktualizaci
       const response = await fetch(
         `${API_URL}api/Images/${data[id]}`,
         {
@@ -125,7 +117,6 @@ const updateData = async (
       }
       return;
     } else if (name === "Images") {
-      // I v případě, že se nemění ID, musíme získat kompletní data
       const getResponse = await fetch(`${API_URL}api/Images/${data[id]}`);
       
       if (!getResponse.ok) {
@@ -134,10 +125,8 @@ const updateData = async (
         throw new Error(`Server vrátil chybu: ${getResponse.status} ${getResponse.statusText}\n${errorText}`);
       }
       
-      // Získáme aktuální kompletní data obrázku
       const currentImageData = await getResponse.json();
       
-      // Připravíme všechna povinná pole pro aktualizaci
       const response = await fetch(`${API_URL}api/Images/${data[id]}`, {
         method: "PUT",
         headers: {
@@ -155,11 +144,9 @@ const updateData = async (
         throw new Error(`Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`);
       }
       
-      // U obrázků nekontrolujeme JSON odpověď, protože ji server nemusí vracet
       return;
     }
 
-    // Pro ostatní entity než Images
     const response = await fetch(`${API_URL}api/${name}/${data[id]}`, {
       method: "PUT",
       headers: {
@@ -174,16 +161,13 @@ const updateData = async (
       throw new Error(`Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`);
     }
     
-    // Kontrola zda odpověď obsahuje data nebo je prázdná (204 No Content)
     if (response.status !== 204) {
       try {
-        // Zkusíme přečíst odpověď jako JSON pouze pokud status není 204
         const contentType = response.headers.get("content-type");
         if (contentType && contentType.includes("application/json")) {
           await response.json();
         }
       } catch {
-        // Ignorujeme chyby parsování, protože to není kritická chyba
         console.log("Odpověď serveru neobsahuje validní JSON, ale operace proběhla úspěšně.");
       }
     }
@@ -193,7 +177,6 @@ const updateData = async (
   }
 };
 
-// Typy pro pokémony a jejich útoky
 interface PokemonAttack {
   pokemonAttackId: number;
   attackName: string;
@@ -208,7 +191,7 @@ interface Attack {
   baseDamage: number;
 }
 
-// Komponenta pro zobrazení a správu útoků pro pokémona
+
 const PokemonAttacksManager: React.FC<{
   pokemonId: number;
   onUpdate: () => void;
@@ -223,7 +206,7 @@ const PokemonAttacksManager: React.FC<{
     const fetchData = async () => {
       setLoading(true);
       try {
-        // Načtení pokémona s jeho útoky
+       
         const pokemonResponse = await fetch(`${API_URL}api/Pokemons/${pokemonId}`);
         
         if (!pokemonResponse.ok) {
@@ -233,7 +216,7 @@ const PokemonAttacksManager: React.FC<{
         const pokemonData = await pokemonResponse.json();
         setAttacks(pokemonData.pokemonAttacks || []);
         
-        // Načtení dostupných útoků
+       
         const attacksResponse = await fetch(`${API_URL}api/Attacks`);
         
         if (!attacksResponse.ok) {
@@ -263,7 +246,7 @@ const PokemonAttacksManager: React.FC<{
     try {
       const attackId = parseInt(selectedAttack);
       
-      // Vytvoření nového PokemonAttack záznamu
+      
       const response = await fetch(`${API_URL}api/PokemonAttacks`, {
         method: "POST",
         headers: {
@@ -282,10 +265,10 @@ const PokemonAttacksManager: React.FC<{
       
       const newAttack = await response.json();
       
-      // Přidáme nový útok do seznamu a obnovíme komponentu
+     
       setAttacks([...attacks, newAttack]);
       setSelectedAttack("");
-      onUpdate(); // Informujeme rodiče o změně
+      onUpdate(); 
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Neznámá chyba';
       alert(`Chyba při přidávání útoku: ${errorMessage}`);
@@ -308,7 +291,7 @@ const PokemonAttacksManager: React.FC<{
         throw new Error(`Nepodařilo se smazat útok. Status: ${response.status}. ${errorText}`);
       }
       
-      // Odebereme smazaný útok ze seznamu
+    
       setAttacks(attacks.filter(attack => attack.pokemonAttackId !== attackId));
       onUpdate(); // Informujeme rodiče o změně
     } catch (err) {

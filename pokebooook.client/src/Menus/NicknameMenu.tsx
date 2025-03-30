@@ -15,7 +15,24 @@ const NicknameMenu: React.FC = () => {
     };
 
     const handleContinueClick = () => {
+        // Zálohujeme statistiky před resetováním localStorage
+        const stats = {
+            completedGames: localStorage.getItem("stats_completedGames"),
+            caughtPokemon: localStorage.getItem("stats_caughtPokemon")
+        };
+        
+        // Resetujeme localStorage
         localStorage.clear(); 
+        
+        // Obnovíme statistiky ze zálohy
+        if (stats.completedGames) {
+            localStorage.setItem("stats_completedGames", stats.completedGames);
+        }
+        if (stats.caughtPokemon) {
+            localStorage.setItem("stats_caughtPokemon", stats.caughtPokemon);
+        }
+        
+        // Uložíme nové herní údaje
         localStorage.setItem("nickname", nickname);
         localStorage.setItem("playerPokemons", JSON.stringify([]));
         localStorage.setItem("visitedLocations", JSON.stringify([]));

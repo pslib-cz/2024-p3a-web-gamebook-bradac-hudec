@@ -406,7 +406,24 @@ const Location: React.FC = () => {
       
       if (allExhausted) {
         console.log("Všichni pokémoni jsou vyčerpaní, resetuji hru");
+        
+        // Zálohujeme statistiky před resetováním localStorage
+        const stats = {
+          completedGames: localStorage.getItem("stats_completedGames"),
+          caughtPokemon: localStorage.getItem("stats_caughtPokemon")
+        };
+        
+        // Resetujeme localStorage
         localStorage.clear();
+        
+        // Obnovíme statistiky ze zálohy
+        if (stats.completedGames) {
+          localStorage.setItem("stats_completedGames", stats.completedGames);
+        }
+        if (stats.caughtPokemon) {
+          localStorage.setItem("stats_caughtPokemon", stats.caughtPokemon);
+        }
+        
         setRedirectPath("/nickname");
       } else {
         setShowOptions(true);
@@ -524,29 +541,33 @@ const Location: React.FC = () => {
   function handleReturnToMainMenu() {
     // Nejprve aktualizujeme statistiky
     try {
-      // Přičteme jeden průchod hry do statistik
-      const completedGames = localStorage.getItem("stats_completedGames");
-      const newCompletedGames = completedGames ? parseInt(completedGames) + 1 : 1;
+      // Načtení aktuální hodnoty počítadla dokončených her
+      const completedGames = localStorage.getItem("stats_completedGames") || "0";
+      // Převedení na číslo a přidání 1
+      const newCompletedGames = parseInt(completedGames) + 1;
+      // Uložení aktualizované hodnoty
       localStorage.setItem("stats_completedGames", newCompletedGames.toString());
 
-      console.log("Dokončený průchod hry zaznamenán do statistik:", newCompletedGames);
+      console.log("Dokončený průchod hry zaznamenán do statistik. Celkem dokončeno:", newCompletedGames);
     } catch (error) {
-      console.error("Chyba při aktualizaci statistik:", error);
+      console.error("Chyba při aktualizaci statistik dokončených her:", error);
     }
 
-    // Resetujeme pouze herní data, ne statistiky
-    const statsCompletedGames = localStorage.getItem("stats_completedGames");
-    const statsCaughtPokemon = localStorage.getItem("stats_caughtPokemon");
+    // Zálohujeme všechny statistiky před resetováním localStorage
+    const stats = {
+      completedGames: localStorage.getItem("stats_completedGames"),
+      caughtPokemon: localStorage.getItem("stats_caughtPokemon")
+    };
     
     // Resetujeme localStorage
     localStorage.clear();
     
-    // Obnovíme statistiky
-    if (statsCompletedGames) {
-      localStorage.setItem("stats_completedGames", statsCompletedGames);
+    // Obnovíme statistiky ze zálohy
+    if (stats.completedGames) {
+      localStorage.setItem("stats_completedGames", stats.completedGames);
     }
-    if (statsCaughtPokemon) {
-      localStorage.setItem("stats_caughtPokemon", statsCaughtPokemon);
+    if (stats.caughtPokemon) {
+      localStorage.setItem("stats_caughtPokemon", stats.caughtPokemon);
     }
     
     // Místo navigate použijeme setRedirectPath
