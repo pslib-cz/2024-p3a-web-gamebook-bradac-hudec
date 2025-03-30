@@ -34,13 +34,15 @@ interface BattleState {
   };
 }
 
-interface BattleProps {
-  locationPokemonId: number;
+type BattleProps = {
+  locationPokemonId?: number;
+  locationPokemon?: PokemonType;
   onBattleComplete: (wasVictorious: boolean, earnedItems?: GameItem[]) => void;
-}
+};
 
 const Battle: React.FC<BattleProps> = ({
   locationPokemonId,
+  locationPokemon,
   onBattleComplete,
 }) => {
   const [battleState, setBattleState] = useState<BattleState>({
@@ -248,8 +250,8 @@ const Battle: React.FC<BattleProps> = ({
         throw new Error("Selected pokemon has no valid ID");
       }
 
-      if (!locationPokemonId) {
-        throw new Error("Location pokemon ID is missing");
+      if (!locationPokemon && !locationPokemonId) {
+        throw new Error("Location pokemon or its ID is missing");
       }
 
       const playerResponse = await fetch(
@@ -264,14 +266,25 @@ const Battle: React.FC<BattleProps> = ({
         currentEnemyHealth = battleState.enemy.health;
       }
 
-      const enemyResponse = await fetch(`${API_URL}api/Pokemons/${locationPokemonId}`);
+      let enemyData;
+      
+      // Pokud máme přímo objekt nepřítele, použijeme ho
+      if (locationPokemon) {
+        enemyData = locationPokemon;
+      } else {
+        // Jinak ho načteme podle ID
+        const enemyResponse = await fetch(`${API_URL}api/Pokemons/${locationPokemonId}`);
+        if (!enemyResponse.ok) {
+          throw new Error("Failed to fetch enemy Pokémon data");
+        }
+        enemyData = await enemyResponse.json();
+      }
 
-      if (!playerResponse.ok || !enemyResponse.ok) {
-        throw new Error("Failed to fetch Pokémon data");
+      if (!playerResponse.ok) {
+        throw new Error("Failed to fetch player Pokémon data");
       }
 
       const playerData = await playerResponse.json();
-      const enemyData = await enemyResponse.json();
 
       const playerType = pokemonTypes.find(
         (t) => t.typeId === playerData.typeId
@@ -314,6 +327,56 @@ const Battle: React.FC<BattleProps> = ({
         })
       );
 
+      // Přidáme základní útoky, pokud pokémon žádné nemá
+      if (playerAttacks.length === 0) {
+        console.log("Hráčův pokémon nemá žádné útoky, přidávám základní sadu");
+        playerAttacks.push(
+          {
+            attackId: 1000,
+            attackName: "Tackle",
+            energyCost: 20,
+            baseDamage: 40
+          },
+          {
+            attackId: 1001,
+            attackName: "Quick Attack",
+            energyCost: 15,
+            baseDamage: 30
+          },
+          {
+            attackId: 1002,
+            attackName: "Flee",
+            energyCost: 0,
+            baseDamage: 0
+          }
+        );
+      }
+
+      if (enemyAttacks.length === 0) {
+        console.log("Nepřátelský pokémon nemá žádné útoky, přidávám základní sadu");
+        enemyAttacks.push(
+          {
+            attackId: 2000,
+            attackName: "Tackle",
+            energyCost: 20,
+            baseDamage: 40
+          },
+          {
+            attackId: 2001,
+            attackName: "Scratch",
+            energyCost: 15,
+            baseDamage: 30
+          },
+          {
+            attackId: 2002,
+            attackName: "Growl",
+            energyCost: 10,
+            baseDamage: 20
+          }
+        );
+      }
+
+      // Kontrola, zda pokémoni mají útoky po našich úpravách
       if (playerAttacks.length === 0 || enemyAttacks.length === 0) {
         throw new Error("No valid attacks found for one or both Pokemon");
       }

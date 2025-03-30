@@ -112,12 +112,37 @@ const Location: React.FC = () => {
       setLocationConnections(filteredConnections);
 
       
-      if (locationData.hasPokemon && locationData.pokemonId) {
-        const pokemonResponse = await fetch(`${API_URL}api/Pokemons/${locationData.pokemonId}`);
-        if (pokemonResponse.ok) {
-          const pokemonData = await pokemonResponse.json();
-          setPokemon(pokemonData);
-        } else {
+      if (locationData.hasPokemon) {
+        // Místo pevně daného pokémona získáme náhodného
+        try {
+          // Nejprve získáme seznam všech dostupných pokémonů
+          const pokemonsResponse = await fetch(`${API_URL}api/Pokemons`);
+          if (!pokemonsResponse.ok) throw new Error("Failed to fetch pokemons");
+          
+          const pokemonsData = await pokemonsResponse.json();
+          const pokemonList = Array.isArray(pokemonsData.value) ? pokemonsData.value : pokemonsData;
+          
+          if (pokemonList.length > 0) {
+            // Vybereme náhodného pokémona ze seznamu
+            const randomIndex = Math.floor(Math.random() * pokemonList.length);
+            const randomPokemon = pokemonList[randomIndex];
+            
+            // Získáme kompletní data o náhodném pokémonovi
+            const pokemonResponse = await fetch(`${API_URL}api/Pokemons/${randomPokemon.pokemonId}`);
+            if (pokemonResponse.ok) {
+              const pokemonData = await pokemonResponse.json();
+              setPokemon(pokemonData);
+              console.log(`Náhodný pokémon v lokaci ${locId}: ${pokemonData.name}`);
+            } else {
+              setPokemon(null);
+              console.error("Nepodařilo se získat detaily náhodného pokémona");
+            }
+          } else {
+            setPokemon(null);
+            console.error("Seznam pokémonů je prázdný");
+          }
+        } catch (error) {
+          console.error("Chyba při načítání náhodného pokémona:", error);
           setPokemon(null);
         }
       }
@@ -130,10 +155,9 @@ const Location: React.FC = () => {
       }
     } catch (error) {
       console.error("Chyba při načítání lokace:", error);
-    } finally {
+    }
       setIsLoading(false);
     }
-  }
 
 
   useEffect(() => {
@@ -591,9 +615,9 @@ const Location: React.FC = () => {
       )}
       
       {showBattle && pokemon && (
-        <Battle 
-          locationPokemonId={pokemon.pokemonId} 
-          onBattleComplete={handleBattleComplete} 
+        <Battle
+          locationPokemon={pokemon}
+          onBattleComplete={handleBattleComplete}
         />
       )}
     </Bg>

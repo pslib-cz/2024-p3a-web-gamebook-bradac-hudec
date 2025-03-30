@@ -73,6 +73,11 @@
     box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.2);
 }
 
+.adminTable__input option {
+    background-color: #121212;
+    color: #fff;
+}
+
 .adminTable__button {
     margin: 0 5px;
     padding: 8px 16px;
@@ -167,4 +172,78 @@
 .adminTable__filter input:focus {
     outline: none;
     border-color: #64ffda;
+}
+
+/* Modální okno pro správu útoků */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 25px;
+  position: relative;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+  color: white;
+}
+
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s ease;
+}
+
+.closeModal:hover {
+  color: #fff;
+}
+
+/* Manager útoků pokémonů */
+.attacksManager {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.attacksManager h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #64ffda;
+}
+
+.attacksManager__add {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.attacksManager__add select {
+  flex-grow: 1;
+  min-width: 250px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.attacksManager__add select option {
+  background-color: #121212;
+  color: #fff;
+  padding: 8px;
 }

@@ -121,11 +121,11 @@ const AdminMenu: React.FC = () => {
                     id="pokemonId"
                     cols={[
                         "name",
+                        "health",
+                        "energy",
+                        "typeId",
                         "imageId",
                         "locationId",
-                        "energy",
-                        "health",
-                        "typeId",
                     ]}
                 />
                 <AdminTable
