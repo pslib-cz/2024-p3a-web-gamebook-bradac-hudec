@@ -11,6 +11,7 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 RUN apt update && apt install nodejs npm -y
+RUN mkdir -p ~/.aspnet/https
 WORKDIR /src
 COPY ["pokebooook.client/nuget.config", "pokebooook.client/"]
 COPY ["Pokebooook.Server/Pokebooook.Server.csproj", "Pokebooook.Server/"]
