@@ -12,7 +12,7 @@ const AttacksContainer: React.FC<AttacksContainerProps> = ({
     attacks,
     onAttack,
 }) => {
-    console.log("Attacks in AttacksContainer:", attacks); // Debug log
+    console.log("Attacks in AttacksContainer:", attacks); 
 
     if (!attacks || attacks.length === 0) {
         return <div>No attacks available</div>;

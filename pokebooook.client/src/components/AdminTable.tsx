@@ -24,25 +24,34 @@ const addData = async (name: string, data: TableRow) => {
       if (!data.name) {
         throw new Error("Jméno položky je povinné");
       }
-      
-      const requiredFields = ["name", "description", "effect", "value", "imageId"];
+
+      const requiredFields = [
+        "name",
+        "description",
+        "effect",
+        "value",
+        "imageId",
+      ];
       for (const field of requiredFields) {
         if (data[field] === undefined || data[field] === "") {
           throw new Error(`Pole ${field} je povinné`);
         }
       }
-      
+
       if (typeof data.value !== "number") {
         data.value = parseInt(data.value?.toString() || "0") || 0;
       }
-      
+
       if (typeof data.imageId !== "number") {
         data.imageId = parseInt(data.imageId?.toString() || "1") || 1;
       }
     }
-    
-    console.log(`Odesílám POST požadavek na ${name}:`, JSON.stringify(data, null, 2));
-    
+
+    console.log(
+      `Odesílám POST požadavek na ${name}:`,
+      JSON.stringify(data, null, 2)
+    );
+
     const response = await fetch(`${API_URL}api/${name}`, {
       method: "POST",
       headers: {
@@ -50,13 +59,15 @@ const addData = async (name: string, data: TableRow) => {
       },
       body: JSON.stringify(data),
     });
-    
+
     if (!response.ok) {
       const errorText = await response.text();
       console.error(`Chyba při vytváření ${name}:`, response.status, errorText);
-      throw new Error(`Chyba: ${response.status} ${response.statusText} - ${errorText}`);
+      throw new Error(
+        `Chyba: ${response.status} ${response.statusText} - ${errorText}`
+      );
     }
-    
+
     return await response.json();
   } catch (error) {
     console.error(`Chyba při vytváření ${name}:`, error);
@@ -81,52 +92,29 @@ const updateData = async (
   data: TableRow,
   newId?: string
 ) => {
-  console.log(`Updating ${name} with ID ${data[id]}`, JSON.stringify(data, null, 2));
-  
+  console.log(
+    `Updating ${name} with ID ${data[id]}`,
+    JSON.stringify(data, null, 2)
+  );
+
   try {
     if (name === "Images" && newId && newId !== data[id]) {
       const getResponse = await fetch(`${API_URL}api/Images/${data[id]}`);
-      
-      if (!getResponse.ok) {
-        const errorText = await getResponse.text();
-        console.error(`Chyba při získávání dat obrázku:`, getResponse.status, errorText);
-        throw new Error(`Server vrátil chybu: ${getResponse.status} ${getResponse.statusText}\n${errorText}`);
-      }
-      
-      const currentImageData = await getResponse.json();
-      
-      const response = await fetch(
-        `${API_URL}api/Images/${data[id]}`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...currentImageData,
-            imageId: parseInt(newId),
-            name: data.name
-          }),
-        }
-      );
 
-      if (!response.ok) {
-        const errorText = await response.text();
-        console.error(`Chyba při aktualizaci obrázku:`, response.status, errorText);
-        throw new Error(`Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`);
-      }
-      return;
-    } else if (name === "Images") {
-      const getResponse = await fetch(`${API_URL}api/Images/${data[id]}`);
-      
       if (!getResponse.ok) {
         const errorText = await getResponse.text();
-        console.error(`Chyba při získávání dat obrázku:`, getResponse.status, errorText);
-        throw new Error(`Server vrátil chybu: ${getResponse.status} ${getResponse.statusText}\n${errorText}`);
+        console.error(
+          `Chyba při získávání dat obrázku:`,
+          getResponse.status,
+          errorText
+        );
+        throw new Error(
+          `Server vrátil chybu: ${getResponse.status} ${getResponse.statusText}\n${errorText}`
+        );
       }
-      
+
       const currentImageData = await getResponse.json();
-      
+
       const response = await fetch(`${API_URL}api/Images/${data[id]}`, {
         method: "PUT",
         headers: {
@@ -134,16 +122,63 @@ const updateData = async (
         },
         body: JSON.stringify({
           ...currentImageData,
-          name: data.name
+          imageId: parseInt(newId),
+          name: data.name,
         }),
       });
-      
+
       if (!response.ok) {
         const errorText = await response.text();
-        console.error(`Chyba při aktualizaci obrázku:`, response.status, errorText);
-        throw new Error(`Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`);
+        console.error(
+          `Chyba při aktualizaci obrázku:`,
+          response.status,
+          errorText
+        );
+        throw new Error(
+          `Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`
+        );
       }
-      
+      return;
+    } else if (name === "Images") {
+      const getResponse = await fetch(`${API_URL}api/Images/${data[id]}`);
+
+      if (!getResponse.ok) {
+        const errorText = await getResponse.text();
+        console.error(
+          `Chyba při získávání dat obrázku:`,
+          getResponse.status,
+          errorText
+        );
+        throw new Error(
+          `Server vrátil chybu: ${getResponse.status} ${getResponse.statusText}\n${errorText}`
+        );
+      }
+
+      const currentImageData = await getResponse.json();
+
+      const response = await fetch(`${API_URL}api/Images/${data[id]}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...currentImageData,
+          name: data.name,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error(
+          `Chyba při aktualizaci obrázku:`,
+          response.status,
+          errorText
+        );
+        throw new Error(
+          `Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`
+        );
+      }
+
       return;
     }
 
@@ -154,13 +189,19 @@ const updateData = async (
       },
       body: JSON.stringify(data),
     });
-    
+
     if (!response.ok) {
       const errorText = await response.text();
-      console.error(`Chyba při aktualizaci ${name}:`, response.status, errorText);
-      throw new Error(`Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`);
+      console.error(
+        `Chyba při aktualizaci ${name}:`,
+        response.status,
+        errorText
+      );
+      throw new Error(
+        `Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`
+      );
     }
-    
+
     if (response.status !== 204) {
       try {
         const contentType = response.headers.get("content-type");
@@ -168,7 +209,9 @@ const updateData = async (
           await response.json();
         }
       } catch {
-        console.log("Odpověď serveru neobsahuje validní JSON, ale operace proběhla úspěšně.");
+        console.log(
+          "Odpověď serveru neobsahuje validní JSON, ale operace proběhla úspěšně."
+        );
       }
     }
   } catch (error) {
@@ -191,7 +234,6 @@ interface Attack {
   baseDamage: number;
 }
 
-
 const PokemonAttacksManager: React.FC<{
   pokemonId: number;
   onUpdate: () => void;
@@ -206,34 +248,39 @@ const PokemonAttacksManager: React.FC<{
     const fetchData = async () => {
       setLoading(true);
       try {
-       
-        const pokemonResponse = await fetch(`${API_URL}api/Pokemons/${pokemonId}`);
-        
+        const pokemonResponse = await fetch(
+          `${API_URL}api/Pokemons/${pokemonId}`
+        );
+
         if (!pokemonResponse.ok) {
-          throw new Error(`Nepodařilo se načíst údaje o pokémonovi. Status: ${pokemonResponse.status}`);
+          throw new Error(
+            `Nepodařilo se načíst údaje o pokémonovi. Status: ${pokemonResponse.status}`
+          );
         }
-        
+
         const pokemonData = await pokemonResponse.json();
         setAttacks(pokemonData.pokemonAttacks || []);
-        
-       
+
         const attacksResponse = await fetch(`${API_URL}api/Attacks`);
-        
+
         if (!attacksResponse.ok) {
-          throw new Error(`Nepodařilo se načíst seznam útoků. Status: ${attacksResponse.status}`);
+          throw new Error(
+            `Nepodařilo se načíst seznam útoků. Status: ${attacksResponse.status}`
+          );
         }
-        
+
         const attacksData = await attacksResponse.json();
         setAvailableAttacks(attacksData);
       } catch (err) {
-        const errorMessage = err instanceof Error ? err.message : 'Neznámá chyba';
+        const errorMessage =
+          err instanceof Error ? err.message : "Neznámá chyba";
         setError(`Chyba při načítání dat: ${errorMessage}`);
         console.error("Chyba při načítání dat pro PokemonAttacksManager:", err);
       } finally {
         setLoading(false);
       }
     };
-    
+
     fetchData();
   }, [pokemonId]);
 
@@ -245,8 +292,7 @@ const PokemonAttacksManager: React.FC<{
 
     try {
       const attackId = parseInt(selectedAttack);
-      
-      
+
       const response = await fetch(`${API_URL}api/PokemonAttacks`, {
         method: "POST",
         headers: {
@@ -254,23 +300,24 @@ const PokemonAttacksManager: React.FC<{
         },
         body: JSON.stringify({
           attackId: attackId,
-          pokemonId: pokemonId
+          pokemonId: pokemonId,
         }),
       });
-      
+
       if (!response.ok) {
         const errorText = await response.text();
-        throw new Error(`Nepodařilo se přidat útok. Status: ${response.status}. ${errorText}`);
+        throw new Error(
+          `Nepodařilo se přidat útok. Status: ${response.status}. ${errorText}`
+        );
       }
-      
+
       const newAttack = await response.json();
-      
-     
+
       setAttacks([...attacks, newAttack]);
       setSelectedAttack("");
-      onUpdate(); 
+      onUpdate();
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Neznámá chyba';
+      const errorMessage = err instanceof Error ? err.message : "Neznámá chyba";
       alert(`Chyba při přidávání útoku: ${errorMessage}`);
       console.error("Chyba při přidávání útoku:", err);
     }
@@ -285,17 +332,20 @@ const PokemonAttacksManager: React.FC<{
       const response = await fetch(`${API_URL}api/PokemonAttacks/${attackId}`, {
         method: "DELETE",
       });
-      
+
       if (!response.ok) {
         const errorText = await response.text();
-        throw new Error(`Nepodařilo se smazat útok. Status: ${response.status}. ${errorText}`);
+        throw new Error(
+          `Nepodařilo se smazat útok. Status: ${response.status}. ${errorText}`
+        );
       }
-      
-    
-      setAttacks(attacks.filter(attack => attack.pokemonAttackId !== attackId));
-      onUpdate(); // Informujeme rodiče o změně
+
+      setAttacks(
+        attacks.filter((attack) => attack.pokemonAttackId !== attackId)
+      );
+      onUpdate(); 
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Neznámá chyba';
+      const errorMessage = err instanceof Error ? err.message : "Neznámá chyba";
       alert(`Chyba při mazání útoku: ${errorMessage}`);
       console.error("Chyba při mazání útoku:", err);
     }
@@ -312,7 +362,7 @@ const PokemonAttacksManager: React.FC<{
   return (
     <div className={AdminTableCSS.attacksManager}>
       <h4>Útoky pokémona</h4>
-      
+
       {attacks.length === 0 ? (
         <p>Tento pokémon nemá přiřazené žádné útoky.</p>
       ) : (
@@ -328,11 +378,22 @@ const PokemonAttacksManager: React.FC<{
           </thead>
           <tbody>
             {attacks.map((attack) => (
-              <tr key={attack.pokemonAttackId} className={AdminTableCSS.adminTable__tr}>
-                <td className={AdminTableCSS.adminTable__td}>{attack.pokemonAttackId}</td>
-                <td className={AdminTableCSS.adminTable__td}>{attack.attackName}</td>
-                <td className={AdminTableCSS.adminTable__td}>{attack.energyCost}</td>
-                <td className={AdminTableCSS.adminTable__td}>{attack.baseDamage}</td>
+              <tr
+                key={attack.pokemonAttackId}
+                className={AdminTableCSS.adminTable__tr}
+              >
+                <td className={AdminTableCSS.adminTable__td}>
+                  {attack.pokemonAttackId}
+                </td>
+                <td className={AdminTableCSS.adminTable__td}>
+                  {attack.attackName}
+                </td>
+                <td className={AdminTableCSS.adminTable__td}>
+                  {attack.energyCost}
+                </td>
+                <td className={AdminTableCSS.adminTable__td}>
+                  {attack.baseDamage}
+                </td>
                 <td className={AdminTableCSS.adminTable__td}>
                   <button
                     className={`${AdminTableCSS["adminTable__button"]} ${AdminTableCSS["adminTable__button--delete"]}`}
@@ -346,7 +407,7 @@ const PokemonAttacksManager: React.FC<{
           </tbody>
         </table>
       )}
-      
+
       <div className={AdminTableCSS.attacksManager__add}>
         <select
           value={selectedAttack}
@@ -356,7 +417,8 @@ const PokemonAttacksManager: React.FC<{
           <option value="">-- Vyberte útok --</option>
           {availableAttacks.map((attack) => (
             <option key={attack.attackId} value={attack.attackId}>
-              {attack.name} (Poškození: {attack.baseDamage}, Energie: {attack.energyCost})
+              {attack.name} (Poškození: {attack.baseDamage}, Energie:{" "}
+              {attack.energyCost})
             </option>
           ))}
         </select>
@@ -380,17 +442,18 @@ const Modal: React.FC<ModalProps> = ({ onClose, children }) => {
   const modalRoot = document.body;
 
   useEffect(() => {
-    // Zabránit scrollování na pozadí
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     };
   }, []);
 
   return ReactDOM.createPortal(
     <div className={AdminTableCSS.modal}>
       <div className={AdminTableCSS.modalContent}>
-        <span className={AdminTableCSS.closeModal} onClick={onClose}>&times;</span>
+        <span className={AdminTableCSS.closeModal} onClick={onClose}>
+          &times;
+        </span>
         {children}
       </div>
     </div>,
@@ -398,7 +461,7 @@ const Modal: React.FC<ModalProps> = ({ onClose, children }) => {
   );
 };
 
-// Oddělená komponenta pro vykreslení buňky s pokémony a správou útoků
+
 const PokemonNameCell: React.FC<{
   row: TableRow;
   col: string;
@@ -408,7 +471,7 @@ const PokemonNameCell: React.FC<{
   setData: React.Dispatch<React.SetStateAction<TableRow[]>>;
 }> = ({ row, col, onNameChange, name, fetchData, setData }) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  
+
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
       <input
@@ -423,14 +486,14 @@ const PokemonNameCell: React.FC<{
       >
         Spravovat útoky
       </button>
-      
+
       {isModalOpen && (
         <Modal onClose={() => setIsModalOpen(false)}>
           <h3>Správa útoků pro pokémona {row.name}</h3>
           <PokemonAttacksManager
             pokemonId={row.pokemonId as number}
             onUpdate={() => {
-              // Obnovíme data po aktualizaci útoků
+        
               const refreshData = async () => {
                 try {
                   const refreshedData = await fetchData(name);
@@ -484,32 +547,39 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
         setData([...data, uploadedImage]);
         setSelectedFile(null);
       } else {
-        // Vytvoříme kopii dat, abychom mohli provést konverze typů
-        const rowToAdd = {...newRow};
-        
-        // Kontrola, zda jsou zadány všechny povinné vlastnosti
+        const rowToAdd = { ...newRow };
+
+   
         if (name.toLowerCase() === "items") {
-          const requiredFields = ["name", "description", "effect", "value", "imageId"];
-          const missingFields = requiredFields.filter(field => !rowToAdd[field]);
-          
+          const requiredFields = [
+            "name",
+            "description",
+            "effect",
+            "value",
+            "imageId",
+          ];
+          const missingFields = requiredFields.filter(
+            (field) => !rowToAdd[field]
+          );
+
           if (missingFields.length > 0) {
             throw new Error(`Chybí povinná pole: ${missingFields.join(", ")}`);
           }
-          
-          // Items - zpracování hodnoty 'value' jako číslo
+
+
           rowToAdd.value = parseInt(rowToAdd.value?.toString() || "0");
           rowToAdd.imageId = parseInt(rowToAdd.imageId?.toString() || "1");
-          
-          // Ověření, že všechny hodnoty jsou validní
+
+      
           if (isNaN(rowToAdd.value)) {
             throw new Error("Hodnota (value) musí být číslo");
           }
-          
+
           if (isNaN(rowToAdd.imageId)) {
             throw new Error("ID obrázku (imageId) musí být číslo");
           }
+
           
-          // Vytvoříme objekt ve formátu, který očekává API
           const itemToAdd = {
             name: rowToAdd.name,
             description: rowToAdd.description,
@@ -517,71 +587,86 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
             value: rowToAdd.value,
             imageId: rowToAdd.imageId,
           };
+
           
-          // Server očekává přímo pole položek bez obalujícího objektu
           const requestData = [itemToAdd];
-          
-          console.log("Odesílám data pro položku (item):", JSON.stringify(requestData, null, 2));
-          
-          // Přímé volání fetch místo addData pro lepší kontrolu
-            const response = await fetch(`${API_URL}api/${name}`, {
+
+          console.log(
+            "Odesílám data pro položku (item):",
+            JSON.stringify(requestData, null, 2)
+          );
+
+        
+          const response = await fetch(`${API_URL}api/${name}`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
             body: JSON.stringify(requestData),
           });
-          
+
           if (!response.ok) {
             const errorText = await response.text();
-            console.error(`Chyba při vytváření položky:`, response.status, errorText);
-            throw new Error(`Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`);
+            console.error(
+              `Chyba při vytváření položky:`,
+              response.status,
+              errorText
+            );
+            throw new Error(
+              `Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`
+            );
           }
-          
+
           const addedRow = await response.json();
           console.log("Přidaný řádek:", addedRow);
           setData([...data, addedRow]);
         } else if (name.toLowerCase() === "locations") {
-          // Locations - zpracování číselných hodnot
+  
           if (rowToAdd.pokemonId) {
             rowToAdd.pokemonId = parseInt(rowToAdd.pokemonId.toString()) || 0;
           }
-          
+
           if (rowToAdd.rocketChance) {
-            rowToAdd.rocketChance = parseFloat(rowToAdd.rocketChance.toString()) || 0;
+            rowToAdd.rocketChance =
+              parseFloat(rowToAdd.rocketChance.toString()) || 0;
           }
-          
+
           if (rowToAdd.imageId) {
             rowToAdd.imageId = parseInt(rowToAdd.imageId.toString()) || 1;
           }
-          
-          // Pro locations musíme vytvořit objekt, který je validní pro API
-          // Se správně typovanými hodnotami
-          const locationId = rowToAdd.locationId ? parseInt(rowToAdd.locationId.toString()) : undefined;
-          
-          // Kontrola povinných polí pro lokaci
+
+      
+       
+          const locationId = rowToAdd.locationId
+            ? parseInt(rowToAdd.locationId.toString())
+            : undefined;
+
+      
           if (!rowToAdd.name) {
             throw new Error("Pole 'name' je povinné");
           }
-          
-          // Pokud je zadané ID, zkontrolujeme, že není prázdné
+
+         
           if (locationId !== undefined && isNaN(locationId)) {
             throw new Error("ID lokace musí být číslo");
           }
-          
+
           const locationToAdd = {
             locationId: locationId,
             name: rowToAdd.name as string,
-            hasPokemon: rowToAdd.hasPokemon === "true", // Převod na skutečný boolean
+            hasPokemon: rowToAdd.hasPokemon === "true", 
             rocketChance: parseFloat(rowToAdd.rocketChance?.toString() || "0"),
             pokemonId: parseInt(rowToAdd.pokemonId?.toString() || "0"),
             imageId: parseInt(rowToAdd.imageId?.toString() || "1"),
-            descriptions: ["Toto místo jsi ještě neprozkoumal."]
+            descriptions: ["Toto místo jsi ještě neprozkoumal."],
           };
-          
-          console.log("Odesílám data pro lokaci:", JSON.stringify(locationToAdd, null, 2));
-          
-          // Přímé volání fetch místo addData pro lepší kontrolu
+
+          console.log(
+            "Odesílám data pro lokaci:",
+            JSON.stringify(locationToAdd, null, 2)
+          );
+
+        
           const response = await fetch(`${API_URL}api/${name}`, {
             method: "POST",
             headers: {
@@ -589,61 +674,76 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
             },
             body: JSON.stringify(locationToAdd),
           });
-          
+
           if (!response.ok) {
             const errorText = await response.text();
-            console.error(`Chyba při vytváření lokace:`, response.status, errorText);
-            throw new Error(`Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`);
+            console.error(
+              `Chyba při vytváření lokace:`,
+              response.status,
+              errorText
+            );
+            throw new Error(
+              `Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`
+            );
           }
-          
+
           const addedRow = await response.json();
           console.log("Přidaná lokace:", addedRow);
           setData([...data, addedRow]);
         } else if (name.toLowerCase() === "pokemons") {
-          // Pokemons - zpracování číselných hodnot
+          
           if (rowToAdd.imageId) {
             rowToAdd.imageId = parseInt(rowToAdd.imageId.toString()) || 1;
           }
-          
+
           if (rowToAdd.locationId) {
             rowToAdd.locationId = parseInt(rowToAdd.locationId.toString()) || 0;
           }
-          
+
           if (rowToAdd.energy) {
             rowToAdd.energy = parseInt(rowToAdd.energy.toString()) || 100;
           }
-          
+
           if (rowToAdd.health) {
             rowToAdd.health = parseInt(rowToAdd.health.toString()) || 100;
           }
-          
+
           if (rowToAdd.typeId) {
             rowToAdd.typeId = parseInt(rowToAdd.typeId.toString()) || 1;
           }
-          
-          // Přidáme prázdné pole pokemonAttacks, což server očekává
+
+         
           const pokemonToAdd = {
             ...rowToAdd,
-            pokemonAttacks: [] // Inicializace prázdného pole útoků
+            pokemonAttacks: [], 
           };
-          
-          console.log("Odesílám data pro pokémona:", JSON.stringify([pokemonToAdd], null, 2));
-          
-          // Server očekává pole pokémonů pro POST
+
+          console.log(
+            "Odesílám data pro pokémona:",
+            JSON.stringify([pokemonToAdd], null, 2)
+          );
+
+        
           const response = await fetch(`${API_URL}api/${name}`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify([pokemonToAdd]), // Odesíláme jako pole s jedním pokémonem
+            body: JSON.stringify([pokemonToAdd]), 
           });
-          
+
           if (!response.ok) {
             const errorText = await response.text();
-            console.error(`Chyba při vytváření pokémona:`, response.status, errorText);
-            throw new Error(`Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`);
+            console.error(
+              `Chyba při vytváření pokémona:`,
+              response.status,
+              errorText
+            );
+            throw new Error(
+              `Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`
+            );
           }
-          
+
           const addedRows = await response.json();
           if (Array.isArray(addedRows) && addedRows.length > 0) {
             console.log("Přidaný řádek:", addedRows[0]);
@@ -653,22 +753,28 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
             setData([...data, addedRows]);
           }
         } else if (name.toLowerCase() === "connections") {
-          // Connections - zpracování ID lokací
           if (rowToAdd.locationFromId) {
-            rowToAdd.locationFromId = parseInt(rowToAdd.locationFromId.toString());
+            rowToAdd.locationFromId = parseInt(
+              rowToAdd.locationFromId.toString()
+            );
           }
-          
+
           if (rowToAdd.locationToId) {
             rowToAdd.locationToId = parseInt(rowToAdd.locationToId.toString());
           }
-          
-          console.log("Odesílám data pro spojení:", JSON.stringify(rowToAdd, null, 2));
+
+          console.log(
+            "Odesílám data pro spojení:",
+            JSON.stringify(rowToAdd, null, 2)
+          );
           const addedRow = await addData(name, rowToAdd);
           console.log("Přidaný řádek:", addedRow);
           setData([...data, addedRow]);
         } else {
-          // Pro ostatní typy entit
-          console.log(`Odesílám data pro ${name}:`, JSON.stringify(rowToAdd, null, 2));
+          console.log(
+            `Odesílám data pro ${name}:`,
+            JSON.stringify(rowToAdd, null, 2)
+          );
           const addedRow = await addData(name, rowToAdd);
           console.log("Přidaný řádek:", addedRow);
           setData([...data, addedRow]);
@@ -676,11 +782,10 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
       }
       setNewRow({});
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Neznámá chyba';
+      const errorMessage = err instanceof Error ? err.message : "Neznámá chyba";
       setError(`Chyba při přidávání řádku: ${errorMessage}`);
       console.error("Chyba při přidávání řádku:", err);
-      
-      // Upozornit uživatele na chybu pomocí alert
+
       alert(`Nepodařilo se přidat řádek: ${errorMessage}`);
     }
   };
@@ -694,11 +799,10 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
   const handleSaveRow = async (row: TableRow) => {
     try {
       const newId = editingId[row[id]];
-      
-      // Speciální zpracování pro obrázky
+
       if (name === "Images") {
         await updateData(name, id, row, newId);
-        
+
         try {
           const refreshedData = await fetchData(name);
           const simplifiedData = refreshedData.map((item: TableRow) => ({
@@ -707,42 +811,46 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
           }));
           setData(simplifiedData);
         } catch (error) {
-          console.error("Chyba při obnovování dat po aktualizaci obrázku:", error);
-          alert("Obrázek byl aktualizován, ale nepodařilo se obnovit tabulku. Obnovte prosím stránku.");
+          console.error(
+            "Chyba při obnovování dat po aktualizaci obrázku:",
+            error
+          );
+          alert(
+            "Obrázek byl aktualizován, ale nepodařilo se obnovit tabulku. Obnovte prosím stránku."
+          );
         }
-        
+
         setEditingId({});
         alert("Změny byly úspěšně uloženy.");
         return;
       }
-      
-      // For items, ensure 'value' is sent as a number
-      if (name.toLowerCase() === "items" && typeof row.value === 'string') {
+
+      if (name.toLowerCase() === "items" && typeof row.value === "string") {
         row.value = parseInt(row.value) || 0;
       }
-      
-      // Pro pokémony, připravíme data pro odeslání s pokemonAttacks
+
       if (name.toLowerCase() === "pokemons") {
-        // Převedeme všechny textové hodnoty na čísla
-        const numericFields = ['health', 'energy', 'typeId', 'imageId', 'locationId'];
+        const numericFields = [
+          "health",
+          "energy",
+          "typeId",
+          "imageId",
+          "locationId",
+        ];
         const pokemonData = { ...row };
-        
-        // Převod stringů na čísla
-        numericFields.forEach(field => {
-          if (typeof pokemonData[field] === 'string') {
+
+        numericFields.forEach((field) => {
+          if (typeof pokemonData[field] === "string") {
             pokemonData[field] = parseInt(pokemonData[field] as string) || 0;
           }
         });
-        
-        // Zjistíme, zda pokémon již má útoky načtené ze serveru
+
         const response = await fetch(`${API_URL}api/Pokemons/${row[id]}`);
-        
+
         if (response.ok) {
           const serverPokemonData = await response.json();
-          // Získáme útoky z existujícího pokémona
           const attacks = serverPokemonData.pokemonAttacks || [];
-          
-          // Použijeme tyto útoky při odeslání PUT požadavku
+
           const putResponse = await fetch(`${API_URL}api/${name}/${row[id]}`, {
             method: "PUT",
             headers: {
@@ -750,17 +858,22 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
             },
             body: JSON.stringify({
               ...pokemonData,
-              pokemonAttacks: attacks
+              pokemonAttacks: attacks,
             }),
           });
-          
+
           if (!putResponse.ok) {
             const errorText = await putResponse.text();
-            console.error(`Chyba při aktualizaci pokémona:`, putResponse.status, errorText);
-            throw new Error(`Server vrátil chybu: ${putResponse.status} ${putResponse.statusText}\n${errorText}`);
+            console.error(
+              `Chyba při aktualizaci pokémona:`,
+              putResponse.status,
+              errorText
+            );
+            throw new Error(
+              `Server vrátil chybu: ${putResponse.status} ${putResponse.statusText}\n${errorText}`
+            );
           }
         } else {
-          // Pokud se nepodařilo načíst data, použijeme prázdné pole útoků
           const putResponse = await fetch(`${API_URL}api/${name}/${row[id]}`, {
             method: "PUT",
             headers: {
@@ -768,30 +881,37 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
             },
             body: JSON.stringify({
               ...pokemonData,
-              pokemonAttacks: []
+              pokemonAttacks: [],
             }),
           });
-          
+
           if (!putResponse.ok) {
             const errorText = await putResponse.text();
-            console.error(`Chyba při aktualizaci pokémona:`, putResponse.status, errorText);
-            throw new Error(`Server vrátil chybu: ${putResponse.status} ${putResponse.statusText}\n${errorText}`);
+            console.error(
+              `Chyba při aktualizaci pokémona:`,
+              putResponse.status,
+              errorText
+            );
+            throw new Error(
+              `Server vrátil chybu: ${putResponse.status} ${putResponse.statusText}\n${errorText}`
+            );
           }
         }
-        
-        // Protože jsme manuálně provedli PUT požadavek, obnovíme data
+
         try {
           const refreshedData = await fetchData(name);
           setData(refreshedData);
         } catch (error) {
           console.error("Chyba při obnovování dat po aktualizaci:", error);
-          alert("Data byla aktualizována, ale nepodařilo se obnovit tabulku. Obnovte prosím stránku.");
+          alert(
+            "Data byla aktualizována, ale nepodařilo se obnovit tabulku. Obnovte prosím stránku."
+          );
         }
         setEditingId({});
         return;
       }
-      
-      // Pro ostatní entity použijeme standardní updateData
+
+     
       await updateData(name, id, row, newId);
 
       try {
@@ -807,19 +927,21 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
         }
       } catch (error) {
         console.error("Chyba při obnovování dat po aktualizaci:", error);
-        alert("Data byla aktualizována, ale nepodařilo se obnovit tabulku. Obnovte prosím stránku.");
+        alert(
+          "Data byla aktualizována, ale nepodařilo se obnovit tabulku. Obnovte prosím stránku."
+        );
       }
 
       setEditingId({});
-      
-      // Zobrazit potvrzení úspěchu
+
+   
       alert("Změny byly úspěšně uloženy.");
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Neznámá chyba';
+      const errorMessage = err instanceof Error ? err.message : "Neznámá chyba";
       setError(`Chyba při ukládání řádku: ${errorMessage}`);
       console.error("Chyba při ukládání řádku:", err);
-      
-      // Upozornit uživatele na chybu
+
+   
       alert(`Nepodařilo se uložit změny: ${errorMessage}`);
     }
   };
@@ -828,24 +950,34 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
     try {
       console.log(`Pokus o smazání záznamu s ID: ${rowId}`);
 
-      // Pro pokémony nejprve ověříme, zda existují navázané PokemonAttacks a smažeme je
+  
       if (name.toLowerCase() === "pokemons") {
-        // Nejprve získáme pokémona, abychom viděli jeho útoky
+        
         const pokemonResponse = await fetch(`${API_URL}api/Pokemons/${rowId}`);
         if (pokemonResponse.ok) {
           const pokemonData = await pokemonResponse.json();
-          if (pokemonData.pokemonAttacks && pokemonData.pokemonAttacks.length > 0) {
-            console.log(`Pokémon ${rowId} má ${pokemonData.pokemonAttacks.length} útoků, které budou smazány.`);
-            
-            // Postupně smažeme všechny útoky
+          if (
+            pokemonData.pokemonAttacks &&
+            pokemonData.pokemonAttacks.length > 0
+          ) {
+            console.log(
+              `Pokémon ${rowId} má ${pokemonData.pokemonAttacks.length} útoků, které budou smazány.`
+            );
+
+          
             for (const attack of pokemonData.pokemonAttacks) {
               try {
-                const deleteAttackResponse = await fetch(`${API_URL}api/PokemonAttacks/${attack.pokemonAttackId}`, {
-                  method: "DELETE"
-                });
-                
+                const deleteAttackResponse = await fetch(
+                  `${API_URL}api/PokemonAttacks/${attack.pokemonAttackId}`,
+                  {
+                    method: "DELETE",
+                  }
+                );
+
                 if (!deleteAttackResponse.ok) {
-                  console.error(`Nepodařilo se smazat útok ${attack.pokemonAttackId}`);
+                  console.error(
+                    `Nepodařilo se smazat útok ${attack.pokemonAttackId}`
+                  );
                 }
               } catch (err) {
                 console.error(`Chyba při mazání útoku:`, err);
@@ -855,7 +987,7 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
         }
       }
 
-      // Nyní smažeme samotný záznam
+    
       const response = await fetch(`${API_URL}api/${name}/${rowId}`, {
         method: "DELETE",
       });
@@ -863,7 +995,9 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
       if (!response.ok) {
         const errorText = await response.text();
         console.error(`Chyba při mazání záznamu:`, response.status, errorText);
-        throw new Error(`Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`);
+        throw new Error(
+          `Server vrátil chybu: ${response.status} ${response.statusText}\n${errorText}`
+        );
       }
 
       const updatedData = data.filter((row) => {
@@ -873,15 +1007,15 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
       });
 
       setData(updatedData);
+
       
-      // Informujeme uživatele o úspěšném smazání
       alert(`Záznam byl úspěšně smazán.`);
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Neznámá chyba';
+      const errorMessage = err instanceof Error ? err.message : "Neznámá chyba";
       setError(`Chyba při mazání záznamu: ${errorMessage}`);
       console.error("Chyba při mazání záznamu:", err);
+
       
-      // Upozornit uživatele na chybu
       alert(`Nepodařilo se smazat záznam: ${errorMessage}`);
     }
   };
@@ -933,13 +1067,13 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
         </td>
       );
     }
-    
-    // Special handling for item effect field
+
+  
     if (name.toLowerCase() === "items" && col === "effect") {
       return (
         <td key={col} className={AdminTableCSS.adminTable__td}>
           <select
-            defaultValue={row[col] as string || "other"}
+            defaultValue={(row[col] as string) || "other"}
             className={AdminTableCSS.adminTable__input}
             onChange={(e) => (row[col] = e.target.value)}
           >
@@ -950,8 +1084,7 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
         </td>
       );
     }
-    
-    // Special handling for item value field
+
     if (name.toLowerCase() === "items" && col === "value") {
       return (
         <td key={col} className={AdminTableCSS.adminTable__td}>
@@ -964,8 +1097,8 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
         </td>
       );
     }
-    
-    // Special handling for hasPokemon in locations
+
+
     if (name.toLowerCase() === "locations" && col === "hasPokemon") {
       return (
         <td key={col} className={AdminTableCSS.adminTable__td}>
@@ -980,22 +1113,26 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
         </td>
       );
     }
-    
-    // Special handling for numeric fields in locations
-    if (name.toLowerCase() === "locations" && (col === "pokemonId" || col === "rocketChance" || col === "imageId")) {
+
+
+    if (
+      name.toLowerCase() === "locations" &&
+      (col === "pokemonId" || col === "rocketChance" || col === "imageId")
+    ) {
       return (
         <td key={col} className={AdminTableCSS.adminTable__td}>
           <input
             type="number"
             defaultValue={row[col]}
             className={AdminTableCSS.adminTable__input}
-            onChange={(e) => (row[col] = e.target.value ? parseInt(e.target.value) : "")}
+            onChange={(e) =>
+              (row[col] = e.target.value ? parseInt(e.target.value) : "")
+            }
           />
         </td>
       );
     }
-    
-    // Přidám speciální zpracování pro locationId v existujících lokacích
+
     if (name.toLowerCase() === "locations" && col === "locationId") {
       return (
         <td key={col} className={AdminTableCSS.adminTable__td}>
@@ -1003,20 +1140,22 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
             type="number"
             defaultValue={row[col]}
             className={AdminTableCSS.adminTable__input}
-            onChange={(e) => (row[col] = e.target.value ? parseInt(e.target.value) : "")}
+            onChange={(e) =>
+              (row[col] = e.target.value ? parseInt(e.target.value) : "")
+            }
           />
         </td>
       );
     }
-    
-    // Pokud se jedná o pokémony, použijeme speciální komponentu pro správu útoků
+
+
     if (name.toLowerCase() === "pokemons" && col === "name") {
       return (
         <td key={col} className={AdminTableCSS.adminTable__td}>
           <PokemonNameCell
             row={row}
             col={col}
-            onNameChange={(value) => row[col] = value}
+            onNameChange={(value) => (row[col] = value)}
             name={name}
             fetchData={fetchData}
             setData={setData}
@@ -1024,7 +1163,7 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
         </td>
       );
     }
-    
+
     return (
       <td key={col} className={AdminTableCSS.adminTable__td}>
         <input
@@ -1043,10 +1182,8 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
     )
   );
 
-  // Převod cols na proměnnou, abychom ji mohli upravit
   let displayCols = [...cols];
 
-  // Pokud jde o locations, přidáme locationId do displayCols, pokud tam ještě není
   if (name.toLowerCase() === "locations" && !cols.includes("locationId")) {
     displayCols = ["locationId", ...cols];
   }
@@ -1132,7 +1269,7 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
                 <td key={index} className={AdminTableCSS.adminTable__td}>
                   {name.toLowerCase() === "items" && col === "effect" ? (
                     <select
-                      value={newRow[col] as string || "other"}
+                      value={(newRow[col] as string) || "other"}
                       className={AdminTableCSS.adminTable__input}
                       onChange={(e) => {
                         setNewRow({ ...newRow, [col]: e.target.value });
@@ -1148,12 +1285,16 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
                       value={newRow[col] || "0"}
                       className={AdminTableCSS.adminTable__input}
                       onChange={(e) => {
-                        setNewRow({ ...newRow, [col]: parseInt(e.target.value) || 0 });
+                        setNewRow({
+                          ...newRow,
+                          [col]: parseInt(e.target.value) || 0,
+                        });
                       }}
                     />
-                  ) : name.toLowerCase() === "locations" && col === "hasPokemon" ? (
+                  ) : name.toLowerCase() === "locations" &&
+                    col === "hasPokemon" ? (
                     <select
-                      value={newRow[col] as string || "false"}
+                      value={(newRow[col] as string) || "false"}
                       className={AdminTableCSS.adminTable__input}
                       onChange={(e) => {
                         setNewRow({ ...newRow, [col]: e.target.value });
@@ -1162,7 +1303,10 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
                       <option value="true">Ano</option>
                       <option value="false">Ne</option>
                     </select>
-                  ) : name.toLowerCase() === "locations" && (col === "pokemonId" || col === "rocketChance" || col === "imageId") ? (
+                  ) : name.toLowerCase() === "locations" &&
+                    (col === "pokemonId" ||
+                      col === "rocketChance" ||
+                      col === "imageId") ? (
                     <input
                       type="number"
                       value={newRow[col] || ""}
@@ -1171,7 +1315,8 @@ const AdminTable: React.FC<AdminTableProps> = ({ id, name, cols }) => {
                         setNewRow({ ...newRow, [col]: e.target.value });
                       }}
                     />
-                  ) : name.toLowerCase() === "locations" && col === "locationId" ? (
+                  ) : name.toLowerCase() === "locations" &&
+                    col === "locationId" ? (
                     <input
                       type="number"
                       value={newRow[col] || ""}

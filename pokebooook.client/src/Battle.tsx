@@ -90,23 +90,23 @@ const Battle: React.FC<BattleProps> = ({
   useEffect(() => {
     fetchPokemonTypes();
     
-    // Přidáme instanceId ke všem pokémonům hráče, pokud ho ještě nemají
+    
     const updatedPokemons = playerPokemons.map(pokemon => {
       if (!pokemon.instanceId) {
-        // Vytvoříme náhodné ID pro každou instanci pokémona
+      
         return { ...pokemon, instanceId: `pokemon_${pokemon.pokemonId}_${Date.now()}_${Math.random().toString(36).substring(2, 9)}` };
       }
       return pokemon;
     });
     
-    // Pokud jsme upravili nějaké pokémony, aktualizujeme localStorage a stav
+   
     if (updatedPokemons.some(p => !p.instanceId)) {
       setPlayerPokemons(updatedPokemons);
       localStorage.setItem("playerPokemons", JSON.stringify(updatedPokemons));
       console.log("Přidána instanceId ke všem pokémonům hráče", updatedPokemons);
     }
     
-    // Načteme tým šampiona, pokud jde o finální bitvu
+   
     if (isChampionBattle) {
       try {
         const savedChampionTeam = localStorage.getItem("championTeam");
@@ -156,7 +156,7 @@ const Battle: React.FC<BattleProps> = ({
       const hasLivePokemon = playerPokemons.some(
         (pokemon) =>
           pokemon.health > 0 &&
-          // Použijeme instanceId k jednoznačnému rozlišení pokémonů
+     
           (battleState.player.pokemon?.instanceId 
             ? pokemon.instanceId !== battleState.player.pokemon.instanceId
             : pokemon.pokemonId !== battleState.player.pokemon?.pokemonId)
@@ -168,7 +168,7 @@ const Battle: React.FC<BattleProps> = ({
         );
 
         const newPlayerPokemons = [...playerPokemons];
-        // Použijeme instanceId pro přesné nalezení aktuálního pokémona
+     
         const selectedPokemonIndex = newPlayerPokemons.findIndex(
           (p) => battleState.player.pokemon?.instanceId 
                  ? p.instanceId === battleState.player.pokemon.instanceId
@@ -177,7 +177,7 @@ const Battle: React.FC<BattleProps> = ({
         );
 
         if (selectedPokemonIndex !== -1) {
-          // Nastavíme pokémona jednoznačně na mrtvého
+     
           newPlayerPokemons[selectedPokemonIndex] = {
             ...newPlayerPokemons[selectedPokemonIndex],
             health: 0
@@ -428,13 +428,13 @@ const Battle: React.FC<BattleProps> = ({
         throw new Error("No valid attacks found for one or both Pokemon");
       }
 
-      // Zachováme zdraví a energii hráčova pokémona pokud jsme v bitvě se šampionem a pouze měníme pokémona
+      
       let currentHealth = selectedPokemon.health;
       let currentEnergy = selectedPokemon.energy !== undefined ? selectedPokemon.energy : 100;
       
-      // Pokud jsme v bitvě se šampionem a již máme nastavený stav bitvy (=přepínáme na dalšího pokémona)
+    
       if (isChampionBattle && battleState.player.pokemon && championIndex !== undefined) {
-        // Použijeme aktuální zdraví a energii pokémona z battleState, ne z localStorage
+       
         if (battleState.player.pokemon.pokemonId === selectedPokemon.pokemonId) {
           currentHealth = battleState.player.health;
           currentEnergy = battleState.player.energy;
@@ -442,8 +442,6 @@ const Battle: React.FC<BattleProps> = ({
         }
       }
 
-      // Pro nepřátelské pokémony šampiona vždy použijeme plné zdraví z dat pokémona,
-      // protože pokaždé posílá nového pokémona se 100% zdravím
       const enemyHealth = enemyData.health;
 
       setBattleState({
@@ -508,11 +506,11 @@ const Battle: React.FC<BattleProps> = ({
           setCurrentMessage(`Chytil jsi ${battleState.enemy.pokemon.name}!`);
 
           try {
-            // Získat současnou hodnotu počítadla chycených pokémonů
+        
             const caughtPokemonCount = localStorage.getItem("stats_caughtPokemon") || "0";
-            // Převedeme na číslo a přidáme 1
+           
             const newCaughtPokemonCount = parseInt(caughtPokemonCount) + 1;
-            // Uložíme aktualizovanou hodnotu
+          
             localStorage.setItem("stats_caughtPokemon", newCaughtPokemonCount.toString());
             
             console.log("Přidán nový pokémon do statistik. Celkem chyceno:", newCaughtPokemonCount);
@@ -634,7 +632,7 @@ const Battle: React.FC<BattleProps> = ({
       );
 
       if (selectedPokemonIndex !== -1) {
-        // Nastavíme pokémona jednoznačně na mrtvého
+     
         newPlayerPokemons[selectedPokemonIndex] = {
           ...newPlayerPokemons[selectedPokemonIndex],
           health: 0
@@ -661,7 +659,7 @@ const Battle: React.FC<BattleProps> = ({
     }
 
     const newPlayerPokemons = [...playerPokemons];
-    // Použijeme instanceId pro přesné nalezení aktuálního pokémona
+   
     const selectedPokemonIndex = newPlayerPokemons.findIndex(
       (p) => (battleState.player.pokemon?.instanceId 
              ? p.instanceId === battleState.player.pokemon.instanceId 
@@ -681,16 +679,15 @@ const Battle: React.FC<BattleProps> = ({
   };
 
   const handleRestartGame = () => {
-    // Zálohujeme statistiky před resetováním localStorage
+  
     const stats = {
       completedGames: localStorage.getItem("stats_completedGames"),
       caughtPokemon: localStorage.getItem("stats_caughtPokemon")
     };
     
-    // Resetujeme localStorage
+   
     localStorage.clear();
-    
-    // Obnovíme statistiky ze zálohy
+  
     if (stats.completedGames) {
       localStorage.setItem("stats_completedGames", stats.completedGames);
     }

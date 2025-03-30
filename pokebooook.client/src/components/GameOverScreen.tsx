@@ -7,16 +7,16 @@ type GameOverScreenProps = {
 
 const GameOverScreen: React.FC<GameOverScreenProps> = ({ onRestart }) => {
   const handleRestart = () => {
-    // Zálohujeme statistiky před resetováním localStorage
+ 
     const stats = {
       completedGames: localStorage.getItem("stats_completedGames"),
       caughtPokemon: localStorage.getItem("stats_caughtPokemon")
     };
     
-    // Resetujeme localStorage
+   
     localStorage.clear();
     
-    // Obnovíme statistiky ze zálohy
+    
     if (stats.completedGames) {
       localStorage.setItem("stats_completedGames", stats.completedGames);
     }
@@ -24,7 +24,7 @@ const GameOverScreen: React.FC<GameOverScreenProps> = ({ onRestart }) => {
       localStorage.setItem("stats_caughtPokemon", stats.caughtPokemon);
     }
     
-    // Voláme původní onRestart funkci
+  
     onRestart();
   };
 

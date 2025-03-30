@@ -12,12 +12,11 @@ const AdminMenu: React.FC = () => {
     const [authStatus, setAuthStatus] = useState<string>("Ověřování přihlášení...");
     
     useEffect(() => {
-        // Kontrola, zda je uživatel přihlášen jako admin
+       
         const adminUser = localStorage.getItem("adminUser");
         console.log("AdminMenu - kontrola přihlášení, adminUser v localStorage:", adminUser ? "nalezen" : "nenalezen");
         
         if (!adminUser) {
-            // Pokud není přihlášen, nastavíme přesměrování
             console.log("AdminMenu - adminUser nenalezen, přesměrování na /login");
             setAuthStatus("Nejste přihlášeni. Přesměrování na přihlašovací stránku...");
             setRedirectPath("/login");
@@ -30,7 +29,6 @@ const AdminMenu: React.FC = () => {
             console.log("AdminMenu - parsovaná data uživatele:", user);
             
             if (!user || !user.isAdmin) {
-                // Pokud není admin, nastavíme přesměrování
                 console.log("AdminMenu - uživatel není admin, přesměrování na /login");
                 setAuthStatus("Nemáte administrátorská práva. Přesměrování na přihlašovací stránku...");
                 setRedirectPath("/login");
@@ -42,7 +40,7 @@ const AdminMenu: React.FC = () => {
         } catch (error) {
             console.error("AdminMenu - chyba při čtení dat uživatele:", error);
             setAuthStatus("Chyba při čtení dat uživatele. Přesměrování na přihlašovací stránku...");
-            // V případě chyby nastavíme přesměrování
+           
             setRedirectPath("/login");
             setShouldRedirect(true);
         } finally {
@@ -51,7 +49,7 @@ const AdminMenu: React.FC = () => {
     }, []);
     
     const handleLogout = () => {
-        // Odhlášení uživatele
+      
         console.log("AdminMenu - odhlášení uživatele");
         localStorage.removeItem("adminUser");
         setAuthStatus("Odhlášení úspěšné. Přesměrování...");
@@ -59,13 +57,13 @@ const AdminMenu: React.FC = () => {
         setShouldRedirect(true);
     };
 
-    // Pokud by mělo dojít k přesměrování
+
     if (shouldRedirect && !isLoading) {
         console.log("AdminMenu - přesměrování na:", redirectPath);
         return <Navigate to={redirectPath} />;
     }
 
-    // Pokud stále probíhá ověřování, zobrazíme loading
+
     if (isLoading) {
         return (
             <Bg imageId={153}>

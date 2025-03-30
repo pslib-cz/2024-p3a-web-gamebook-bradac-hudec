@@ -6,16 +6,16 @@ const StatisticsTable = () => {
   const [completedGames, setCompletedGames] = useState<number>(0);
 
   useEffect(() => {
-    // Načtení statistik z localStorage
+
     const loadStatistics = () => {
       try {
-        // Statistika chycených pokémonů
+       
         const caughtPokemonCount = localStorage.getItem("stats_caughtPokemon");
         if (caughtPokemonCount) {
           setCaughtPokemon(parseInt(caughtPokemonCount));
         }
         
-        // Statistika dokončených her
+    
         const completedGamesCount = localStorage.getItem("stats_completedGames");
         if (completedGamesCount) {
           setCompletedGames(parseInt(completedGamesCount));

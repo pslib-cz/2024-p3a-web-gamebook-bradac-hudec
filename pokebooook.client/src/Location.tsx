@@ -79,7 +79,7 @@ const Location: React.FC = () => {
 
   const nickname = localStorage.getItem("nickname") || "trenér";
 
-  // Přidám nový stav pro zobrazení zprávy
+ 
   const [currentMessage, setCurrentMessage] = useState<string>("");
   
   async function loadLocation() {
@@ -93,9 +93,9 @@ const Location: React.FC = () => {
       
       const locId = parseInt(locationId);
       
-      // Kontrola, zda má hráč dostatečný počet pokémonů pro lokace 17, 18 a 19
+      
       if ([17, 18, 19].includes(locId)) {
-        // Zjistíme, kolik má hráč pokémonů
+        
         const savedPokemons = localStorage.getItem("playerPokemons");
         const parsedPokemons = savedPokemons ? JSON.parse(savedPokemons) : [];
         
@@ -103,11 +103,11 @@ const Location: React.FC = () => {
           console.log(`Pokus o vstup do lokace ${locId} s ${parsedPokemons.length} pokémony. Potřeba 6.`);
           setCurrentMessage("Pro vstup do této oblasti potřebuješ tým 6 pokémonů!");
           
-          // Zjistíme poslední navštívenou lokaci, která není 17, 18 nebo 19
+        
           const validLocations = visitedLocations.filter(loc => ![17, 18, 19].includes(loc));
           const lastValidLocation = validLocations.length > 0 ? Math.max(...validLocations) : 1;
           
-          // Přesměrujeme na poslední platnou lokaci nebo na lokaci 1, pokud není žádná platná
+     
           setRedirectPath(`/location/${lastValidLocation}`);
           return;
         }
@@ -122,24 +122,24 @@ const Location: React.FC = () => {
       const connectionsResponse = await fetch(`${API_URL}api/Locations/${locId}/Connections`);
       const connectionsData = connectionsResponse.ok ? await connectionsResponse.json() : [];
       
-      // Vždy filtrujeme spojení tak, aby bylo možné jít pouze dopředu
+      
       const filteredConnections = connectionsData.filter((connection: ConnectionType) => {
         const targetLocationId =
           connection.locationFromId === locId
             ? connection.locationToId
             : connection.locationFromId;
-        return targetLocationId > locId; // Zobrazujeme pouze lokace s vyšším ID
+        return targetLocationId > locId; 
       });
       setLocationConnections(filteredConnections);
 
-      // Pokud jsme v lokaci s ID 18 (finální bitva), vyléčíme hráčovy pokémony
+ 
       if (locId === 18) {
         try {
           console.log("Finální bitva s šampionem - léčení pokémonů hráče");
           const savedPokemons = localStorage.getItem("playerPokemons");
           if (savedPokemons) {
             const parsedPokemons = JSON.parse(savedPokemons);
-            // Vyléčíme všechny pokémony hráče na maximum
+            
             const healedPokemons = parsedPokemons.map((pokemon: PokemonType) => ({
               ...pokemon,
               health: pokemon.maxHealth || pokemon.health,
@@ -155,10 +155,10 @@ const Location: React.FC = () => {
       }
       
       if (locationData.hasPokemon) {
-        // Standardní lokace - jeden náhodný pokémon
+      
         if (locId !== 18) {
           try {
-            // Nejprve získáme seznam všech dostupných pokémonů
+          
             const pokemonsResponse = await fetch(`${API_URL}api/Pokemons`);
             if (!pokemonsResponse.ok) throw new Error("Failed to fetch pokemons");
             
@@ -166,11 +166,11 @@ const Location: React.FC = () => {
             const pokemonList = Array.isArray(pokemonsData.value) ? pokemonsData.value : pokemonsData;
             
             if (pokemonList.length > 0) {
-              // Vybereme náhodného pokémona ze seznamu
+             
               const randomIndex = Math.floor(Math.random() * pokemonList.length);
               const randomPokemon = pokemonList[randomIndex];
               
-              // Získáme kompletní data o náhodném pokémonovi
+             
               const pokemonResponse = await fetch(`${API_URL}api/Pokemons/${randomPokemon.pokemonId}`);
               if (pokemonResponse.ok) {
                 const pokemonData = await pokemonResponse.json();
@@ -189,12 +189,12 @@ const Location: React.FC = () => {
             setPokemon(null);
           }
         } 
-        // Lokace 18 - finální bitva, šampion má 6 různých pokémonů
+       
         else {
           try {
             console.log("Finální bitva se šampionem - příprava 6 unikátních pokémonů");
             
-            // Nejprve získáme seznam všech dostupných pokémonů
+            
             const pokemonsResponse = await fetch(`${API_URL}api/Pokemons`);
             if (!pokemonsResponse.ok) throw new Error("Failed to fetch pokemons");
             
@@ -202,26 +202,26 @@ const Location: React.FC = () => {
             const pokemonList = Array.isArray(pokemonsData.value) ? pokemonsData.value : pokemonsData;
             
             if (pokemonList.length >= 6) {
-              // Zamícháme seznam pokémonů
+             
               const shuffledPokemons = [...pokemonList].sort(() => Math.random() - 0.5);
               
-              // Vybereme prvních 6 unikátních pokémonů
+              
               const selectedPokemons = shuffledPokemons.slice(0, 6);
               
               try {
-                // Načteme detailní data pro všechny pokémony v týmu šampiona, včetně útoků
+              
                 const championTeam = [];
                 
-                // Pro každého pokémona v týmu šampiona získáme jeho kompletní data včetně útoků
+               
                 for (const pokemon of selectedPokemons) {
                   const detailResponse = await fetch(`${API_URL}api/Pokemons/${pokemon.pokemonId}`);
                   if (detailResponse.ok) {
                     const detailData = await detailResponse.json();
                     
-                    // Zpracujeme útoky pokémona
+                   
                     const attacks = Array.isArray(detailData.pokemonAttacks) ? detailData.pokemonAttacks : [];
                     
-                    // Pokud pokémon nemá žádné útoky, přidáme mu základní sadu
+                  
                     const pokemonAttacks = attacks.length > 0 ? attacks : [
                       {
                         pokemonAttackId: 2000,
@@ -243,7 +243,7 @@ const Location: React.FC = () => {
                       }
                     ];
                     
-                    // Přidáme pokémona s jeho útoky do týmu šampiona
+                 
                     championTeam.push({
                       pokemonId: detailData.pokemonId,
                       name: detailData.name,
@@ -259,11 +259,10 @@ const Location: React.FC = () => {
                   }
                 }
                 
-                // Pokud se podařilo načíst alespoň jednoho pokémona
+               
                 if (championTeam.length > 0) {
                   localStorage.setItem("championTeam", JSON.stringify(championTeam));
                   
-                  // Získáme detailní data prvního pokémona pro zobrazení v UI
                   const firstPokemonDetailResponse = await fetch(`${API_URL}api/Pokemons/${championTeam[0].pokemonId}`);
                   if (firstPokemonDetailResponse.ok) {
                     const firstPokemonData = await firstPokemonDetailResponse.json();
@@ -281,7 +280,6 @@ const Location: React.FC = () => {
                 setPokemon(null);
               }
             } else {
-              // Pokud nemáme dostatek unikátních pokémonů, použijeme standardní logiku
               console.warn("Není dostatek pokémonů pro tým šampiona, použijeme dostupné");
               
               if (pokemonList.length > 0) {
@@ -316,7 +314,6 @@ const Location: React.FC = () => {
 
 
   useEffect(() => {
-    // Resetujeme stav komponenty
     setCurrentTextIndex(0);
     setShowText(true);
     setShowOptions(false);
@@ -326,7 +323,7 @@ const Location: React.FC = () => {
     setShowSelectionSuccess(false);
     setSelectedStarterPokemon(null);
     
-    // Načteme vždy aktuální pokémony z localStorage
+  
     try {
       const savedPokemons = localStorage.getItem("playerPokemons");
       if (savedPokemons) {
@@ -341,7 +338,7 @@ const Location: React.FC = () => {
       console.error("Chyba při načítání dat z localStorage:", error);
     }
     
-    // Načteme lokaci
+
     loadLocation();
   }, [locationId]);
 
@@ -352,12 +349,12 @@ const Location: React.FC = () => {
     if (wasVictorious) {
       setShowOptions(true);
       
-      // Po vítězném souboji načteme aktuální seznam pokémonů z localStorage
+    
       try {
         const savedPokemons = localStorage.getItem("playerPokemons");
         if (savedPokemons) {
           const parsedPokemons = JSON.parse(savedPokemons);
-          // Aktualizujeme stav playerPokemons, aby reflektoval chyceného pokémona z Battle komponenty
+         
           setPlayerPokemons(parsedPokemons);
           console.log("Aktualizován seznam pokémonů po souboji:", parsedPokemons);
         }
@@ -365,29 +362,27 @@ const Location: React.FC = () => {
         console.error("Chyba při načítání pokémonů:", error);
       }
       
-      // Zpracování získaných předmětů
+     
       if (earnedItems && Array.isArray(earnedItems) && earnedItems.length > 0) {
         console.log("Hráč získal předměty:", earnedItems);
         
         const updatedItems = [...playerItems];
         
         earnedItems.forEach(newItem => {
-          // Důležité: Hledáme existující položku PŘESNĚ podle názvu
-          // Tímto způsobem zajistíme, že každý typ předmětu bude mít vždy vlastní políčko v inventáři
+        
           const existingItemIndex = updatedItems.findIndex(
             item => item.name === newItem.name
           );
           
           if (existingItemIndex !== -1) {
-            // Existující položka se stejným názvem byla nalezena, zvýšíme počet
+          
             const existingItem = updatedItems[existingItemIndex];
             updatedItems[existingItemIndex] = {
               ...existingItem,
               count: (existingItem.count || 1) + 1
             };
           } else {
-            // Položka s tímto názvem neexistuje, přidáme ji jako novou
-            // Použijeme spread operátor pro vytvoření kopie, abychom předešli sdílení reference
+          
             updatedItems.push({
               ...newItem,
               count: 1
@@ -395,7 +390,6 @@ const Location: React.FC = () => {
           }
         });
         
-        // Vypíšeme pro kontrolu výsledný seznam předmětů
         console.log("Aktualizovaný seznam předmětů:", updatedItems);
         
         setPlayerItems(updatedItems);
@@ -407,16 +401,13 @@ const Location: React.FC = () => {
       if (allExhausted) {
         console.log("Všichni pokémoni jsou vyčerpaní, resetuji hru");
         
-        // Zálohujeme statistiky před resetováním localStorage
         const stats = {
           completedGames: localStorage.getItem("stats_completedGames"),
           caughtPokemon: localStorage.getItem("stats_caughtPokemon")
         };
         
-        // Resetujeme localStorage
         localStorage.clear();
         
-        // Obnovíme statistiky ze zálohy
         if (stats.completedGames) {
           localStorage.setItem("stats_completedGames", stats.completedGames);
         }
@@ -431,57 +422,57 @@ const Location: React.FC = () => {
     }
   }
 
-  // Funkce pro použití předmětu na pokémona
+  
   function handleUseItem(item: GameItem, pokemonIndex: number) {
     if (!item || pokemonIndex < 0 || pokemonIndex >= playerPokemons.length) {
       return;
     }
 
-    // Vytvoříme kopii pokémona a pole pokémonů, abychom neměnili přímo stav
+    
     const updatedPokemons = [...playerPokemons];
     const pokemon = { ...updatedPokemons[pokemonIndex] };
 
-    // Aplikujeme efekt předmětu
+    
     if (item.effect === "heal") {
-      // Výpočet obnovení zdraví
+      
       const newHealth = Math.min(pokemon.health + item.value, pokemon.maxHealth);
       pokemon.health = newHealth;
       console.log(`Použit ${item.name} na ${pokemon.name}. Zdraví: ${pokemon.health}/${pokemon.maxHealth}`);
     } else if (item.effect === "energy") {
-      // Výpočet obnovení energie - používáme hodnotu 100 jako maximum
-      const MAX_ENERGY = 100; // Definujeme konstantu pro max energii
+     
+      const MAX_ENERGY = 100; 
       const newEnergy = Math.min(pokemon.energy + item.value, MAX_ENERGY);
       pokemon.energy = newEnergy;
       console.log(`Použit ${item.name} na ${pokemon.name}. Energie: ${pokemon.energy}/${MAX_ENERGY}`);
     } else {
       console.log(`Předmět ${item.name} nemá implementovaný efekt: ${item.effect}`);
-      return; // Pokud efekt není implementován, nepokračujeme
+      return; 
     }
 
-    // Aktualizujeme pokémona v poli
+    
     updatedPokemons[pokemonIndex] = pokemon;
     setPlayerPokemons(updatedPokemons);
 
-    // Aktualizujeme lokální úložiště
+    
     localStorage.setItem('playerPokemons', JSON.stringify(updatedPokemons));
 
-    // Aktualizujeme stav předmětů - snížíme počet
+    
     const updatedItems = [...playerItems];
     const itemIndex = updatedItems.findIndex(i => i.id === item.id);
     
     if (itemIndex >= 0) {
       if (updatedItems[itemIndex].count && updatedItems[itemIndex].count! > 1) {
-        // Snížíme počet předmětu o 1
+        
         updatedItems[itemIndex] = {
           ...updatedItems[itemIndex],
           count: updatedItems[itemIndex].count! - 1
         };
       } else {
-        // Pokud je to poslední předmět, odstraníme ho z inventáře
+       
         updatedItems.splice(itemIndex, 1);
       }
       
-      // Aktualizujeme stav a lokální úložiště
+    
       setPlayerItems(updatedItems);
       localStorage.setItem('playerItems', JSON.stringify(updatedItems));
     }
@@ -512,12 +503,12 @@ const Location: React.FC = () => {
       return;
     }
 
-    // Speciální případ pro lokaci s ID 19 - konec příběhu
+    
     if (location.locationId === 19) {
       if (currentTextIndex < location.descriptions.length - 1) {
         setCurrentTextIndex(prevIndex => prevIndex + 1);
       } else {
-        // Místo skrytí textu pouze upravíme stav, aby se zobrazilo tlačítko
+       
         setHasCompletedIntro(true);
       }
       return;
@@ -537,15 +528,15 @@ const Location: React.FC = () => {
     }
   }
 
-  // Funkce pro návrat do hlavního menu a resetování localStorage
+  
   function handleReturnToMainMenu() {
-    // Nejprve aktualizujeme statistiky
+    
     try {
-      // Načtení aktuální hodnoty počítadla dokončených her
+    
       const completedGames = localStorage.getItem("stats_completedGames") || "0";
-      // Převedení na číslo a přidání 1
+     
       const newCompletedGames = parseInt(completedGames) + 1;
-      // Uložení aktualizované hodnoty
+      
       localStorage.setItem("stats_completedGames", newCompletedGames.toString());
 
       console.log("Dokončený průchod hry zaznamenán do statistik. Celkem dokončeno:", newCompletedGames);
@@ -553,16 +544,16 @@ const Location: React.FC = () => {
       console.error("Chyba při aktualizaci statistik dokončených her:", error);
     }
 
-    // Zálohujeme všechny statistiky před resetováním localStorage
+    
     const stats = {
       completedGames: localStorage.getItem("stats_completedGames"),
       caughtPokemon: localStorage.getItem("stats_caughtPokemon")
     };
     
-    // Resetujeme localStorage
+ 
     localStorage.clear();
     
-    // Obnovíme statistiky ze zálohy
+   
     if (stats.completedGames) {
       localStorage.setItem("stats_completedGames", stats.completedGames);
     }
@@ -570,7 +561,7 @@ const Location: React.FC = () => {
       localStorage.setItem("stats_caughtPokemon", stats.caughtPokemon);
     }
     
-    // Místo navigate použijeme setRedirectPath
+    
     setRedirectPath("/");
   }
 
@@ -640,28 +631,28 @@ const Location: React.FC = () => {
       });
   }
 
-  // Přidám funkci pro výběr předmětu
+ 
   function handleItemSelect(item: GameItem) {
-    // Pokud byl vybrán předmět, zobrazíme výběr pokémona
+   
     setSelectedPokemonForItem(item);
   }
 
-  // Funkce pro výběr pokémona pro aplikaci předmětu
+ 
   function handlePokemonSelectForItem(pokemonIndex: number) {
     if (selectedPokemonForItem) {
-      // Použijeme vybraný předmět na vybraného pokémona
+     
       handleUseItem(selectedPokemonForItem, pokemonIndex);
-      // Resetujeme výběr
+   
       setSelectedPokemonForItem(null);
     }
   }
 
   function cancelItemSelection() {
-    // Zrušení výběru předmětu
+   
     setSelectedPokemonForItem(null);
   }
 
-  // Pokud máme nastavený redirectPath, přesměrujeme
+ 
   if (redirectPath) {
     return <Navigate to={redirectPath} replace />;
   }
@@ -697,7 +688,6 @@ const Location: React.FC = () => {
 
   return (
     <Bg key={location.imageId} imageId={location.imageId}>
-      {/* Výběr pokémona pro použití předmětu */}
       {selectedPokemonForItem && (
         <div className={LocationCSS["item-pokemon-selection"]}>
           <h3>Vyber pokémona pro použití předmětu {selectedPokemonForItem.name}</h3>
