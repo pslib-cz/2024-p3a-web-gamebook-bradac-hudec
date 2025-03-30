@@ -79,6 +79,8 @@ const Location: React.FC = () => {
 
   const nickname = localStorage.getItem("nickname") || "trenér";
 
+  // Přidám nový stav pro zobrazení zprávy
+  const [currentMessage, setCurrentMessage] = useState<string>("");
   
   async function loadLocation() {
     setIsLoading(true);
@@ -91,7 +93,26 @@ const Location: React.FC = () => {
       
       const locId = parseInt(locationId);
       
-     
+      // Kontrola, zda má hráč dostatečný počet pokémonů pro lokace 17, 18 a 19
+      if ([17, 18, 19].includes(locId)) {
+        // Zjistíme, kolik má hráč pokémonů
+        const savedPokemons = localStorage.getItem("playerPokemons");
+        const parsedPokemons = savedPokemons ? JSON.parse(savedPokemons) : [];
+        
+        if (parsedPokemons.length < 6) {
+          console.log(`Pokus o vstup do lokace ${locId} s ${parsedPokemons.length} pokémony. Potřeba 6.`);
+          setCurrentMessage("Pro vstup do této oblasti potřebuješ tým 6 pokémonů!");
+          
+          // Zjistíme poslední navštívenou lokaci, která není 17, 18 nebo 19
+          const validLocations = visitedLocations.filter(loc => ![17, 18, 19].includes(loc));
+          const lastValidLocation = validLocations.length > 0 ? Math.max(...validLocations) : 1;
+          
+          // Přesměrujeme na poslední platnou lokaci nebo na lokaci 1, pokud není žádná platná
+          setRedirectPath(`/location/${lastValidLocation}`);
+          return;
+        }
+      }
+      
       const locationResponse = await fetch(`${API_URL}api/Locations/${locId}`);
       if (!locationResponse.ok) throw new Error("Failed to fetch location");
       const locationData = await locationResponse.json();
@@ -111,39 +132,173 @@ const Location: React.FC = () => {
       });
       setLocationConnections(filteredConnections);
 
-      
-      if (locationData.hasPokemon) {
-        // Místo pevně daného pokémona získáme náhodného
+      // Pokud jsme v lokaci s ID 18 (finální bitva), vyléčíme hráčovy pokémony
+      if (locId === 18) {
         try {
-          // Nejprve získáme seznam všech dostupných pokémonů
-          const pokemonsResponse = await fetch(`${API_URL}api/Pokemons`);
-          if (!pokemonsResponse.ok) throw new Error("Failed to fetch pokemons");
-          
-          const pokemonsData = await pokemonsResponse.json();
-          const pokemonList = Array.isArray(pokemonsData.value) ? pokemonsData.value : pokemonsData;
-          
-          if (pokemonList.length > 0) {
-            // Vybereme náhodného pokémona ze seznamu
-            const randomIndex = Math.floor(Math.random() * pokemonList.length);
-            const randomPokemon = pokemonList[randomIndex];
-            
-            // Získáme kompletní data o náhodném pokémonovi
-            const pokemonResponse = await fetch(`${API_URL}api/Pokemons/${randomPokemon.pokemonId}`);
-            if (pokemonResponse.ok) {
-              const pokemonData = await pokemonResponse.json();
-              setPokemon(pokemonData);
-              console.log(`Náhodný pokémon v lokaci ${locId}: ${pokemonData.name}`);
-            } else {
-              setPokemon(null);
-              console.error("Nepodařilo se získat detaily náhodného pokémona");
-            }
-          } else {
-            setPokemon(null);
-            console.error("Seznam pokémonů je prázdný");
+          console.log("Finální bitva s šampionem - léčení pokémonů hráče");
+          const savedPokemons = localStorage.getItem("playerPokemons");
+          if (savedPokemons) {
+            const parsedPokemons = JSON.parse(savedPokemons);
+            // Vyléčíme všechny pokémony hráče na maximum
+            const healedPokemons = parsedPokemons.map((pokemon: PokemonType) => ({
+              ...pokemon,
+              health: pokemon.maxHealth || pokemon.health,
+              energy: 100
+            }));
+            localStorage.setItem("playerPokemons", JSON.stringify(healedPokemons));
+            setPlayerPokemons(healedPokemons);
+            console.log("Pokémoni hráče byli vyléčeni před finální bitvou", healedPokemons);
           }
         } catch (error) {
-          console.error("Chyba při načítání náhodného pokémona:", error);
-          setPokemon(null);
+          console.error("Chyba při léčení pokémonů hráče:", error);
+        }
+      }
+      
+      if (locationData.hasPokemon) {
+        // Standardní lokace - jeden náhodný pokémon
+        if (locId !== 18) {
+          try {
+            // Nejprve získáme seznam všech dostupných pokémonů
+            const pokemonsResponse = await fetch(`${API_URL}api/Pokemons`);
+            if (!pokemonsResponse.ok) throw new Error("Failed to fetch pokemons");
+            
+            const pokemonsData = await pokemonsResponse.json();
+            const pokemonList = Array.isArray(pokemonsData.value) ? pokemonsData.value : pokemonsData;
+            
+            if (pokemonList.length > 0) {
+              // Vybereme náhodného pokémona ze seznamu
+              const randomIndex = Math.floor(Math.random() * pokemonList.length);
+              const randomPokemon = pokemonList[randomIndex];
+              
+              // Získáme kompletní data o náhodném pokémonovi
+              const pokemonResponse = await fetch(`${API_URL}api/Pokemons/${randomPokemon.pokemonId}`);
+              if (pokemonResponse.ok) {
+                const pokemonData = await pokemonResponse.json();
+                setPokemon(pokemonData);
+                console.log(`Náhodný pokémon v lokaci ${locId}: ${pokemonData.name}`);
+              } else {
+                setPokemon(null);
+                console.error("Nepodařilo se získat detaily náhodného pokémona");
+              }
+            } else {
+              setPokemon(null);
+              console.error("Seznam pokémonů je prázdný");
+            }
+          } catch (error) {
+            console.error("Chyba při načítání náhodného pokémona:", error);
+            setPokemon(null);
+          }
+        } 
+        // Lokace 18 - finální bitva, šampion má 6 různých pokémonů
+        else {
+          try {
+            console.log("Finální bitva se šampionem - příprava 6 unikátních pokémonů");
+            
+            // Nejprve získáme seznam všech dostupných pokémonů
+            const pokemonsResponse = await fetch(`${API_URL}api/Pokemons`);
+            if (!pokemonsResponse.ok) throw new Error("Failed to fetch pokemons");
+            
+            const pokemonsData = await pokemonsResponse.json();
+            const pokemonList = Array.isArray(pokemonsData.value) ? pokemonsData.value : pokemonsData;
+            
+            if (pokemonList.length >= 6) {
+              // Zamícháme seznam pokémonů
+              const shuffledPokemons = [...pokemonList].sort(() => Math.random() - 0.5);
+              
+              // Vybereme prvních 6 unikátních pokémonů
+              const selectedPokemons = shuffledPokemons.slice(0, 6);
+              
+              try {
+                // Načteme detailní data pro všechny pokémony v týmu šampiona, včetně útoků
+                const championTeam = [];
+                
+                // Pro každého pokémona v týmu šampiona získáme jeho kompletní data včetně útoků
+                for (const pokemon of selectedPokemons) {
+                  const detailResponse = await fetch(`${API_URL}api/Pokemons/${pokemon.pokemonId}`);
+                  if (detailResponse.ok) {
+                    const detailData = await detailResponse.json();
+                    
+                    // Zpracujeme útoky pokémona
+                    const attacks = Array.isArray(detailData.pokemonAttacks) ? detailData.pokemonAttacks : [];
+                    
+                    // Pokud pokémon nemá žádné útoky, přidáme mu základní sadu
+                    const pokemonAttacks = attacks.length > 0 ? attacks : [
+                      {
+                        pokemonAttackId: 2000,
+                        attackName: "Tackle",
+                        energyCost: 20,
+                        baseDamage: 40
+                      },
+                      {
+                        pokemonAttackId: 2001,
+                        attackName: "Scratch",
+                        energyCost: 15,
+                        baseDamage: 30
+                      },
+                      {
+                        pokemonAttackId: 2002,
+                        attackName: "Growl",
+                        energyCost: 10,
+                        baseDamage: 20
+                      }
+                    ];
+                    
+                    // Přidáme pokémona s jeho útoky do týmu šampiona
+                    championTeam.push({
+                      pokemonId: detailData.pokemonId,
+                      name: detailData.name,
+                      health: detailData.health,
+                      maxHealth: detailData.health,
+                      energy: detailData.energy || 100,
+                      typeId: detailData.typeId,
+                      imageId: detailData.imageId,
+                      type: "Normal",
+                      typeImageId: 1,
+                      pokemonAttacks: pokemonAttacks
+                    });
+                  }
+                }
+                
+                // Pokud se podařilo načíst alespoň jednoho pokémona
+                if (championTeam.length > 0) {
+                  localStorage.setItem("championTeam", JSON.stringify(championTeam));
+                  
+                  // Získáme detailní data prvního pokémona pro zobrazení v UI
+                  const firstPokemonDetailResponse = await fetch(`${API_URL}api/Pokemons/${championTeam[0].pokemonId}`);
+                  if (firstPokemonDetailResponse.ok) {
+                    const firstPokemonData = await firstPokemonDetailResponse.json();
+                    setPokemon(firstPokemonData);
+                    console.log(`Šampionův první pokémon: ${championTeam[0].name}`);
+                    console.log(`Šampionův tým (${championTeam.length} pokémonů):`, championTeam);
+                  } else {
+                    throw new Error("Nepodařilo se načíst detaily prvního pokémona šampiona");
+                  }
+                } else {
+                  throw new Error("Nepodařilo se načíst žádného pokémona pro tým šampiona");
+                }
+              } catch (error) {
+                console.error("Chyba při načítání detailů pokémonů šampiona:", error);
+                setPokemon(null);
+              }
+            } else {
+              // Pokud nemáme dostatek unikátních pokémonů, použijeme standardní logiku
+              console.warn("Není dostatek pokémonů pro tým šampiona, použijeme dostupné");
+              
+              if (pokemonList.length > 0) {
+                const randomIndex = Math.floor(Math.random() * pokemonList.length);
+                const randomPokemon = pokemonList[randomIndex];
+                
+                const pokemonResponse = await fetch(`${API_URL}api/Pokemons/${randomPokemon.pokemonId}`);
+                if (pokemonResponse.ok) {
+                  const pokemonData = await pokemonResponse.json();
+                  setPokemon(pokemonData);
+                }
+              }
+            }
+          } catch (error) {
+            console.error("Chyba při načítání týmu šampiona:", error);
+            setPokemon(null);
+          }
         }
       }
 
@@ -493,6 +648,16 @@ const Location: React.FC = () => {
   if (isLoading) return <div className="loading-spinner">Načítání...</div>;
   if (!location) return <div>Lokace nenalezena</div>;
 
+  if (currentMessage) {
+    return (
+      <Bg key={location.imageId} imageId={location.imageId}>
+        <StoryBox onClick={() => setRedirectPath(`/location/${visitedLocations[visitedLocations.length - 1] || 1}`)} showContinueText={true}>
+          <StoryText text={currentMessage} />
+        </StoryBox>
+      </Bg>
+    );
+  }
+
   if (location.locationId === 2 && !hasCompletedIntro) {
     return (
       <Bg key={location.imageId} imageId={location.imageId}>
@@ -617,6 +782,7 @@ const Location: React.FC = () => {
       {showBattle && pokemon && (
         <Battle
           locationPokemon={pokemon}
+          isChampionBattle={location?.locationId === 18}
           onBattleComplete={handleBattleComplete}
         />
       )}

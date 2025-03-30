@@ -10,6 +10,7 @@ type PokemonType = {
     type: string;
     typeImageId: number;
     pokemonAttacks: PokemonAttack[];
+    instanceId?: string;
 };
 
 export default PokemonType;

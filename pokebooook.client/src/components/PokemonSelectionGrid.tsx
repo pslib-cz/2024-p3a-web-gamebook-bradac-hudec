@@ -3,11 +3,11 @@ import PokemonType from '../types/PokemonType';
 import PokemonSelectionGridCSS from '../styles/components/PokemonSelectionGrid.module.css';
 import { API_URL } from '../env';
 
-interface PokemonSelectionGridProps {
+type PokemonSelectionGridProps = {
   playerPokemons: PokemonType[];
   loading: boolean;
   onSelect: (pokemon: PokemonType) => void;
-}
+};
 
 const PokemonSelectionGrid: React.FC<PokemonSelectionGridProps> = ({ 
   playerPokemons, 
