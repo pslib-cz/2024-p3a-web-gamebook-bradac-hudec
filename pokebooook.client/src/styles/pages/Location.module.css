@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 5rem;
-    max-width: 1200px;
+    max-width: 75rem;
     width: 100%;
     margin-bottom: 2rem;
 }
@@ -30,12 +30,12 @@
     height: 20rem;
     border-radius: 1rem;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .connections__container {
     width: 100%;
-    max-width: 800px;
+    max-width: 50rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,14 +50,14 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    max-width: 400px;
+    max-width: 25rem;
 }
 
 .connections__btn {
     width: 100%;
     background-color: #302f2f;
     color: #fff;
-    border: 2px solid transparent;
+    border: 0.125rem solid transparent;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -71,17 +71,17 @@
 .connections__btn:focus {
     background-color: #444;
     border-color: #fff;
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem);
     outline: none;
 }
 
 
 .connections__btn:active {
-    transform: translateY(1px);
+    transform: translateY(0.0625rem);
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .location__info {
         flex-direction: column;
         gap: 2rem;
@@ -94,6 +94,107 @@
 
     .connections__btn {
         padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Přidání media query pro ještě menší zařízení */
+@media (max-width: 30rem) {
+    .location__container {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .location__info {
+        gap: 1.5rem;
+    }
+    
+    .location__img {
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .info__text {
+        line-height: 1.4;
+    }
+    
+    .connections__container {
+        max-width: 90%;
+        margin-top: 1.5rem;
+    }
+    
+    .connections__list {
+        max-width: 100%;
+    }
+    
+    .connections__btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+    
+    .item-pokemon-selection {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .pokemon-selection-grid {
+        grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+        gap: 0.7rem;
+    }
+    
+    .pokemon-image {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .cancel-button {
+        padding: 0.7rem 1.4rem;
+        font-size: 1rem;
+        border-width: 0.25rem;
+    }
+}
+
+/* Přidání media query pro mobilní zařízení */
+@media (max-width: 20rem) {
+    .location__container {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+    
+    .location__info {
+        gap: 1rem;
+    }
+    
+    .location__img {
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .connections__container {
+        margin-top: 1rem;
+    }
+    
+    .item-pokemon-selection {
+        padding: 1rem;
+    }
+    
+    .pokemon-selection-grid {
+        grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+        gap: 0.5rem;
+    }
+    
+    .pokemon-option {
+        padding: 0.7rem;
+    }
+    
+    .pokemon-image {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    .cancel-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+        border-width: 0.2rem;
     }
 }
 
@@ -113,29 +214,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(217, 217, 217, 0.5);
-  border: solid 5px #a1a1a1;
-  border-radius: 20px;
+  border: solid 0.3125rem #a1a1a1;
+  border-radius: 1.25rem;
   padding: 2rem;
   z-index: 1000;
   width: 80%;
-  max-width: 600px;
+  max-width: 37.5rem;
   text-align: center;
   color: white;
-  text-shadow: 1px 1px 10px #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0.0625rem 0.0625rem 0.625rem #000;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
 }
 
 .item-pokemon-selection h3 {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
-  text-shadow: 1px 1px 10px #000;
+  text-shadow: 0.0625rem 0.0625rem 0.625rem #000;
   margin-bottom: 1.5rem;
 }
 
 .pokemon-selection-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(9.375rem, 1fr));
   gap: 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -143,22 +244,22 @@
 
 .pokemon-option {
   background-color: rgba(217, 217, 217, 0.7);
-  border: solid 3px #a1a1a1;
-  border-radius: 15px;
+  border: solid 0.1875rem #a1a1a1;
+  border-radius: 0.9375rem;
   padding: 1rem;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
 }
 
 .pokemon-option:hover:not(.disabled) {
   background-color: rgba(217, 217, 217, 0.9);
   border-color: white;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  transform: translateY(-3px);
+  box-shadow: 0 0 0.625rem rgba(255, 255, 255, 0.5);
+  transform: translateY(-0.1875rem);
 }
 
 .pokemon-option.disabled {
@@ -168,8 +269,8 @@
 }
 
 .pokemon-image {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -183,25 +284,25 @@
   font-weight: bold;
   margin-bottom: 0.3rem;
   color: white;
-  text-shadow: 1px 1px 10px #000;
+  text-shadow: 0.0625rem 0.0625rem 0.625rem #000;
 }
 
 .cancel-button {
-  padding: 15px 30px;
+  padding: 0.9375rem 1.875rem;
   font-size: 1.2em;
   background-color: #d9d9d9;
-  border: solid 5px #a1a1a1;
-  border-radius: 20px;
+  border: solid 0.3125rem #a1a1a1;
+  border-radius: 1.25rem;
   color: #fff;
   cursor: pointer;
-  text-shadow: 1px 1px 30px #000;
+  text-shadow: 0.0625rem 0.0625rem 1.875rem #000;
   font-weight: bold;
   transition: all 0.2s ease;
 }
 
 .cancel-button:hover {
   background-color: #a1a1a1;
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
 }
 
 .cancel-button:active {

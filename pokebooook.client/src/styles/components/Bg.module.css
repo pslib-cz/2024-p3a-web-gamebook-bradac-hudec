@@ -11,3 +11,17 @@
     align-items: center;
     position: relative;
 }
+
+/* Media queries pro responzivní design */
+@media (max-width: 768px) {
+    .bg__container {
+        justify-content: flex-start;
+        padding-top: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg__container {
+        padding-top: 20%;
+    }
+}

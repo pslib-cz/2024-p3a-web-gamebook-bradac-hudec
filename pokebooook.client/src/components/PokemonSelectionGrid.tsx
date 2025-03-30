@@ -1,6 +1,6 @@
 import React from 'react';
 import PokemonType from '../types/PokemonType';
-import BattleCSS from '../styles/pages/Battle.module.css';
+import PokemonSelectionGridCSS from '../styles/components/PokemonSelectionGrid.module.css';
 import { API_URL } from '../env';
 
 interface PokemonSelectionGridProps {
@@ -15,39 +15,36 @@ const PokemonSelectionGrid: React.FC<PokemonSelectionGridProps> = ({
   onSelect 
 }) => {
   if (loading) {
-    return <div className={BattleCSS.loading}>Načítání...</div>;
+    return <div className={PokemonSelectionGridCSS.loading}>Načítání...</div>;
   }
 
   return (
-    <div className={BattleCSS.pokemonGrid}>
+    <div className={PokemonSelectionGridCSS.pokemonGrid}>
       {playerPokemons.map((pokemon, index) => {
         return (
           <div
             key={index}
-            className={`${BattleCSS.pokemonOption} ${
-              pokemon.health <= 0 ? BattleCSS.disabled : ""
+            className={`${PokemonSelectionGridCSS.pokemonOption} ${
+              pokemon.health <= 0 ? PokemonSelectionGridCSS.disabled : ""
             }`}
             onClick={() => {
               if (pokemon.health > 0) {
                 onSelect(pokemon);
               }
             }}
-            style={{
-              cursor: pokemon.health > 0 ? "pointer" : "not-allowed",
-            }}
           >
             <img
               src={`${API_URL}api/Images/${pokemon.imageId}`}
               alt={pokemon.name}
             />
-            <div className={BattleCSS.pokemonInfo}>
+            <div className={PokemonSelectionGridCSS.pokemonInfo}>
               <span>{pokemon.name}</span>
               <span>
                 HP: {pokemon.health}/{pokemon.maxHealth}
               </span>
             </div>
             {pokemon.health <= 0 && (
-              <div className={BattleCSS.faintedOverlay}>Vyčerpaný</div>
+              <div className={PokemonSelectionGridCSS.faintedOverlay}>Vyčerpaný</div>
             )}
           </div>
         );

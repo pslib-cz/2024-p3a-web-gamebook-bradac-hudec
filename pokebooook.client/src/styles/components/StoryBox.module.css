@@ -36,3 +36,41 @@
     -moz-user-select: none;
     -ms-user-select: none;
 }
+
+/* Media queries pro responzivní design */
+@media (max-width: 1200px) {
+    .actionBox__container {
+        width: calc(100% - 20em);
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .actionBox__container {
+        width: calc(100% - 4em);
+        font-size: 1.1em;
+        min-height: 150px;
+        padding: 0.8em;
+    }
+    
+    .clickToContinue {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .actionBox__container {
+        width: calc(100% - 2em);
+        font-size: 1em;
+        min-height: 120px;
+        padding: 0.6em;
+        border-width: 3px;
+        border-radius: 15px;
+    }
+    
+    .clickToContinue {
+        font-size: 0.7rem;
+        bottom: 5px;
+        right: 5px;
+    }
+}

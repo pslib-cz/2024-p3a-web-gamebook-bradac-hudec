@@ -1,0 +1,51 @@
+.gameOver {
+  background-color: rgba(217, 217, 217, 0.5);
+  border: solid 0.3125rem #a1a1a1;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0.0625rem 0.0625rem 0.625rem #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 25rem;
+  max-width: 80%;
+  z-index: 1000;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0.0625rem 0.0625rem 0.9375rem #000;
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-shadow: 0.0625rem 0.0625rem 0.625rem #000;
+}
+
+.restartButton {
+  padding: 0.9375rem 1.875rem;
+  font-size: 1.5em;
+  background-color: #d9d9d9;
+  border: solid 0.3125rem #a1a1a1;
+  border-radius: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 0.0625rem 0.0625rem 1.875rem #000;
+}
+
+.restartButton:hover {
+  background-color: #a1a1a1;
+  transform: translateY(-0.125rem);
+} 

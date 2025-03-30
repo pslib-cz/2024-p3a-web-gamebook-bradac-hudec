@@ -99,3 +99,28 @@
         min-height: 50px;
     }
 }
+
+/* Přidání media query pro ještě menší zařízení */
+@media (max-width: 480px) {
+    .locationOptions__container {
+        width: calc(100% - 2em);
+        padding: 0.4rem;
+        border-width: 3px;
+        border-radius: 15px;
+        margin-bottom: 0.5em;
+    }
+
+    .locationOptions__wrapper {
+        max-height: 140px;
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+    }
+
+    .locationOptions__btn {
+        padding: 0.6em 1em;
+        font-size: 0.9rem;
+        min-height: 45px;
+        border-width: 3px;
+        border-radius: 10px;
+    }
+}

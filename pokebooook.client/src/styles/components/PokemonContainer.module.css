@@ -7,8 +7,8 @@
 }
 
 .pokemon__image {
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
     margin: 1em;
 }
 
@@ -21,23 +21,23 @@
 .pokemonType {
     background-color: #4a5568;
     color: white;
-    padding: 2px 8px;
-    border-radius: 4px;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.25rem;
     font-size: 0.8em;
-    margin-left: 8px;
+    margin-left: 0.5rem;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 0.25rem;
 }
 
 .typeIcon {
-    width: 24px;
-    height: 24px;
-    margin-left: 8px;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.5rem;
 }
 
 .pokemonInfo {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }

@@ -21,7 +21,7 @@ const Bg: React.FC<BgProps> = ({ imageId, bgImage, children }) => {
     }, [backgroundImageUrl]);
 
     return (
-        <div className={BgCSS.bg__container} style={{ backgroundImage: `url(${backgroundImageUrl})`, backgroundSize: 'cover', height: '100vh', width: '100vw' }}>
+        <div className={BgCSS.bg__container} style={{ backgroundImage: `url(${backgroundImageUrl})` }}>
             {children}
         </div>
     );
