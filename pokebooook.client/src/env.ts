@@ -1,1 +1,1 @@
-export const API_URL = import.meta.env.VITE_API_URL || 'https://id-67.pslib.cloud/';
+export const API_URL = import.meta.env.VITE_API_URL || 'https://id-67.pslib.cloud';
