@@ -107,7 +107,7 @@ const VictoryScreen: React.FC<VictoryScreenProps> = ({
               boxShadow: '0 0 8px rgba(0, 0, 0, 0.5)'
             }}>
               <img
-                src={`${API_URL}/api/Images/${capturedPokemon.imageId}`}
+                src={`${API_URL}api/Images/${capturedPokemon.imageId}`}
                 alt={capturedPokemon.name}
                 style={{ 
                   width: '100px', 
@@ -163,7 +163,7 @@ const VictoryScreen: React.FC<VictoryScreenProps> = ({
                 boxShadow: '0 0 6px rgba(0, 0, 0, 0.5)'
               }}>
                 <img
-                  src={`${API_URL}/api/Images/${groupedItem.item.imageId}`}
+                  src={`${API_URL}api/Images/${groupedItem.item.imageId}`}
                   alt={groupedItem.item.name}
                   style={{ 
                     width: '50px', 
