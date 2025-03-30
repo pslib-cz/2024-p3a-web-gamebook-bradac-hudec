@@ -8,5 +8,4 @@
 /Pokebooook.Server/app.db-wal
 /Pokebooook.Server/bin/
 /Pokebooook.Server/obj/
-*.env
 /Pokebooook.Server/app.db
