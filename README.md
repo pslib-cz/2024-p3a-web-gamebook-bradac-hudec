@@ -39,6 +39,8 @@ Odkaz:  https://www.figma.com/design/SKZ4c1FYVx0rSehQLImRUW/PGB?node-id=0-1&node
 
 ![DBmodel](https://github.com/user-attachments/assets/f063d041-617e-4677-8bfd-8fdb6b954c16)
 
+Nasazená hra: https://id-67.pslib.cloud/
+
 
 
 
